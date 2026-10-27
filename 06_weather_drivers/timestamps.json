@@ -1,0 +1,10 @@
+{
+ "timestep": "15 min (Pinocchio default Timestep 4/h; the profile does not change it)",
+ "drybulb_at_hh00_minus_epw_hour_value_maxabs": 0.0,
+ "drybulb_at_hh30_minus_epw_hour_value_maxabs": 7.25,
+ "hours_with_sun_up_at_midpoint": 4383,
+ "fraction_DHI_at_midpoint_equal_epw_hour_value": 1.0,
+ "fraction_DNI_at_midpoint_equal_epw_hour_value": 1.0,
+ "fraction_DHI_at_hour_end_equal_epw_hour_value": 0.010723248916267396,
+ "finding": "Instantaneous EPW quantities (dry-bulb etc.) are placed at the END of their hour (the 15-min value at hh:00 equals the EPW value exactly) and linearly interpolated in between. EPW solar (average over the preceding 60 min) is placed at the MIDDLE of its hour (the 15-min value at hh-1:30 equals the EPW value of hour hh) and linearly interpolated between hour midpoints. Hourly report = mean of the four 15-min samples (:15 :30 :45 :00): for temperatures this equals the interpolated value at hh-0:22:30, for solar a smoothed hour average (annual horizontal 1664.58 vs EPW GHI 1670.22 kWh/m2, -0.34%). The workbook stamps hourly means at the hour midpoint (6.3: averaged values at the midpoint)."
+}

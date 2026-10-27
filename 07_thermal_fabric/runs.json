@@ -1,0 +1,439 @@
+{
+ "195": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.685,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\195"
+ },
+ "200": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.697,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\200"
+ },
+ "210": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.773,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\210"
+ },
+ "215": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.747,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\215"
+ },
+ "220": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.668,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\220"
+ },
+ "230": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.728,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\230"
+ },
+ "240": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.766,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\240"
+ },
+ "250": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.71,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\250"
+ },
+ "270": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.887,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\270"
+ },
+ "280": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.95,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\280"
+ },
+ "290": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.034,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\290"
+ },
+ "300": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.935,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\300"
+ },
+ "310": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.01,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\310"
+ },
+ "320": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.007,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\320"
+ },
+ "395": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.767,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\395"
+ },
+ "400": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.841,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\400"
+ },
+ "410": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.939,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\410"
+ },
+ "420": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.935,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\420"
+ },
+ "430": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.901,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\430"
+ },
+ "440": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.114,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\440"
+ },
+ "450": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 6,
+  "seconds": 2.061,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\450"
+ },
+ "460": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 6,
+  "seconds": 2.078,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\460"
+ },
+ "470": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.107,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\470"
+ },
+ "600": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 3.296,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\600"
+ },
+ "610": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.408,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\610"
+ },
+ "620": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.5,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\620"
+ },
+ "630": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.36,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\630"
+ },
+ "640": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.183,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\640"
+ },
+ "650": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.226,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\650"
+ },
+ "660": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.23,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\660"
+ },
+ "670": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.169,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\670"
+ },
+ "680": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.106,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\680"
+ },
+ "685": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.955,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\685"
+ },
+ "695": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.97,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\695"
+ },
+ "800": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.821,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\800"
+ },
+ "810": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.056,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\810"
+ },
+ "900": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.905,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\900"
+ },
+ "910": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.02,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\910"
+ },
+ "920": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.914,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\920"
+ },
+ "930": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.959,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\930"
+ },
+ "940": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.027,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\940"
+ },
+ "950": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.122,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\950"
+ },
+ "960": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.47,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\960"
+ },
+ "980": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.15,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\980"
+ },
+ "985": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.146,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\985"
+ },
+ "995": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.979,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\995"
+ },
+ "600FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.985,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\600FF"
+ },
+ "900FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.908,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\900FF"
+ },
+ "650FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.084,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\650FF"
+ },
+ "950FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.92,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\950FF"
+ },
+ "680FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.024,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\680FF"
+ },
+ "980FF": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.479,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\980FF"
+ },
+ "_meta": {
+  "version": "1.0.0+b0c9cf1.dirty",
+  "engine": "EnergyPlus 26.1.0-6f2e40d102",
+  "weather": "weather/725650TY.epw"
+ },
+ "default_900": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 1.982,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\default_900"
+ },
+ "default_600": {
+  "code": 0,
+  "ok": true,
+  "severe": 0,
+  "warnings": 4,
+  "seconds": 2.715,
+  "runDir": "C:\\Users\\NG\\Desktop\\GVC\\pinocchio\\ashrae140\\work\\tf_runs\\default_600"
+ }
+}

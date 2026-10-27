@@ -1,0 +1,1216 @@
+! Exported by Pinocchio-EP 1.0.0+b0c9cf1.dirty (EnergyPlus input)
+Version,
+  26.1;                   !- Version Identifier
+
+  SimulationControl,
+    Yes,                     !- Do Zone Sizing Calculation
+    Yes,                     !- Do System Sizing Calculation
+    Yes,                     !- Do Plant Sizing Calculation
+    Yes,                     !- Run Simulation for Sizing Periods
+    Yes;                     !- Run Simulation for Weather File Run Periods
+
+Building,
+  Std140 HE130,           !- Name
+  0,                      !- North Axis
+  City,                   !- Terrain
+  0.04,                   !- Loads Convergence Tolerance Value
+  0.4,                    !- Temperature Convergence Tolerance Value
+  FullExterior,           !- Solar Distribution
+  25,                     !- Maximum Number of Warmup Days
+  6;                      !- Minimum Number of Warmup Days
+
+Timestep,
+  4;                      !- Number of Timesteps per Hour
+
+GlobalGeometryRules,
+  UpperLeftCorner,        !- Starting Vertex Position
+  Counterclockwise,       !- Vertex Entry Direction
+  Relative,               !- Coordinate System
+  Relative,               !- Daylighting Reference Point Coordinate System
+  Relative;               !- Rectangular Surface Coordinate System
+
+RunPeriod,
+  Run Period,             !- Name
+  1,                      !- Begin Month
+  1,                      !- Begin Day of Month
+  ,                       !- Begin Year
+  3,                      !- End Month
+  31,                     !- End Day of Month
+  ,                       !- End Year
+  Sunday,                 !- Day of Week for Start Day
+  No,                     !- Use Weather File Holidays and Special Days
+  No,                     !- Use Weather File Daylight Saving Period
+  No,                     !- Apply Weekend Holiday Rule
+  Yes,                    !- Use Weather File Rain Indicators
+  Yes;                    !- Use Weather File Snow Indicators
+
+Site:GroundTemperature:BuildingSurface,
+  18,                     !- January Ground Temperature
+  18,                     !- February Ground Temperature
+  18,                     !- March Ground Temperature
+  18,                     !- April Ground Temperature
+  18,                     !- May Ground Temperature
+  18,                     !- June Ground Temperature
+  18,                     !- July Ground Temperature
+  18,                     !- August Ground Temperature
+  18,                     !- September Ground Temperature
+  18,                     !- October Ground Temperature
+  18,                     !- November Ground Temperature
+  18;                     !- December Ground Temperature
+
+ScheduleTypeLimits,
+  Fraction,               !- Name
+  0,                      !- Lower Limit Value
+  1,                      !- Upper Limit Value
+  Continuous;             !- Numeric Type
+
+ScheduleTypeLimits,
+  Temperature,            !- Name
+  ,                       !- Lower Limit Value
+  ,                       !- Upper Limit Value
+  Continuous,             !- Numeric Type
+  Temperature;            !- Unit Type
+
+ScheduleTypeLimits,
+  Any Number;             !- Name
+
+ScheduleTypeLimits,
+  On/Off,                 !- Name
+  0,                      !- Lower Limit Value
+  1,                      !- Upper Limit Value
+  Discrete;               !- Numeric Type
+
+ScheduleTypeLimits,
+  Activity Level,         !- Name
+  0,                      !- Lower Limit Value
+  ,                       !- Upper Limit Value
+  Continuous;             !- Numeric Type
+
+Schedule:Compact,
+  Always On,              !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  1;                      !- Field 6
+
+Schedule:Compact,
+  Office Occupancy,       !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 08:00,           !- Field 5
+  0.05,                   !- Field 6
+  Until: 18:00,           !- Field 7
+  0.9,                    !- Field 8
+  Until: 24:00,           !- Field 9
+  0.1,                    !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.05;                   !- Field 13
+
+Schedule:Compact,
+  Office Lighting,        !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 07:00,           !- Field 5
+  0.1,                    !- Field 6
+  Until: 19:00,           !- Field 7
+  0.9,                    !- Field 8
+  Until: 24:00,           !- Field 9
+  0.15,                   !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.1;                    !- Field 13
+
+Schedule:Compact,
+  Office Equipment,       !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 07:00,           !- Field 5
+  0.2,                    !- Field 6
+  Until: 19:00,           !- Field 7
+  0.85,                   !- Field 8
+  Until: 24:00,           !- Field 9
+  0.25,                   !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.2;                    !- Field 13
+
+Schedule:Compact,
+  Activity Sched,         !- Name
+  Activity Level,         !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  120;                    !- Field 6
+
+Schedule:Compact,
+  Heating Setpoint,       !- Name
+  Temperature,            !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  20;                     !- Field 6
+
+Schedule:Compact,
+  Cooling Setpoint,       !- Name
+  Temperature,            !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  60;                     !- Field 6
+
+Material:NoMass,
+  Ext Wall Ins,           !- Name
+  MediumRough,            !- Roughness
+  1.975,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Ext Wall Mass,          !- Name
+  MediumRough,            !- Roughness
+  0.15,                   !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Ext Wall,               !- Name
+  Ext Wall Ins,           !- Outside Layer
+  Ext Wall Mass;          !- Layer 2
+
+Material:NoMass,
+  Roof Ins,               !- Name
+  MediumRough,            !- Roughness
+  4.202,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Roof Mass,              !- Name
+  MediumRough,            !- Roughness
+  0.1,                    !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Roof,                   !- Name
+  Roof Ins,               !- Outside Layer
+  Roof Mass;              !- Layer 2
+
+Material:NoMass,
+  Slab Floor Ins,         !- Name
+  MediumRough,            !- Roughness
+  3.296,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Slab Floor Mass,        !- Name
+  MediumRough,            !- Roughness
+  0.15,                   !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Slab Floor,             !- Name
+  Slab Floor Ins,         !- Outside Layer
+  Slab Floor Mass;        !- Layer 2
+
+Material:NoMass,
+  Int Wall Ins,           !- Name
+  MediumRough,            !- Roughness
+  0.302,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Int Wall Mass,          !- Name
+  MediumRough,            !- Roughness
+  0.1,                    !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Int Wall,               !- Name
+  Int Wall Ins,           !- Outside Layer
+  Int Wall Mass;          !- Layer 2
+
+WindowMaterial:SimpleGlazingSystem,
+  Std Glass Mat,          !- Name
+  3,                      !- U-Factor
+  0.4,                    !- Solar Heat Gain Coefficient
+  0.4;                    !- Visible Transmittance
+
+Construction,
+  Window,                 !- Name
+  Std Glass Mat;          !- Outside Layer
+
+Output:Table:SummaryReports,
+  AllSummary;             !- Report 1 Name
+
+OutputControl:Table:Style,
+  CommaAndHTML,           !- Column Separator
+  JtoKWH;                 !- Unit Conversion
+
+Output:Diagnostics,
+  DisplayExtraWarnings;   !- Key 1
+
+Material:NoMass,
+  HE Wall R100,           !- Name
+  Smooth,                 !- Roughness
+  100,                    !- Thermal Resistance
+  0.00001,                !- Thermal Absorptance
+  0,                      !- Solar Absorptance
+  0;                      !- Visible Absorptance
+
+Material:NoMass,
+  HE Floor R100,          !- Name
+  Smooth,                 !- Roughness
+  100,                    !- Thermal Resistance
+  0.00001,                !- Thermal Absorptance
+  0,                      !- Solar Absorptance
+  0;                      !- Visible Absorptance
+
+Material:NoMass,
+  HE Roof R0.14,          !- Name
+  Smooth,                 !- Roughness
+  0.140056022409,         !- Thermal Resistance
+  0.00001,                !- Thermal Absorptance
+  0,                      !- Solar Absorptance
+  0;                      !- Visible Absorptance
+
+Construction,
+  HE Wall,                !- Name
+  HE Wall R100;           !- Outside Layer
+
+Construction,
+  HE Floor,               !- Name
+  HE Floor R100;          !- Outside Layer
+
+Construction,
+  HE Roof,                !- Name
+  HE Roof R0.14;          !- Outside Layer
+
+SurfaceProperty:ConvectionCoefficients:MultipleSurface,
+  AllExteriorRoofs,       !- Field 1
+  Inside,                 !- Field 2
+  Value,                  !- Field 3
+  20,                     !- Field 4
+  ,                       !- Field 5
+  ,                       !- Field 6
+  Outside,                !- Field 7
+  Value,                  !- Field 8
+  20;                     !- Field 9
+
+SurfaceProperty:ConvectionCoefficients:MultipleSurface,
+  AllExteriorWalls,       !- Field 1
+  Inside,                 !- Field 2
+  Value,                  !- Field 3
+  0.1,                    !- Field 4
+  ,                       !- Field 5
+  ,                       !- Field 6
+  Outside,                !- Field 7
+  Value,                  !- Field 8
+  0.1;                    !- Field 9
+
+SurfaceProperty:ConvectionCoefficients:MultipleSurface,
+  AllExteriorFloors,      !- Field 1
+  Inside,                 !- Field 2
+  Value,                  !- Field 3
+  0.1,                    !- Field 4
+  ,                       !- Field 5
+  ,                       !- Field 6
+  Outside,                !- Field 7
+  Value,                  !- Field 8
+  0.1;                    !- Field 9
+
+Zone,
+  HE Zone,                !- Name
+  ,                       !- Direction of Relative North
+  0,                      !- X Origin
+  0,                      !- Y Origin
+  0,                      !- Z Origin
+  1,                      !- Type
+  1;                      !- Multiplier
+
+BuildingSurface:Detailed,
+  Wall-0001,              !- Name
+  Wall,                   !- Surface Type
+  HE Wall,                !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  SunExposed,             !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  0,                      !- X2
+  0,                      !- Y2
+  0,                      !- Z2
+  8,                      !- X3
+  0,                      !- Y3
+  0,                      !- Z3
+  8,                      !- X4
+  0,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0002,              !- Name
+  Wall,                   !- Surface Type
+  HE Wall,                !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  SunExposed,             !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  8,                      !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  8,                      !- X2
+  0,                      !- Y2
+  0,                      !- Z2
+  8,                      !- X3
+  6,                      !- Y3
+  0,                      !- Z3
+  8,                      !- X4
+  6,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0003,              !- Name
+  Wall,                   !- Surface Type
+  HE Wall,                !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  SunExposed,             !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  8,                      !- X1
+  6,                      !- Y1
+  2.7,                    !- Z1
+  8,                      !- X2
+  6,                      !- Y2
+  0,                      !- Z2
+  0,                      !- X3
+  6,                      !- Y3
+  0,                      !- Z3
+  0,                      !- X4
+  6,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0004,              !- Name
+  Wall,                   !- Surface Type
+  HE Wall,                !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  SunExposed,             !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  6,                      !- Y1
+  2.7,                    !- Z1
+  0,                      !- X2
+  6,                      !- Y2
+  0,                      !- Z2
+  0,                      !- X3
+  0,                      !- Y3
+  0,                      !- Z3
+  0,                      !- X4
+  0,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Roof-0005,              !- Name
+  Roof,                   !- Surface Type
+  HE Roof,                !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  SunExposed,             !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  8,                      !- X2
+  0,                      !- Y2
+  2.7,                    !- Z2
+  8,                      !- X3
+  6,                      !- Y3
+  2.7,                    !- Z3
+  0,                      !- X4
+  6,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Flr-0006,               !- Name
+  Floor,                  !- Surface Type
+  HE Floor,               !- Construction Name
+  HE Zone,                !- Zone Name
+  ,                       !- Space Name
+  Outdoors,               !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  WindExposed,            !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  6,                      !- Y1
+  0,                      !- Z1
+  8,                      !- X2
+  6,                      !- Y2
+  0,                      !- Z2
+  8,                      !- X3
+  0,                      !- Y3
+  0,                      !- Z3
+  0,                      !- X4
+  0,                      !- Y4
+  0;                      !- Z4
+
+ZoneList,
+  AllZones,               !- Name
+  HE Zone;                !- Zone 1 Name
+
+People,
+  No people,              !- Name
+  AllZones,               !- Zone or ZoneList or Space or SpaceList Name
+  Always On,              !- Number of People Schedule Name
+  People,                 !- Number of People Calculation Method
+  0,                      !- Number of People
+  ,                       !- People per Floor Area
+  ,                       !- Floor Area per Person
+  0.3,                    !- Fraction Radiant
+  ,                       !- Sensible Heat Fraction
+  Activity Sched;         !- Activity Level Schedule Name
+
+Lights,
+  No lights,              !- Name
+  AllZones,               !- Zone or ZoneList or Space or SpaceList Name
+  Always On,              !- Schedule Name
+  LightingLevel,          !- Design Level Calculation Method
+  0,                      !- Lighting Level
+  ,                       !- Watts per Floor Area
+  ,                       !- Watts per Person
+  0,                      !- Return Air Fraction
+  0.32,                   !- Fraction Radiant
+  0.25;                   !- Fraction Visible
+
+ElectricEquipment,
+  No equipment,           !- Name
+  AllZones,               !- Zone or ZoneList or Space or SpaceList Name
+  Always On,              !- Schedule Name
+  EquipmentLevel,         !- Design Level Calculation Method
+  0,                      !- Design Level
+  ,                       !- Watts per Floor Area
+  ,                       !- Watts per Person
+  0,                      !- Fraction Latent
+  0.5,                    !- Fraction Radiant
+  0;                      !- Fraction Lost
+
+ZoneInfiltration:DesignFlowRate,
+  No infiltration,        !- Name
+  AllZones,               !- Zone or ZoneList or Space or SpaceList Name
+  Always On,              !- Schedule Name
+  AirChanges/Hour,        !- Design Flow Rate Calculation Method
+  ,                       !- Design Flow Rate
+  ,                       !- Flow Rate per Floor Area
+  ,                       !- Flow Rate per Exterior Surface Area
+  0;                      !- Air Changes per Hour
+
+Output:Variable,
+  *,                      !- Key Value
+  Heating Coil Heating Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Heating Coil NaturalGas Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Heating Coil Electricity Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Heating Coil Runtime Fraction, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Fan Electricity Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Fan Heat Gain to Air,   !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Fan Runtime Fraction,   !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Mean Air Temperature, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Air System Sensible Heating Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Unitary System Part Load Ratio, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Surface Inside Face Convection Heat Transfer Coefficient, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Surface Outside Face Convection Heat Transfer Coefficient, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+SizingPeriod:WeatherFileConditionType,
+  Summer Extreme,          !- Name
+  SummerExtreme,           !- Period Selection
+  Monday,                  !- Day of Week for Start Day
+  Yes,                     !- Use Weather File Daylight Saving Period
+  Yes;                     !- Use Weather File Rain and Snow Indicators
+
+SizingPeriod:WeatherFileConditionType,
+  Winter Extreme,          !- Name
+  WinterExtreme,           !- Period Selection
+  Monday,                  !- Day of Week for Start Day
+  Yes,                     !- Use Weather File Daylight Saving Period
+  Yes;                     !- Use Weather File Rain and Snow Indicators
+
+! ==== HVAC: Pinocchio Studio (osstd kernel forward translation of project.hvacStudio) ====
+
+  ZoneControl:Thermostat,
+    HE Zone Thermostat,      !- Name
+    HE Zone,                 !- Zone or ZoneList Name
+    HE Zone Thermostat Schedule,  !- Control Type Schedule Name
+    ThermostatSetpoint:DualSetpoint,  !- Control 1 Object Type
+    HE Zone Tstat,           !- Control 1 Name
+    ,                        !- Control 2 Object Type
+    ,                        !- Control 2 Name
+    ,                        !- Control 3 Object Type
+    ,                        !- Control 3 Name
+    ,                        !- Control 4 Object Type
+    ,                        !- Control 4 Name
+    0;                       !- Temperature Difference Between Cutout And Setpoint {deltaC}
+
+  Schedule:Compact,
+    HE Zone Thermostat Schedule,  !- Name
+    HE Zone Thermostat Schedule Type Limits,  !- Schedule Type Limits Name
+    Through: 12/31,          !- Field 1
+    For: AllDays,            !- Field 2
+    Until: 24:00,            !- Field 3
+    4;                       !- Field 4
+
+  ScheduleTypeLimits,
+    HE Zone Thermostat Schedule Type Limits,  !- Name
+    0,                       !- Lower Limit Value
+    4,                       !- Upper Limit Value
+    DISCRETE;                !- Numeric Type
+
+  ThermostatSetpoint:DualSetpoint,
+    HE Zone Tstat,           !- Name
+    Heating Setpoint,        !- Heating Setpoint Temperature Schedule Name
+    Cooling Setpoint;        !- Cooling Setpoint Temperature Schedule Name
+
+  ZoneHVAC:EquipmentConnections,
+    HE Zone,                 !- Zone Name
+    HE Zone Equipment List,  !- Zone Conditioning Equipment List Name
+    HE Zone Inlet Node List,  !- Zone Air Inlet Node or NodeList Name
+    ,                        !- Zone Air Exhaust Node or NodeList Name
+    Node 1,                  !- Zone Air Node Name
+    HE Zone Return Node List;  !- Zone Return Air Node or NodeList Name
+
+  NodeList,
+    HE Zone Inlet Node List,  !- Name
+    Node 6;                  !- Node 1 Name
+
+  NodeList,
+    HE Zone Return Node List,  !- Name
+    Node 7;                  !- Node 1 Name
+
+  AirTerminal:SingleDuct:ConstantVolume:NoReheat,
+    Furnace Diffuser,        !- Name
+    Always On Discrete,      !- Availability Schedule Name
+    Node 8,                  !- Air Inlet Node Name
+    Node 6,                  !- Air Outlet Node Name
+    0.355;                   !- Maximum Air Flow Rate {m3/s}
+
+  ZoneHVAC:AirDistributionUnit,
+    ADU Furnace Diffuser,    !- Name
+    Node 6,                  !- Air Distribution Unit Outlet Node Name
+    AirTerminal:SingleDuct:ConstantVolume:NoReheat,  !- Air Terminal Object Type
+    Furnace Diffuser;        !- Air Terminal Name
+
+  ZoneHVAC:EquipmentList,
+    HE Zone Equipment List,  !- Name
+    SequentialLoad,          !- Load Distribution Scheme
+    ZoneHVAC:AirDistributionUnit,  !- Zone Equipment 1 Object Type
+    ADU Furnace Diffuser,    !- Zone Equipment 1 Name
+    1,                       !- Zone Equipment 1 Cooling Sequence
+    1,                       !- Zone Equipment 1 Heating or No-Load Sequence
+    ,                        !- Zone Equipment 1 Sequential Cooling Fraction Schedule Name
+    ;                        !- Zone Equipment 1 Sequential Heating Fraction Schedule Name
+
+  Sizing:Zone,
+    HE Zone,                 !- Zone or ZoneList Name
+    SupplyAirTemperature,    !- Zone Cooling Design Supply Air Temperature Input Method
+    14,                      !- Zone Cooling Design Supply Air Temperature {C}
+    11.11,                   !- Zone Cooling Design Supply Air Temperature Difference {deltaC}
+    SupplyAirTemperature,    !- Zone Heating Design Supply Air Temperature Input Method
+    40,                      !- Zone Heating Design Supply Air Temperature {C}
+    11.11,                   !- Zone Heating Design Supply Air Temperature Difference {deltaC}
+    0.0085,                  !- Zone Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    0.008,                   !- Zone Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    OSP DSOA,                !- Design Specification Outdoor Air Object Name
+    ,                        !- Zone Heating Sizing Factor
+    ,                        !- Zone Cooling Sizing Factor
+    DesignDay,               !- Cooling Design Air Flow Method
+    0,                       !- Cooling Design Air Flow Rate {m3/s}
+    0.000762,                !- Cooling Minimum Air Flow per Zone Floor Area {m3/s-m2}
+    0,                       !- Cooling Minimum Air Flow {m3/s}
+    0,                       !- Cooling Minimum Air Flow Fraction
+    DesignDay,               !- Heating Design Air Flow Method
+    0,                       !- Heating Design Air Flow Rate {m3/s}
+    0.002032,                !- Heating Maximum Air Flow per Zone Floor Area {m3/s-m2}
+    0.1415762,               !- Heating Maximum Air Flow {m3/s}
+    0.3,                     !- Heating Maximum Air Flow Fraction
+    ,                        !- Design Specification Zone Air Distribution Object Name
+    No,                      !- Account for Dedicated Outdoor Air System
+    ,                        !- Dedicated Outdoor Air System Control Strategy
+    ,                        !- Dedicated Outdoor Air Low Setpoint Temperature for Design {C}
+    ,                        !- Dedicated Outdoor Air High Setpoint Temperature for Design {C}
+    Sensible Load Only No Latent Load,  !- Zone Load Sizing Method
+    HumidityRatioDifference,  !- Zone Latent Cooling Design Supply Air Humidity Ratio Input Method
+    ,                        !- Zone Dehumidification Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    0.005,                   !- Zone Cooling Design Supply Air Humidity Ratio Difference {kgWater/kgDryAir}
+    HumidityRatioDifference,  !- Zone Latent Heating Design Supply Air Humidity Ratio Input Method
+    ,                        !- Zone Humidification Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    0.005,                   !- Zone Humidification Design Supply Air Humidity Ratio Difference {kgWater/kgDryAir}
+    ,                        !- Zone Humidistat Dehumidification Set Point Schedule Name
+    ,                        !- Zone Humidistat Humidification Set Point Schedule Name
+    Coincident,              !- Type of Space Sum to Use
+    None,                    !- Heating Coil Sizing Method
+    1;                       !- Maximum Heating Capacity To Cooling Load Sizing Ratio {W/W}
+
+  DesignSpecification:OutdoorAir,
+    OSP DSOA,                !- Name
+    Sum,                     !- Outdoor Air Method
+    0.00944,                 !- Outdoor Air Flow per Person {m3/s-person}
+    0,                       !- Outdoor Air Flow per Zone Floor Area {m3/s-m2}
+    0,                       !- Outdoor Air Flow per Zone {m3/s}
+    0;                       !- Outdoor Air Flow Air Changes per Hour {1/hr}
+
+  Sizing:Parameters,
+    1.25,                    !- Heating Sizing Factor
+    1.15;                    !- Cooling Sizing Factor
+
+  Schedule:Constant,Always On Discrete,OnOff,1;
+
+  Schedule:Constant,Always Off Discrete,OnOff 1,0;
+
+  Schedule:Constant,Always On Continuous,Fractional,1;
+
+  ScheduleTypeLimits,
+    Fractional,              !- Name
+    0,                       !- Lower Limit Value
+    1,                       !- Upper Limit Value
+    Continuous;              !- Numeric Type
+
+  ScheduleTypeLimits,
+    OnOff,                   !- Name
+    0,                       !- Lower Limit Value
+    1,                       !- Upper Limit Value
+    Discrete,                !- Numeric Type
+    availability;            !- Unit Type
+
+  ScheduleTypeLimits,
+    OnOff 1,                 !- Name
+    0,                       !- Lower Limit Value
+    1,                       !- Upper Limit Value
+    Discrete,                !- Numeric Type
+    availability;            !- Unit Type
+
+  Schedule:Constant,Fan Mode continuous,,1;
+
+  OutdoorAir:Node,
+    Model Outdoor Air Node;  !- Name
+
+  AirLoopHVAC,
+    Furnace Loop,            !- Name
+    ,                        !- Controller List Name
+    Furnace LoopAvailability Manager List,  !- Availability Manager List Name
+    0.355,                   !- Design Supply Air Flow Rate {m3/s}
+    Furnace Loop Supply Branches,  !- Branch List Name
+    ,                        !- Connector List Name
+    Node 2,                  !- Supply Side Inlet Node Name
+    Node 5,                  !- Demand Side Outlet Node Name
+    Furnace Loop Demand Inlet Nodes,  !- Demand Side Inlet Node Names
+    Furnace Loop Supply Outlet Nodes,  !- Supply Side Outlet Node Names
+    1;                       !- Design Return Air Flow Fraction of Supply Air Flow
+
+  NodeList,
+    Furnace Loop Supply Outlet Nodes,  !- Name
+    Node 3;                  !- Node 1 Name
+
+  NodeList,
+    Furnace Loop Demand Inlet Nodes,  !- Name
+    Node 4;                  !- Node 1 Name
+
+  Sizing:System,
+    Furnace Loop,            !- AirLoop Name
+    Sensible,                !- Type of Load to Size On
+    Autosize,                !- Design Outdoor Air Flow Rate {m3/s}
+    0.3,                     !- Central Heating Maximum System Air Flow Ratio
+    7,                       !- Preheat Design Temperature {C}
+    0.008,                   !- Preheat Design Humidity Ratio {kgWater/kgDryAir}
+    12.8,                    !- Precool Design Temperature {C}
+    0.008,                   !- Precool Design Humidity Ratio {kgWater/kgDryAir}
+    12.8,                    !- Central Cooling Design Supply Air Temperature {C}
+    16.7,                    !- Central Heating Design Supply Air Temperature {C}
+    NonCoincident,           !- Type of Zone Sum to Use
+    Yes,                     !- 100% Outdoor Air in Cooling
+    Yes,                     !- 100% Outdoor Air in Heating
+    0.0085,                  !- Central Cooling Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    0.008,                   !- Central Heating Design Supply Air Humidity Ratio {kgWater/kgDryAir}
+    DesignDay,               !- Cooling Supply Air Flow Rate Method
+    0,                       !- Cooling Supply Air Flow Rate {m3/s}
+    0.0099676501,            !- Cooling Supply Air Flow Rate Per Floor Area {m3/s-m2}
+    1,                       !- Cooling Fraction of Autosized Cooling Supply Air Flow Rate
+    3.9475456e-05,           !- Cooling Supply Air Flow Rate Per Unit Cooling Capacity {m3/s-W}
+    DesignDay,               !- Heating Supply Air Flow Rate Method
+    0,                       !- Heating Supply Air Flow Rate {m3/s}
+    0.0099676501,            !- Heating Supply Air Flow Rate Per Floor Area {m3/s-m2}
+    1,                       !- Heating Fraction of Autosized Heating Supply Air Flow Rate
+    1,                       !- Heating Fraction of Autosized Cooling Supply Air Flow Rate
+    3.1588213e-05,           !- Heating Supply Air Flow Rate Per Unit Heating Capacity {m3/s-W}
+    ZoneSum,                 !- System Outdoor Air Method
+    1,                       !- Zone Maximum Outdoor Air Fraction {dimensionless}
+    CoolingDesignCapacity,   !- Cooling Design Capacity Method
+    Autosize,                !- Cooling Design Capacity {W}
+    234.7,                   !- Cooling Design Capacity Per Floor Area {W/m2}
+    1,                       !- Fraction of Autosized Cooling Design Capacity
+    HeatingDesignCapacity,   !- Heating Design Capacity Method
+    Autosize,                !- Heating Design Capacity {W}
+    157,                     !- Heating Design Capacity Per Floor Area {W/m2}
+    1,                       !- Fraction of Autosized Heating Design Capacity
+    OnOff,                   !- Central Cooling Capacity Control Method
+    Autosize,                !- Occupant Diversity
+    None,                    !- Heating Coil Sizing Method
+    1;                       !- Maximum Heating Capacity To Cooling Capacity Sizing Ratio {W/W}
+
+  AvailabilityManagerAssignmentList,
+    Furnace LoopAvailability Manager List,  !- Name
+    AvailabilityManager:Scheduled,  !- Availability Manager 1 Object Type
+    Furnace Loop Availability Manager;  !- Availability Manager 1 Name
+
+  AvailabilityManager:Scheduled,
+    Furnace Loop Availability Manager,  !- Name
+    Always On Discrete;      !- Schedule Name
+
+  BranchList,
+    Furnace Loop Supply Branches,  !- Name
+    Furnace Loop Main Branch;  !- Branch 1 Name
+
+  Branch,
+    Furnace Loop Main Branch,  !- Name
+    ,                        !- Pressure Drop Curve Name
+    AirLoopHVAC:UnitarySystem,  !- Component 1 Object Type
+    Furnace Unit,            !- Component 1 Name
+    Node 2,                  !- Component 1 Inlet Node Name
+    Node 3;                  !- Component 1 Outlet Node Name
+
+  AirLoopHVAC:UnitarySystem,
+    Furnace Unit,            !- Name
+    Load,                    !- Control Type
+    HE Zone,                 !- Controlling Zone or Thermostat Location
+    None,                    !- Dehumidification Control Type
+    ,                        !- Availability Schedule Name
+    Node 2,                  !- Air Inlet Node Name
+    Node 3,                  !- Air Outlet Node Name
+    Fan:OnOff,               !- Supply Fan Object Type
+    Circulating Fan,         !- Supply Fan Name
+    BlowThrough,             !- Fan Placement
+    Fan Mode continuous,     !- Supply Air Fan Operating Mode Schedule Name
+    Coil:Heating:Fuel,       !- Heating Coil Object Type
+    Furnace,                 !- Heating Coil Name
+    1,                       !- DX Heating Coil Sizing Ratio
+    ,                        !- Cooling Coil Object Type
+    ,                        !- Cooling Coil Name
+    No,                      !- Use DOAS DX Cooling Coil
+    2,                       !- Minimum Supply Air Temperature {C}
+    SensibleOnlyLoadControl,  !- Latent Load Control
+    ,                        !- Supplemental Heating Coil Object Type
+    ,                        !- Supplemental Heating Coil Name
+    None,                    !- Cooling Supply Air Flow Rate Method
+    ,                        !- Cooling Supply Air Flow Rate {m3/s}
+    ,                        !- Cooling Supply Air Flow Rate Per Floor Area {m3/s-m2}
+    ,                        !- Cooling Fraction of Autosized Cooling Supply Air Flow Rate
+    ,                        !- Cooling Supply Air Flow Rate Per Unit of Capacity {m3/s-W}
+    SupplyAirFlowRate,       !- Heating Supply Air Flow Rate Method
+    0.355,                   !- Heating Supply Air Flow Rate {m3/s}
+    ,                        !- Heating Supply Air Flow Rate Per Floor Area {m3/s-m2}
+    ,                        !- Heating Fraction of Autosized Heating Supply Air Flow Rate
+    ,                        !- Heating Supply Air Flow Rate Per Unit of Capacity {m3/s-W}
+    SupplyAirFlowRate,       !- No Load Supply Air Flow Rate Method
+    0.355,                   !- No Load Supply Air Flow Rate {m3/s}
+    ,                        !- No Load Supply Air Flow Rate Per Floor Area {m3/s-m2}
+    ,                        !- No Load Fraction of Autosized Cooling Supply Air Flow Rate
+    ,                        !- No Load Fraction of Autosized Heating Supply Air Flow Rate
+    ,                        !- No Load Supply Air Flow Rate Per Unit of Capacity During Cooling Operation {m3/s-W}
+    ,                        !- No Load Supply Air Flow Rate Per Unit of Capacity During Heating Operation {m3/s-W}
+    Yes,                     !- No Load Supply Air Flow Rate Control Set To Low Speed
+    100,                     !- Maximum Supply Air Temperature {C}
+    21,                      !- Maximum Outdoor Dry-Bulb Temperature for Supplemental Heater Operation {C}
+    ,                        !- Outdoor Dry-Bulb Temperature Sensor Node Name
+    0,                       !- Ancillary On-Cycle Electric Power {W}
+    0;                       !- Ancillary Off-Cycle Electric Power {W}
+
+  Fan:OnOff,
+    Circulating Fan,         !- Name
+    Always On Discrete,      !- Availability Schedule Name
+    1,                       !- Fan Total Efficiency
+    0,                       !- Pressure Rise {Pa}
+    0.355,                   !- Maximum Flow Rate {m3/s}
+    1,                       !- Motor Efficiency
+    1,                       !- Motor In Airstream Fraction
+    Node 2,                  !- Air Inlet Node Name
+    Furnace Unit Fan - Heating Coil Node,  !- Air Outlet Node Name
+    Fan On Off Power Curve,  !- Fan Power Ratio Function of Speed Ratio Curve Name
+    Fan On Off Efficiency Curve,  !- Fan Efficiency Ratio Function of Speed Ratio Curve Name
+    General;                 !- End-Use Subcategory
+
+  Curve:Exponent,
+    Fan On Off Power Curve,  !- Name
+    1,                       !- Coefficient1 Constant
+    0,                       !- Coefficient2 Constant
+    0,                       !- Coefficient3 Constant
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+  Curve:Cubic,
+    Fan On Off Efficiency Curve,  !- Name
+    1,                       !- Coefficient1 Constant
+    0,                       !- Coefficient2 x
+    0,                       !- Coefficient3 x**2
+    0,                       !- Coefficient4 x**3
+    0,                       !- Minimum Value of x
+    1;                       !- Maximum Value of x
+
+  Coil:Heating:Fuel,
+    Furnace,                 !- Name
+    Always On Discrete,      !- Availability Schedule Name
+    NaturalGas,              !- Fuel Type
+    0.8,                     !- Burner Efficiency
+    10000,                   !- Nominal Capacity {W}
+    Furnace Unit Fan - Heating Coil Node,  !- Air Inlet Node Name
+    Node 3,                  !- Air Outlet Node Name
+    ,                        !- Temperature Setpoint Node Name
+    0,                       !- On Cycle Parasitic Electric Load {W}
+    HE PLF Table,            !- Part Load Fraction Correlation Curve Name
+    0;                       !- Off Cycle Parasitic Fuel Load {W}
+
+  Table:Lookup,
+    HE PLF Table,            !- Name
+    HE PLF Table Independent Variable List,  !- Independent Variable List Name
+    None,                    !- Normalization Method
+    1,                       !- Normalization Divisor
+    0,                       !- Minimum Output
+    2,                       !- Maximum Output
+    Dimensionless,           !- Output Unit Type
+    ,                        !- External File Name
+    ,                        !- External File Column Number
+    ,                        !- External File Starting Row Number
+    0,                       !- Output Value 1
+    0.594079,                !- Output Value 2
+    0.778945,                !- Output Value 3
+    0.867677,                !- Output Value 4
+    0.918912,                !- Output Value 5
+    0.951679,                !- Output Value 6
+    0.974012,                !- Output Value 7
+    0.989887,                !- Output Value 8
+    1.001495,                !- Output Value 9
+    1.010146,                !- Output Value 10
+    1.016669,                !- Output Value 11
+    1.021613,                !- Output Value 12
+    1.02536,                 !- Output Value 13
+    1.028179,                !- Output Value 14
+    1.030269,                !- Output Value 15
+    1.031776,                !- Output Value 16
+    1.032815,                !- Output Value 17
+    1.033471,                !- Output Value 18
+    1.033815,                !- Output Value 19
+    1.0339,                  !- Output Value 20
+    1.033772,                !- Output Value 21
+    1.033466,                !- Output Value 22
+    1.033012,                !- Output Value 23
+    1.032435,                !- Output Value 24
+    1.031754,                !- Output Value 25
+    1.030988,                !- Output Value 26
+    1.030151,                !- Output Value 27
+    1.029255,                !- Output Value 28
+    1.028312,                !- Output Value 29
+    1.02733,                 !- Output Value 30
+    1.026318,                !- Output Value 31
+    1.025282,                !- Output Value 32
+    1.024228,                !- Output Value 33
+    1.023162,                !- Output Value 34
+    1.022088,                !- Output Value 35
+    1.02101,                 !- Output Value 36
+    1.019933,                !- Output Value 37
+    1.018858,                !- Output Value 38
+    1.017789,                !- Output Value 39
+    1.016728,                !- Output Value 40
+    1.015678,                !- Output Value 41
+    1.014641,                !- Output Value 42
+    1.013617,                !- Output Value 43
+    1.01261,                 !- Output Value 44
+    1.01162,                 !- Output Value 45
+    1.010649,                !- Output Value 46
+    1.009698,                !- Output Value 47
+    1.008767,                !- Output Value 48
+    1.007858,                !- Output Value 49
+    1.006972,                !- Output Value 50
+    1.006109,                !- Output Value 51
+    1.00527,                 !- Output Value 52
+    1.004456,                !- Output Value 53
+    1.003667,                !- Output Value 54
+    1.002904,                !- Output Value 55
+    1.002167,                !- Output Value 56
+    1.001457,                !- Output Value 57
+    1.000774,                !- Output Value 58
+    1.000119,                !- Output Value 59
+    0.999491,                !- Output Value 60
+    0.998892,                !- Output Value 61
+    0.998321,                !- Output Value 62
+    0.997779,                !- Output Value 63
+    0.997265,                !- Output Value 64
+    0.996781,                !- Output Value 65
+    0.996326,                !- Output Value 66
+    0.995901,                !- Output Value 67
+    0.995505,                !- Output Value 68
+    0.995139,                !- Output Value 69
+    0.994804,                !- Output Value 70
+    0.994499,                !- Output Value 71
+    0.994224,                !- Output Value 72
+    0.993979,                !- Output Value 73
+    0.993765,                !- Output Value 74
+    0.993583,                !- Output Value 75
+    0.993431,                !- Output Value 76
+    0.99331,                 !- Output Value 77
+    0.99322,                 !- Output Value 78
+    0.993161,                !- Output Value 79
+    0.993134,                !- Output Value 80
+    0.993139,                !- Output Value 81
+    0.993175,                !- Output Value 82
+    0.993243,                !- Output Value 83
+    0.993343,                !- Output Value 84
+    0.993475,                !- Output Value 85
+    0.993639,                !- Output Value 86
+    0.993835,                !- Output Value 87
+    0.994064,                !- Output Value 88
+    0.994325,                !- Output Value 89
+    0.994619,                !- Output Value 90
+    0.994946,                !- Output Value 91
+    0.995306,                !- Output Value 92
+    0.995698,                !- Output Value 93
+    0.996124,                !- Output Value 94
+    0.996584,                !- Output Value 95
+    0.997077,                !- Output Value 96
+    0.997603,                !- Output Value 97
+    0.998164,                !- Output Value 98
+    0.998758,                !- Output Value 99
+    0.999387,                !- Output Value 100
+    1.00005;                 !- Output Value 101
+
+  Table:IndependentVariableList,
+    HE PLF Table Independent Variable List,  !- Name
+    HE PLR;                  !- Independent Variable 1 Name
+
+  Table:IndependentVariable,
+    HE PLR,                  !- Name
+    Linear,                  !- Interpolation Method
+    Constant,                !- Extrapolation Method
+    0,                       !- Minimum Value
+    1,                       !- Maximum Value
+    ,                        !- Normalization Reference Value
+    Dimensionless,           !- Unit Type
+    ,                        !- External File Name
+    ,                        !- External File Column Number
+    ,                        !- External File Starting Row Number
+    0,                       !- Value 1
+    0.01,                    !- Value 2
+    0.02,                    !- Value 3
+    0.03,                    !- Value 4
+    0.04,                    !- Value 5
+    0.05,                    !- Value 6
+    0.06,                    !- Value 7
+    0.07,                    !- Value 8
+    0.08,                    !- Value 9
+    0.09,                    !- Value 10
+    0.1,                     !- Value 11
+    0.11,                    !- Value 12
+    0.12,                    !- Value 13
+    0.13,                    !- Value 14
+    0.14,                    !- Value 15
+    0.15,                    !- Value 16
+    0.16,                    !- Value 17
+    0.17,                    !- Value 18
+    0.18,                    !- Value 19
+    0.19,                    !- Value 20
+    0.2,                     !- Value 21
+    0.21,                    !- Value 22
+    0.22,                    !- Value 23
+    0.23,                    !- Value 24
+    0.24,                    !- Value 25
+    0.25,                    !- Value 26
+    0.26,                    !- Value 27
+    0.27,                    !- Value 28
+    0.28,                    !- Value 29
+    0.29,                    !- Value 30
+    0.3,                     !- Value 31
+    0.31,                    !- Value 32
+    0.32,                    !- Value 33
+    0.33,                    !- Value 34
+    0.34,                    !- Value 35
+    0.35,                    !- Value 36
+    0.36,                    !- Value 37
+    0.37,                    !- Value 38
+    0.38,                    !- Value 39
+    0.39,                    !- Value 40
+    0.4,                     !- Value 41
+    0.41,                    !- Value 42
+    0.42,                    !- Value 43
+    0.43,                    !- Value 44
+    0.44,                    !- Value 45
+    0.45,                    !- Value 46
+    0.46,                    !- Value 47
+    0.47,                    !- Value 48
+    0.48,                    !- Value 49
+    0.49,                    !- Value 50
+    0.5,                     !- Value 51
+    0.51,                    !- Value 52
+    0.52,                    !- Value 53
+    0.53,                    !- Value 54
+    0.54,                    !- Value 55
+    0.55,                    !- Value 56
+    0.56,                    !- Value 57
+    0.57,                    !- Value 58
+    0.58,                    !- Value 59
+    0.59,                    !- Value 60
+    0.6,                     !- Value 61
+    0.61,                    !- Value 62
+    0.62,                    !- Value 63
+    0.63,                    !- Value 64
+    0.64,                    !- Value 65
+    0.65,                    !- Value 66
+    0.66,                    !- Value 67
+    0.67,                    !- Value 68
+    0.68,                    !- Value 69
+    0.69,                    !- Value 70
+    0.7,                     !- Value 71
+    0.71,                    !- Value 72
+    0.72,                    !- Value 73
+    0.73,                    !- Value 74
+    0.74,                    !- Value 75
+    0.75,                    !- Value 76
+    0.76,                    !- Value 77
+    0.77,                    !- Value 78
+    0.78,                    !- Value 79
+    0.79,                    !- Value 80
+    0.8,                     !- Value 81
+    0.81,                    !- Value 82
+    0.82,                    !- Value 83
+    0.83,                    !- Value 84
+    0.84,                    !- Value 85
+    0.85,                    !- Value 86
+    0.86,                    !- Value 87
+    0.87,                    !- Value 88
+    0.88,                    !- Value 89
+    0.89,                    !- Value 90
+    0.9,                     !- Value 91
+    0.91,                    !- Value 92
+    0.92,                    !- Value 93
+    0.93,                    !- Value 94
+    0.94,                    !- Value 95
+    0.95,                    !- Value 96
+    0.96,                    !- Value 97
+    0.97,                    !- Value 98
+    0.98,                    !- Value 99
+    0.99,                    !- Value 100
+    1;                       !- Value 101
+
+  AirLoopHVAC:SupplyPath,
+    Furnace Loop Node 4 Supply Path,  !- Name
+    Node 4,                  !- Supply Air Path Inlet Node Name
+    AirLoopHVAC:ZoneSplitter,  !- Component 1 Object Type
+    Air Loop HVAC Zone Splitter 1;  !- Component 1 Name
+
+  AirLoopHVAC:ZoneSplitter,
+    Air Loop HVAC Zone Splitter 1,  !- Name
+    Node 4,                  !- Inlet Node Name
+    Node 8;                  !- Outlet 1 Node Name
+
+  AirLoopHVAC:ReturnPath,
+    Furnace Loop Return Path,  !- Name
+    Node 5,                  !- Return Air Path Outlet Node Name
+    AirLoopHVAC:ZoneMixer,   !- Component 1 Object Type
+    Air Loop HVAC Zone Mixer 1;  !- Component 1 Name
+
+  AirLoopHVAC:ZoneMixer,
+    Air Loop HVAC Zone Mixer 1,  !- Name
+    Node 5,                  !- Outlet Node Name
+    Node 7;                  !- Inlet 1 Node Name

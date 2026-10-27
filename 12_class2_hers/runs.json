@@ -1,0 +1,590 @@
+{
+ "L100AC": {
+  "case": "L100A",
+  "climate": "C",
+  "heating_MBtu": 52.09,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 41.724972598178766,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.126,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L100AL": {
+  "case": "L100A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 47.789,
+  "tzone_min_C": 1.6038547721542993,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 3.427,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L110AC": {
+  "case": "L110A",
+  "climate": "C",
+  "heating_MBtu": 77.768,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 40.20719128338744,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.102,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L110AL": {
+  "case": "L110A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 51.094,
+  "tzone_min_C": -0.011854051412909834,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 3.11,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L120AC": {
+  "case": "L120A",
+  "climate": "C",
+  "heating_MBtu": 39.674,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999996,
+  "tzone_max_C": 41.02682530436045,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.689,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L120AL": {
+  "case": "L120A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 43.757,
+  "tzone_min_C": 3.693529308419026,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 3.456,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L130AC": {
+  "case": "L130A",
+  "climate": "C",
+  "heating_MBtu": 42.286,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 38.787035229599994,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 6.236,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L130AL": {
+  "case": "L130A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 35.238,
+  "tzone_min_C": 2.643607317748046,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 6.117,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L140AC": {
+  "case": "L140A",
+  "climate": "C",
+  "heating_MBtu": 49.392,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999996,
+  "tzone_max_C": 33.786678072090524,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.52,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L140AL": {
+  "case": "L140A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 22.655,
+  "tzone_min_C": 2.0653799098672354,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 3.551,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L150AC": {
+  "case": "L150A",
+  "climate": "C",
+  "heating_MBtu": 44.05,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 45.859583262022305,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 5.454,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L150AL": {
+  "case": "L150A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 59.9,
+  "tzone_min_C": 2.9260379314930622,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 5.866,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L155AC": {
+  "case": "L155A",
+  "climate": "C",
+  "heating_MBtu": 46.854,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 40.58902695070419,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 4.202,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L155AL": {
+  "case": "L155A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 45.092,
+  "tzone_min_C": 2.989548153298319,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 3.683,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L160AC": {
+  "case": "L160A",
+  "climate": "C",
+  "heating_MBtu": 52.812,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 45.986565986262164,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 4.909,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L160AL": {
+  "case": "L160A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 57.134,
+  "tzone_min_C": 1.2240533986643092,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 7.905,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L170AC": {
+  "case": "L170A",
+  "climate": "C",
+  "heating_MBtu": 62.961,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999996,
+  "tzone_max_C": 39.920101874101455,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 7.27,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L170AL": {
+  "case": "L170A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 38.719,
+  "tzone_min_C": -0.2991207156664183,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 6.723,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L200AC": {
+  "case": "L200A",
+  "climate": "C",
+  "heating_MBtu": 131.293,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 40.425829070435874,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 6.277,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L200AL": {
+  "case": "L200A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 59.878,
+  "tzone_min_C": -2.4268969004096252,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 4.32,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L202AC": {
+  "case": "L202A",
+  "climate": "C",
+  "heating_MBtu": 136.973,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 38.12737828850457,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 4.085,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L202AL": {
+  "case": "L202A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 50.174,
+  "tzone_min_C": -2.4774595482259283,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 4.493,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L302AC": {
+  "case": "L302A",
+  "climate": "C",
+  "heating_MBtu": 60.75,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 42.434229500001436,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.852,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L304AC": {
+  "case": "L304A",
+  "climate": "C",
+  "heating_MBtu": 50.021,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 43.62413830194586,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.88,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L302KC": {
+  "case": "L302K",
+  "climate": "C",
+  "heating_MBtu": 43.14,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 37.79929882009607,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 6.628,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L304KC": {
+  "case": "L304K",
+  "climate": "C",
+  "heating_MBtu": 39.162,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 37.81945990601237,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 6.043,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L322AC": {
+  "case": "L322A",
+  "climate": "C",
+  "heating_MBtu": 70.674,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 40.589036861522686,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 4,
+  "exit": 0,
+  "secs": 5.988,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L324AC": {
+  "case": "L324A",
+  "climate": "C",
+  "heating_MBtu": 52.296,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 40.400805398314255,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 4,
+  "exit": 0,
+  "secs": 5.004,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L165AC": {
+  "case": "L165A",
+  "climate": "C",
+  "heating_MBtu": 56.874,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 43.41831667729353,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.763,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ },
+ "L165AL": {
+  "case": "L165A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 48.693,
+  "tzone_min_C": 1.0723786625276572,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 5.057,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients",
+   "Shading:Building:Detailed"
+  ]
+ }
+}

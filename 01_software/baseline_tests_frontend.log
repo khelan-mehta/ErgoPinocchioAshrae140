@@ -1,0 +1,1578 @@
+✔ reviewModel: assumed rows start UNCHECKED, user/code-default rows checked; summary line; bases never reach the applied op (4.0553ms)
+✔ reviewModel: plan steps with an invented value are unchecked; step JSON carries no basis keys (1.6386ms)
+✔ review panel (DOM): 'Assumed by AI' rows highlighted + unchecked, code-default shows its source, summary shown (333.8651ms)
+✔ fieldSnapshot ships the app's own defaults (+ source) and document provenance ids for the server's basis check (124.0779ms)
+✔ (a) coverage · project · Step 1 · ProjectStep (1008.9613ms)
+✔ (c) GUI ≡ registry · project · Step 1 · ProjectStep (1570.946ms)
+✔ (a) coverage · project · Step 1 · ProjectStep (no weather) (144.4782ms)
+✔ (c) GUI ≡ registry · project · Step 1 · ProjectStep (no weather) (108.6187ms)
+✔ (a) coverage · project · TopBar · Pinocchio Mode switch (96.7239ms)
+✔ (c) GUI ≡ registry · project · TopBar · Pinocchio Mode switch (141.3942ms)
+✔ (a) coverage · geometry · Inspector · Zone tab (Office A: window, door, walls) (266.0708ms)
+✔ (c) GUI ≡ registry · geometry · Inspector · Zone tab (Office A: window, door, walls) (3990.4509ms)
+✔ (a) coverage · geometry · Inspector · Zone tab (Office B: skylight) (110.6683ms)
+✔ (c) GUI ≡ registry · geometry · Inspector · Zone tab (Office B: skylight) (3194.48ms)
+✔ (a) coverage · geometry · Inspector · Model tab (113.5721ms)
+✔ (c) GUI ≡ registry · geometry · Inspector · Model tab (1808.0648ms)
+✔ (a) coverage · geometry · PlanEditor · floor bar + snap bar (700.1348ms)
+✔ (c) GUI ≡ registry · geometry · PlanEditor · floor bar + snap bar (799.2158ms)
+✔ (a) coverage · geometry · PlanEditor · building orientation (compass open) (207.2414ms)
+Warning: Removing a style property during rerender (borderColor) when a conflicting property is set (border) can lead to styling bugs. To avoid this, don't mix shorthand and non-shorthand properties for the same value; instead, replace the shorthand with separate values.
+    at button
+    at div
+    at div
+    at div
+    at OrientationControl (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/OrientationControl.jsx:10:31)
+    at div
+    at PlanEditor (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PlanEditor.jsx:33:23)
+    at Host (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/tools/agent-registry.test.mjs:83:23)
+✔ (c) GUI ≡ registry · geometry · PlanEditor · building orientation (compass open) (1297.6489ms)
+✔ (a) coverage · geometry · PlanEditor · selection transform bar (Ctrl+A) (346.484ms)
+✔ (c) GUI ≡ registry · geometry · PlanEditor · selection transform bar (Ctrl+A) (765.7714ms)
+✔ (a) coverage · geometry · RoofPanel · gambrel roof + a dormer (161.428ms)
+✔ (c) GUI ≡ registry · geometry · RoofPanel · gambrel roof + a dormer (89.7153ms)
+✔ (a) coverage · geometry · PlenumEditor (134.9306ms)
+✔ (c) GUI ≡ registry · geometry · PlenumEditor (367.523ms)
+✔ (a) coverage · geometry · WallCadEditor · window (65.9737ms)
+✔ (c) GUI ≡ registry · geometry · WallCadEditor · window (549.6698ms)
+✔ (a) coverage · geometry · WallCadEditor · door (41.9045ms)
+✔ (c) GUI ≡ registry · geometry · WallCadEditor · door (279.7878ms)
+✔ (a) coverage · geometry · RoofCadEditor · skylight (66.0147ms)
+✔ (c) GUI ≡ registry · geometry · RoofCadEditor · skylight (303.3431ms)
+✔ (a) coverage · geometry · FocusEdit · toolbar (46.0207ms)
+✔ (c) GUI ≡ registry · geometry · FocusEdit · toolbar (25.487ms)
+✔ (a) coverage · surface · Zone editor · Office A · window wall (208.3651ms)
+✔ (c) GUI ≡ registry · surface · Zone editor · Office A · window wall (2192.6322ms)
+✔ (a) coverage · surface · Zone editor · Office A · door wall (131.1125ms)
+✔ (c) GUI ≡ registry · surface · Zone editor · Office A · door wall (1093.4276ms)
+✔ (a) coverage · surface · Zone editor · Office B · roof (skylight) (130.8689ms)
+✔ (c) GUI ≡ registry · surface · Zone editor · Office B · roof (skylight) (1651.2924ms)
+✔ (a) coverage · surface · Zone editor · Office B · shared wall (adiabatic) (164.7246ms)
+✔ (c) GUI ≡ registry · surface · Zone editor · Office B · shared wall (adiabatic) (367.8687ms)
+✔ (a) coverage · surface · Zone editor · All surfaces sheet (696.406ms)
+✔ (c) GUI ≡ registry · surface · Zone editor · All surfaces sheet (22333.3684ms)
+✔ (a) coverage · surface · Site tab (a building selected) (68.8832ms)
+✔ (c) GUI ≡ registry · surface · Site tab (a building selected) (677.7525ms)
+✔ (a) coverage · envelope · Envelope · library (slots + cards) (146.3794ms)
+✔ (c) GUI ≡ registry · envelope · Envelope · library (slots + cards) (127.9345ms)
+✔ (a) coverage · envelope · Envelope · builder (new, layer stack) (80.8669ms)
+✔ (c) GUI ≡ registry · envelope · Envelope · builder (new, layer stack) (153.7061ms)
+✔ (a) coverage · envelope · Envelope · builder (custom glazing) (66.4499ms)
+✔ (c) GUI ≡ registry · envelope · Envelope · builder (custom glazing) (130.5399ms)
+✔ (a) coverage · envelope · Envelope · builder (by target U) (60.4449ms)
+✔ (c) GUI ≡ registry · envelope · Envelope · builder (by target U) (130.0575ms)
+✔ (a) coverage · envelope · Groups · GroupsEditor (40.3323ms)
+✔ (c) GUI ≡ registry · envelope · Groups · GroupsEditor (207.0867ms)
+✔ (a) coverage · envelope · Daylight · DaylightTab (108.0665ms)
+✔ (c) GUI ≡ registry · envelope · Daylight · DaylightTab (274.479ms)
+✔ (a) coverage · envelope · Renewables (hidden step) · RenewablesEditor (42.3525ms)
+✔ (c) GUI ≡ registry · envelope · Renewables (hidden step) · RenewablesEditor (160.1465ms)
+✔ (a) coverage · loads · Schedules · editor (weekday bar + template chips) (57.0937ms)
+✔ (c) GUI ≡ registry · loads · Schedules · editor (weekday bar + template chips) (125.6452ms)
+✔ (a) coverage · loads · Schedules · editor (weekend bar) (44.568ms)
+✔ (c) GUI ≡ registry · loads · Schedules · editor (weekend bar) (98.9632ms)
+✔ (a) coverage · loads · Schedules · editor (custom chip Lab Hours) (50.8544ms)
+✔ (c) GUI ≡ registry · loads · Schedules · editor (custom chip Lab Hours) (99.9913ms)
+✔ (a) coverage · loads · Schedules · editor (temperature: Cooling Setpoint) (59.7989ms)
+✔ (c) GUI ≡ registry · loads · Schedules · editor (temperature: Cooling Setpoint) (112.0148ms)
+✔ (a) coverage · loads · Schedules · New blank schedule modal (64.8982ms)
+✔ (c) GUI ≡ registry · loads · Schedules · New blank schedule modal (60.7611ms)
+✔ (a) coverage · loads · Schedules · Import Schedule:Compact modal (62.6612ms)
+✔ (c) GUI ≡ registry · loads · Schedules · Import Schedule:Compact modal (63.7429ms)
+✔ (a) coverage · loads · Schedules · Add-a-schedule modal (imported models) (45.5999ms)
+✔ (c) GUI ≡ registry · loads · Schedules · Add-a-schedule modal (imported models) (28.8158ms)
+✔ (a) coverage · loads · Schedules · imported-model view (62.3259ms)
+✔ (c) GUI ≡ registry · loads · Schedules · imported-model view (53.7921ms)
+✔ (a) coverage · loads · Loads · by zone (66.5122ms)
+✔ (c) GUI ≡ registry · loads · Loads · by zone (1505.4788ms)
+✔ (a) coverage · loads · Loads · by zone (every category loaded) (42.8694ms)
+✔ (c) GUI ≡ registry · loads · Loads · by zone (every category loaded) (1450.0379ms)
+✔ (a) coverage · loads · Loads · edit occupancy (zone) (93.4216ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit occupancy (zone) (1300.6643ms)
+✔ (a) coverage · loads · Loads · edit lighting (group) (89.6569ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit lighting (group) (1290.5038ms)
+✔ (a) coverage · loads · Loads · edit exterior lighting (85.3147ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit exterior lighting (962.4942ms)
+✔ (a) coverage · loads · Loads · edit equipment (93.6666ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit equipment (1301.3986ms)
+✔ (a) coverage · loads · Loads · edit exterior equipment (88.265ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit exterior equipment (964.2591ms)
+✔ (a) coverage · loads · Loads · edit infiltration (77.9567ms)
+✔ (c) GUI ≡ registry · loads · Loads · edit infiltration (955.883ms)
+✔ (a) coverage · loads · Loads · add modal (set_load params) (81.3811ms)
+✔ (c) GUI ≡ registry · loads · Loads · add modal (set_load params) (224.2906ms)
+✔ (a) coverage · loads · Loads · table (68.5104ms)
+✔ (c) GUI ≡ registry · loads · Loads · table (480.5456ms)
+✔ (a) coverage · hvac · HVAC step · Quick tier (HvacStep + HvacEditor + SystemEditor) (165.1733ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Quick tier (HvacStep + HvacEditor + SystemEditor) (3286.713ms)
+✔ (a) coverage · hvac · HVAC step · Quick · All-zones grid (BulkGrid) (57.2893ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Quick · All-zones grid (BulkGrid) (53.6487ms)
+✔ (a) coverage · hvac · HVAC step · Studio · systems view (SystemCard, HvacGrid) (137.3906ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Studio · systems view (SystemCard, HvacGrid) (1960.2194ms)
+✔ (a) coverage · hvac · HVAC step · Studio · floor plan (HvacZoneMap) (62.8701ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Studio · floor plan (HvacZoneMap) (33.0926ms)
+✔ (a) coverage · hvac · HVAC step · Studio · canvas inspector (HvacCanvas) (75.544ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Studio · canvas inspector (HvacCanvas) (268.1248ms)
+✔ (a) coverage · hvac · HVAC step · Known products (HVAC catalog + Apply panel) (1209.7904ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · Known products (HVAC catalog + Apply panel) (1127.347ms)
+✔ (a) coverage · hvac · Known products browser (non-HVAC: envelope / lighting / DHW / PV) (1034.7762ms)
+✔ (c) GUI ≡ registry · hvac · Known products browser (non-HVAC: envelope / lighting / DHW / PV) (1015.1247ms)
+✔ (a) coverage · hvac · HVAC step · imported building (HvacImportedView raw fields) (88.4837ms)
+✔ (c) GUI ≡ registry · hvac · HVAC step · imported building (HvacImportedView raw fields) (1002.8106ms)
+✔ (a) coverage · results · Results · Cost & ROI assumptions (59.1525ms)
+✔ (c) GUI ≡ registry · results · Results · Cost & ROI assumptions (680.1537ms)
+✔ (a) coverage · results · Results · ECM study options (38.9072ms)
+✔ (c) GUI ≡ registry · results · Results · ECM study options (416.2315ms)
+✔ (a) coverage · results · Results · Parametric study builder (106.2027ms)
+✔ (c) GUI ≡ registry · results · Results · Parametric study builder (43.6047ms)
+✔ (a) coverage · results · Results · LCA what-if inputs (31.1077ms)
+✔ (c) GUI ≡ registry · results · Results · LCA what-if inputs (190.4402ms)
+✔ (a) coverage · results · Results · IP/SI units toggle (26.6355ms)
+✔ (c) GUI ≡ registry · results · Results · IP/SI units toggle (20.8422ms)
+✔ (a) coverage · results · Results · ResultsView (energy tab) (58.4495ms)
+✔ (c) GUI ≡ registry · results · Results · ResultsView (energy tab) (25.8428ms)
+✔ (a) coverage · results · Review · ReviewEditor (61.0466ms)
+✔ (c) GUI ≡ registry · results · Review · ReviewEditor (49.577ms)
+✔ (a) coverage · results · Workflow · Projects tab (24.4409ms)
+✔ (c) GUI ≡ registry · results · Workflow · Projects tab (17.1392ms)
+✔ (a) coverage · results · Model objects · IdfObjectsEditor (Building) (51.6101ms)
+✔ (c) GUI ≡ registry · results · Model objects · IdfObjectsEditor (Building) (503.8628ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · air loop scene + coil inspector (278.6651ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · air loop scene + coil inspector (1099.9034ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · fan + sizing inspector (132.1842ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · fan + sizing inspector (4873.0181ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · coil link tab (loop chooser) (120.7745ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · coil link tab (loop chooser) (115.3498ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · zone splitter (zone chooser) (100.8388ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · zone splitter (zone chooser) (96.9429ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · air loop Control view (111.0757ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · air loop Control view (721.2043ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · plant loop Control view (107.7609ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · plant loop Control view (202.2999ms)
+✔ (a) coverage · studio · Studio · HVAC Systems · generator Electric Load Center tab (178.1545ms)
+✔ (c) GUI ≡ registry · studio · Studio · HVAC Systems · generator Electric Load Center tab (179.3896ms)
+✔ (a) coverage · studio · Studio · Thermal Zones · HVAC Systems (116.663ms)
+✔ (c) GUI ≡ registry · studio · Studio · Thermal Zones · HVAC Systems (4883.0328ms)
+✔ (a) coverage · studio · Studio · Thermal Zones · Cooling Sizing Parameters (135.1469ms)
+✔ (c) GUI ≡ registry · studio · Studio · Thermal Zones · Cooling Sizing Parameters (6455.7114ms)
+✔ (b) every registry key: get → set(sample) → get · invalid rejected · export stays clean (2673.8707ms)
+✔ (d) set_fields: atomic all-or-nothing; non-atomic applies the valid ops and reports the rest (2.3444ms)
+✔ (d) plan_and_apply: ordered, per-step include, atomic by default, runs refused (1.1801ms)
+✔ (d) plan_and_apply from an EMPTY project: 3-zone office, glazing SHGC 0.3, VAV, schedule 8–6 → expected project + valid IDF (8.8546ms)
+✔ (d) review panel model: set_fields per-field + plan per-step include; JSON params survive the round trip (1.6426ms)
+▶ (d) project macros + combinations
+  ✔ project.mode via registry ≡ the TopBar switch helper; changes nothing in the energy model (0.3146ms)
+  ✔ buildingType via registry keeps hand-edited schedules (no silent reset) (0.2048ms)
+✔ (d) project macros + combinations (0.8524ms)
+▶ (d) geometry macros + combinations
+  ✔ add_zones: rectangles + grid land like the plan's rectangle tool (floor heights, adjacency) (1.6644ms)
+  ✔ edit_windows / add_shading by facade; delete_zones; skylight + remove_opening (2.5674ms)
+  ✔ set_floor_heights (validated like the floor bar) · curve_wall · delete_floor (2.9054ms)
+  ✔ plan_and_apply: a 3-zone office floor, glazed south, shaded, taller ceilings → valid IDF (2.9429ms)
+  ✔ rotate_zones / mirror_zones / offset_zones / inset_zones: area kept, openings stay on the same physical wall, valid IDF (12.3812ms)
+  ✔ scale_zones / duplicate_zones (the command line's SCALE / COPY): area × f², copies with fresh ids + unique names, valid IDF (7.1495ms)
+  ✔ CAD ops: trim_zone / extend_wall / fillet_corner / add_constraint / remove_constraints → valid IDF (15.7654ms)
+  ✔ mirror twice = identity · rotate 4×90 = identity (incl. openings, adjacency, surface overrides, skylights) (2.1077ms)
+[agent-registry] coverage
+  project: 35 controls, 35 mapped · 17 keys · 0 ops · 2 view-only
+  zone: 54 controls, 54 mapped · 25 keys · 1 ops · 0 view-only
+  geometry: 107 controls, 107 mapped · 33 keys · 4 ops · 27 view-only
+  surface: 149 controls, 149 mapped · 20 keys · 0 ops · 8 view-only
+  site: 31 controls, 31 mapped · 11 keys · 2 ops · 14 view-only
+  envelope: 35 controls, 35 mapped · 1 keys · 1 ops · 9 view-only
+  groups: 14 controls, 14 mapped · 2 keys · 2 ops · 2 view-only
+  daylight: 36 controls, 36 mapped · 4 keys · 0 ops · 32 view-only
+  schedules: 20 controls, 20 mapped · 0 keys · 1 ops · 7 view-only
+  loads: 142 controls, 142 mapped · 20 keys · 1 ops · 18 view-only
+  hvac: 389 controls, 389 mapped · 55 keys · 4 ops · 88 view-only
+  products: 22 controls, 22 mapped · 0 keys · 1 ops · 21 view-only
+  results: 60 controls, 60 mapped · 24 keys · 1 ops · 17 view-only
+  review: 0 controls, 0 mapped · 0 keys · 0 ops · 0 view-only
+  workflow: 1 controls, 1 mapped · 0 keys · 0 ops · 1 view-only
+  registry keys: 280 · GUI-equivalence checked: 578 · skipped: 52
+  skipped:
+    Step 1 · ProjectStep (no weather): project.name (view noEq)
+    Step 1 · ProjectStep (no weather): project.climateZone (view noEq)
+    Step 1 · ProjectStep (no weather): project.code (view noEq)
+    Step 1 · ProjectStep (no weather): project.terrain (view noEq)
+    Step 1 · ProjectStep (no weather): project.buildingCategory (view noEq)
+    Step 1 · ProjectStep (no weather): project.buildingType (view noEq)
+    Step 1 · ProjectStep (no weather): project.usagePattern (view noEq)
+    Step 1 · ProjectStep (no weather): project.studyType (view noEq)
+    Step 1 · ProjectStep (no weather): project.comfort (view noEq)
+    Step 1 · ProjectStep (no weather): project.daylighting (view noEq)
+    Step 1 · ProjectStep (no weather): project.sizing (view noEq)
+    Step 1 · ProjectStep (no weather): project.ddyPreset (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.name (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.floor (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.elevation (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.height (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.multiplier (view noEq)
+    Zone editor · Office A · door wall: zoneEditor.conditioned (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.name (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.floor (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.elevation (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.height (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.multiplier (view noEq)
+    Zone editor · Office B · roof (skylight): zoneEditor.conditioned (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.name (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.floor (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.elevation (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.height (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.multiplier (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): zoneEditor.conditioned (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): surface.sunExposed (view noEq)
+    Zone editor · Office B · shared wall (adiabatic): surface.windExposed (view noEq)
+    Schedules · editor (weekend bar): schedules.template (view noEq)
+    Schedules · editor (custom chip Lab Hours): schedules.template (view noEq)
+    Schedules · editor (temperature: Cooling Setpoint): schedules.template (view noEq)
+    Schedules · New blank schedule modal: schedules.template (view noEq)
+    Schedules · New blank schedule modal: schedule.weekday (view noEq)
+    Schedules · Import Schedule:Compact modal: schedules.template (view noEq)
+    Schedules · Import Schedule:Compact modal: schedule.weekday (view noEq)
+    Loads · edit lighting (group): load.target@load_qpmuzv (no sample)
+    Loads · edit exterior lighting: load.method@load_aopibs (no sample)
+    Loads · edit exterior equipment: load.method@load_cg21j9 (no sample)
+    Studio · HVAC Systems · air loop scene + coil inspector: studio.field@OS:Coil:Heating:Water|HW Htg Coil::U-Factor Times Area Value (no sample)
+    Studio · HVAC Systems · air loop scene + coil inspector: studio.field@OS:Coil:Heating:Water|HW Htg Coil::Maximum Water Flow Rate (no sample)
+    Studio · HVAC Systems · air loop scene + coil inspector: studio.field@OS:Coil:Heating:Water|HW Htg Coil::Rated Capacity (no sample)
+    Studio · HVAC Systems · fan + sizing inspector: studio.field@OS:AirLoopHVAC|Gas Fired Furnace::Design Supply Air Flow Rate (no sample)
+    Studio · HVAC Systems · fan + sizing inspector: studio.field@OS:AirLoopHVAC|Gas Fired Furnace>sizingSystem::Design Outdoor Air Flow Rate (no sample)
+    Studio · HVAC Systems · fan + sizing inspector: studio.field@OS:AirLoopHVAC|Gas Fired Furnace>sizingSystem::Cooling Design Capacity (no sample)
+    Studio · HVAC Systems · fan + sizing inspector: studio.field@OS:AirLoopHVAC|Gas Fired Furnace>sizingSystem::Heating Design Capacity (no sample)
+    Studio · HVAC Systems · fan + sizing inspector: studio.field@OS:AirLoopHVAC|Gas Fired Furnace>sizingSystem::Occupant Diversity (no sample)
+    Studio · HVAC Systems · coil link tab (loop chooser): studio.coil.plantLoop (view noEq)
+    Studio · HVAC Systems · zone splitter (zone chooser): studio.loop.zones (view noEq)
+  ✔ plan selection bar buttons (⟳ ⇋ ⇅ ⊖ Move) produce exactly the macro's project (327.5885ms)
+✔ (d) geometry macros + combinations (376.3105ms)
+▶ (d) surface macros + combinations
+  ✔ set_surface: boundary by face key / orientation / edge, construction; refusals (6.5407ms)
+  ✔ add_window_on_face: outdoors wall only (2.8049ms)
+  ✔ site macros: add / place / scale / simplify / remove (1.3455ms)
+  ✔ plan_and_apply: two surfaces adiabatic + a site building + a face field, atomic, valid IDF (6.5279ms)
+✔ (d) surface macros + combinations (18.0581ms)
+▶ (d) envelope macros + combinations
+  ✔ edit_construction: create glazing (validated), edit, rename follows refs, built-in read-only (2.5491ms)
+  ✔ set_envelope_slot + group macros + site context + renewables (3.9044ms)
+  ✔ plan_and_apply: glazing SHGC 0.3 → assign to the building → group two zones (atomic, valid IDF) (3.7686ms)
+  ✔ BE macro specs mirror the FE macros (4.2348ms)
+✔ (d) envelope macros + combinations (15.0943ms)
+▶ (d) loads macros + combinations
+  ✔ create_schedule: weekday/weekend + Saturday/Sunday day types → Schedule:Compact + chip; garbage refused (4.0638ms)
+  ✔ create_schedule temp setpoint + edit_schedule_hours (2.0617ms)
+  ✔ edit_load (atomic) + delete_load (1.2756ms)
+  ✔ plan_and_apply: Office 8–6 schedule + 9 W/m² lighting on it + occupancy edit → valid model (3.7735ms)
+  ✔ BE macro specs match the FE macros (names + required args) (3.5183ms)
+✔ (d) loads macros + combinations (15.3967ms)
+▶ (d) hvac macros + combinations
+  ✔ set_hvac_mode switches the tier (products is a view; Quick/Studio set hvacMode) (0.5409ms)
+  ✔ set_quick_system: type + details (validated) + rename; garbage rejected atomically (2.0028ms)
+  ✔ hvac_assign_zones (set/add/remove, exclusivity + unconditioned guard) + hvac_remove_system (1.2276ms)
+  ✔ set_zone_hvac: per-zone setpoints/sizing through the hvac.zone.* keys (atomic, validated) (4.2279ms)
+  ✔ studio_graph_edit: canvas gestures (component on/off, zone moves, add/remove system) (2.2458ms)
+  ✔ apply_catalog_product: refuses without product data (never invents specs) (0.5015ms)
+  ✔ hvac.studio.chwCurves: pasted coefficient TEXT ≡ the parsed object (CurveEditor path) (6.0481ms)
+  ✔ plan_and_apply: Studio VAV on 2 zones + chillerCOP via set_fields + assign a 3rd zone → valid IDF with AirLoopHVAC (4.703ms)
+✔ (d) hvac macros + combinations (22.5899ms)
+▶ (d) results macros + combinations
+  ✔ set_cost_assumptions: region first resets defaults; atomic on a bad value (1.442ms)
+  ✔ set_ecm_study: options incl. categories; kind change resets value unless given (0.5355ms)
+  ✔ rename_object: a Construction rename follows into project.envelope (no dangling ref) (1.6899ms)
+  ✔ link_doc_floor: link + unlink an uploaded document to a floor (0.6682ms)
+  ✔ idf.field: numbers stay numbers, choices validated, autosize keyword, unknown field/object rejected (0.5763ms)
+  ✔ plan_and_apply combo: tariff + discount + ECM target + IDF north axis → valid model (3.7837ms)
+  ✔ set_result_units: project unchanged; the per-user preference is saved only by the apply-time effect (1.4108ms)
+  ✔ BE macro specs mirror the FE macros (names + required args) (21.5197ms)
+✔ (d) results macros + combinations (32.4692ms)
+▶ (d) weather macros + combinations
+  ✔ set_weather: fetches on apply (prepareOp) → identical to Step 1's fetchStation result (9.0034ms)
+  ✔ import_site_osm: fetches on apply → identical to the Site tab's OSM import (5.1525ms)
+✔ (d) weather macros + combinations (14.899ms)
+✔ (d) studio macros + combinations (327.5962ms)
+✔ coverage summary (4.5095ms)
+✔ store: old { key, model } migrates as OpenAI; each provider keeps its own key + model; only the active key is sent (7.1211ms)
+✔ AiSetupPanel: pick Anthropic, paste a key, load the key's models, save → onDone with the settings (470.5442ms)
+✔ set_fields → review panel (not applied mid-stream); per-field checkbox; Apply = ONE commit (501.3421ms)
+✔ plan_and_apply → per-step checkboxes; an unchecked step is skipped; one commit (212.679ms)
+✔ several ops / a macro in one turn → review; Reject applies nothing (145.1347ms)
+✔ a single trivial field set stays inline + Undo toast restores the previous project (148.7089ms)
+✔ R-tree: search returns exactly the overlapping items (vs brute force), 20k random boxes (56.05ms)
+✔ snap: endpoint beats nearest; midpoint; center; grid fallback (1.6125ms)
+✔ snap: intersection of the DXF line with the zone edge (not an endpoint) (0.6205ms)
+✔ snap: perpendicular from the previous point; extension past a segment's end (0.7134ms)
+✔ snap: excludeId skips the edited zone; trace mode only snaps the DXF (0.3769ms)
+✔ snap: 100k DXF segments — a query stays fast (R-tree) (214.3893ms)
+✔ input: feet-inch, metric, fractions, angles, bearings (1.5992ms)
+✔ input: absolute, relative, polar, direct distance (1.2767ms)
+✔ commands: aliases, suggestions, args (1.2899ms)
+✔ commands: edit commands through the shared geometry helpers (3.2477ms)
+✔ tracking: polar ray, horizontal/vertical tracking lines, their crossing (8.0911ms)
+✔ TRIM: removes the picked side, keeps the window on the surviving wall (5.9909ms)
+✔ EXTEND: a wall moves out to the neighbour / DXF line, its windows ride along (0.946ms)
+✔ FILLET / CHAMFER: tangent arc of the radius; the corner's walls keep their windows (15.9969ms)
+✔ mirror about a 45° line; grips: stretch corner / wall, move, rotate, scale, mirror, typed values (5.3681ms)
+✔ constraints: horizontal, length, perpendicular, equal, fix — solved; shared corners stay connected (46.1594ms)
+✔ 3-D picking: single click selects, double click on the SAME zone within 300 ms opens; drags and other zones don't (15.9842ms)
+✔ tabs: Chat | Insights tablist (aria-selected/controls, arrow keys, Home/End); the live feed lives in the Insights tab (1395.8609ms)
+✔ unread: badge on the Insights tab and on the collapsed launcher; looking at the tab clears it (284.7843ms)
+✔ Ask about this → Chat tab with the insight pinned above the input → snapshot.pinned_insight in the request (sticky for follow-ups) (1391.6112ms)
+✔ dictation (Web Speech API): listening → interim → final text; stop resolves with it; permission denied → friendly error (31.3285ms)
+✔ dictation fallback (no SpeechRecognition): MediaRecorder → transcribe(blob, {durationMs, mimeType}) → text; permission error (42.5ms)
+✔ speaker: speechSynthesis in sentence chunks with the picked voice; code/tables summarised; stop/skip; server TTS + fallback (11.4552ms)
+✔ Talk loop: listen → send → speak the reply → listen again; Escape-style stop ends it; silence twice ends it (179.1374ms)
+✔ chat UI: mic dictation fills the input (never auto-sends); 'send on stop' sends; Talk button; speak replies calls speechSynthesis; privacy note (902.9398ms)
+✔ NPV — hand calculation (1.4438ms)
+✔ IRR — textbook cases (Wikipedia 'Internal rate of return' examples) + robustness (1.2676ms)
+✔ UPV / SPV / LCC per NIST Handbook 135 — hand calculation (0.4659ms)
+✔ evaluateMeasure — payback / NPV / IRR / SIR / LCC consistent with the hand numbers (3.2365ms)
+✔ client offline: FX-dated conversion from the snapshot's fx_rates; same math as inventory-core (87.8064ms)
+✔ takeoff of a simple box vs a hand takeoff (±5 %) (133.798ms)
+✔ takeoff HVAC from the real .eio sizing fixture = hand sum of the sized plant (±5 %) (5.7572ms)
+✔ incentives: every rule flagged verify + URL + as-of; never applied without a toggle; hand amounts (1.2811ms)
+✔ embodied = Σ qty × EPD GWP; generic factors flagged (0.8404ms)
+✔ compliance report: economics appendix (snapshot) — appended only when economics is passed (14.0188ms)
+✔ Daylight tab's Run sends the same body as daylightRequest(project, settings) for the agent's run_daylight args (758.4561ms)
+✔ solar position: NOAA algorithm vs the NREL SPA reference (Golden CO, 2003-10-17 12:30:30 MST) within 0.5° (2.2736ms)
+✔ site location: weather (lat/lon/tz) → Site:Location → default; time zone from the LOCATION header (10.0999ms)
+✔ sun vector frame: model-frame sun rotated by toWorld(North Axis) ≡ the true-frame sun (the Radiance payload frame) (1.5253ms)
+✔ shadow direction sanity: winter noon shadows fall north, ~2× the height at lat 40; afternoon shadows fall east (0.4146ms)
+✔ ray–prism: exact hits, misses, height overlap (0.8989ms)
+✔ zone obstruction: a tower to the south blocks winter-noon sun on the south window, not the summer-noon sun (11.6758ms)
+✔ tile grid mapping: one tile per run sensor, centred on it, value = the server's value for THAT sensor (9.877ms)
+✔ popup states: no-run → no-zone → ready (+ stale flag) (1.8366ms)
+✔ legend scales: illuminance knots, percentage scales, threshold ticks, readable ink (19.8268ms)
+✔ CSV export: one row per sensor (or per zone sensor), real values, blanks where none (4.1265ms)
+✔ history: newest first, capped, persisted compactly, survives a reload of the module state (10.9475ms)
+✔ layout smoke: every previous control is present + the new ones; run → zone popup tiles; history; annual metrics (3264.2778ms)
+Warning: Please use the `legacy` build in Node.js environments.
+✔ no weather + no location: the placeholder (New Delhi, UTC+5 — the production report) is LABELLED, not silent (6.0981ms)
+✔ Site:Location / imported site centre / weather give the real site; tz sign = EPW convention (NYC −5) (3.3716ms)
+✔ Brooklyn Jun 21 sunrise / sunset match NOAA (05:25 / 20:31 EDT = 04:25 / 19:31 EST); noon altitude ≈ 72.7° (7.0371ms)
+✔ Atlantic (pipeline geometry, North Axis 90°, N/S glazed 28 %, E/W blind): towers in the payload sit where the viewer draws them (80.825ms)
+✔ facade note: towers beside the blind E/W walls → 'little impact'; in front of N/S glazing → 'clear reduction' (15.4272ms)
+✔ payload names the weather (path, or bundled name); the run record states the sky it used (16.4599ms)
+✔ run-time estimate + big-model suggestion (Fast / coarser grid) (3.0206ms)
+✔ runDaylightJob: submit → progress → done; cancel sends DELETE; 404 → synchronous fallback (39.2819ms)
+✔ siteImpact pairs a with-site and a no-site run of the same settings → per-zone / per-floor / building Δ (26.5526ms)
+✔ Daylight tab: Site impact → one click runs the no-site partner → per-floor Δ table + Δ colouring, site hash + sky stated (1307.3465ms)
+✔ scene contains the site context polygons — the SAME set EnergyPlus gets (10.8535ms)
+✔ frame alignment: a context block coincident with the zone's south wall coincides in the scene (+ offset, + North Axis) (2.8985ms)
+✔ toggles: Radiance off removes the context; EnergyPlus off drops it from the IDF only; shading:false excludes a building from both (30.2417ms)
+✔ reflectance: per-building value mapped, default 0.25; .rad has ctx_ materials; ground plane option (2.8445ms)
+✔ site hash: stable, changes with height / transform / exclusion / toggle (1.1536ms)
+✔ Daylight tab: site context toggle + count, run payload carries ctx surfaces, results flag inclusion + staleness (2440.3962ms)
+✔ lib/ddy: lists and classifies the 18 design days; presets pick the ASHRAE pair (10.9473ms)
+✔ a fetched station brings its design days with the weather (App G by default) (5.8835ms)
+✔ an uploaded .ddy for the same weather wins; the preset re-selects from the stored file (3.6067ms)
+✔ export: the selected design days are what EnergyPlus sizes on (no weather extremes beside them), IDD-valid (18.7885ms)
+✔ SET-DEFAULT FOR <type> pre-fills later objects; own keywords override (2.2044ms)
+✔ LIKE inherits the referenced object's keywords; later keywords override (1.135ms)
+✔ list values: quoted names with commas, &D tokens, multi-line lists (0.2743ms)
+✔ a {BDL expression} spanning lines is kept whole and does not swallow later keywords (0.6439ms)
+✔ °F biquadratic re-expressed in °C gives identical values (0.9772ms)
+✔ normalisation pins the curve to 1 at the rating point (0.1947ms)
+✔ boiler: p / HIR-fPLR(p) refit stays within 0.5 % over MIN-RATIO 0.4 – 1.2 (E+ clamps PLR there, as DOE-2 cycles) (1.491ms)
+✔ fields are written in IDD order regardless of input order; trailing blanks trimmed to min-fields (1.1295ms)
+✔ an unknown field name throws (typos never become dropped values) (1.5918ms)
+✔ extensible groups append after the fixed fields (Branch components) (0.8123ms)
+✔ field names match case- and unit-insensitively (0.3433ms)
+✔ numbered (non-extensible) groups take ext too: ControllerList, load-range schemes (0.6671ms)
+✔ zone EXHAUST-FLOW sets the outside-air floor and writes a coupled Fan:ZoneExhaust (default 0.3 in / 0.4) (37.0695ms)
+✔ PSZ defaults: COOLING-EIR 0.36, heat-pump HEATING-EIR 0.37 (SV-A with keywords omitted) (14.4279ms)
+✔ FLOOR / SPACE MULTIPLIER becomes the E+ Zone Multiplier (6.7237ms)
+✔ userCurve reads a file's own CURVE-FIT (coefficients or data points), never a library name (1.2242ms)
+✔ a WINDOW overhang with only OVERHANG-D still shades (engine default W = window width); none without a depth (23.4509ms)
+✔ SPACE LOCATION = FRONT/RIGHT/BACK/LEFT places spaces on floor vertices 1–4 (all four facades get walls) (3.4436ms)
+✔ a wall with its own HEIGHT on a SPACE-Vk edge is a strip (slab edge), not a second full-height wall (6.5973ms)
+✔ library MATERIALs named in LAYERS resolve to their black-box R (d2mats.json), not zero (0.363ms)
+✔ VAVS COOL-CONTROL WARMEST = airflow-first reset (WarmestTemperatureFlow, TemperatureFirst, turndown = box MIN-FLOW-RATIO) (14.6407ms)
+✔ WEEK-SCHEDULE-PD without HDD / CDD entries uses the MON day for the design days (Topics › Design Days) (0.6786ms)
+✔ DDS: OA-TEMP economizer by default, HEATING-SCHEDULE with a temperature value gates the HW loop by outdoor air (12.1865ms)
+✔ LTG-SPEC-METHOD LUMINAIRE-COUNT: NO-OF-LUMINAIRES × the black-box W of the LIGHTING-SYSTEM (d2lum.json); task lights added (8.159ms)
+✔ VAVS: ZONE ASSIGNED-FLOW is the box design flow (not stretched to SUPPLY-FLOW); zero reset range → fixed SAT (8.5955ms)
+✔ PIPE2 + HEAT-PUMP chiller: two E+ loops switched at SNAP-T, companion EIR heat pumps sized on heating (31.6332ms)
+✔ a CHW loop with one chiller and two coils writes the full supply/demand topology (4.0373ms)
+✔ a loop without supply equipment is skipped with a note (never a dangling loop) (0.3002ms)
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+✔ buildDrawingGraph: every node type, every edge kind, provenance on every edge (3.1243ms)
+✔ addScheduleRows: AC-18S ↔ CU-18S (tag family), EF-1 ↔ EF-1 → scheduled-by (331.2439ms)
+✔ mergeGraph / dropFloors / bindZones (2.7449ms)
+✔ graphDigest (bounded) + lookup: 'what serves 101?' → AC head, exhaust, condenser, the plan crop (10.1479ms)
+✔ verifyGraphText: numbers in an answer must be the graph's (strip mode drops the invented sentence) (4.5453ms)
+✔ persistence: drawingGraph round-trips through the project snapshot and is a HEAVY (re-derivable) field (5.7136ms)
+✔ geometry stage: DXF cells named / typed / conditioned from the plans; ERV-only corridors are ASSUMED rows (18696.3843ms)
+✔ apply (one review): project.drawingGraph bound to the new zone ids + per-zone provenance; one undo step (718.4346ms)
+✔ hvac: one system per apartment (ticked) + per AC head (alternative), ERV / exhaust info, scheduled-by edges (5.1456ms)
+✔ lighting: the common-area LPD applies by zone TYPE; schedules: printed occupancy per apartment (13.5186ms)
+✔ Pareto front drops dominated options; top-k keeps both extremes + spread (84.4434ms)
+✔ multiple-choice knapsack: exact enumeration, ≤ 1 option per measure, budget honoured (34.2208ms)
+✔ knapsack falls back to greedy (savings ÷ capital) when the space is huge (0.7552ms)
+✔ interaction correction: learned from verified samples, re-ranks the candidates (0.4335ms)
+✔ measures from the catalog: HVAC per Studio system + envelope/lighting/PV, capital from inventory-core (1.6726ms)
+✔ plan preview: run list, count and ETA (measured avg), compliance adds the 4 App-G rotations (2.9403ms)
+✔ study (fake engine): cheapest verified package meets the target; additive-vs-verified error flagged > 15 % (79.3547ms)
+✔ cache: re-running the same study is instant (all cache hits, 0 engine runs) (77.8653ms)
+✔ decline → no runs; approve → runs through the study client (72.2481ms)
+✔ cancel: an aborted study stops after the current batch — no package verification (13.0326ms)
+✔ apply_ecm_package proposal op applies the package through the product apply paths (15.55ms)
+✔ [audit] Undo apply is an inverse patch: later edits elsewhere survive; edited package fields → refuse / partial revert (18.5449ms)
+✔ lighting ECM replaces the building-wide lighting — never stacks on a plain building LPD (it used to ADD and lose energy) (1.4658ms)
+✔ custom glazing U/SHGC/VT → Save & assign → slot card + export show exactly those (no 0.40) (1487.4794ms)
+✔ wall by target U (SI 0.3): films stated, hero = target, export NoMass R = 1/U − films (431.9148ms)
+✔ R-value layer in IP (R-13) shows its RSI, adds in series, exports Material:NoMass (451.1932ms)
+✔ frame: area-weighted whole-window U / SHGC / VT (3.3375ms)
+✔ frame: an unframed construction exports byte-identical; a framed one exports whole-window values (0.549ms)
+✔ frame: saved custom window → export, glazingOf (code checks) and the daylight scene all use whole-window values (23.4153ms)
+✔ frame: registry fields drive it (material / % / Uf / colour) through the same helper (4.4557ms)
+✔ annual: weekday/weekend compact → 1 week, 2 days, 12 months; round-trips to the same profile (5.5065ms)
+✔ annual: a summer week for Jun–Aug + a holiday profile → valid compact with month periods (10.2696ms)
+✔ annual: an unused new day profile is kept (by id) until a week uses it (1.9378ms)
+✔ annual: registry key schedule.annual — sample applies, bad input rejected (39.4146ms)
+✔ annual: the carpet is 365 × 24 and Jan 1 is a Sunday (1.3072ms)
+✔ ground: no setting → model untouched; methods give 12 monthly values (6.7216ms)
+✔ rules: f2f 6–40 ft, plenum ≤ f2f − 6, ceiling ≥ 6 — errors, no clamping (4.8481ms)
+✔ New Project: 1212 ft floor-to-floor shows an inline error and blocks Create (456.9387ms)
+WARNING: Multiple instances of Three.js being imported.
+✔ Plenum editor: an impossible plenum is shown inline and not applied (134.9055ms)
+✔ zone 3-D: fitView re-frames camera + orbit target, re-measures and requests a frame (16761.2289ms)
+WARNING: Multiple instances of Three.js being imported.
+✔ thermal bridging: constructionU = clear-field × (1+tb); the exported stack reproduces it exactly (6.6037ms)
+✔ custom operating hours: template follows the hours, survives a reload, lands in the model's schedules (16.9316ms)
+✔ agent: add_roof / edit_roof / add_dormer / remove_roof drive the same helpers (71.0796ms)
+✔ camera focus: looks at the zone from the building's side, framed to its size (0.5632ms)
+Warning: Removing a style property during rerender (borderColor) when a conflicting property is set (border) can lead to styling bugs. To avoid this, don't mix shorthand and non-shorthand properties for the same value; instead, replace the shorthand with separate values.
+    at button
+    at div
+    at RailBtn (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PlanEditor.jsx:2905:20)
+    at div
+    at div
+    at Toolbar (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PlanEditor.jsx:2934:20)
+    at div
+    at PlanEditor (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PlanEditor.jsx:33:23)
+    at Host (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/tools/geometry-revamp.test.mjs:115:45)
+✔ plan: tool rail (icons + O for Roof), floor stack (top floor first, ghosts), roof panel opens (1884.9819ms)
+PASS  HDD18 3650 → thermal zone 5
+PASS  Toronto degree days → 5A
+PASS  Toronto (no degree days: station) → 5A
+PASS  lat 43.67 last-resort → 5A
+PASS  explicit typed zone still wins
+PASS  no data → 4A default (back-compat)
+PASS  effective LPD = 0.7432 W/ft² (8 W/m²)
+PASS  LPD row: 0.74 W/ft² → PASS vs ≤ 0.79
+PASS  checklist climate zone = 5A
+PASS  9 W/m² (0.836 W/ft²) FAILS 0.79
+      surfaces: {"ext":24,"part":24,"roofs":4,"clg":8,"slabs":4,"flr":8,"extWallM2":1070.2,"winM2":321.1}
+PASS  24 exterior walls + 24 partitions
+PASS  4 roofs + 8 interzone ceilings
+PASS  4 slabs + 8 interzone floors
+PASS  WWR on true exterior walls = 30.0%
+PASS  3 ft plenum: 4 roofs · 12 zone↔plenum + 8 inter-floor ceilings · 4 slabs · 0 exposed floors
+PASS  plenum band keeps the full exterior wall area
+PASS  unexplained 3 ft gap (plenum 0) → floors above are exposed, not coupled
+
+all passed
+✔ tools\gui-fixes.test.mjs (263.324ms)
+✔ HIL window schedule W-1 U=1.703 W/m²K → exported WindowMaterial U-Factor 1.703; assembly U 0.055 IP lands as 0.055 IP (130.7308ms)
+✔ agent create_construction: opaque uValue IP → stored SI; window uValue SI as given (1.5986ms)
+✔ currentValue: envelope 'current U' is the model's IP assembly U (no ÷U_IP2SI) — registry and fallback paths agree (1.1271ms)
+✔ parsing: merged title + two-line merged header + units; hour columns; CSV (106.9558ms)
+✔ mapping: HVAC schedule → new systems with COP from EER + served zones; thermostat → setpoint profiles (27.1834ms)
+✔ mapping: hourly schedules (weekday/weekend/holiday, % → fraction), loads per space type, windows + assemblies (28.1042ms)
+✔ evidence: a value that is not in its cited cell is dropped; the photo path keeps only transcribed values (34.337ms)
+✔ apply: registry field ops + creator ops → one project; atomic on error; provenance (105.6649ms)
+✔ popup: upload → popup → edit → accept → Apply → project changed → one undo reverts everything; file saved (1782.2944ms)
+✔ BE: vision TABLE mode asks for a verbatim transcription; extract_from_upload is a proposal-only op tool (192.6994ms)
+✔ products: real offline matcher runs on the schedule rows; thresholds → link (≥0.9) / confirm / fetch (326.569ms)
+✔ products popup: link preselected at ≥0.9; <0.6 offers Fetch specs behind an in-app confirm (164.5649ms)
+✔ HVAC Studio has the Import from file entry point (7.9212ms)
+✔ hostile spreadsheets are capped: rows/cols bounded, oversize files refused before reading (1263.066ms)
+✔ every Studio archetype has catalog product types; CATEGORY_ARCHETYPES covers them all (3.0512ms)
+✔ legacy EQUIPMENT rows keep their exact applyEquipment behaviour (0.8395ms)
+✔ productToEquip + applyEquipment + native IDF — vav-chw (135.3521ms)
+✔ productToEquip + applyEquipment + native IDF — pvav (54.7432ms)
+✔ productToEquip + applyEquipment + native IDF — ptac (15.0587ms)
+✔ productToEquip + applyEquipment + native IDF — vrf (25.9524ms)
+✔ productToEquip + applyEquipment + native IDF — fcu (43.05ms)
+✔ productToEquip + applyEquipment + native IDF — doas-vrf (40.3937ms)
+✔ productToEquip + applyEquipment + native IDF — rtu-psz (32.3238ms)
+✔ productToEquip + applyEquipment + native IDF — radiant-doas (190.43ms)
+✔ productToEquip + applyEquipment + native IDF — wshp (68.3649ms)
+✔ per-archetype default export is unchanged by an applied-then-cleared product (80.4176ms)
+✔ productToEquip uses the service /ep payload when given (identical to local) (4.3414ms)
+✔ secondary roles: boiler on vav-chw goes to equipmentRoles, chiller stays primary (2.7043ms)
+✔ [audit] clearing an ERV product restores the pre-apply heat-recovery setting (unless edited since) (0.9247ms)
+✔ a re-stamped details.equipment (snapshot {product, ep}) keeps the product plumbing + its qty/hardSize (4.6387ms)
+✔ equipmentUpdateAvailable (1.4974ms)
+✔ client: 503 (service not configured) → bundled snapshot + legacy rows (151.9281ms)
+✔ client: network error → bundled; 400 → error without fallback (29.7237ms)
+✔ client: service answers are tagged + cached (SWR) (28.9729ms)
+✔ [audit] productToEquip: IPLV stored SI (COP) is displayed as kW/ton = 3.516853 / COP (1.713ms)
+✔ [audit] client cache is partitioned by user + projectId (no cross-user / cross-project answers) (2.0326ms)
+✔ client: requestFetch + watchJob (polling transport) (8.3714ms)
+✔ productSizing verdicts (15.4498ms)
+✔ bundled fixtures exist for every non-HVAC category (2.014ms)
+✔ glazing product → SimpleGlazingSystem clone (SI NFRC U / SHGC / VT), original untouched, stamped (14.6334ms)
+✔ code limits: ASHRAE 90.1 by vintage × CZ vs ECSBC by project (2.764ms)
+✔ insulation layer → resulting assembly U = constructionUIP, R adds in series, position honoured (2.658ms)
+✔ lighting: lumen method count / LPD, heat split by fixture type, code LPD (2.3332ms)
+✔ lighting load carries product; export Lights = design LPD + fixture heat split (32.3423ms)
+✔ DHW: ASHRAE ch.51 sizing, UEF → η + UA (uefToMixedTank), stand-alone WaterHeater:Mixed text (6.9089ms)
+✔ DHW: HPWH wrapped condenser text; never for imported projects or when the model already has SWH (5.9879ms)
+✔ PV: Generator:PVWatts DC = STC × count, module type from efficiency, no pv_kwh double count (33.2652ms)
+✔ envelope plans: slot re-point + productLinks + revert; imported models re-point surfaces (39.9851ms)
+✔ offline client answers every non-HVAC category from the bundled snapshot (84.6269ms)
+✔ projects without products export exactly as before (no DHW / PV text) (9.8353ms)
+✔ revert / re-apply leave no orphan product objects; revert exports byte-identical to pre-apply (9.48ms)
+✔ scheduleRowsFromProject: page-text rows + inventory records, provenance kept, de-duplicated (66.4696ms)
+✔ matchSchedule: offline → bundled catalog via the same inventory-core scorer (338.696ms)
+✔ requestFetchForRow: posts the row + drawing evidence; offline → clear error (1.0349ms)
+✔ applyScheduleMatch → Studio chiller: product applied via apply_product, schedule COP wins, IDF carries it (165.7702ms)
+✔ applyScheduleMatch → window construction: schedule U/SHGC win, product is the reference (103.3026ms)
+✔ ScheduleMatchPanel SSR smoke (mocked client): rows, decisions, candidates, fetch + apply controls (2667.6335ms)
+✔ public pages: exactly one H1, a unique title + description, a canonical, and indexable (703.9123ms)
+✔ /about: FAQPage + SoftwareApplication JSON-LD mirror the visible text; CTA goes to /auth; honest claims (102.1881ms)
+✔ private routes: noindex and no canonical (applySeo) (6.2006ms)
+✔ legal texts say what the app does: data, OpenAI, rights, engineering disclaimer, trademarks, placeholders (168.8763ms)
+✔ the app really sets no cookies and loads no analytics (what /cookies claims) (2999.9095ms)
+✔ static SEO files: index.html, robots.txt, sitemap.xml, OG image, manifest (108.1164ms)
+✔ terms version is the same on both sides (the server refuses any other) (37.1514ms)
+✔ licences: generated from both lockfiles, with the engine + font attributions and the flagged list (1.0268ms)
+✔ exported reports carry the engineering disclaimer (energy, compliance, cost appendix) (77.5597ms)
+✔ sign-up: no account without ticking Terms + Privacy; the tick is sent as acceptTerms (414.7677ms)
+Not implemented: navigation to another Document
+✔ Workflow → Account & data: profile correction, export, legal links (326.7435ms)
+Not implemented: navigation to another Document
+✔ Account & data: delete is blocked for a last admin, needs the typed e-mail, then wipes this browser (282.3612ms)
+✔ deleting your own account never shows the workspace's 'an admin deleted the project' notice (3.1586ms)
+✔ notices: storage notice once; AI notice per user; terms banner is non-blocking and records acceptance (196.7867ms)
+✔ a local edit becomes ops; the ack makes it the confirmed state (4.6674ms)
+✔ typing in one field coalesces into the newest value; nothing is sent for a no-op (1.3866ms)
+✔ a teammate's op on ANOTHER path merges with my unconfirmed edit (0.7828ms)
+✔ a teammate's op on the SAME value does not clobber what I typed but have not had confirmed (0.62ms)
+✔ the value I am editing (focused, lock held) is pinned against a racing remote op and re-asserted (0.8508ms)
+✔ a rejected op (someone else is editing that value) reverts it — and only it (0.815ms)
+✔ rate limit → retry later; refused batch → dropped + reverted; session gone → resync (0.6433ms)
+✔ a seq gap asks for a resync; the resync keeps my pending edits (0.7142ms)
+✔ undo snapshots are rebased over teammates' edits (an undo never reverts their work) (0.7996ms)
+✔ lock helpers (0.653ms)
+✔ convergence: 4 clients editing in parallel (with locks) all end on the server's doc (318.6283ms)
+✔ lock anchors: the view context ignores sub-tab / selection outside the geometry step (83.9712ms)
+  2 real project(s): drawn (newProject + zones) [12 zones, 39 objects] · imported (export → importIdf) [12 zones, 227 objects]
+✔ round-trip on drawn (newProject + zones): 60 edit scripts, forwards + undo (354.8483ms)
+✔ round-trip on imported (export → importIdf): 60 edit scripts, forwards + undo (2210.7481ms)
+✔ round-trip between different real projects (135.7739ms)
+✔ minimal on a real project: a keystroke is one small op; untouched objects are never resent (7.723ms)
+✔ zones are keyed by id and model objects by Type|Name in real snapshots (1.1485ms)
+✔ the frontend liveDoc.js is byte-identical to the backend's (2.8512ms)
+✔ no session: nothing live on screen (19936.7772ms)
+✔ admin starts → the starter is in; the modeler sees the gate and joins (637.3542ms)
+✔ parallel typing: each person's edits appear for the other (730.5185ms)
+✔ the field Asha types in is locked on Bob's screen: her colour + name, not editable, toast (1316.0828ms)
+✔ explicit data-live-path fields lock on focus; a learned field locks on focus the second time (326.407ms)
+✔ entity-level fallback: an un-mapped control inside an entity container locks the entity (545.6962ms)
+✔ Watching: banner + frame, follows Asha's step, read-only; one click back to my own (1413.6005ms)
+✔ own mode: avatars on the step tabs show where the others are (59.1399ms)
+✔ stop: the admin stops from the workspace's live control; the session ends for both; solo editing is back (372.8892ms)
+✔ no session: the connection just watches the open project (solo editing untouched) (1171.2643ms)
+✔ admin starts: the starter auto-joins, a modeler who clicked Join auto-joins, another sees the gate (64.3961ms)
+✔ parallel edits on different values converge for everyone (163.9833ms)
+✔ the value I am typing in is locked: a teammate's edit bounces, reverts and says who (1303.0568ms)
+✔ watching: a read-only preview that follows the watched person; own mode keeps my view (258.3077ms)
+✔ offline edits survive a reconnect; the client resyncs what it missed (81.3441ms)
+✔ the session saves for everyone; solo HTTP saves are refused meanwhile (153.684ms)
+✔ leave: out of the session (it keeps running); the gate returns (35.97ms)
+✔ a removed member is kicked; stop ends the session for everyone (83.9415ms)
+✔ NumInput: 6. → 6.5 types freely, clearing never commits 0, blur re-syncs, arrows step (106.1193ms)
+✔ Loads › By zone defaults and the Inspector take fractional LPD (6.5 / 7.5) (528.0248ms)
+✔ construction builder: drag + arrows reorder layers (XPS between AAC and plaster) (1480.7671ms)
+✔ ECSBC: library presets renamed; an old project's ECBC construction follows on load (4.7839ms)
+✔ SpreadGrid reports filtered + selected rows (drives the 3-D under the Surfaces sheet) (104.1551ms)
+✔ Surfaces sheet renders the 3-D panel with a filter summary (toggle persists) (398.1694ms)
+✔ every consumer gets the same IDF: Export / Run, the Studio's IDF button, compliance proposed, parametric base (447.2377ms)
+✔ a zone renamed in Pinocchio keeps its Studio HVAC (refs follow, the next save writes the new name) (147.8186ms)
+✔ a deleted zone: its Studio edits are kept (stale), left out of the IDF, warned about, and come back with the zone (258.1542ms)
+✔ conditioned zones the Studio does not serve are warned (they float); an unsized 90.1 system is a validate error (411.9906ms)
+✔ the HVAC tier switch is explicit and loses nothing; Quick writers refuse on a Studio project (42.7564ms)
+✔ explicit migration: Quick systems -> Pinocchio Studio (same zones), the Quick systems kept (217.0186ms)
+✔ surfaces: a collector and an indoor pool point at Pinocchio's building surfaces (inspector options -> add_surface); a deleted surface is an error (210.1321ms)
+✔ (a) the op log persists on the project and replays to the same model; undo / redo (338.2501ms)
+✔ (b) templates: availability from the kernel's classes; every offered template builds (465.5776ms)
+✔ (b) drops: a Library coil on a supply node, a pump refused, a zone on the drop zone; remove semantics (60.5361ms)
+✔ (b) inspector: IP values are committed with their units (setQuantity), numbers clamped like IGLineEdit (44.4627ms)
+✔ (b) Control view + Thermal Zones ops (54.453ms)
+✔ (c) an osstd project exports (building + the kernel's HVAC) and validates; ideal air loads = the kernel's HVACTemplate (K6) (197.5985ms)
+✔ (c) humidistat columns: a zone's ZoneControl:Humidistat is created on first use and exported (K8) (128.3227ms)
+✔ (c) plenum tab: a zone on an air loop gets a supply and a return plenum zone, exported; 'no plenum' removes them (K9) (190.8421ms)
+✔ (d) the Studio in jsdom: Add HVAC System -> template, an inspector edit, Ctrl+Z — all through the host's update path (1136.9643ms)
+✔ (c) Apply ASHRAE 90.1-2019 system as a session op = the std pipeline's sizing-run model, for every ported system (9329.7967ms)
+✔ K10 A: every library setpoint manager drops onto the supply outlet node (SetpointManager addToNode) and is translated (1589.3172ms)
+✔ K10 A: FollowGroundTemperature / SystemNodeReset:Temperature are allowed on a plant loop, the air-only ones are refused there (40.286ms)
+✔ K10 A: every library availability manager drops onto the air loop's Availability Managers zone (Control view) (453.2659ms)
+✔ K10 A: the nine other curve types have kernel classes (the library objects that use them clone them) (0.7077ms)
+✔ K10 B1: fluid coolers / tempering valve drop onto the plant supply splitter (a new supply branch), pumps onto the supply inlet node (662.9993ms)
+✔ K10 B1: load profile and pipes drop onto the plant demand splitter; supply-only / demand-only rules refuse the other side (326.6828ms)
+✔ K10 B1: a Duct drops onto an air loop node; the variable-speed towers keep their CoolTools / YorkCalc performance object (241.9516ms)
+✔ K10 B2: absorption chillers, water-to-water heat pumps and the fluid-to-fluid HX drop onto the plant supply splitter (418.3356ms)
+✔ K10 B2: a library ground heat exchanger arrives without its ground temperature model (OpenStudio's clone does not take it); with one it exports (355.5643ms)
+✔ K10 B3: water heaters, thermal storage and the central heat pump drop onto the plant supply splitter and export (506.3449ms)
+✔ K10 B4: the library PlantComponent:UserDefined drops onto either plant side and exports with its EMS actuators / programs (267.2703ms)
+✔ K10 C1: the library fans, steam humidifiers and indirect evaporative cooler drop onto an air loop node and export (561.1921ms)
+✔ K10 C2: the library multi-speed air-to-air heat pump, the two-stage DX coil and the VAV changeover bypass drop onto an air loop node and export (328.9508ms)
+✔ K10 C3: the library heat pump water heaters drop onto a zone (Zone Equipment) and export with their tank, DX coil and fan (179.7287ms)
+✔ K10 D1 / D2: the library CV reheat, VAV heat-and-cool, series PIU, cooled beam and induction terminals drop onto a zone's demand node and export with an ADU (488.6646ms)
+✔ K10 D3: dual duct terminals drop onto a dual duct loop's zone node (zone splitter B made); a PTAC drops after an inlet side mixer (153.5841ms)
+✔ K10 E1 / E2: the library zone equipment (incl. the low-temperature radiant units) drops onto a zone; zone ventilation stays off the E+ equipment list (131.943ms)
+✔ K10 F: refrigeration — the library system drops on the Refrigeration view, cases / walk-in / compressors / condenser / subcoolers drop on its slots, zones from the grid; exports (93.7317ms)
+✔ K10 G: the library micro turbine heat recovery and fuel cell exhaust heat exchanger drop onto a plant loop with their generator; the branch lists the micro turbine (92.5154ms)
+✔ K10 B4: the library solar collectors drop onto the plant supply side with their performance and export (no Surface Name: the Studio model has no surfaces) (183.0073ms)
+✔ VRF view: library system and terminal drops, the big zone drop clones the last terminal (refused without one), terminal zone drop, removals (98.2657ms)
+✔ Inspector: extensible groups are listed per group, + / - push and pop a group, a group field edits by index (32.6126ms)
+✔ Thermal Zones grid: Apply to Selected copies the focused row's value to the checked rows (thermostat schedule, sizing field, ideal loads) (84.233ms)
+✔ Control view charts: follow-outdoor-air, outdoor air reset and system node reset SPMs give the reference's chart series (34.8213ms)
+✔ Inspector EMS tabs: the object's EMS actuator / output variable names as checkboxes; checking creates the actuator / sensor, unchecking removes it (37.3832ms)
+✔ viewApi: loops per system, OS-name sorted (27.1944ms)
+✔ viewApi: VAV topology in flow order; OA system streams; SPMs on nodes; linked water coils (16.0658ms)
+✔ viewApi: field values are the kernel's stored text; children per kernel class (5.2023ms)
+✔ loopLayout: PSZ-AC loop, positions derived by hand from SupplySideItem / DemandSideItem / SystemItem (5.7916ms)
+✔ loopLayout invariants on every loop of the 5 systems (66.4515ms)
+✔ loopLayout: plant demand branches are reversed and sorted by the component after the outlet node (6.6929ms)
+✔ inspector rows: OS IDD labels, hidden node fields, autosize radios, units (15.0083ms)
+✔ inspector dispatch: tabs per class (HVAC_SPEC §10.1) (3.3151ms)
+✔ units + formatting: QString::number(v,'g',14), XHTML unit strings, conversions (10.2702ms)
+✔ toolbar visibility and system combo order (0.824ms)
+✔ icons: IconLibrary lookups, fallbacks, SPM badges (8.0034ms)
+✔ no 'OpenStudio' in Studio UI strings (comments and the licence notice excepted); no brand images shipped (29.3096ms)
+✔ CSS isolation: every Studio selector is scoped under .osr; no :root tokens (6.5ms)
+✔ the Studio mounts on the sample building: shell, HVAC tab, combo, scene, inspector (1038.5559ms)
+✔ the Refrigeration Layout / Grid and the VRF views render the model's systems (668.802ms)
+✔ osNum is %.15g exactly as OpenStudio writes it (3.0888ms)
+✔ every HVAC number of the cached OpenStudio reference re-formats to its own text (8.6037ms)
+✔ F->C goes through Kelvin like OpenStudio.convert (values from openstudio.exe 3.11.0) (0.5336ms)
+✔ Ruby numeric semantics: Float#round, Float#to_s, Array#sum (1.0247ms)
+✔ kernel names: default names fill gaps per type, collisions take max+1 across types, name order is ASCII upper-case (11.3995ms)
+✔ standards lookups: first match, (min,max] capacity, 0.99 retry, Date.today rows (SEER vs SEER2) (15.9528ms)
+✔ data guard: no integral Float spelled 'x.0' in the efficiency fields that end up in object names (6.0006ms)
+✔ small zone fans: 0.55 impeller x ECM 1/2 hp motor, both S8.4 and S8.5 (whatever the flow) (55.219ms)
+✔ ptac end to end: every emitted object equals the OpenStudio reference text, in the reference's order (2015.4252ms)
+✔ vrf end to end: every emitted object equals the OpenStudio reference text, in the reference's order (168.3242ms)
+✔ psz end to end: every emitted object equals the OpenStudio reference text, in the reference's order (1341.5627ms)
+✔ vav end to end: every emitted object equals the OpenStudio reference text, in the reference's order (374.5457ms)
+✔ fcu end to end: every emitted object equals the OpenStudio reference text, in the reference's order (384.1597ms)
+✔ psz air loop: unitary DX capacity counts toward the loop (no economizer < 54 kBtu/h), LockoutWithHeating, maxOASch 0.75, no EMS (1103.6217ms)
+✔ fcu: DOAS ERV on the outboard OA node (Node 2 / Node 3), effectiveness tables replaced once, sequential terminal fractions (320.4716ms)
+✔ parseSizingRun: ComponentSizes keyed by type / UPPER name / description, first row wins; ZoneSizes rows; the sizingProvider reads it (1.4517ms)
+✔ osstdClimateZone: the model's ASHRAE value -> create_typical's zone ('7' -> 7A) and the pump lookup's 169-2006 string (1.3711ms)
+✔ ptac sizing-run IDF: every object equals OpenStudio's model_run_sizing_run in.idf (transitioned), in order (68.2181ms)
+✔ psz sizing-run IDF: every object equals OpenStudio's model_run_sizing_run in.idf (transitioned), in order (88.4818ms)
+✔ vav sizing-run IDF: every object equals OpenStudio's model_run_sizing_run in.idf (transitioned), in order (97.9684ms)
+✔ vrf sizing-run IDF: every object equals OpenStudio's model_run_sizing_run in.idf (transitioned), in order (57.6989ms)
+✔ fcu sizing-run IDF: every object equals OpenStudio's model_run_sizing_run in.idf (transitioned), in order (139.3283ms)
+✔ matrix office5.miami.vav: no WB=>MDB design day: the condenser loop reads the station .ddy (0.4% WB=>MDB) (308.4021ms)
+✔ matrix officeL.chicago.vav: optimum start EMS (> 10,000 cfm), boiler combustion-efficiency row (421.8216ms)
+✔ matrix officeL.chicago.psz: 15 PSZ loops, optimum start on the large ones (3626.9976ms)
+✔ matrix small1.houston.vav: single-zone VAV fan curve (341.6275ms)
+✔ matrix mult.chicago.vav: zone multipliers in the VRP damper sizing (401.6663ms)
+✔ matrix mult.chicago.fcu: zone multipliers in the DOAS (599.21ms)
+✔ matrix retail.chicago.fcu: Retail schedules (Occ Sch) (397.0378ms)
+✔ matrix office5.duluth7A.vav: CZ 7A pump control thresholds (374.2961ms)
+✔ matrix office5.duluth.vav: CZ '7' from the .stat: pump control compares with nil (ArgumentError) (131.2807ms)
+✔ matrix small1.sf.doase: FixedDryBulb economizer: the stray `s` (NameError) (368.0694ms)
+✔ matrix office5.chicago.pthp: PTHP: DX heating coil lookup finds no row (subcategory PTHP), heat-pump cooling curves partly rejected (cubic for a biquadratic field) (1207.1376ms)
+✔ matrix officeL.chicago.pthp: PTHP >= 65 kBtu/h: setRatedCOP(false) TypeError (3679.1529ms)
+✔ matrix office5.chicago.pszhp: PSZ-HP: unitary heat pump, HSPF / SEER rows, defrost curve created twice (1382.1927ms)
+✔ matrix office5.chicago.pvav: PVAV Reheat: two-speed DX on the loop (CoilSystem:Cooling:DX), hot-water reheat (318.0936ms)
+✔ matrix office5.chicago.pvavpfp: PVAV PFP Boxes: parallel PIU terminals (secondary inlets, fans on the loop schedule, night cycle zone lists) (370.8341ms)
+✔ matrix office5.chicago.vavpfp: VAV PFP Boxes: PIU terminals on a chilled-water VAV (371.1663ms)
+✔ matrix office5.chicago.vavnr: VAV No Reheat: VAV no-reheat terminals, damper positions (367.1174ms)
+✔ matrix office5.chicago.vavgas: VAV Gas Reheat: gas main and reheat coils (376.2001ms)
+✔ matrix office5.chicago.pszvav: PSZ-VAV: unitary SingleZoneVAV, variable-speed DX, UnitarySystemPerformance:Multispeed (1198.4399ms)
+✔ matrix office5.chicago.furnace: Forced Air Furnace: unitary gas furnace, no cooling (1084.7358ms)
+✔ matrix office5.chicago.uhgas: Unit Heaters (gas): fan control 'ConstantVolume' rejected (keys OnOff/Continuous) (40.939ms)
+✔ matrix office5.chicago.uhelec: Unit Heaters (electric) (39.5351ms)
+✔ matrix office5.chicago.bbelec: Baseboards (electric) (30.6319ms)
+✔ matrix office5.chicago.bbhw: Baseboards (hot water): the baseboard on the plant branch (47.8224ms)
+✔ matrix office5.chicago.wshp: Water Source HPs: heat-pump loop (fluid cooler, boiler), component-setpoint scheme, WAHP coils sized on their own capacity (75.3657ms)
+✔ matrix office5.chicago.wshpct: Water Source HPs on a two-speed cooling tower (66.8294ms)
+✔ matrix office5.chicago.gshp: Ground Source HPs: temperature-source ground loop driven by EMS (60.5582ms)
+✔ matrix office5.chicago.doascold: DOAS Cold Supply: OpenStudio's NameError in the FixedDryBulb economizer path (188.4062ms)
+✔ matrix office5.chicago.fcudcv: Fan Coil with DOAS with DCV: combination dispatch, VAV terminal OA control (241.7479ms)
+✔ matrix office5.chicago.ptacerv: PTAC with ERVs: zone ERVs (on-off fans not 'contained': loop pressure rise) (83.6851ms)
+✔ matrix office5.chicago.windowac: Window AC: room-AC curves (dimensionless unit types) (579.5488ms)
+✔ matrix office5.chicago.evap: Evaporative Cooler: EMS availability, Erl names (70.0332ms)
+✔ matrix office5.chicago.radiant: Radiant Slab: slab constructions on the floors, EMS proportional controls (514.2019ms)
+✔ matrix office5.chicago.ideal: Ideal Air Loads (23.128ms)
+✔ matrix office5.chicago.resac: Residential AC (518.1973ms)
+✔ matrix office5.chicago.resfurnac: Residential Forced Air Furnace with AC (477.6948ms)
+✔ matrix office5.chicago.resashp: Residential Air Source HP (562.2146ms)
+✔ matrix office5.chicago.minisplit: Residential Minisplit HP (651.23ms)
+✔ matrix office5.chicago.reserv: Residential ERVs (historical HX curves, library schedule) (544.8519ms)
+✔ matrix office5.chicago.resvent: Residential Ventilators (unattached zone exhaust fans) (519.4801ms)
+✔ matrix office5.chicago.fculow: Fan Coil on a low-temperature (condensing) HW loop (499.5787ms)
+✔ matrix office5.chicago.vavaircool: VAV Reheat with an air-cooled chiller (130.6764ms)
+✔ matrix office5.chicago.vavdist: VAV Reheat on district heating / cooling (135.7028ms)
+✔ a 3-period compact becomes one date-ranged ruleset with each period's day profiles (18.2597ms)
+✔ special days come from the period that holds them, as EnergyPlus reads the compact (10.6122ms)
+✔ single-period compacts are unchanged (the parity path) (2.0993ms)
+✔ a project with annual multi-period schedules opens in the Studio and exports its HVAC (1341.18ms)
+✔ field store: IDD-ordered fields, handle in field 0, constructor image stored (5.0448ms)
+✔ connections: a fan on an air loop splices between nodes; remove re-splices (9.6919ms)
+✔ op log: a transaction fails atomically; undo / redo / replay restore the same model (97.9454ms)
+✔ clone: a cloned air loop gets its own nodes, components and terminals (20.6214ms)
+✔ every op-log scenario replays and forward-translates in the kernel; OSM write/read is stable (2725.8593ms)
+✔ bridge: Pinocchio zones become ThermalZones; schedules are offered by name and converted on use (49.375ms)
+✔ bridge: a Studio session on the project persists as its op log and replays on load (95.5852ms)
+✔ units: SI <-> IP as the application displays IDD fields (1.3795ms)
+✔ K12: a model loaded from an OSM whose handles carry the model's own uuid prefix mints fresh handles (no collision, no loop) (3.5359ms)
+✔ every applicable parameter changes the model's IDF (same helpers as the screens) (146.6805ms)
+✔ designs: one-at-a-time, full factorial, Latin hypercube (7.7512ms)
+✔ variants: patches from one base IDF; labels; a bad value is reported, not fatal (24.5175ms)
+✔ analysis: metrics, sensitivity ranks the parameter that matters, Pareto front (2.3724ms)
+✔ sensitivity: the base run counts at its real value in one-at-a-time, and stays out of a balanced grid (1.3994ms)
+✔ number guard: invented numbers rejected (strict) or stripped (strip); correct roundings pass (14.4139ms)
+✔ code profiles: 90.1 vintage × CZ, NYCECC → its ASHRAE vintage (amendments not modelled), ECSBC; rules use them (22.5733ms)
+✔ situation model on the real Atlantic slice: completeness by source, sources, risk, conflicts (169.727ms)
+✔ anomalies on fixtures: office defaults on residential, thermostat inversion, unused document schedule, dangling HVAC, hidden glazing (203.5546ms)
+✔ estimates: always labelled + ranged + an approval-gated confirm run; end-use / engineering / measured; null without inputs (43.414ms)
+✔ prioritisation: impact × confidence ÷ effort; only proposals / approval-gated runs; declines + dismissal learning (2.4061ms)
+✔ nag control: dismiss learning per family, decline memory, cooldown (unless escalated), accepted detection, per-flush cap (113.806ms)
+✔ companion: diff-aware reaction (estimate + compliance direction, teammate named), journal, anticipation (100.6157ms)
+✔ debrief v2 on the REAL Atlantic run: benchmark w/ source, drivers + why, unmet by zone + causes, sizing, experiments; numbers all facts (240.7218ms)
+✔ eplustbl parser: per-zone unmet, design loads, coils from the real report (11.0791ms)
+✔ think(): situation + insights (with estimates) + top-3 next actions; snapshot for the agent; narration re-checked (200.0304ms)
+✔ runBrainAction: run → ASK_EVENT (the chat's approval card), review → PROPOSE_EVENT (+ remembered), goto/focus → FOCUS_EVENT (34.4639ms)
+✔ pageText applies the page rotation (a /Rotate 270 sheet reads in rows, not columns) (29.2368ms)
+✔ pageRegions: embedded raster images (n-up report tiles) in displayed fractions, column-major order (4.7259ms)
+✔ window schedule BY POSITION: per tag unit size + every sash's type, glass, U / SHGC / VT; area-weighted type glazing (37.4335ms)
+✔ window COUNTS per type × facade = COMcheck sash area ÷ schedule sash area (whole numbers); SHGC disagreement reported (4.3039ms)
+✔ COMcheck table parser: a one-row slip is realigned; names / numbers printed as two blocks; section + header carried across crops (16.7641ms)
+✔ plan titles: ranges cover their floors; the drawing index never wins; the crop is the band above the title (43.2066ms)
+✔ vision rooms are fitted to TILE the DXF footprint (power diagram) — no gaps, no overlaps, labels kept (3.7131ms)
+✔ plates: two bulkhead boxes on one layer are two PARTS of the floor (not an artefact); a far small symbol is dropped (9.8578ms)
+✔ levels: roof spot elevations paired with the label printed ABOVE them → bulkhead + machine-room heights (6.7952ms)
+✔ EN1 schedule tab with the hours DOWN the rows and a 3-line header → 24-h profiles (no bogus per-row loads) (15.0405ms)
+✔ ERV schedule row → airflow + printed effectiveness (+ the header's kind); range-checked (7.3331ms)
+✔ two reads of a COMcheck table are reconciled: agreement confirms, the sharper read wins a disagreement, a missed row is recovered (1.4783ms)
+Warning: Please use the `legacy` build in Node.js environments.
+✔ classification: discipline + role + floor per file; chips are user-correctable (19.4242ms)
+✔ stage adapter interface + exact missing inputs + blocked stages (5.6268ms)
+✔ storey heights from the architectural sections (spot elevations) (6.0501ms)
+✔ geometry: layered SLD DXF slices → floors, rooms, heights, stack, typical plate stamped (382.6496ms)
+✔ geometry: a footprint-only DXF is SAID to be one, never silently zoned; routes zone it on request (74.7232ms)
+✔ atomic apply per stage: a bad row → nothing applied; the review rows reach the HIL apply path (7.0065ms)
+✔ windows: schedule unit sizes on exposed walls (assumed positions, unticked); DXF window layer = document (137.3207ms)
+✔ envelope: glazing families → constructions; COMcheck (stubbed vision table) authoritative; conflicts surfaced, not resolved (107.9676ms)
+✔ hvac: layout-mode condenser schedule (MCA never read as SEER2) + catalog match + datasheet mismatch + fetchable (39.7497ms)
+✔ dhw: water-heater schedule (layout) + cross-foot vs the printed capacity + silent gaps reported (26.9903ms)
+✔ lighting: a drawing calc that closes (874 W / 4,351 ft² = 0.201) + spreadsheet fixtures × counts per space (131.2161ms)
+✔ schedules: EN1 workbook — filled tab offered (capped, noted), swapped thermostat dropped, templates / identity ignored (50.7517ms)
+✔ section insights: expected messages, evidence + proposal actions (34.067ms)
+✔ live analyzer: debounced, diff-based, tied to the edited window; resolved; verbosity (331.0127ms)
+✔ run debrief: EUI + delta vs the last run, drivers, unmet hours, default-weather warning (12.5327ms)
+✔ agent bridge: snapshot for pinocchio_insights, ingest event, project.mode registry key (67.1005ms)
+✔ jsdom flow: toggle → new project in Pinocchio Mode → drop → run → review → apply → insights → edit a window → live insight; Ctrl+Z = one stage (5260.6464ms)
+Warning: An update to PinocchioHost inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at PinocchioHost (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/ui/PinocchioHost.jsx:19:26)
+    at Workspace (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/tools/pinocchio-mode.test.mjs:448:33)
+Warning: An update to PinocchioHost inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at PinocchioHost (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/ui/PinocchioHost.jsx:19:26)
+    at Workspace (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/tools/pinocchio-mode.test.mjs:448:33)
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+✔ printedScale + parseRun: the plan vocabulary (6.2455ms)
+✔ registerPlan: MH M-300 (1F, top band) — the 1215 pt wall line at 1/4" = 1'-0", outline on the sheet's line work (135.1268ms)
+✔ registerPlan: REV1 A-100 is stored /Rotate 90 — registered in the displayed frame (17.027ms)
+✔ 1F: 11 / 11 cells named, typed and in their apartment (REV1 A-100 + MH M-300) — equipment per cell (135.8356ms)
+✔ 2F: 13 / 13 — bedrooms + baths join the right apartment (adjacency, ties by the printed unit SF) (112.5296ms)
+✔ sharedEdge / sameCells / renumberUnit (0.9852ms)
+✔ planLabelsForFloors (docs store + sheet index): 1F–3F all named; 3F inherits 3xx numbers + AC heads from 2F (12100.5286ms)
+✔ no text layer → the vision reader names the cells (stubbed service, confidence ≤ 0.5) (2.7543ms)
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: getOperatorList - ignoring beginMarkedContentProps: "TypeError: Cannot read properties of undefined (reading 'get')".
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+✔ classifyPage: plans with their levels, schedules, notes, elevations, COMcheck, the drawing index (6.1076ms)
+✔ blockCrops: a schedule / notes header → a bounded crop below it (0.9027ms)
+✔ classification of the real files: MH = mechanical set, REV1 = architectural set (0.2398ms)
+✔ buildSheetIndex on the real MH + REV1 sets: plan sheets per level, two plans per sheet split at their titles (13473.5777ms)
+✔ plansForLevel: the arch plan first, then the mech plan; a typical range is still offered (1.6177ms)
+Warning: UnknownErrorException: Ensure that the `standardFontDataUrl` API parameter is provided.
+✔ snapshotCrops + saveSnapshots: references without a backend; rendered + stored with one; never hangs (130.9022ms)
+✔ docs.planLayout: the real M-300 sheet's words (centred) + vector lines (662.85ms)
+✔ empty: commanding drop zone, honest board, the first next action, Run all disabled (210.9696ms)
+✔ ingesting: pending rows scan while files are classified, then resolve into chips with a confidence readout (264.2448ms)
+✔ stage blocked / missing: exact needs + one-click fixes (93.452ms)
+✔ review pending: Review N on the stage, the next best action, board caption (37.2736ms)
+✔ insights: evidence cards with page chips, confidence + impact, situation board conflicts and risk (70.4684ms)
+✔ situation board prefers the brain's situation model when supplied (0.9721ms)
+✔ companion message (chat Insights tab): presence + full sentence in a polite live region; element anchor; feed; voice (78.3142ms)
+✔ run debrief: the briefing — EUI readout, delta, sorted end-use bars, unmet hours over the limit (125.82ms)
+✔ reduced motion: the sentence appears whole (no typing, no caret); with motion it types; CSS disables animation (473.8499ms)
+✔ situation board renders the brain's real buildSituation output (81.2345ms)
+✔ actions: review → Review panel, run → the chat's approval card (never runs), goto/focus → focus (74.5099ms)
+✔ briefing renders the brain's Debrief on the real Atlantic run: narrative, sourced benchmark, causes by zone, sizing, experiments (308.9212ms)
+✔ host: useBrain drives the board, next actions and insights (no stub data) (384.5223ms)
+✔ the DXF: generator ≡ the shipped file; feet; clean layers; symmetric extents (28.4072ms)
+✔ the DXF imports: Import-DXF room detection + plateFromDxf find every cell (area within 1 %), the underlay is in feet at the drawing's own coordinates (38.6378ms)
+✔ steps: well-formed, unique ids, valid chapters / targets / wizard steps / refs; ~45 min; SCRIPT_ID (1.5242ms)
+✔ “Do it for me” in order builds the whole practice: every check passes; validates; exports (103.3614ms)
+✔ skipped steps: later demos fill in what's missing; a hand-traced room is renamed, never duplicated (15.3576ms)
+✔ set_dxf_underlay: validates, sets and clears the plan's underlay (2.641ms)
+✔ an app-authored model: the Building object follows the project title (26.534ms)
+✔ IDF-safe: delimiters are removed, an emptied title keeps a valid Building name, and typing resumes (2.0236ms)
+✔ user data is left alone: a hand-set Building name, an imported model, a no-op rename (0.6566ms)
+✔ a stored snapshot (a project renamed from its Workflow card while not open) follows the same rule (0.8779ms)
+✔ the export requests every report meter once, hourly; studies opt out; an IDF that already has them adds none (14.1217ms)
+✔ hourly meters: one run-period year, J → kWh (63.8019ms)
+✔ monthly by end use adds up to the annual end uses (≤ 2 %); by fuel too (0.6162ms)
+✔ peaks: kW, day, hour, and the top-3 contributors' 24-h profiles on that day (0.651ms)
+✔ energy: site / source / CO2 per m², factors stated, fuels add up (0.4675ms)
+✔ envelope: U-values match constructionLib AND the engine's Envelope Summary; WWR by orientation (0.6572ms)
+✔ cost, comfort, zones, identity (86.3458ms)
+✔ graceful: no report files → totals only (monthly / peaks null); ensureDigest reuses a stored digest; size (17.798ms)
+✔ fitCamera: every corner inside the frame, the frame is used, the building centred — all presets (15.1936ms)
+✔ colours: ramps, nice ranges, legends, legend SVG (4.7628ms)
+✔ model data: faces from the export geometry, U lookups, WWR per orientation, north axis turns the world (28.0931ms)
+✔ zone values: comfort, loads (W/m²) and daylight; presets only when there's data, one plan per floor (3.8789ms)
+✔ an empty model (or no DOM) renders nothing — never throws (1.1838ms)
+✔ golden conversion values (5.8608ms)
+✔ formatters: labels, rounding, thousands separators, blanks (43.1519ms)
+✔ quantities EnergyPlus already reports in SI are converted from THEIR unit — never twice (3.8868ms)
+✔ relabel: IP text lines (run log / chat) are re-expressed once, IP is left alone (1.3671ms)
+✔ default by the project's energy code / region (1.1683ms)
+✔ choice is persisted per user in localStorage and overrides the default (2.4887ms)
+✔ ResultsView renders IP and SI from the SAME result object — totals consistent, converted once (1000.2458ms)
+✔ toggle is an accessible radio group with keyboard support (200.0601ms)
+✔ results dock follows the same selection (incl. run-log lines) and offers the toggle (294.9219ms)
+✔ energy report + compliance report exports follow the selection and state the unit system (14.2261ms)
+✔ HVAC diagnostics quote energy in the selected units (default stays kBtu) (2.5086ms)
+✔ inventoryClient review functions: paths, bodies, errors (58.6055ms)
+✔ reviewModel: IP/SI formatting via inventory-core, edit patch, promote only for global curators (27.3529ms)
+✔ ReviewQueue SSR smoke + list → open → edit-approve → reject (mocked client) (1590.0247ms)
+✔ drawn rectangle → skylight → exported at the drawn position (34.2504ms)
+✔ a roof covered by the floor above has no exposed roof — nothing fits, export skips it (8.4202ms)
+✔ gable over two zones: union outline, 2 planes, ridge along the long axis, 2 gable walls (10.377ms)
+✔ hip on a convex outline: one plane per edge, no walls; non-convex falls back to gable (12.8142ms)
+✔ shed: one plane, a tall wall on the high side, flip reverses the slope (1.4729ms)
+✔ export: roof space zone, sloped Roof planes, ceiling ↔ roof space floor PAIRED, eaves shading, IDD-valid (27.4885ms)
+✔ viewer + sheet see the roof; edits validate; removing it restores the flat roof (21.231ms)
+✔ drawn / traced outline wins over zones; ridge direction is settable (2.4072ms)
+✔ gable: planar, upward planes, vertical walls, closed outward volume (33.21ms)
+✔ boxgable: planar, upward planes, vertical walls, closed outward volume (25.009ms)
+✔ hip: planar, upward planes, vertical walls, closed outward volume (22.0786ms)
+✔ pyramid: planar, upward planes, vertical walls, closed outward volume (9.8016ms)
+✔ shed: planar, upward planes, vertical walls, closed outward volume (10.4485ms)
+✔ leanto: planar, upward planes, vertical walls, closed outward volume (24.382ms)
+✔ saltbox: planar, upward planes, vertical walls, closed outward volume (9.8154ms)
+✔ gambrel: planar, upward planes, vertical walls, closed outward volume (12.0481ms)
+✔ mansard: planar, upward planes, vertical walls, closed outward volume (10.224ms)
+✔ butterfly: planar, upward planes, vertical walls, closed outward volume (8.0667ms)
+✔ mshape: planar, upward planes, vertical walls, closed outward volume (10.8287ms)
+✔ dormer on a gable: plane cut into pieces, front/cheek walls, window; closed volume still holds (5.333ms)
+✔ roofs persist: snapshot → revive keeps every roof and dormer (regression: they were dropped on reload) (2.6005ms)
+✔ isAffirmative: short confirmations yes; qualified / negative no (3.7131ms)
+✔ 'yes' after a proposal carries the whole conversation + applies the proposal exactly (one undo step) (651.815ms)
+✔ 'yes' after ops already APPLIED says so (no re-create); every turn says the bar applies inline (528.8836ms)
+✔ the conversation survives the step remounting; a revision gets the revise note (377.7501ms)
+✔ clear forgets; another project never sees this project's history (531.3238ms)
+✔ starter: a brand-new project's windows export the starter glazing (0.40) — the ONLY 0.40 case (22.7227ms)
+✔ Envelope Window slot: custom glazing SHGC 0.25 reaches every window (9.5744ms)
+✔ Envelope Window slot: custom glazing SHGC 0.4 reaches every window (4.5486ms)
+✔ Envelope Window slot: custom glazing SHGC 0.6 reaches every window (5.6943ms)
+✔ Envelope Window slot: library glazing (ECSBC DGU 0.27 / ASHRAE 0.38) (6.7856ms)
+✔ mixed per façade: per-window glazing (elevation editor / Inspector) exports each window's own SHGC — library ones never dangle (7.3222ms)
+✔ zone window override + glass-door 'Window' sentinel follow the zone/slot glazing (5.1817ms)
+✔ WWR auto-glaze windows follow LATER slot changes (no pinned slot name) (4.4897ms)
+✔ slot change re-points windows pinned to the OLD slot name (older WWR/CAD placements) (3.0531ms)
+✔ editing an in-use custom glazing (not the slot) re-materializes it: 0.40 → 0.25 reaches the export (11.9391ms)
+✔ CAD auto-place: no dangling 'Pella …' names — windows follow the slot; explicit glass honoured (6.7528ms)
+✔ CAD schedule rows: a window row's own U/SHGC → custom construction on placed windows (6.5905ms)
+✔ imported .idf: assigning the Window slot re-points the file's windows (they kept SHGC 0.40 before) (34.5596ms)
+✔ App-G baseline: code SHGC on EVERY window incl. per-window library glazing; ECM low-e reaches them too (8.5655ms)
+✔ agent / doc field write targets the slot glazing (not the starter 'Std Glass Mat') (2.7553ms)
+✔ compliance checklist SHGC = area-weighted exported glazing (was the first SimpleGlazing = 0.40) (5.3703ms)
+✔ windowGlazing() = what the UI shows = what exports (2.2005ms)
+✔ glazing validation: U ≤ 7, 0<SHGC<1, 0<VT<1; materialize clamps (never a silent 0.40) (0.6607ms)
+✔ R-value units round-trip (IP R ↔ RSI) (0.3094ms)
+✔ R-value layer → Material:NoMass with its R; layered U includes EnergyPlus films (1.4012ms)
+✔ whole assembly by target U: R = 1/U − films per orientation; limits validated (1.6226ms)
+✔ exported objects are IDD-valid (field names exactly as iddRules.json) and pass idfCheck (5.105ms)
+✔ GeoJSON (lon/lat): polygons + multipolygons, lines ignored, heights from height / levels (38.83ms)
+✔ OSM: Overpass JSON and .osm XML give the same buildings; nearest is the site building (5.784ms)
+✔ OSM live fetch: mirror fail-over, keyless POST to Overpass (2.3755ms)
+✔ true-north sources are rotated into the building frame by the North Axis and anchored on the project (1.113ms)
+✔ STL (ascii + binary) and OBJ massing → one prism per solid, ground plane dropped (72.5919ms)
+✔ DXF site plan: closed polylines → footprints, $INSUNITS, height from a '6F' label (7.705ms)
+✔ site transform: scale about the pivot, CCW rotation, offset — and its exact inverse (1.6369ms)
+✔ Shading:Building:Detailed: walls + roof per building, outward normals, convex roof pieces, skips degenerate/excluded (11.9965ms)
+✔ vertex order follows GlobalGeometryRules (Clockwise / LowerLeftCorner) (1.374ms)
+✔ scaling the site ×2 scales shading coordinates about the pivot (and heights) (1.3853ms)
+✔ North Axis frame: site shading is in the same building frame as the zone surfaces; exportIdf is idfCheck-clean (36.3842ms)
+✔ surface-count warning + simplification (radius / min height / smoothing) (48.1645ms)
+✔ Site tab: import a GeoJSON → editor shows the buildings → scale + measured scale + height edit update project.site (1241.3721ms)
+✔ selection math: click / shift / ctrl / rows / cols / all / moves (6.1554ms)
+✔ TSV: Excel round-trip incl. quoted cells with tabs / newlines / quotes (1.0141ms)
+✔ coercion + validation: number w/ unit & separators, select by label, bool words, min/max, custom (2.3566ms)
+✔ edits: type into multi-selection, read-only skipped, paste fill / block / tile / clip, clear (6.1652ms)
+✔ fill down / right / fill handle (copy + numeric series) (2.2322ms)
+✔ sort / filter: stable, blanks last, ids preserved; numeric ops; value-set filter (2.3805ms)
+✔ commonValue reports mixed + range (0.517ms)
+✔ SpreadGrid: drag/shift select → type → ONE onChange for all; aria; mixed summary (709.4922ms)
+✔ SpreadGrid: paste 3×2 from Excel, Ctrl+D, Delete, Ctrl+A, read-only skip notice, bool toggle (543.6222ms)
+✔ SpreadGrid: virtualised 2,000 rows, keyboard nav, sort keeps ids (1752.2247ms)
+✔ quickGrid: rows/cols/edits mapping is lossless + read-only where the template can't take it (4.0206ms)
+✔ HVAC Quick (All zones grid): select 5 zones' cooling SP → type 24 → five changed in ONE onChange; paste 3×2 (590.065ms)
+✔ HVAC Quick (system editor draft): thermostat grid multi-edit → draft; Ctrl+Z walks draft history (398.8654ms)
+✔ HvacEditor: 'All zones' toggle swaps the right pane to the bulk SpreadGrid (1056.032ms)
+✔ every wizard step has help, and every help key is a real wizard step (or the top bar) (4.9824ms)
+✔ features: ids unique per step, text present, finder specs valid, regexes compile (1.976ms)
+✔ helpFor: the project step opens with the top bar; unknown keys fall back to the top bar (0.5576ms)
+✔ step 1 logic — identity (new UI): same mutations, requests and files as before the redesign (3.1076ms)
+✔ step 1 logic — operation_template (new UI): same mutations, requests and files as before the redesign (0.3165ms)
+✔ step 1 logic — operation_confirm_reset (new UI): same mutations, requests and files as before the redesign (0.2354ms)
+✔ step 1 logic — operation_confirm_keep (new UI): same mutations, requests and files as before the redesign (0.1718ms)
+✔ step 1 logic — operation_imported (new UI): same mutations, requests and files as before the redesign (0.1798ms)
+✔ step 1 logic — analysis_options (new UI): same mutations, requests and files as before the redesign (0.2271ms)
+✔ step 1 logic — weather_search_fetch_india (new UI): same mutations, requests and files as before the redesign (0.4335ms)
+✔ step 1 logic — weather_fetch_keeps_user_choices (new UI): same mutations, requests and files as before the redesign (0.3602ms)
+✔ step 1 logic — weather_search_fails (new UI): same mutations, requests and files as before the redesign (0.2336ms)
+✔ step 1 logic — weather_upload (new UI): same mutations, requests and files as before the redesign (0.2988ms)
+✔ step 1 logic — mount_fills_zone_from_weather (new UI): same mutations, requests and files as before the redesign (0.2279ms)
+✔ step 1 logic — mount_inspects_header (new UI): same mutations, requests and files as before the redesign (0.1159ms)
+✔ step 1 logic — folder_choose_and_save (new UI): same mutations, requests and files as before the redesign (0.0825ms)
+✔ step 1 logic — folder_picker_cancelled (new UI): same mutations, requests and files as before the redesign (0.1154ms)
+✔ the recorded baseline actually exercises the logic (not vacuous) (0.7027ms)
+✔ renamed labels are shown; the old names are gone (74.1649ms)
+✔ accessible: every control is named, toggles are real switches, sections are landmarks (151.6337ms)
+✔ summary rail states what is set and where it came from (224.0661ms)
+✔ weather card shows the station details (6.4783ms)
+✔ no blocking browser dialogs; engine-offline note kept (68.9164ms)
+✔ cleanup (72.2209ms)
+idfStore: project too large for this browser's storage — other projects kept huge
+✔ a project too large for the browser is refused; the cached ones are untouched (98.4831ms)
+✔ a project that fits after shedding others' heavy fields still saves (55.5246ms)
+✔ production flag is on: agent layer mounted over the zone editor's sheet (795.5867ms)
+✔ double-click → in-cell combobox + list; click an option commits; Escape cancels, dialog stays (453.7874ms)
+✔ F2 → type-ahead → Enter commits the highlighted option + moves down; Tab moves right inside the focus trap (428.8727ms)
+✔ typing on a cell keeps every key (even those that reach the grid while the editor opens) (180.3579ms)
+✔ an untouched editor on a MIXED selection never wipes the cells (218.0708ms)
+✔ agent layer ignores events inside the editor; a double right-click on a plain cell still summons (219.9051ms)
+✔ any SpreadGrid under the agent layer (HVAC-style number + select columns) (338.988ms)
+Warning: An update to BlobCursor inside a test was not wrapped in act(...).
+
+When testing, code that causes React state updates should be wrapped into act(...):
+
+act(() => {
+  /* fire events that update state */
+});
+/* assert on the output */
+
+This ensures that you're testing the behavior the user would see in the browser. Learn more at https://reactjs.org/link/wrap-tests-with-act
+    at BlobCursor (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/BlobCursor.jsx:4:23)
+    at Workspace (file:///C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/tools/surfaces-sheet-agent.test.mjs:62:33)
+✔ matchOption: exact, unambiguous prefix / substring, else null (3.6031ms)
+✔ Surfaces sheet: type into Boundary / Construction cells → overrides land, IDF carries them (2064.5067ms)
+✔ Surfaces sheet: the grid is height-bounded (body scrolls) and read-only cells explain why (266.8124ms)
+✔ Surfaces sheet: type a WWR / window count on an exterior wall → its windows are resized (one commit); shared walls stay read-only (1003.7217ms)
+✔ Boundary filter splits Auto by its result (Auto → Outdoors / Adiabatic / …) (66.5891ms)
+✔ steps: well-formed, unique ids, valid chapters / targets / wizard steps / brief refs; 38 min (3.9474ms)
+✔ “Do it for me” in order builds the WHOLE brief: every check passes, nothing is pre-passed by an earlier demo (303.1072ms)
+✔ skipped steps: a later demo fills in what's missing (groups, loads, HVAC, windows, PV on an empty model) (62.4938ms)
+✔ FILLET step: the brief's corner (Office East NE) — also when the user drew Office East with extra vertices (8.2434ms)
+✔ knowledge base (built on the PRACTICE script the host runs): answers the obvious questions, and about the practice (20.003ms)
+✔ ideal loads: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (63.1554ms)
+✔ template vav: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (25.2857ms)
+✔ template ptac: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (14.4155ms)
+✔ template vrf: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (15.7734ms)
+✔ template pvav: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (16.7456ms)
+✔ template fancoil: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (9.8656ms)
+✔ studio vav-chw: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (42.0924ms)
+✔ studio rtu-psz: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (18.2339ms)
+✔ studio ptac: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (13.7495ms)
+✔ studio doas-vrf: unconditioned zone has no thermostat/equipment/ideal loads/Sizing:Zone; others served (21.2375ms)
+✔ plenum-like unconditioned zone keeps infiltration only (2.5341ms)
+✔ conditioned floor area excludes the unconditioned zone (3.0631ms)
+✔ App-G baseline mirrors the proposed conditioned status (21.8137ms)
+✔ imported model: flipping a zone with self-contained HVAC removes it cleanly, geometry untouched (55.4124ms)
+✔ imported model: a central-system zone is kept + warned (never a broken splitter) (10.0772ms)
+✔ import: a zone the file's HVAC never serves imports as unconditioned (7.7382ms)
+✔ agent op set_zone_conditioned + summary lists unconditioned zones (7.7171ms)
+✔ zoneConditioning helpers (0.7466ms)
+✔ DOE-2 writer maps unconditioned → ZONE-TYPE/TYPE UNCONDITIONED on a SUM system (17.0165ms)
+✔ space function on several generic zones never yields duplicate zone names (set_zone / set_field) (3.8042ms)
+✔ normalisation: whitespace, case, separators, dashes and unit glyphs don't matter; numbers are read as numbers (10.7221ms)
+✔ text-layer page: invented values, tags and codes are dropped; what the page prints is kept with its snippet (3.4507ms)
+✔ an honest read keeps everything; an invented evidence snippet is refused (0.6835ms)
+✔ no text layer (scan / CAD image): kept, but flagged — confidence <= 0.5 and labelled 'from image — verify' (6.5345ms)
+✔ end to end: model stub → verify → merge → suggestions: no invented value is offered; kept ones cite page + snippet (2.7506ms)
+✔ leak regression: project A's facts never reach a new project B (14.2632ms)
+✔ opening a polluted snapshot strips inherited facts + pooled inventory (and only those) (3.2387ms)
+✔ duplicate keeps the project's own copy — never inherited leftovers (1.0948ms)
+✔ per-project caches are cleared on a project switch (315.4325ms)
+✔ agent memory is per user AND per project — nothing migrates (7.1327ms)
+✔ workflowApi: contract paths + bodies; envelopes or bare lists; legacy roles → admin | modeler (8.8102ms)
+✔ permissions: two roles only — admin-only actions are closed to a modeler (1.3052ms)
+✔ invite e-mails: paste parsing, validation, per-address results (2.2746ms)
+✔ project rows: this device's cache merged with the org's cloud list (live state, not-yet-mirrored projects) (9.4161ms)
+✔ routes + notifications (8.5444ms)
+✔ source documents are saved into THAT project's files; space sources are bound to one project (25.3871ms)
+✔ in-memory doc / CAD caches are keyed by project: the same doc id in two projects never collides (372.465ms)
+✔ rehydration fetches ONLY that project's files (lazily, cached per project, cleared on switch) (9.2578ms)
+✔ read-only insights of project B, shown while A is open, contain only B's own snapshot (5.0488ms)
+✔ create organization → invite by e-mail → Requests → accept → People (388.0063ms)
+✔ role gating: a modeler sees no invite / role change / remove / delete / start-live (157.6661ms)
+✔ start live (admin) → notification with Join (modeler) → joins through the collab seam; stop live (226.884ms)
+✔ project space: every tab shows ONLY that project's data (303.8166ms)
+✔ long lists page with limit / before: activity, versions, files, notifications — and nothing loads twice (365.3212ms)
+✔ loading states are skeletons; the project search waits for typing to pause (466.3483ms)
+✔ project card: 'In session' for the live session I am already in; 'Join live' otherwise (40.0206ms)
+✔ zone editor: open full screen → pick a face → change its boundary → project + export updated → Esc closes (857.173ms)
+✔ sheet: a batch edit of several faces is ONE project change (3.3356ms)
+✔ defaults: building defaults (IP) and the exterior-area infiltration default as ACH (22.5398ms)
+✔ precedence in the sheet: zone › group › building (11.7614ms)
+✔ precedence in the export: narrowed ZoneLists, no double counting, IDF stays valid (28.6528ms)
+✔ a building load every zone overrides is dropped with an info note (not a warning) (11.36ms)
+✔ typing a value: one deterministic zone override, schedule inherited; clearing reverts (6.9262ms)
+✔ conversions: People count, People/Area, Flow/Zone and summed same-scope loads (3.3348ms)
+✔ 2 zones side by side: the shared wall is Adiabatic on both sides, the rest Outdoors (27.689ms)
+✔ 2-storey stack: the roof/floor between floors is Adiabatic (Ceiling), ground floor on Ground (10.0857ms)
+✔ partial overlaps split the face into segments (along the edge + in height) (8.3252ms)
+✔ user overrides win over the rule and are immutable/undoable (10.1692ms)
+✔ paired boundary: both sides Surface, reversed vertices, reversed construction; symmetric set/unset (23.3728ms)
+✔ windows are refused on Adiabatic / Ground faces (warned + linted), kept on Outdoors faces (12.9726ms)
+✔ plenums: zone ceiling ↔ plenum floor pair is fixed; plenum walls split against neighbours (5.346ms)
+✔ conditioned=false zones keep every surface (8.128ms)
+✔ split pieces fall back to their whole-face key; per-face constructions are materialized + follow renames (1.6834ms)
+✔ a door picked as "Opaque door" (glass: "Door") exports the default door construction, not a missing "Door" (3.6051ms)
+✔ building orientation: rotating the North Axis turns facade orientations and the export, not the drawing (13.7972ms)
+ℹ tests 895
+ℹ suites 0
+ℹ pass 895
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 132721.5867
+exit 0

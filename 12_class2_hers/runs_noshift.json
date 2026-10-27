@@ -1,0 +1,116 @@
+{
+ "L100AC_noshift": {
+  "case": "L100A",
+  "climate": "C",
+  "heating_MBtu": 52.132,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 41.74498939606203,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.792,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L100AL_noshift": {
+  "case": "L100A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 47.762,
+  "tzone_min_C": 1.6308351100678335,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 4.577,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L140AC_noshift": {
+  "case": "L140A",
+  "climate": "C",
+  "heating_MBtu": 49.394,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999996,
+  "tzone_max_C": 33.7798739918984,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 3.105,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L140AL_noshift": {
+  "case": "L140A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 22.597,
+  "tzone_min_C": 2.074790124858873,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 2.906,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L170AC_noshift": {
+  "case": "L170A",
+  "climate": "C",
+  "heating_MBtu": 63.01,
+  "cooling_MBtu": 0,
+  "tzone_min_C": 19.999999999999993,
+  "tzone_max_C": 39.94016444413964,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 3,
+  "exit": 0,
+  "secs": 6.779,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ },
+ "L170AL_noshift": {
+  "case": "L170A",
+  "climate": "L",
+  "heating_MBtu": 0,
+  "cooling_MBtu": 38.732,
+  "tzone_min_C": -0.5029759305558823,
+  "tzone_max_C": 25.555600000000005,
+  "rows": 8760,
+  "severe": 0,
+  "fatal": false,
+  "warnings": 1,
+  "exit": 0,
+  "secs": 6.688,
+  "passthrough": [
+   "InternalMass",
+   "WindowProperty:FrameAndDivider",
+   "SurfaceProperty:ConvectionCoefficients"
+  ]
+ }
+}

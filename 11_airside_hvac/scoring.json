@@ -1,0 +1,1872 @@
+{
+ "section": "11 Air-side HVAC equipment (AE101-AE445)",
+ "software": "Pinocchio-EP (Studio HVAC kernel) + EnergyPlus 26.1.0-6f2e40d102",
+ "criteria": "Annex A3 Table A3-9 as revised by Addendum a; pass = >= 48 of 54 range cases in range (Table A3-10); values compared at the table's 0.01 kWh/h precision",
+ "ambient": "constant conditions of Tables 11-4/5/7/14/16 input directly (constant-ambient EPWs); not the TM2 files",
+ "rangeCases": 54,
+ "inRange": 54,
+ "minimumToPass": 48,
+ "pass": true,
+ "checks": [
+  {
+   "rangeCase": "AE201",
+   "quantity": "QH",
+   "value": 8.3866,
+   "lower": 7.94,
+   "upper": 8.78,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE205",
+   "quantity": "QCTotal",
+   "value": 1.9129,
+   "lower": 1.82,
+   "upper": 2.01,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE205",
+   "quantity": "QCSensible",
+   "value": 1.9129,
+   "lower": 1.82,
+   "upper": 2.01,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE245-AE205",
+   "quantity": "QCTotal",
+   "value": 0.295,
+   "lower": 0.2,
+   "upper": 0.39,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE245-AE205",
+   "quantity": "QCSensible",
+   "value": 0.295,
+   "lower": 0.2,
+   "upper": 0.39,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE206",
+   "quantity": "QCTotal",
+   "value": 2.7196,
+   "lower": 2.54,
+   "upper": 2.85,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE206",
+   "quantity": "QCSensible",
+   "value": 1.6969,
+   "lower": 1.62,
+   "upper": 1.79,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE226-AE206",
+   "quantity": "QCTotal",
+   "value": 0.7095,
+   "lower": 0.55,
+   "upper": 0.82,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE226-AE206",
+   "quantity": "QCSensible",
+   "value": -0.1412,
+   "lower": -0.23,
+   "upper": -0.06,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301",
+   "quantity": "QHPreheat",
+   "value": 3.5498,
+   "lower": 2.8,
+   "upper": 4.2,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301",
+   "quantity": "QH1Reheat",
+   "value": 7.5089,
+   "lower": 7.23,
+   "upper": 8.1,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301",
+   "quantity": "QH2Reheat",
+   "value": 8.1361,
+   "lower": 7.77,
+   "upper": 8.81,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301-AE401",
+   "quantity": "QHPreheat",
+   "value": -6.798,
+   "lower": -7.67,
+   "upper": -6.16,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301-AE401",
+   "quantity": "QH1Reheat",
+   "value": 3.0065,
+   "lower": 2.7,
+   "upper": 3.6,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE301-AE401",
+   "quantity": "QH2Reheat",
+   "value": 3.2363,
+   "lower": 2.87,
+   "upper": 3.93,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305",
+   "quantity": "QCTotal",
+   "value": 9.2213,
+   "lower": 8.77,
+   "upper": 9.85,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305",
+   "quantity": "QCSensible",
+   "value": 9.2213,
+   "lower": 8.77,
+   "upper": 9.85,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305",
+   "quantity": "QH1Reheat",
+   "value": 2.1942,
+   "lower": 1.92,
+   "upper": 2.46,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305",
+   "quantity": "QH2Reheat",
+   "value": 2.3757,
+   "lower": 2.02,
+   "upper": 2.71,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305-AE405",
+   "quantity": "QCTotal",
+   "value": 5.1151,
+   "lower": 4.55,
+   "upper": 5.75,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE305-AE405",
+   "quantity": "QCSensible",
+   "value": 5.1151,
+   "lower": 4.55,
+   "upper": 5.75,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE305",
+   "quantity": "QCTotal",
+   "value": 0.2883,
+   "lower": -0.15,
+   "upper": 0.79,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE305",
+   "quantity": "QCSensible",
+   "value": 0.2883,
+   "lower": -0.15,
+   "upper": 0.79,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE305",
+   "quantity": "QH1Reheat",
+   "value": -0.0083,
+   "lower": -0.11,
+   "upper": 0.11,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE305",
+   "quantity": "QH2Reheat",
+   "value": -0.0107,
+   "lower": -0.12,
+   "upper": 0.12,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE445",
+   "quantity": "QCTotal",
+   "value": 5.3545,
+   "lower": 4.76,
+   "upper": 6.01,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE345-AE445",
+   "quantity": "QCSensible",
+   "value": 5.3545,
+   "lower": 4.76,
+   "upper": 6.01,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306",
+   "quantity": "QCTotal",
+   "value": 14.5129,
+   "lower": 13.65,
+   "upper": 15.08,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306",
+   "quantity": "QCSensible",
+   "value": 8.7655,
+   "lower": 8.3,
+   "upper": 9.37,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306",
+   "quantity": "QH1Reheat",
+   "value": 2.2147,
+   "lower": 1.92,
+   "upper": 2.48,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306",
+   "quantity": "QH2Reheat",
+   "value": 2.4022,
+   "lower": 2.02,
+   "upper": 2.74,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306-AE406",
+   "quantity": "QCTotal",
+   "value": 6.0835,
+   "lower": 5.42,
+   "upper": 6.86,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE306-AE406",
+   "quantity": "QCSensible",
+   "value": 5.1705,
+   "lower": 4.64,
+   "upper": 5.73,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE306",
+   "quantity": "QCTotal",
+   "value": 6.2557,
+   "lower": 5.68,
+   "upper": 7.12,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE306",
+   "quantity": "QCSensible",
+   "value": -0.5174,
+   "lower": -0.91,
+   "upper": -0.01,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE306",
+   "quantity": "QH1Reheat",
+   "value": 0.0003,
+   "lower": -0.11,
+   "upper": 0.11,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE306",
+   "quantity": "QH2Reheat",
+   "value": 0.0004,
+   "lower": -0.12,
+   "upper": 0.12,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE426",
+   "quantity": "QCTotal",
+   "value": 11.8198,
+   "lower": 11.21,
+   "upper": 12.65,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE326-AE426",
+   "quantity": "QCSensible",
+   "value": 4.6999,
+   "lower": 4.27,
+   "upper": 5.31,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE401",
+   "quantity": "QHPreheat",
+   "value": 10.3477,
+   "lower": 9.75,
+   "upper": 10.77,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE401",
+   "quantity": "QH1Reheat",
+   "value": 4.5023,
+   "lower": 4.27,
+   "upper": 4.72,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE401",
+   "quantity": "QH2Reheat",
+   "value": 4.8998,
+   "lower": 4.63,
+   "upper": 5.12,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE405",
+   "quantity": "QCTotal",
+   "value": 4.1062,
+   "lower": 3.9,
+   "upper": 4.31,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE405",
+   "quantity": "QCSensible",
+   "value": 4.1062,
+   "lower": 3.9,
+   "upper": 4.31,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE405",
+   "quantity": "QH1Reheat",
+   "value": 0,
+   "lower": 0.0,
+   "upper": 0.0,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE405",
+   "quantity": "QH2Reheat",
+   "value": 0,
+   "lower": 0.0,
+   "upper": 0.0,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE445-AE405",
+   "quantity": "QCTotal",
+   "value": 0.0489,
+   "lower": -0.15,
+   "upper": 0.26,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE445-AE405",
+   "quantity": "QCSensible",
+   "value": 0.0489,
+   "lower": -0.15,
+   "upper": 0.26,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE406",
+   "quantity": "QCTotal",
+   "value": 8.4294,
+   "lower": 7.81,
+   "upper": 8.82,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE406",
+   "quantity": "QCSensible",
+   "value": 3.595,
+   "lower": 3.45,
+   "upper": 3.82,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE406",
+   "quantity": "QH1Reheat",
+   "value": 0,
+   "lower": 0.0,
+   "upper": 0.0,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE406",
+   "quantity": "QH2Reheat",
+   "value": 0,
+   "lower": 0.0,
+   "upper": 0.0,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE426-AE406",
+   "quantity": "QCTotal",
+   "value": 0.5194,
+   "lower": 0.2,
+   "upper": 1.02,
+   "inRange": true
+  },
+  {
+   "rangeCase": "AE426-AE406",
+   "quantity": "QCSensible",
+   "value": -0.0467,
+   "lower": -0.22,
+   "upper": 0.14,
+   "inRange": true
+  }
+ ],
+ "sensitivity_median24": {
+  "inRange": 54,
+  "checks": [
+   {
+    "rangeCase": "AE201",
+    "quantity": "QH",
+    "value": 8.3866,
+    "lower": 7.94,
+    "upper": 8.78,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE205",
+    "quantity": "QCTotal",
+    "value": 1.9129,
+    "lower": 1.82,
+    "upper": 2.01,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE205",
+    "quantity": "QCSensible",
+    "value": 1.9129,
+    "lower": 1.82,
+    "upper": 2.01,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE245-AE205",
+    "quantity": "QCTotal",
+    "value": 0.295,
+    "lower": 0.2,
+    "upper": 0.39,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE245-AE205",
+    "quantity": "QCSensible",
+    "value": 0.295,
+    "lower": 0.2,
+    "upper": 0.39,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE206",
+    "quantity": "QCTotal",
+    "value": 2.7196,
+    "lower": 2.54,
+    "upper": 2.85,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE206",
+    "quantity": "QCSensible",
+    "value": 1.6969,
+    "lower": 1.62,
+    "upper": 1.79,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE226-AE206",
+    "quantity": "QCTotal",
+    "value": 0.7095,
+    "lower": 0.55,
+    "upper": 0.82,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE226-AE206",
+    "quantity": "QCSensible",
+    "value": -0.1412,
+    "lower": -0.23,
+    "upper": -0.06,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301",
+    "quantity": "QHPreheat",
+    "value": 3.5498,
+    "lower": 2.8,
+    "upper": 4.2,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301",
+    "quantity": "QH1Reheat",
+    "value": 7.5089,
+    "lower": 7.23,
+    "upper": 8.1,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301",
+    "quantity": "QH2Reheat",
+    "value": 8.1361,
+    "lower": 7.77,
+    "upper": 8.81,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301-AE401",
+    "quantity": "QHPreheat",
+    "value": -6.798,
+    "lower": -7.67,
+    "upper": -6.16,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301-AE401",
+    "quantity": "QH1Reheat",
+    "value": 3.0065,
+    "lower": 2.7,
+    "upper": 3.6,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE301-AE401",
+    "quantity": "QH2Reheat",
+    "value": 3.2363,
+    "lower": 2.87,
+    "upper": 3.93,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305",
+    "quantity": "QCTotal",
+    "value": 9.2213,
+    "lower": 8.77,
+    "upper": 9.85,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305",
+    "quantity": "QCSensible",
+    "value": 9.2213,
+    "lower": 8.77,
+    "upper": 9.85,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305",
+    "quantity": "QH1Reheat",
+    "value": 2.1942,
+    "lower": 1.92,
+    "upper": 2.46,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305",
+    "quantity": "QH2Reheat",
+    "value": 2.3757,
+    "lower": 2.02,
+    "upper": 2.71,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305-AE405",
+    "quantity": "QCTotal",
+    "value": 5.1131,
+    "lower": 4.55,
+    "upper": 5.75,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE305-AE405",
+    "quantity": "QCSensible",
+    "value": 5.1131,
+    "lower": 4.55,
+    "upper": 5.75,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE305",
+    "quantity": "QCTotal",
+    "value": 0.2883,
+    "lower": -0.15,
+    "upper": 0.79,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE305",
+    "quantity": "QCSensible",
+    "value": 0.2883,
+    "lower": -0.15,
+    "upper": 0.79,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE305",
+    "quantity": "QH1Reheat",
+    "value": -0.0083,
+    "lower": -0.11,
+    "upper": 0.11,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE305",
+    "quantity": "QH2Reheat",
+    "value": -0.0107,
+    "lower": -0.12,
+    "upper": 0.12,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE445",
+    "quantity": "QCTotal",
+    "value": 5.3575,
+    "lower": 4.76,
+    "upper": 6.01,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE345-AE445",
+    "quantity": "QCSensible",
+    "value": 5.3575,
+    "lower": 4.76,
+    "upper": 6.01,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306",
+    "quantity": "QCTotal",
+    "value": 14.5129,
+    "lower": 13.65,
+    "upper": 15.08,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306",
+    "quantity": "QCSensible",
+    "value": 8.7655,
+    "lower": 8.3,
+    "upper": 9.37,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306",
+    "quantity": "QH1Reheat",
+    "value": 2.2147,
+    "lower": 1.92,
+    "upper": 2.48,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306",
+    "quantity": "QH2Reheat",
+    "value": 2.4022,
+    "lower": 2.02,
+    "upper": 2.74,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306-AE406",
+    "quantity": "QCTotal",
+    "value": 6.0847,
+    "lower": 5.42,
+    "upper": 6.86,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE306-AE406",
+    "quantity": "QCSensible",
+    "value": 5.1719,
+    "lower": 4.64,
+    "upper": 5.73,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE306",
+    "quantity": "QCTotal",
+    "value": 6.2557,
+    "lower": 5.68,
+    "upper": 7.12,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE306",
+    "quantity": "QCSensible",
+    "value": -0.5174,
+    "lower": -0.91,
+    "upper": -0.01,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE306",
+    "quantity": "QH1Reheat",
+    "value": 0.0003,
+    "lower": -0.11,
+    "upper": 0.11,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE306",
+    "quantity": "QH2Reheat",
+    "value": 0.0004,
+    "lower": -0.12,
+    "upper": 0.12,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE426",
+    "quantity": "QCTotal",
+    "value": 11.8212,
+    "lower": 11.21,
+    "upper": 12.65,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE326-AE426",
+    "quantity": "QCSensible",
+    "value": 4.7004,
+    "lower": 4.27,
+    "upper": 5.31,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE401",
+    "quantity": "QHPreheat",
+    "value": 10.3477,
+    "lower": 9.75,
+    "upper": 10.77,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE401",
+    "quantity": "QH1Reheat",
+    "value": 4.5023,
+    "lower": 4.27,
+    "upper": 4.72,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE401",
+    "quantity": "QH2Reheat",
+    "value": 4.8998,
+    "lower": 4.63,
+    "upper": 5.12,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE405",
+    "quantity": "QCTotal",
+    "value": 4.1082,
+    "lower": 3.9,
+    "upper": 4.31,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE405",
+    "quantity": "QCSensible",
+    "value": 4.1082,
+    "lower": 3.9,
+    "upper": 4.31,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE405",
+    "quantity": "QH1Reheat",
+    "value": 0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE405",
+    "quantity": "QH2Reheat",
+    "value": 0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE445-AE405",
+    "quantity": "QCTotal",
+    "value": 0.0438,
+    "lower": -0.15,
+    "upper": 0.26,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE445-AE405",
+    "quantity": "QCSensible",
+    "value": 0.0438,
+    "lower": -0.15,
+    "upper": 0.26,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE406",
+    "quantity": "QCTotal",
+    "value": 8.4283,
+    "lower": 7.81,
+    "upper": 8.82,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE406",
+    "quantity": "QCSensible",
+    "value": 3.5936,
+    "lower": 3.45,
+    "upper": 3.82,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE406",
+    "quantity": "QH1Reheat",
+    "value": 0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE406",
+    "quantity": "QH2Reheat",
+    "value": 0,
+    "lower": 0.0,
+    "upper": 0.0,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE426-AE406",
+    "quantity": "QCTotal",
+    "value": 0.5192,
+    "lower": 0.2,
+    "upper": 1.02,
+    "inRange": true
+   },
+   {
+    "rangeCase": "AE426-AE406",
+    "quantity": "QCSensible",
+    "value": -0.0459,
+    "lower": -0.22,
+    "upper": 0.14,
+    "inRange": true
+   }
+  ]
+ },
+ "notSteady": {
+  "AE403": {
+   "maxRelDev": 0.010503139503460032,
+   "worst": "NODE 12:System Node Mass Flow Rate [kg/s](Hourly)",
+   "ok": false
+  },
+  "AE404": {
+   "maxRelDev": 0.009717059801676866,
+   "worst": "NODE 25:System Node Mass Flow Rate [kg/s](Hourly)",
+   "ok": false
+  },
+  "AE405": {
+   "maxRelDev": 0.0027663729153555076,
+   "worst": "RETURN FAN:Fan Electricity Rate [W](Hourly)",
+   "ok": false
+  },
+  "AE406": {
+   "maxRelDev": 0.0033161072259021494,
+   "worst": "SUPPLY FAN:Fan Electricity Rate [W](Hourly)",
+   "ok": false
+  },
+  "AE445": {
+   "maxRelDev": 0.016388784249409913,
+   "worst": "NODE 21:System Node Mass Flow Rate [kg/s](Hourly)",
+   "ok": false
+  }
+ },
+ "errors": [],
+ "results": {
+  "AE101": {
+   "coils": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QCLatent": 0,
+    "RHcco": 6.515059204934477,
+    "QH": 8.453800888645524
+   },
+   "zones": [
+    {
+     "QZHSensible": 2.9310000000000573,
+     "QZCSensible": 0,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 21.121885506543123
+    }
+   ],
+   "median24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QH": 8.45380088864561,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QH": 2.984279490192421e-13
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE103": {
+   "coils": {
+    "QCTotal": 0.7627921149167968,
+    "QCSensible": 0.7627921149167958,
+    "QCLatent": 9.992007221626409e-16,
+    "RHcco": 45.64067744126035,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999995524,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327608191151235
+    }
+   ],
+   "median24": {
+    "QCTotal": 0.7627921149166841,
+    "QCSensible": 0.7627921149166843,
+    "QH": 0,
+    "QCLatent": -2.220446049250313e-16
+   },
+   "spread24": {
+    "QCTotal": 3.667066650336892e-13,
+    "QCSensible": 3.667066650336892e-13,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE104": {
+   "coils": {
+    "QCTotal": 5.68268283945402,
+    "QCSensible": 3.499101070494746,
+    "QCLatent": 2.183581768959274,
+    "RHcco": 99.32751847570063,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.9309999999994885,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.878336550190454
+    }
+   ],
+   "median24": {
+    "QCTotal": 5.68268283918963,
+    "QCSensible": 3.4991010704955574,
+    "QH": 0,
+    "QCLatent": 2.183581768694072
+   },
+   "spread24": {
+    "QCTotal": 6.786908812728143e-10,
+    "QCSensible": 2.6409985309783224e-12,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE201": {
+   "coils": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QCLatent": 0,
+    "RHcco": 6.515059204934477,
+    "QH": 8.386649145788382
+   },
+   "zones": [
+    {
+     "QZHSensible": 2.9310000000000573,
+     "QZCSensible": 0,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 21.121885506543123
+    }
+   ],
+   "median24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QH": 8.386649145788466,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QH": 2.984279490192421e-13
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE203": {
+   "coils": {
+    "QCTotal": 0.8299432759491465,
+    "QCSensible": 0.8299432759491473,
+    "QCLatent": -7.771561172376096e-16,
+    "RHcco": 45.640663767893194,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999995484,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327613241130873
+    }
+   ],
+   "median24": {
+    "QCTotal": 0.829943275949024,
+    "QCSensible": 0.829943275949024,
+    "QH": 0,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 3.9468428525424315e-13,
+    "QCSensible": 3.943512183468556e-13,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE204": {
+   "coils": {
+    "QCTotal": 5.750450004360187,
+    "QCSensible": 3.5662579112586044,
+    "QCLatent": 2.1841920931015824,
+    "RHcco": 99.30808248044221,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.9310000000809207,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.878327743032308
+    }
+   ],
+   "median24": {
+    "QCTotal": 5.75045000413216,
+    "QCSensible": 3.566257911186961,
+    "QH": 0,
+    "QCLatent": 2.1841920929451994
+   },
+   "spread24": {
+    "QCTotal": 6.806306629414394e-10,
+    "QCSensible": 5.589593676802451e-09,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE205": {
+   "coils": {
+    "QCTotal": 1.9128978214425534,
+    "QCSensible": 1.912897821442554,
+    "QCLatent": -6.661338147750939e-16,
+    "RHcco": 44.119087752027404,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999999872,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327564750622486
+    }
+   ],
+   "median24": {
+    "QCTotal": 1.9128978214425534,
+    "QCSensible": 1.912897821442554,
+    "QH": 0,
+    "QCLatent": -6.661338147750939e-16
+   },
+   "spread24": {
+    "QCTotal": 1.922551007282891e-11,
+    "QCSensible": 1.922462189440921e-11,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE206": {
+   "coils": {
+    "QCTotal": 2.7196226298838413,
+    "QCSensible": 1.6968672035036516,
+    "QCLatent": 1.0227554263801897,
+    "RHcco": 99.50999902800302,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.464999999999837,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327709344107184
+    }
+   ],
+   "median24": {
+    "QCTotal": 2.7196226298548325,
+    "QCSensible": 1.696867203503488,
+    "QH": 0,
+    "QCLatent": 1.0227554263513445
+   },
+   "spread24": {
+    "QCTotal": 1.4526602143405398e-10,
+    "QCSensible": 6.512568262451168e-13,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE226": {
+   "coils": {
+    "QCTotal": 3.429084227095587,
+    "QCSensible": 1.5556425633077615,
+    "QCLatent": 1.8734416637878253,
+    "RHcco": 99.7331528417495,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.464999999999895,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327734870380826
+    }
+   ],
+   "median24": {
+    "QCTotal": 3.429084227095587,
+    "QCSensible": 1.5556425633077615,
+    "QH": 0,
+    "QCLatent": 1.8734416637878253
+   },
+   "spread24": {
+    "QCTotal": 3.561524408723926e-10,
+    "QCSensible": 0,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE245": {
+   "coils": {
+    "QCTotal": 2.2079249799705574,
+    "QCSensible": 2.2079249799705583,
+    "QCLatent": -8.881784197001252e-16,
+    "RHcco": 33.99528884829897,
+    "QH": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999998748,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327611770687387
+    }
+   ],
+   "median24": {
+    "QCTotal": 2.2079249799705574,
+    "QCSensible": 2.2079249799705583,
+    "QH": 0,
+    "QCLatent": -8.881784197001252e-16
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QH": 0
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE301": {
+   "coils": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QCLatent": 0,
+    "RHcco": 24.084232424533234,
+    "QHPreheat": 3.5497556733510502,
+    "QH1Reheat": 7.5088569290861615,
+    "QH2Reheat": 8.136101634268298
+   },
+   "zones": [
+    {
+     "QZHSensible": 2.931000000000204,
+     "QZCSensible": 0,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 21.13892935705169
+    },
+    {
+     "QZHSensible": 2.345000000000343,
+     "QZCSensible": 0,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 22.261018607077624
+    }
+   ],
+   "median24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 3.5497556733510502,
+    "QH1Reheat": 7.50885692908647,
+    "QH2Reheat": 8.13610163426881,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 1.3322676295501878e-15,
+    "QH1Reheat": 1.0729195309977513e-12,
+    "QH2Reheat": 1.7816859099184512e-12
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE303": {
+   "coils": {
+    "QCTotal": 6.517034178502658,
+    "QCSensible": 6.517034178502659,
+    "QCLatent": -8.881784197001252e-16,
+    "RHcco": 67.33975149334881,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.1955294693653564,
+    "QH2Reheat": 2.3774933338126605
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999999177,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.341136450499793
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.344999999999869,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.455359616761022
+    }
+   ],
+   "median24": {
+    "QCTotal": 6.517034178502658,
+    "QCSensible": 6.517034178502659,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.195529469365483,
+    "QH2Reheat": 2.377493333812857,
+    "QCLatent": -8.881784197001252e-16
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 0,
+    "QH1Reheat": 4.3787196091216174e-13,
+    "QH2Reheat": 6.838973831690964e-13
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE304": {
+   "coils": {
+    "QCTotal": 16.792875920165148,
+    "QCSensible": 10.17699154257406,
+    "QCLatent": 6.6158843775910885,
+    "RHcco": 99.32406174459678,
+    "QHPreheat": 0,
+    "QH1Reheat": 0.9424903678439283,
+    "QH2Reheat": 1.4561302454614422
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.931000000002143,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.892477123478287
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 3.5170000000028048,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 25.006926114845246
+    }
+   ],
+   "median24": {
+    "QCTotal": 16.792875920348198,
+    "QCSensible": 10.176991542784727,
+    "QHPreheat": 0,
+    "QH1Reheat": 0.9424903679439646,
+    "QH2Reheat": 1.4561302455787284,
+    "QCLatent": 6.6158843775634715
+   },
+   "spread24": {
+    "QCTotal": 5.216353571313448e-09,
+    "QCSensible": 5.683258308408767e-10,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.6429980426456723e-10,
+    "QH2Reheat": 3.091422673406896e-10
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE305": {
+   "coils": {
+    "QCTotal": 9.221262578416447,
+    "QCSensible": 9.221262578416447,
+    "QCLatent": 0,
+    "RHcco": 65.04797364607458,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.1941517772956196,
+    "QH2Reheat": 2.375717927514668
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649999999999117,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.341134750063354
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.344999999999887,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.4553558869396
+    }
+   ],
+   "median24": {
+    "QCTotal": 9.221262578416447,
+    "QCSensible": 9.221262578416447,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.1941517772957515,
+    "QH2Reheat": 2.3757179275148435,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 0,
+    "QH1Reheat": 4.631850458736153e-13,
+    "QH2Reheat": 6.084022174945858e-13
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE306": {
+   "coils": {
+    "QCTotal": 14.512940786122126,
+    "QCSensible": 8.765485562295707,
+    "QCLatent": 5.747455223826419,
+    "RHcco": 99.38491372225394,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.214706111669393,
+    "QH2Reheat": 2.4022286093215484
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4650000000000063,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.341159508372936
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.3449999999999083,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.45541066996453
+    }
+   ],
+   "median24": {
+    "QCTotal": 14.512940785884451,
+    "QCSensible": 8.765485562235547,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.2147061116444187,
+    "QH2Reheat": 2.4022286092927763,
+    "QCLatent": 5.747455223648904
+   },
+   "spread24": {
+    "QCTotal": 2.915919949941781e-09,
+    "QCSensible": 2.5421975635708804e-10,
+    "QHPreheat": 0,
+    "QH1Reheat": 1.1610090666636097e-10,
+    "QH2Reheat": 1.347633116211e-10
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE326": {
+   "coils": {
+    "QCTotal": 20.768684955378212,
+    "QCSensible": 8.248115099902735,
+    "QCLatent": 12.520569855475477,
+    "RHcco": 99.97418678323916,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.215051349274844,
+    "QH2Reheat": 2.402675048053264
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4650000000000987,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.341159898018596
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.344999999999981,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.45541155681146
+    }
+   ],
+   "median24": {
+    "QCTotal": 20.768684953220298,
+    "QCSensible": 8.248115099902735,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.2150513492791797,
+    "QH2Reheat": 2.402675048058228,
+    "QCLatent": 12.520569853317562
+   },
+   "spread24": {
+    "QCTotal": 2.1579147357897455e-09,
+    "QCSensible": 0,
+    "QHPreheat": 0,
+    "QH1Reheat": 7.009504088273388e-12,
+    "QH2Reheat": 8.959499808725013e-12
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE345": {
+   "coils": {
+    "QCTotal": 9.509598425699089,
+    "QCSensible": 9.509598425699089,
+    "QCLatent": 0,
+    "RHcco": 50.99432890048213,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.185825111395222,
+    "QH2Reheat": 2.364975145863658
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.46499999999984,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.341124694100063
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.344999999999801,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.455333569418094
+    }
+   ],
+   "median24": {
+    "QCTotal": 9.509598426202638,
+    "QCSensible": 9.509598426202636,
+    "QHPreheat": 0,
+    "QH1Reheat": 2.1858251116278584,
+    "QH2Reheat": 2.3649751461352144,
+    "QCLatent": 1.7763568394002505e-15
+   },
+   "spread24": {
+    "QCTotal": 2.014196809341229e-09,
+    "QCSensible": 2.0141950329843894e-09,
+    "QHPreheat": 0,
+    "QH1Reheat": 9.308935844387634e-10,
+    "QH2Reheat": 1.086512213532842e-09
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE401": {
+   "coils": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QCLatent": 0,
+    "RHcco": 4.144216455936283,
+    "QHPreheat": 10.347748523389134,
+    "QH1Reheat": 4.502308546449778,
+    "QH2Reheat": 4.899837491330904
+   },
+   "zones": [
+    {
+     "QZHSensible": 2.931000000000363,
+     "QZCSensible": 0,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 21.15250740963747
+    },
+    {
+     "QZHSensible": 2.345000000000337,
+     "QZCSensible": 0,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 22.262581316445555
+    }
+   ],
+   "median24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 10.347748523389134,
+    "QH1Reheat": 4.502308546450319,
+    "QH2Reheat": 4.899837491331408,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0,
+    "QCSensible": 0,
+    "QHPreheat": 0,
+    "QH1Reheat": 1.886490963443066e-12,
+    "QH2Reheat": 1.759481449425948e-12
+   },
+   "steady": {
+    "maxRelDev": 0,
+    "worst": null,
+    "ok": true
+   }
+  },
+  "AE403": {
+   "coils": {
+    "QCTotal": 1.4014423468705184,
+    "QCSensible": 1.4014423468705184,
+    "QCLatent": 0,
+    "RHcco": 55.02969732447825,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4662675343344285,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.32865102098939
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.34504289923702,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.436077802601012
+    }
+   ],
+   "median24": {
+    "QCTotal": 1.4011215401330752,
+    "QCSensible": 1.401121540133075,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 2.220446049250313e-16
+   },
+   "spread24": {
+    "QCTotal": 0.04052704617687253,
+    "QCSensible": 0.040527046176873194,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.010503139503460032,
+    "worst": "NODE 12:System Node Mass Flow Rate [kg/s](Hourly)",
+    "ok": false
+   }
+  },
+  "AE404": {
+   "coils": {
+    "QCTotal": 13.663744879942668,
+    "QCSensible": 7.407733435610561,
+    "QCLatent": 6.256011444332106,
+    "RHcco": 99.57454410551378,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.931849658578256,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.884756262874642
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 3.4962821849666277,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 25.13063259353715
+    }
+   ],
+   "median24": {
+    "QCTotal": 13.707063987227762,
+    "QCSensible": 7.427258155113529,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 6.279805832114233
+   },
+   "spread24": {
+    "QCTotal": 0.1426623931201565,
+    "QCSensible": 0.09892479726882186,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.009717059801676866,
+    "worst": "NODE 25:System Node Mass Flow Rate [kg/s](Hourly)",
+    "ok": false
+   }
+  },
+  "AE405": {
+   "coils": {
+    "QCTotal": 4.106195470924582,
+    "QCSensible": 4.1061954709245825,
+    "QCLatent": -8.881784197001252e-16,
+    "RHcco": 52.802092070763344,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4649942631253254,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.3265542054556
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.345061964782897,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.433690581226283
+    }
+   ],
+   "median24": {
+    "QCTotal": 4.108208942501538,
+    "QCSensible": 4.108208942501538,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0.11449183762807102,
+    "QCSensible": 0.11449183762807102,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.0027663729153555076,
+    "worst": "RETURN FAN:Fan Electricity Rate [W](Hourly)",
+    "ok": false
+   }
+  },
+  "AE406": {
+   "coils": {
+    "QCTotal": 8.429444930043354,
+    "QCSensible": 3.5949663352784125,
+    "QCLatent": 4.834478594764942,
+    "RHcco": 99.87339240609607,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4667036824454778,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.32823895780303
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.3451027806734976,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.434964657649815
+    }
+   ],
+   "median24": {
+    "QCTotal": 8.428275169672371,
+    "QCSensible": 3.593580438981707,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 4.834694730690664
+   },
+   "spread24": {
+    "QCTotal": 0.09618881924755662,
+    "QCSensible": 0.0652145159824391,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.0033161072259021494,
+    "worst": "SUPPLY FAN:Fan Electricity Rate [W](Hourly)",
+    "ok": false
+   }
+  },
+  "AE426": {
+   "coils": {
+    "QCTotal": 8.948892510883944,
+    "QCSensible": 3.548238190544832,
+    "QCLatent": 5.400654320339112,
+    "RHcco": 99.92592674797683,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4654718267310176,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.327432268153267
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.344850833635288,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.434108122195198
+    }
+   ],
+   "median24": {
+    "QCTotal": 8.947498571234789,
+    "QCSensible": 3.547692222542909,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 5.39980634869188
+   },
+   "spread24": {
+    "QCTotal": 0.1359824929864022,
+    "QCSensible": 0.053902208419751574,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.00046529548801088437,
+    "worst": "NODE 12:System Node Mass Flow Rate [kg/s](Hourly)",
+    "ok": true
+   }
+  },
+  "AE445": {
+   "coils": {
+    "QCTotal": 4.155131025304402,
+    "QCSensible": 4.155131025304401,
+    "QCLatent": 8.881784197001252e-16,
+    "RHcco": 49.465557768457984,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "zones": [
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 1.4653289365942692,
+     "QZLatent": 0.5861000000000001,
+     "Tz": 23.32708818679606
+    },
+    {
+     "QZHSensible": 0,
+     "QZCSensible": 2.3468686708156485,
+     "QZLatent": 0.8792000000000001,
+     "Tz": 24.436949376507638
+    }
+   ],
+   "median24": {
+    "QCTotal": 4.152057862736433,
+    "QCSensible": 4.152057862736433,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0,
+    "QCLatent": 0
+   },
+   "spread24": {
+    "QCTotal": 0.060309262528917884,
+    "QCSensible": 0.060309262528917884,
+    "QHPreheat": 0,
+    "QH1Reheat": 0,
+    "QH2Reheat": 0
+   },
+   "steady": {
+    "maxRelDev": 0.016388784249409913,
+    "worst": "NODE 21:System Node Mass Flow Rate [kg/s](Hourly)",
+    "ok": false
+   }
+  }
+ },
+ "generated": "2026-10-27T09:45:40"
+}

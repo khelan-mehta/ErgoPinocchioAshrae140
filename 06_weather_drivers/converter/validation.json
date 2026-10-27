@@ -1,0 +1,3304 @@
+{
+ "generated": "2026-10-27T16:52:54.653Z",
+ "wd": {
+  "WD100": {
+   "location": {
+    "ours": {
+     "city": "DENVER INTL AP",
+     "state": "CO",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "725650",
+     "lat": 39.833,
+     "lon": -104.65,
+     "tz": -7,
+     "elevation": 1650
+    },
+    "ref": {
+     "city": "Denver Intl AP",
+     "state": "CO",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "725650",
+     "lat": 39.833,
+     "lon": -104.65,
+     "tz": -7,
+     "elevation": 1650
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8756,
+     "of": 8760,
+     "maxAbs": 2,
+     "meanAbs": 0.0006,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7315,
+     "of": 8760,
+     "maxAbs": 1,
+     "meanAbs": 0.165,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 125794,
+     "meanAbs": 21542.3398,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5025,
+     "of": 8760,
+     "maxAbs": 102979,
+     "meanAbs": 16124.2856,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 64578,
+     "meanAbs": 7401.5789,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 9436,
+     "meanAbs": 1671.2862,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 681
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8754,
+     "of": 8760,
+     "maxAbs": 0.1,
+     "meanAbs": 0.0001,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8650,
+     "of": 8760,
+     "maxAbs": 310.5,
+     "meanAbs": 0.2013,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "WD200": {
+   "location": {
+    "ours": {
+     "city": "ATLANTA HARTSFIELD INTL AP",
+     "state": "GA",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "722190",
+     "lat": 33.633,
+     "lon": -84.433,
+     "tz": -5,
+     "elevation": 308
+    },
+    "ref": {
+     "city": "Atlanta-Hartsfield-Jackson Intl AP",
+     "state": "GA",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "722190",
+     "lat": 33.633,
+     "lon": -84.433,
+     "tz": -5,
+     "elevation": 308
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8715,
+     "of": 8760,
+     "maxAbs": 29,
+     "meanAbs": 0.0435,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7188,
+     "of": 8760,
+     "maxAbs": 1,
+     "meanAbs": 0.1795,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4249,
+     "of": 8760,
+     "maxAbs": 126185,
+     "meanAbs": 21893.1049,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 4707,
+     "of": 8760,
+     "maxAbs": 103052,
+     "meanAbs": 12399.5616,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4250,
+     "of": 8760,
+     "maxAbs": 61476,
+     "meanAbs": 9475.2258,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4250,
+     "of": 8760,
+     "maxAbs": 9423,
+     "meanAbs": 1639.0592,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 1243
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8424,
+     "of": 8760,
+     "maxAbs": 258.3,
+     "meanAbs": 0.6752,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "WD300": {
+   "location": {
+    "ours": {
+     "city": "Santiago Benitez Intl AP",
+     "state": "RM",
+     "country": "",
+     "source": "TMY3",
+     "wmo": "855740",
+     "lat": -33.393,
+     "lon": -70.786,
+     "tz": -4,
+     "elevation": 474
+    },
+    "ref": {
+     "city": "Santiago Benitez Intl AP",
+     "state": "RM",
+     "country": "CHL",
+     "source": "ISD-TMYx",
+     "wmo": "855740",
+     "lat": -33.393,
+     "lon": -70.786,
+     "tz": -4,
+     "elevation": 474
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7281,
+     "of": 8760,
+     "maxAbs": 20,
+     "meanAbs": 0.2471,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4407,
+     "of": 8760,
+     "maxAbs": 128700,
+     "meanAbs": 25636.1983,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5129,
+     "of": 8760,
+     "maxAbs": 63004,
+     "meanAbs": 14009.5006,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4407,
+     "of": 8760,
+     "maxAbs": 55756,
+     "meanAbs": 8664.8172,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4407,
+     "of": 8760,
+     "maxAbs": 9890,
+     "meanAbs": 2141.9701,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 938
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 7153,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 1607,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 45,
+     "meanAbs": 19.4543,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 0.4,
+     "meanAbs": 0.2004,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8601,
+     "of": 8760,
+     "maxAbs": 70,
+     "meanAbs": 0.5442,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "WD400": {
+   "location": {
+    "ours": {
+     "city": "BARROW W POST-W ROGERS ARPT [NSA - ARM]",
+     "state": "AK",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "700260",
+     "lat": 71.32,
+     "lon": -156.62,
+     "tz": -9,
+     "elevation": 10
+    },
+    "ref": {
+     "city": "Barrow-Post-Rogers Meml AP",
+     "state": "AK",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "700260",
+     "lat": 71.286,
+     "lon": -156.767,
+     "tz": -9,
+     "elevation": 10
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8687,
+     "of": 8760,
+     "maxAbs": 31,
+     "meanAbs": 0.0712,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7720,
+     "of": 8760,
+     "maxAbs": 1,
+     "meanAbs": 0.1187,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4326,
+     "of": 8760,
+     "maxAbs": 80493,
+     "meanAbs": 9118.8541,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5424,
+     "of": 8760,
+     "maxAbs": 87913,
+     "meanAbs": 3995.37,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4327,
+     "of": 8760,
+     "maxAbs": 43618,
+     "meanAbs": 5851.4081,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4327,
+     "of": 8760,
+     "maxAbs": 9390,
+     "meanAbs": 1532.2594,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 290
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8612,
+     "of": 8760,
+     "maxAbs": 11.7,
+     "meanAbs": 0.0396,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "WD500": {
+   "location": {
+    "ours": {
+     "city": "New Delhi Gandhi Intl AP",
+     "state": "DL",
+     "country": "",
+     "source": "TMY3",
+     "wmo": "421810",
+     "lat": 28.567,
+     "lon": 77.103,
+     "tz": 5.5,
+     "elevation": 236.8
+    },
+    "ref": {
+     "city": "New Delhi Gandhi Intl AP",
+     "state": "DL",
+     "country": "IND",
+     "source": "ISD-TMYx",
+     "wmo": "421810",
+     "lat": 28.567,
+     "lon": 77.103,
+     "tz": 5.5,
+     "elevation": 236.8
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7053,
+     "of": 8760,
+     "maxAbs": 39,
+     "meanAbs": 0.2727,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4384,
+     "of": 8760,
+     "maxAbs": 127496,
+     "meanAbs": 25779.6885,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5006,
+     "of": 8760,
+     "maxAbs": 91510,
+     "meanAbs": 12806.1623,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4384,
+     "of": 8760,
+     "maxAbs": 54668,
+     "meanAbs": 9081.9846,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4384,
+     "of": 8760,
+     "maxAbs": 9892,
+     "meanAbs": 2096.2332,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 1057
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 6446,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 2314,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 227,
+     "meanAbs": 58.5718,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 0.221,
+     "meanAbs": 0.1502,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 0.2,
+     "meanAbs": 0.2,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8677,
+     "of": 8760,
+     "maxAbs": 50,
+     "meanAbs": 0.0608,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "WD600": {
+   "location": {
+    "ours": {
+     "city": "DENVER INTL AP",
+     "state": "CO",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "725650",
+     "lat": 39.833,
+     "lon": -104.65,
+     "tz": -7,
+     "elevation": 1650
+    },
+    "ref": {
+     "city": "Denver Intl AP",
+     "state": "CO",
+     "country": "USA",
+     "source": "TMY3",
+     "wmo": "725650",
+     "lat": 39.833,
+     "lon": -104.65,
+     "tz": -7,
+     "elevation": 1650
+    }
+   },
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8756,
+     "of": 8760,
+     "maxAbs": 2,
+     "meanAbs": 0.0006,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7315,
+     "of": 8760,
+     "maxAbs": 1,
+     "meanAbs": 0.165,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 125794,
+     "meanAbs": 21542.3398,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5025,
+     "of": 8760,
+     "maxAbs": 102979,
+     "meanAbs": 16124.2856,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 64578,
+     "meanAbs": 7401.5789,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 9436,
+     "meanAbs": 1671.2862,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 681
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8754,
+     "of": 8760,
+     "maxAbs": 0.1,
+     "meanAbs": 0.0001,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 8650,
+     "of": 8760,
+     "maxAbs": 310.5,
+     "meanAbs": 0.2013,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    }
+   }
+  }
+ },
+ "tf": {
+  "vsWD100epw": {
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8756,
+     "of": 8760,
+     "maxAbs": 2,
+     "meanAbs": 0.0006,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 7315,
+     "of": 8760,
+     "maxAbs": 1,
+     "meanAbs": 0.165,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 4408,
+     "of": 8760,
+     "maxAbs": 61769,
+     "meanAbs": 2646.9074,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 5026,
+     "of": 8760,
+     "maxAbs": 97997,
+     "meanAbs": 6245.5696,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 4406,
+     "of": 8760,
+     "maxAbs": 30192,
+     "meanAbs": 807.4774,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 4879,
+     "of": 8760,
+     "maxAbs": 9014,
+     "meanAbs": 584.7234,
+     "missingOnlyInOurs": 25,
+     "missingOnlyInRef": 244
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8011,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 749,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 0,
+     "of": 8760,
+     "maxAbs": 0.22,
+     "meanAbs": 0.2033,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 6603,
+     "of": 8760,
+     "maxAbs": 34.5,
+     "meanAbs": 0.0556,
+     "missingOnlyInOurs": 1974,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 6648,
+     "of": 8760,
+     "maxAbs": 23,
+     "meanAbs": 0.1026,
+     "missingOnlyInOurs": 1974,
+     "missingOnlyInRef": 0
+    }
+   }
+  },
+  "vsOnebuildingEpw": {
+   "records": [
+    8760,
+    8760
+   ],
+   "timeAligned": true,
+   "fields": {
+    "db": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dp": {
+     "exact": 8649,
+     "of": 8760,
+     "maxAbs": 7.25,
+     "meanAbs": 0.0298,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "rh": {
+     "exact": 8649,
+     "of": 8760,
+     "maxAbs": 5,
+     "meanAbs": 0.0292,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "p": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etr": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "etrn": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ir": {
+     "exact": 112,
+     "of": 8760,
+     "maxAbs": 57,
+     "meanAbs": 18.6482,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dni": {
+     "exact": 8538,
+     "of": 8760,
+     "maxAbs": 192,
+     "meanAbs": 0.712,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhi": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ghIll": {
+     "exact": 8450,
+     "of": 8760,
+     "maxAbs": 58410,
+     "meanAbs": 901.8333,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dnIll": {
+     "exact": 8478,
+     "of": 8760,
+     "maxAbs": 97614,
+     "meanAbs": 1495.6217,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dhIll": {
+     "exact": 8451,
+     "of": 8760,
+     "maxAbs": 30096,
+     "meanAbs": 329.8486,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "zLum": {
+     "exact": 8452,
+     "of": 8760,
+     "maxAbs": 7119,
+     "meanAbs": 55.857,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "wd": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "ws": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "tsc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "osc": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "vis": {
+     "exact": 8011,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 749,
+     "missingOnlyInRef": 0
+    },
+    "ceil": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pwo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "pw": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "aod": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "snow": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "dsls": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "albedo": {
+     "exact": 8760,
+     "of": 8760,
+     "maxAbs": 0,
+     "meanAbs": 0,
+     "missingOnlyInOurs": 0,
+     "missingOnlyInRef": 0
+    },
+    "lpd": {
+     "exact": 6603,
+     "of": 8760,
+     "maxAbs": 34.5,
+     "meanAbs": 0.0556,
+     "missingOnlyInOurs": 1974,
+     "missingOnlyInRef": 0
+    },
+    "lpq": {
+     "exact": 6648,
+     "of": 8760,
+     "maxAbs": 23,
+     "meanAbs": 0.1026,
+     "missingOnlyInOurs": 1974,
+     "missingOnlyInRef": 0
+    }
+   }
+  }
+ },
+ "roundTrip": {
+  "lossless": true,
+  "fields": {
+   "db": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "dp": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "rh": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "p": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "etr": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "etrn": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "ghi": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "dni": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "dhi": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "ghIll": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "dnIll": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "dhIll": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "zLum": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "wd": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "ws": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "tsc": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "osc": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "vis": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "ceil": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "pw": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "aod": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "albedo": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "lpd": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   },
+   "lpq": {
+    "exact": 8760,
+    "of": 8760,
+    "maxAbs": 0,
+    "meanAbs": 0,
+    "missingOnlyInOurs": 0,
+    "missingOnlyInRef": 0
+   }
+  },
+  "derivedIR": {
+   "exact": 113,
+   "of": 8760,
+   "maxAbs": 57,
+   "meanAbs": 18.676,
+   "missingOnlyInOurs": 0,
+   "missingOnlyInRef": 0
+  }
+ },
+ "files": {
+  "GC/GC30a.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    10,
+    10
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    40,
+    40
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "GC/GC30b.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    10,
+    10
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    19.9,
+    19.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "GC/GC40a.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    2,
+    18
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    40,
+    40
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "GC/GC40b.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    2,
+    18
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    19.9,
+    19.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "GC/GC65b.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    10,
+    10
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    1,
+    1
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "GC/GC70b.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    2,
+    18
+   ],
+   "dp": [
+    -56.6,
+    -56.6
+   ],
+   "rh": [
+    0,
+    0
+   ],
+   "ws": [
+    1,
+    1
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "CE_a/CE100.TMY": {
+   "format": "tmy",
+   "records": 2160,
+   "location": {
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "12839",
+    "lat": 25.8,
+    "lon": -80.3,
+    "tz": -5,
+    "elevation": 2
+   },
+   "warnings": [],
+   "db": [
+    46.1,
+    46.1
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    16,
+    16
+   ],
+   "ws": [
+    0,
+    12.4
+   ],
+   "annual_kWh_m2": {
+    "ghi": 376.185,
+    "dni": 374.703,
+    "dhi": 148.589
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -0.15146809997531818,
+    "note": "tape LST agrees with A1.5 (median -0.2 min)",
+    "metInterpolated": 0,
+    "dhiDerived": 2160
+   },
+   "conservation": {
+    "ghi_in": 376188,
+    "ghi_out": 376185,
+    "dni_in": 374698,
+    "dni_out": 374703
+   }
+  },
+  "CE_a/CE100A.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    46.1,
+    46.1
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    16,
+    16
+   ],
+   "ws": [
+    0,
+    13.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1792.618,
+    "dni": 1504.922,
+    "dhi": 809.504
+   }
+  },
+  "CE_a/CE110.TMY": {
+   "format": "tmy",
+   "records": 2160,
+   "location": {
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "12839",
+    "lat": 25.8,
+    "lon": -80.3,
+    "tz": -5,
+    "elevation": 2
+   },
+   "warnings": [],
+   "db": [
+    29.4,
+    29.4
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    39,
+    39
+   ],
+   "ws": [
+    0,
+    12.4
+   ],
+   "annual_kWh_m2": {
+    "ghi": 376.185,
+    "dni": 374.703,
+    "dhi": 148.589
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -0.15146809997531818,
+    "note": "tape LST agrees with A1.5 (median -0.2 min)",
+    "metInterpolated": 0,
+    "dhiDerived": 2160
+   },
+   "conservation": {
+    "ghi_in": 376188,
+    "ghi_out": 376185,
+    "dni_in": 374698,
+    "dni_out": 374703
+   }
+  },
+  "CE_a/CE110A.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    29.4,
+    29.4
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    39,
+    39
+   ],
+   "ws": [
+    0,
+    13.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1792.618,
+    "dni": 1504.922,
+    "dhi": 809.504
+   }
+  },
+  "CE_a/CE165.TMY": {
+   "format": "tmy",
+   "records": 2160,
+   "location": {
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "12839",
+    "lat": 25.8,
+    "lon": -80.3,
+    "tz": -5,
+    "elevation": 2
+   },
+   "warnings": [],
+   "db": [
+    40.6,
+    40.6
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    21,
+    21
+   ],
+   "ws": [
+    0,
+    12.4
+   ],
+   "annual_kWh_m2": {
+    "ghi": 376.185,
+    "dni": 374.703,
+    "dhi": 148.589
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -0.15146809997531818,
+    "note": "tape LST agrees with A1.5 (median -0.2 min)",
+    "metInterpolated": 0,
+    "dhiDerived": 2160
+   },
+   "conservation": {
+    "ghi_in": 376188,
+    "ghi_out": 376185,
+    "dni_in": 374698,
+    "dni_out": 374703
+   }
+  },
+  "CE_a/CE165A.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    40.6,
+    40.6
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    21,
+    21
+   ],
+   "ws": [
+    0,
+    13.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1792.618,
+    "dni": 1504.922,
+    "dhi": 809.504
+   }
+  },
+  "CE_a/CE200.TMY": {
+   "format": "tmy",
+   "records": 2160,
+   "location": {
+    "city": "Miami",
+    "state": "FL",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "12839",
+    "lat": 25.8,
+    "lon": -80.3,
+    "tz": -5,
+    "elevation": 2
+   },
+   "warnings": [],
+   "db": [
+    35,
+    35
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    28,
+    28
+   ],
+   "ws": [
+    0,
+    12.4
+   ],
+   "annual_kWh_m2": {
+    "ghi": 376.185,
+    "dni": 374.703,
+    "dhi": 148.589
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -0.15146809997531818,
+    "note": "tape LST agrees with A1.5 (median -0.2 min)",
+    "metInterpolated": 0,
+    "dhiDerived": 2160
+   },
+   "conservation": {
+    "ghi_in": 376188,
+    "ghi_out": 376185,
+    "dni_in": 374698,
+    "dni_out": 374703
+   }
+  },
+  "CE_a/CE200A.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12839",
+    "city": "MIAMI",
+    "state": "FL",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 2,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    35,
+    35
+   ],
+   "dp": [
+    14,
+    14
+   ],
+   "rh": [
+    28,
+    28
+   ],
+   "ws": [
+    0,
+    13.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1792.618,
+    "dni": 1504.922,
+    "dhi": 809.504
+   }
+  },
+  "CE_b/CE300.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "12916",
+    "city": "NEW_ORLEANS",
+    "state": "LA",
+    "tz": -6,
+    "lat": 29.9833,
+    "lon": -90.25,
+    "elevation": 3,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    -4.4,
+    35
+   ],
+   "dp": [
+    -9.4,
+    26.7
+   ],
+   "rh": [
+    21,
+    100
+   ],
+   "ws": [
+    0,
+    13.9
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1680.691,
+    "dni": 1498.078,
+    "dhi": 726.432
+   }
+  },
+  "HE/HE100W.WY2": {
+   "format": "wyec2",
+   "records": 8760,
+   "location": {
+    "city": "Ottawa",
+    "state": "ON",
+    "country": "CAN",
+    "source": "WYEC2",
+    "wmo": "04772",
+    "lat": 45.32,
+    "lon": -75.67,
+    "tz": -5,
+    "elevation": 115
+   },
+   "warnings": [
+    "record 40 is stamped 1/2 hour 15, but the sequence says 1/2 hour 16 — re-stamped from the sequence"
+   ],
+   "db": [
+    -30,
+    -30
+   ],
+   "dp": [
+    -36.2,
+    -36.2
+   ],
+   "rh": [
+    52,
+    52
+   ],
+   "ws": [
+    0,
+    0
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "HE/HE120W.WY2": {
+   "format": "wyec2",
+   "records": 8760,
+   "location": {
+    "city": "Ottawa",
+    "state": "ON",
+    "country": "CAN",
+    "source": "WYEC2",
+    "wmo": "04772",
+    "lat": 45.32,
+    "lon": -75.67,
+    "tz": -5,
+    "elevation": 115
+   },
+   "warnings": [
+    "record 40 is stamped 1/2 hour 15, but the sequence says 1/2 hour 16 — re-stamped from the sequence"
+   ],
+   "db": [
+    0,
+    0
+   ],
+   "dp": [
+    -8.2,
+    -8.2
+   ],
+   "rh": [
+    50,
+    50
+   ],
+   "ws": [
+    0,
+    0
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "HE/HE130W.WY2": {
+   "format": "wyec2",
+   "records": 8760,
+   "location": {
+    "city": "Ottawa",
+    "state": "ON",
+    "country": "CAN",
+    "source": "WYEC2",
+    "wmo": "04772",
+    "lat": 45.32,
+    "lon": -75.67,
+    "tz": -5,
+    "elevation": 115
+   },
+   "warnings": [
+    "record 40 is stamped 1/2 hour 15, but the sequence says 1/2 hour 16 — re-stamped from the sequence"
+   ],
+   "db": [
+    20,
+    20
+   ],
+   "dp": [
+    10.4,
+    10.4
+   ],
+   "rh": [
+    54,
+    54
+   ],
+   "ws": [
+    0,
+    0
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "HE/HE140W.WY2": {
+   "format": "wyec2",
+   "records": 8760,
+   "location": {
+    "city": "Ottawa",
+    "state": "ON",
+    "country": "CAN",
+    "source": "WYEC2",
+    "wmo": "04772",
+    "lat": 45.32,
+    "lon": -75.67,
+    "tz": -5,
+    "elevation": 115
+   },
+   "warnings": [
+    "1 short stray line(s) ignored",
+    "record 40 is stamped 1/2 hour 15, but the sequence says 1/2 hour 16 — re-stamped from the sequence"
+   ],
+   "db": [
+    -20,
+    20
+   ],
+   "dp": [
+    -26.9,
+    10.5
+   ],
+   "rh": [
+    50,
+    55
+   ],
+   "ws": [
+    0,
+    0
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "HE/HE210W.WY2": {
+   "format": "wyec2",
+   "records": 8760,
+   "location": {
+    "city": "Ottawa",
+    "state": "ON",
+    "country": "CAN",
+    "source": "WYEC2",
+    "wmo": "04772",
+    "lat": 45.32,
+    "lon": -75.67,
+    "tz": -5,
+    "elevation": 115
+   },
+   "warnings": [],
+   "db": [
+    -25,
+    33
+   ],
+   "dp": [
+    -30.6,
+    24.9
+   ],
+   "rh": [
+    16,
+    100
+   ],
+   "ws": [
+    0,
+    18.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1338.166,
+    "dni": 1368.731,
+    "dhi": 600.117
+   }
+  },
+  "AE/AE101.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "00001",
+    "city": "SEA-LEVEL CASE 1",
+    "state": "XX",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 0,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    -29,
+    -29
+   ],
+   "dp": [
+    -29,
+    -29
+   ],
+   "rh": [
+    100,
+    100
+   ],
+   "ws": [
+    4.3,
+    4.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "AE/AE103.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "00003",
+    "city": "SEA-LEVEL CASE 3",
+    "state": "XX",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 0,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    15.5,
+    15.5
+   ],
+   "dp": [
+    -3,
+    -3
+   ],
+   "rh": [
+    27,
+    27
+   ],
+   "ws": [
+    4.3,
+    4.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "AE/AE104.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "00004",
+    "city": "SEA-LEVEL CASE 4",
+    "state": "XX",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 0,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    26.9,
+    26.9
+   ],
+   "dp": [
+    22.1,
+    22.1
+   ],
+   "rh": [
+    75,
+    75
+   ],
+   "ws": [
+    4.3,
+    4.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "AE/AE105.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "00005",
+    "city": "SEA-LEVEL CASE 5",
+    "state": "XX",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 0,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    24.9,
+    24.9
+   ],
+   "dp": [
+    2.4,
+    2.4
+   ],
+   "rh": [
+    23,
+    23
+   ],
+   "ws": [
+    4.3,
+    4.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "AE/AE106.TM2": {
+   "format": "tmy2",
+   "records": 8760,
+   "location": {
+    "wmo": "00006",
+    "city": "SEA-LEVEL CASE 6",
+    "state": "XX",
+    "tz": -5,
+    "lat": 25.8,
+    "lon": -80.2667,
+    "elevation": 0,
+    "country": "USA",
+    "source": "TMY2"
+   },
+   "warnings": [],
+   "db": [
+    23,
+    23
+   ],
+   "dp": [
+    20.9,
+    20.9
+   ],
+   "rh": [
+    88,
+    88
+   ],
+   "ws": [
+    4.3,
+    4.3
+   ],
+   "annual_kWh_m2": {
+    "ghi": 0,
+    "dni": 0,
+    "dhi": 0
+   }
+  },
+  "Class2/Colorad.TMY": {
+   "format": "tmy",
+   "records": 8760,
+   "location": {
+    "city": "Colorado Springs",
+    "state": "CO",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "93037",
+    "lat": 38.8,
+    "lon": -104.7,
+    "tz": -7,
+    "elevation": 1873
+   },
+   "warnings": [
+    "2 meteorological observation(s) mapped onto an already-filled hour (later one kept)"
+   ],
+   "db": [
+    -23.3,
+    34.4
+   ],
+   "dp": [
+    -27.2,
+    17.2
+   ],
+   "rh": [
+    2,
+    100
+   ],
+   "ws": [
+    0,
+    16.5
+   ],
+   "annual_kWh_m2": {
+    "ghi": 1842.088,
+    "dni": 2394.817,
+    "dhi": 478.127
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -29.968689513025765,
+    "note": "tape LST is the hour MIDPOINT (median -30.0 min; A1.5 \"add 30 minutes\" stations) — computed LST used",
+    "metInterpolated": 2,
+    "dhiDerived": 8760
+   },
+   "conservation": {
+    "ghi_in": 1842095,
+    "ghi_out": 1842088,
+    "dni_in": 2394839,
+    "dni_out": 2394817
+   }
+  },
+  "Class2/Lasvega.TMY": {
+   "format": "tmy",
+   "records": 8760,
+   "location": {
+    "city": "Las Vegas",
+    "state": "NV",
+    "country": "USA",
+    "source": "TMY",
+    "wmo": "23169",
+    "lat": 36.1,
+    "lon": -115.2,
+    "tz": -8,
+    "elevation": 663.9
+   },
+   "warnings": [],
+   "db": [
+    -5,
+    45
+   ],
+   "dp": [
+    -26.7,
+    22.2
+   ],
+   "rh": [
+    2,
+    97
+   ],
+   "ws": [
+    -0.1,
+    16
+   ],
+   "annual_kWh_m2": {
+    "ghi": 2166.936,
+    "dni": 2750.906,
+    "dhi": 492.925
+   },
+   "timeShift": {
+    "tapeLstMedianMin": -30.140144594090998,
+    "note": "tape LST is the hour MIDPOINT (median -30.1 min; A1.5 \"add 30 minutes\" stations) — computed LST used",
+    "metInterpolated": 0,
+    "dhiDerived": 8760
+   },
+   "conservation": {
+    "ghi_in": 2166947,
+    "ghi_out": 2166936,
+    "dni_in": 2750922,
+    "dni_out": 2750906
+   }
+  }
+ }
+}

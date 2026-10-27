@@ -1,0 +1,158 @@
+[36mvite v5.4.21 [32mbuilding for production...[36m[39m
+transforming...
+[32m✓[39m 1535 modules transformed.
+rendering chunks...
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/pageRegions.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/docs.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/docs.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/routes/comcheck.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/sheets.js, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/stages/insights.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/brain/useBrain.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/stages/index.js, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/osapp/kernel.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/EpWorkspace.jsx but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/fields/studio.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/macros/studio.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/hvacSource.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/StudioHvacPanel.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/idfProject.js, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/siteImport/index.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/macros/weather.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/macros/surface.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/edits/siteEdits.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/site/Site2DEditor.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/site/SiteTab.jsx, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140ReportTF.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140ReportExport.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140AppReport.js, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140ReportET.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140ReportExport.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/compliance/std140AppReport.js, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/applyOps.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/EpWorkspace.jsx but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/agent/AgentLayer.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/hil/apply.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/parametric.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/scheduleMatch.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/applyStage.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/FloatingChat.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/HvacEditor.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/LoadsEditor.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PromptBar.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/RenewablesEditor.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/ScheduleEditor.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/results/EcmStudyTab.jsx, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/hil/uploads.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/bridge.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/pinocchio/ui/PinocchioHost.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/FloatingChat.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/PromptBar.jsx, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/product/hil/HilHost.jsx, dynamic import will not move module into another chunk.
+[39m
+[1m[33m[plugin:vite:reporter][39m[22m [33m[plugin vite:reporter] 
+(!) C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/doe2/sizing.js is dynamically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/doe2/doe2Api.js but also statically imported by C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/doe2/airVav.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/doe2/dualDuct.js, C:/Users/NG/Desktop/GVC/pinocchio/pinocchio-ep/src/lib/doe2/zonal.js, dynamic import will not move module into another chunk.
+[39m
+computing gzip size...
+[2mdist/[22m[32mindex.html                                    [39m[1m[2m    7.07 kB[22m[1m[22m[2m │ gzip:   2.48 kB[22m
+[2mdist/[22m[32massets/inter-latin-400-normal-C38fXH4l.woff2  [39m[1m[2m   23.66 kB[22m[1m[22m
+[2mdist/[22m[32massets/inter-latin-700-normal-Yt3aPRUw.woff2  [39m[1m[2m   24.36 kB[22m[1m[22m
+[2mdist/[22m[32massets/inter-latin-800-normal-BYj_oED-.woff2  [39m[1m[2m   24.40 kB[22m[1m[22m
+[2mdist/[22m[32massets/inter-latin-600-normal-LgqL8muc.woff2  [39m[1m[2m   24.45 kB[22m[1m[22m
+[2mdist/[22m[32massets/pdf.worker.min-yatZIOMy.mjs            [39m[1m[2m1,375.84 kB[22m[1m[22m
+[2mdist/[22m[35massets/EarlyAccess-D4uw40h9.css               [39m[1m[2m    5.78 kB[22m[1m[22m[2m │ gzip:   1.73 kB[22m
+[2mdist/[22m[35massets/index-BmICXBT4.css                     [39m[1m[2m    7.79 kB[22m[1m[22m[2m │ gzip:   2.61 kB[22m
+[2mdist/[22m[35massets/ProjectStep-BznsCvLi.css               [39m[1m[2m   12.65 kB[22m[1m[22m[2m │ gzip:   3.00 kB[22m
+[2mdist/[22m[35massets/ParametricDashboard-BvQrSJhD.css       [39m[1m[2m   13.05 kB[22m[1m[22m[2m │ gzip:   3.23 kB[22m
+[2mdist/[22m[35massets/StudioRoute-Qiqj6DPf.css               [39m[1m[2m   18.54 kB[22m[1m[22m[2m │ gzip:   4.49 kB[22m
+[2mdist/[22m[35massets/DaylightTab-CemP2KvS.css               [39m[1m[2m   19.55 kB[22m[1m[22m[2m │ gzip:   4.41 kB[22m
+[2mdist/[22m[35massets/EpWorkspace-C6RREf0p.css               [39m[1m[2m   22.88 kB[22m[1m[22m[2m │ gzip:   5.34 kB[22m
+[2mdist/[22m[35massets/JarvisRail-CWUMeNJb.css                [39m[1m[2m   35.86 kB[22m[1m[22m[2m │ gzip:   7.77 kB[22m
+[2mdist/[22m[36massets/zoneConditioning-BYscF9Ri.js           [39m[1m[2m    0.23 kB[22m[1m[22m[2m │ gzip:   0.19 kB[22m
+[2mdist/[22m[36massets/IdfTag-BAR1X5Fg.js                     [39m[1m[2m    0.66 kB[22m[1m[22m[2m │ gzip:   0.45 kB[22m
+[2mdist/[22m[36massets/listWindow-Df_x8214.js                 [39m[1m[2m    1.13 kB[22m[1m[22m[2m │ gzip:   0.66 kB[22m
+[2mdist/[22m[36massets/projectFiles-n9YOUM1e.js               [39m[1m[2m    1.19 kB[22m[1m[22m[2m │ gzip:   0.72 kB[22m
+[2mdist/[22m[36massets/Site3D-Bd2Sx9IC.js                     [39m[1m[2m    1.25 kB[22m[1m[22m[2m │ gzip:   0.78 kB[22m
+[2mdist/[22m[36massets/docRehydrate-Ce1sx_Bq.js               [39m[1m[2m    1.65 kB[22m[1m[22m[2m │ gzip:   0.81 kB[22m
+[2mdist/[22m[36massets/focusCamera-C9orIBnB.js                [39m[1m[2m    1.67 kB[22m[1m[22m[2m │ gzip:   0.89 kB[22m
+[2mdist/[22m[36massets/InsightsTab-B5ki0xWG.js                [39m[1m[2m    1.80 kB[22m[1m[22m[2m │ gzip:   0.92 kB[22m
+[2mdist/[22m[36massets/reducedMotion-C54d1WNu.js              [39m[1m[2m    2.30 kB[22m[1m[22m[2m │ gzip:   1.18 kB[22m
+[2mdist/[22m[36massets/dxfZones-DwjX0Dsf.js                   [39m[1m[2m    2.83 kB[22m[1m[22m[2m │ gzip:   1.35 kB[22m
+[2mdist/[22m[36massets/Blob3D-CTKrvcIZ.js                     [39m[1m[2m    3.03 kB[22m[1m[22m[2m │ gzip:   1.64 kB[22m
+[2mdist/[22m[36massets/FactsTable-Ct-u1o1r.js                 [39m[1m[2m    3.14 kB[22m[1m[22m[2m │ gzip:   1.29 kB[22m
+[2mdist/[22m[36massets/EarlyAccessScene-B8m3T0h_.js           [39m[1m[2m    3.17 kB[22m[1m[22m[2m │ gzip:   1.46 kB[22m
+[2mdist/[22m[36massets/history-BwZyZNR-.js                    [39m[1m[2m    3.32 kB[22m[1m[22m[2m │ gzip:   1.46 kB[22m
+[2mdist/[22m[36massets/docInventory-ue_7LR2h.js               [39m[1m[2m    3.98 kB[22m[1m[22m[2m │ gzip:   2.01 kB[22m
+[2mdist/[22m[36massets/docImages-rk8HDRty.js                  [39m[1m[2m    4.07 kB[22m[1m[22m[2m │ gzip:   1.64 kB[22m
+[2mdist/[22m[36massets/ZoneDaylight3D-DoOJyWPp.js             [39m[1m[2m    4.34 kB[22m[1m[22m[2m │ gzip:   1.94 kB[22m
+[2mdist/[22m[36massets/FilesTab-7DeRdXdu.js                   [39m[1m[2m    4.50 kB[22m[1m[22m[2m │ gzip:   1.89 kB[22m
+[2mdist/[22m[36massets/index-BeVrpgiw.js                      [39m[1m[2m    4.63 kB[22m[1m[22m[2m │ gzip:   2.30 kB[22m
+[2mdist/[22m[36massets/DaylightViewer3D-CV7-Hi0w.js           [39m[1m[2m    5.00 kB[22m[1m[22m[2m │ gzip:   2.30 kB[22m
+[2mdist/[22m[36massets/ZoneSurface3D-Dk9B7MH9.js              [39m[1m[2m    5.10 kB[22m[1m[22m[2m │ gzip:   2.39 kB[22m
+[2mdist/[22m[36massets/SourcePeek-DxXzNLjS.js                 [39m[1m[2m    5.11 kB[22m[1m[22m[2m │ gzip:   2.39 kB[22m
+[2mdist/[22m[36massets/SheetModel3D-KkaqeCdR.js               [39m[1m[2m    5.19 kB[22m[1m[22m[2m │ gzip:   2.35 kB[22m
+[2mdist/[22m[36massets/DrawingGuide-DAZmtEoe.js               [39m[1m[2m    5.24 kB[22m[1m[22m[2m │ gzip:   2.48 kB[22m
+[2mdist/[22m[36massets/kernelModule-C9JfrAjb.js               [39m[1m[2m    5.70 kB[22m[1m[22m[2m │ gzip:   2.71 kB[22m
+[2mdist/[22m[36massets/ftf-gXpPsH56.js                        [39m[1m[2m    5.76 kB[22m[1m[22m[2m │ gzip:   2.86 kB[22m
+[2mdist/[22m[36massets/ProvenanceChip-CtZqJIxy.js             [39m[1m[2m    5.95 kB[22m[1m[22m[2m │ gzip:   2.63 kB[22m
+[2mdist/[22m[36massets/LcaModal-69S4rvh2.js                   [39m[1m[2m    5.99 kB[22m[1m[22m[2m │ gzip:   2.51 kB[22m
+[2mdist/[22m[36massets/scene3d-B8MuLcio.js                    [39m[1m[2m    6.07 kB[22m[1m[22m[2m │ gzip:   2.74 kB[22m
+[2mdist/[22m[36massets/TrialGate-I6EJJTh_.js                  [39m[1m[2m    6.23 kB[22m[1m[22m[2m │ gzip:   2.70 kB[22m
+[2mdist/[22m[36massets/daylightRequest-DCNegQ9Q.js            [39m[1m[2m    6.31 kB[22m[1m[22m[2m │ gzip:   2.82 kB[22m
+[2mdist/[22m[36massets/PlenumEditor-BAuv82dD.js               [39m[1m[2m    6.82 kB[22m[1m[22m[2m │ gzip:   2.66 kB[22m
+[2mdist/[22m[36massets/miniAgentChat-DDX-jntb.js              [39m[1m[2m    6.93 kB[22m[1m[22m[2m │ gzip:   3.28 kB[22m
+[2mdist/[22m[36massets/ReadOnlyTabs-CnLOolPw.js               [39m[1m[2m    7.01 kB[22m[1m[22m[2m │ gzip:   2.13 kB[22m
+[2mdist/[22m[36massets/Cookies-DMLIuxzV.js                    [39m[1m[2m    7.07 kB[22m[1m[22m[2m │ gzip:   2.65 kB[22m
+[2mdist/[22m[36massets/VersionsTab-CheAsDOE.js                [39m[1m[2m    7.33 kB[22m[1m[22m[2m │ gzip:   2.69 kB[22m
+[2mdist/[22m[36massets/board-CIKpIpPS.js                      [39m[1m[2m    7.54 kB[22m[1m[22m[2m │ gzip:   3.37 kB[22m
+[2mdist/[22m[36massets/PeopleTab-CE0B5PWQ.js                  [39m[1m[2m    7.73 kB[22m[1m[22m[2m │ gzip:   2.74 kB[22m
+[2mdist/[22m[36massets/NewProject-9oqkNvh5.js                 [39m[1m[2m    8.03 kB[22m[1m[22m[2m │ gzip:   3.16 kB[22m
+[2mdist/[22m[36massets/ChatInsights-Ca84fF_8.js               [39m[1m[2m    8.29 kB[22m[1m[22m[2m │ gzip:   2.84 kB[22m
+[2mdist/[22m[36massets/DxfImport-tWPRZ-jy.js                  [39m[1m[2m    8.66 kB[22m[1m[22m[2m │ gzip:   3.63 kB[22m
+[2mdist/[22m[36massets/BaselineInfo-D5caiZzb.js               [39m[1m[2m    9.17 kB[22m[1m[22m[2m │ gzip:   3.98 kB[22m
+[2mdist/[22m[36massets/aiField-DnPLL0GF.js                    [39m[1m[2m    9.23 kB[22m[1m[22m[2m │ gzip:   3.40 kB[22m
+[2mdist/[22m[36massets/AccountData-Dhgq6Zwx.js                [39m[1m[2m    9.29 kB[22m[1m[22m[2m │ gzip:   3.42 kB[22m
+[2mdist/[22m[36massets/AiSettings-i3KNkyw4.js                 [39m[1m[2m   10.46 kB[22m[1m[22m[2m │ gzip:   4.18 kB[22m
+[2mdist/[22m[36massets/GroupsEditor-Dx9izBZH.js               [39m[1m[2m   11.39 kB[22m[1m[22m[2m │ gzip:   3.86 kB[22m
+[2mdist/[22m[36massets/docExtract-B_pjBTUH.js                 [39m[1m[2m   11.79 kB[22m[1m[22m[2m │ gzip:   5.53 kB[22m
+[2mdist/[22m[36massets/HilReview-DYP0ysif.js                  [39m[1m[2m   13.62 kB[22m[1m[22m[2m │ gzip:   5.01 kB[22m
+[2mdist/[22m[36massets/IdfObjectsEditor-D_qx5gSx.js           [39m[1m[2m   14.54 kB[22m[1m[22m[2m │ gzip:   5.26 kB[22m
+[2mdist/[22m[36massets/ProjectSpace-DAXDKcAp.js               [39m[1m[2m   14.72 kB[22m[1m[22m[2m │ gzip:   5.10 kB[22m
+[2mdist/[22m[36massets/ModelViewer-DjFUV_gC.js                [39m[1m[2m   15.14 kB[22m[1m[22m[2m │ gzip:   5.72 kB[22m
+[2mdist/[22m[36massets/EarlyAccess-v3BNWHr1.js                [39m[1m[2m   15.31 kB[22m[1m[22m[2m │ gzip:   4.85 kB[22m
+[2mdist/[22m[36massets/Terms-BxSi6EtO.js                      [39m[1m[2m   15.33 kB[22m[1m[22m[2m │ gzip:   5.52 kB[22m
+[2mdist/[22m[36massets/About-DxmjH00c.js                      [39m[1m[2m   15.55 kB[22m[1m[22m[2m │ gzip:   5.08 kB[22m
+[2mdist/[22m[36massets/Inspector-BOtdzXl-.js                  [39m[1m[2m   15.89 kB[22m[1m[22m[2m │ gzip:   5.30 kB[22m
+[2mdist/[22m[36massets/CostRoiTab-rWhNWWap.js                 [39m[1m[2m   16.80 kB[22m[1m[22m[2m │ gzip:   6.14 kB[22m
+[2mdist/[22m[36massets/ImportedSchedulesView-CcHUxiba.js      [39m[1m[2m   17.23 kB[22m[1m[22m[2m │ gzip:   5.44 kB[22m
+[2mdist/[22m[36massets/ReviewEditor-BeZxFkUv.js               [39m[1m[2m   17.73 kB[22m[1m[22m[2m │ gzip:   6.18 kB[22m
+[2mdist/[22m[36massets/RenewablesEditor-COHB1tIW.js           [39m[1m[2m   19.39 kB[22m[1m[22m[2m │ gzip:   6.56 kB[22m
+[2mdist/[22m[36massets/Privacy-CJL48TeC.js                    [39m[1m[2m   21.07 kB[22m[1m[22m[2m │ gzip:   7.30 kB[22m
+[2mdist/[22m[36massets/rules-xy94iu9C.js                      [39m[1m[2m   21.22 kB[22m[1m[22m[2m │ gzip:   8.30 kB[22m
+[2mdist/[22m[36massets/Brief-BGpAE75n.js                      [39m[1m[2m   23.34 kB[22m[1m[22m[2m │ gzip:   7.53 kB[22m
+[2mdist/[22m[36massets/HvacImportedView-QEED4vn-.js           [39m[1m[2m   23.34 kB[22m[1m[22m[2m │ gzip:   7.30 kB[22m
+[2mdist/[22m[36massets/EcmStudyTab-D0q-NSto.js                [39m[1m[2m   23.78 kB[22m[1m[22m[2m │ gzip:   8.26 kB[22m
+[2mdist/[22m[36massets/LoadsEditor-CEmSpEi-.js                [39m[1m[2m   23.85 kB[22m[1m[22m[2m │ gzip:   8.17 kB[22m
+[2mdist/[22m[36massets/JarvisRail-DC33zQ6I.js                 [39m[1m[2m   23.97 kB[22m[1m[22m[2m │ gzip:   7.63 kB[22m
+[2mdist/[22m[36massets/StepHelp-D63XC5dL.js                   [39m[1m[2m   25.73 kB[22m[1m[22m[2m │ gzip:  10.12 kB[22m
+[2mdist/[22m[36massets/SiteTab-DijgDcmn.js                    [39m[1m[2m   27.86 kB[22m[1m[22m[2m │ gzip:  10.17 kB[22m
+[2mdist/[22m[36massets/KnownProductsBrowser-Dplvnp7J.js       [39m[1m[2m   30.22 kB[22m[1m[22m[2m │ gzip:   9.89 kB[22m
+[2mdist/[22m[36massets/ScheduleEditor-BMlUHBdR.js             [39m[1m[2m   33.06 kB[22m[1m[22m[2m │ gzip:  11.00 kB[22m
+[2mdist/[22m[36massets/ProductPicker-D5uWXHT3.js              [39m[1m[2m   33.21 kB[22m[1m[22m[2m │ gzip:  11.47 kB[22m
+[2mdist/[22m[36massets/ProjectStep-DuU77Hot.js                [39m[1m[2m   34.72 kB[22m[1m[22m[2m │ gzip:  12.08 kB[22m
+[2mdist/[22m[36massets/KnownProducts-7Ms8SPP9.js              [39m[1m[2m   35.26 kB[22m[1m[22m[2m │ gzip:  12.45 kB[22m
+[2mdist/[22m[36massets/KnowledgeBase-BgROVpfS.js              [39m[1m[2m   35.35 kB[22m[1m[22m[2m │ gzip:  11.55 kB[22m
+[2mdist/[22m[36massets/ZoneEditorFull-BlMaEqcG.js             [39m[1m[2m   36.20 kB[22m[1m[22m[2m │ gzip:  12.07 kB[22m
+[2mdist/[22m[36massets/inventoryClient-B966_uY0.js            [39m[1m[2m   37.58 kB[22m[1m[22m[2m │ gzip:  12.75 kB[22m
+[2mdist/[22m[36massets/Licenses-gSj2MeTv.js                   [39m[1m[2m   39.98 kB[22m[1m[22m[2m │ gzip:   9.05 kB[22m
+[2mdist/[22m[36massets/SpreadGrid-CARSd_se.js                 [39m[1m[2m   40.16 kB[22m[1m[22m[2m │ gzip:  14.37 kB[22m
+[2mdist/[22m[36massets/HvacEditor-CLdhf60m.js                 [39m[1m[2m   40.45 kB[22m[1m[22m[2m │ gzip:  12.31 kB[22m
+[2mdist/[22m[36massets/dxfUnderlay-DpCP_pbo.js                [39m[1m[2m   41.07 kB[22m[1m[22m[2m │ gzip:  14.45 kB[22m
+[2mdist/[22m[36massets/vendor-socket-SYmKJpIj.js              [39m[1m[2m   41.61 kB[22m[1m[22m[2m │ gzip:  13.03 kB[22m
+[2mdist/[22m[36massets/WorkflowPage-CL6Jit93.js               [39m[1m[2m   47.41 kB[22m[1m[22m[2m │ gzip:  13.02 kB[22m
+[2mdist/[22m[36massets/ParametricDashboard-Db4Jq2Hh.js        [39m[1m[2m   49.64 kB[22m[1m[22m[2m │ gzip:  17.16 kB[22m
+[2mdist/[22m[36massets/ResultsView-B8OeOkEW.js                [39m[1m[2m   53.99 kB[22m[1m[22m[2m │ gzip:  16.20 kB[22m
+[2mdist/[22m[36massets/FloatingChat-B-d4zMmW.js               [39m[1m[2m   55.29 kB[22m[1m[22m[2m │ gzip:  20.63 kB[22m
+[2mdist/[22m[36massets/EnvelopeEditor-HwJHD4WR.js             [39m[1m[2m   58.90 kB[22m[1m[22m[2m │ gzip:  17.94 kB[22m
+[2mdist/[22m[36massets/DocInsights-DAkkEDKD.js                [39m[1m[2m   68.02 kB[22m[1m[22m[2m │ gzip:  22.39 kB[22m
+[2mdist/[22m[36massets/index-B2ryjh2w.js                      [39m[1m[2m   75.82 kB[22m[1m[22m[2m │ gzip:  27.83 kB[22m
+[2mdist/[22m[36massets/TutorialHost-DHHZnq6m.js               [39m[1m[2m   76.37 kB[22m[1m[22m[2m │ gzip:  27.61 kB[22m
+[2mdist/[22m[36massets/DaylightTab-BMWspFfi.js                [39m[1m[2m   76.56 kB[22m[1m[22m[2m │ gzip:  26.63 kB[22m
+[2mdist/[22m[36massets/HvacStudio-B3Jv5-Qm.js                 [39m[1m[2m   91.66 kB[22m[1m[22m[2m │ gzip:  28.42 kB[22m
+[2mdist/[22m[36massets/ReportBuilder-l84QOs0A.js              [39m[1m[2m   92.43 kB[22m[1m[22m[2m │ gzip:  32.79 kB[22m
+[2mdist/[22m[36massets/index-Dv65ODXq.js                      [39m[1m[2m  135.76 kB[22m[1m[22m[2m │ gzip:  47.55 kB[22m
+[2mdist/[22m[36massets/PlanEditor-D6rhpbcM.js                 [39m[1m[2m  147.86 kB[22m[1m[22m[2m │ gzip:  48.90 kB[22m
+[2mdist/[22m[36massets/StudioRoute-BMVOdlvQ.js                [39m[1m[2m  154.86 kB[22m[1m[22m[2m │ gzip:  40.44 kB[22m
+[2mdist/[22m[36massets/vendor-react-CVBlM-jw.js               [39m[1m[2m  170.29 kB[22m[1m[22m[2m │ gzip:  55.83 kB[22m
+[2mdist/[22m[36massets/PinocchioHost-DkDYcWbp.js              [39m[1m[2m  203.68 kB[22m[1m[22m[2m │ gzip:  75.30 kB[22m
+[2mdist/[22m[36massets/vendor-konva-ChLrc6kf.js               [39m[1m[2m  294.48 kB[22m[1m[22m[2m │ gzip:  89.85 kB[22m
+[2mdist/[22m[36massets/vendor-pdfjs-C5e2cN2Z.js               [39m[1m[2m  334.22 kB[22m[1m[22m[2m │ gzip:  98.47 kB[22m
+[2mdist/[22m[36massets/xlsx-BuJx8oN_.js                       [39m[1m[2m  499.36 kB[22m[1m[22m[2m │ gzip: 163.09 kB[22m
+[2mdist/[22m[36massets/vendor-three-FGypadCo.js               [39m[1m[2m  876.10 kB[22m[1m[22m[2m │ gzip: 234.19 kB[22m
+[2mdist/[22m[36massets/iddFull-oCpOOEXc.js                    [39m[1m[2m  969.03 kB[22m[1m[22m[2m │ gzip: 104.95 kB[22m
+[2mdist/[22m[36massets/EpWorkspace-DTH1XoFE.js                [39m[1m[2m2,527.26 kB[22m[1m[22m[2m │ gzip: 670.61 kB[22m
+[2mdist/[22m[36massets/inventory-snapshot-BJwZeJG_.js         [39m[1m[2m2,873.07 kB[22m[1m[22m[2m │ gzip: 345.10 kB[22m
+[2mdist/[22m[36massets/fieldEdit-BoWFu7rw.js                  [39m[1m[33m4,935.07 kB[39m[22m[2m │ gzip: 709.41 kB[22m
+[33m
+(!) Some chunks are larger than 3000 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 22.74s[39m
+exit 0

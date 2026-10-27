@@ -1,0 +1,459 @@
+MODELING NOTES FOR ASHRAE STANDARD 140
+
+Test section: 7 - Building thermal envelope and fabric load tests (Section 7.2)
+Software: Pinocchio-EP 1.0.0+b0c9cf1.dirty
+Date of results: 2026-10-27
+
+All cases were entered through the program's project data and input forms
+  (Geometry, Envelope with exact material layers and layered glazing, Inspector
+  window shading, Surface heat transfer, Schedules, Internal loads, HVAC Quick
+  ideal-loads system with zone thermostats, Analysis options, All model objects
+  for one schedule) and written by the program's own IDF export; inputs and
+  outputs are archived with this report.
+
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+
+1. SOFTWARE VENDOR:
+   ERGO Energy LLP (Pinocchio-EP); calculation engine EnergyPlus 26.1.0 (build
+     6f2e40d102), unmodified
+
+2. SOFTWARE NAME:
+   Pinocchio-EP
+
+3. SOFTWARE VERSION (unique software version identifier):
+   1.0.0+b0c9cf1.dirty
+
+4. OPERATING SYSTEM REQUIREMENTS:
+   Web application: any OS with a current Chromium, Firefox or Safari browser.
+     Simulation server: Linux (Docker) running the official EnergyPlus 26.1.0
+     build; the same build for Windows x86_64 was used for these runs.
+
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION:
+   Browser: none (web app). Server: about 2 GB (EnergyPlus 26.1 + application).
+
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION:
+   Browser: 4 GB. Server: 2 GB per concurrent simulation.
+
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS:
+   1280 x 800 or larger.
+
+8. OTHER HARDWARE OR SOFTWARE-RELATED REQUIREMENTS:
+   None.
+
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+
+NOTE 1 - Standard 140 / validation project profile
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated:
+    Program-side assumptions the test specification excludes (daylight saving,
+      holidays, automatic loads, latent removal) and the interior solar
+      distribution method.
+
+1.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+1.2.1 Normal (realistic defaults)
+        Physical Meaning: Pinocchio-EP's default for design projects:
+          weather-file DST and holidays honoured, FullExterior solar
+          distribution, ideal loads with constant-SHR dehumidification,
+          automatic People/Lights/Equipment/Infiltration from the space type.
+
+1.2.2 Standard 140 / validation: runperiod
+        Physical Meaning: RunPeriod: Use Weather File Daylight Saving Period =
+          No, Use Weather File Holidays and Special Days = No, Apply Weekend
+          Holiday Rule = No; any RunPeriodControl:DaylightSavingTime /
+          RunPeriodControl:SpecialDays object is dropped. (5.1.1.1 Time
+          convention - "Daylight savings time or holidays shall not be used for
+          scheduling.")
+
+1.2.3 Standard 140 / validation: solar
+        Physical Meaning: Building > Solar Distribution =
+          FullInteriorAndExterior (...WithReflections kept when the Site tab
+          turned reflections on). (7.2.1.12 Interior solar distribution -
+          programs that calculate it internally shall do so (Table 7-13
+          fractions only for programs that cannot); 5.1.1.6 c)
+
+1.2.4 Standard 140 / validation: terrain
+        Physical Meaning: Building > Terrain = Country when the project has no
+          Site exposure of its own (an explicit Site exposure always wins).
+          (7.2.1.1.2.2 / 7.2.1.9.1 - open terrain with scattered obstructions
+          (Terrain Category 3) -> EnergyPlus "Country")
+
+1.2.5 Standard 140 / validation: ideal
+        Physical Meaning: Every HVACTemplate:Zone:IdealLoadsAirSystem /
+          ZoneHVAC:IdealLoadsAirSystem: Dehumidification Control Type = None,
+          Humidification Control Type = None, Outdoor Air Method = None (no
+          outdoor-air object). (7.2.1.13 a, d and 7.2.1.13.2 e - 100 %
+          convective, "no latent heat extraction", "sensible cooling only")
+
+1.2.6 Standard 140 / validation: loads
+        Physical Meaning: No automatic People / Lights / ElectricEquipment /
+          Infiltration: only the loads the user defines (Internal loads step,
+          or model objects) are exported. (7.2.1.6 / 7.2.1.7 (the specified
+          infiltration and internal gains are the only ones) and 5.1.1.6
+          (non-specified inputs are not permitted))
+
+1.2.7 Standard 140 / validation: outputs
+        Physical Meaning: Hourly Output:Variable for Zone Ideal Loads Zone
+          Sensible Heating Energy, Zone Ideal Loads Zone Sensible Cooling
+          Energy, Zone Mean Air Temperature (key *). (7.3.1, 7.3.2, 7.3.8 -
+          annual and hourly heating / sensible cooling loads and zone
+          temperatures)
+
+1.2.8 Standard 140 / validation: timestep
+        Physical Meaning: Timestep, convergence tolerances and warm-up are NOT
+          changed by the profile (the model's own values are used and
+          reported). (5.1.1.9 Numerical settings - per the software
+          implementation; 5.1.1.4 consistent settings across the suite)
+
+1.3 Setting or Capability Used:
+    project.profile = "std140" (Project > Analysis options > Simulation profile
+      = Standard 140 / validation) for every Section 7 case. Site exposure is
+      not set separately, so the profile's Country terrain (open terrain,
+      category 3) applies.
+
+
+NOTE 2 - Exterior and interior surface heat transfer
+-------------------------------------------------------------------------------
+2.1 Describe the Effect Being Simulated:
+    Exterior and interior convective coefficients and longwave radiative
+      exchange (7.2.1.9, 7.2.1.10, 7.2.3.1.4.3/4, 7.2.3.2.2, 7.2.3.3.2).
+
+2.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+2.2.1 Envelope > Surface heat transfer > Inside algorithm: TARP (default) |
+  Simple | CeilingDiffuser | AdaptiveConvectionAlgorithm | ASTMC1340
+        Physical Meaning: time-step varying interior convection correlations;
+          interior longwave exchange is always calculated from the surface
+          emittances
+
+2.2.2 Envelope > Surface heat transfer > Outside algorithm: DOE-2 (default) |
+  TARP | MoWitt | SimpleCombined | AdaptiveConvectionAlgorithm
+        Physical Meaning: time-step varying exterior convection from the
+          terrain-corrected wind speed at the surface height and the surface
+          roughness; exterior longwave exchange with sky, ground and air from
+          the surface emittance
+
+2.2.3 Envelope > Surface heat transfer > constant coefficients by surface type
+  / per face
+        Physical Meaning: constant convective coefficients (W/m2K) replacing
+          the correlations on the chosen surfaces
+
+2.3 Setting or Capability Used:
+    Program defaults (time-step varying: TARP inside, DOE-2 outside, calculated
+      longwave exchange) for all cases except 450, 460 and 470, which use the
+      constant coefficients of Table 7-46 (Block C, note 4), as 7.2.1.9.3 a /
+      7.2.1.10.3 a require of programs with time-step varying calculations.
+
+
+NOTE 3 - Window optical and thermal model
+-------------------------------------------------------------------------------
+3.1 Describe the Effect Being Simulated:
+    Window transmission, absorption and conduction (7.2.1.11, 7.2.2.1.6,
+      7.2.2.1.7).
+
+3.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+3.2.1 Window construction: Simple (U-factor, SHGC, VT)
+        Physical Meaning: a single equivalent layer derived from whole-window
+          performance values
+
+3.2.2 Window construction: Layered: pane by pane
+        Physical Meaning: each pane entered with thickness, normal-incidence
+          solar/visible transmittance and front/back reflectance, IR
+          transmittance, front/back emissivity and conductivity, each gap with
+          gas type and thickness; angular optics are calculated from the
+          normal-incidence values and gap heat transfer (conduction,
+          convection, radiation) each time step with temperature-dependent gas
+          properties
+
+3.3 Setting or Capability Used:
+    Layered: pane by pane with the Table 7-10 / 7-17 / 7-21 values (the
+      builder's Std 140 presets 600 / 660 / 670). Visible-band properties are
+      set equal to the solar-band values (they do not affect the thermal
+      results).
+
+
+NOTE 4 - Interior solar distribution
+-------------------------------------------------------------------------------
+4.1 Describe the Effect Being Simulated:
+    Distribution of transmitted solar radiation to interior surfaces (7.2.1.12
+      and the corresponding sections of 7.2.2 / 7.2.3).
+
+4.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+4.2.1 FullExterior
+        Physical Meaning: transmitted beam solar falls on the floor only
+
+4.2.2 FullInteriorAndExterior
+        Physical Meaning: transmitted beam solar is tracked geometrically to
+          the interior surfaces it strikes; diffuse and reflected solar is
+          distributed by area x solar absorptance; the part reflected back out
+          through the windows is lost
+
+4.3 Setting or Capability Used:
+    FullInteriorAndExterior (set by the Standard 140 profile): calculated
+      internally from the interior solar absorptances, so the alternative
+      constant fractions of Tables 7-13, 7-15, 7-30, 7-43, 7-44 and 7-45 are
+      not used.
+
+
+NOTE 5 - Numerical settings
+-------------------------------------------------------------------------------
+5.1 Describe the Effect Being Simulated:
+    Time step, conduction solution and initialization (5.1.1.7, 5.1.1.9).
+
+5.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+5.2.1 Timestep (Number of Timesteps per Hour)
+        Physical Meaning: zone heat-balance time step; the program default is 4
+          per hour
+
+5.2.2 Heat balance algorithm
+        Physical Meaning: conduction transfer functions (default)
+
+5.2.3 Warm-up
+        Physical Meaning: the first day of the run period is repeated until
+          zone temperatures and loads converge (6 to 25 days) before results
+          are recorded (preconditioning per 5.1.1.7)
+
+5.3 Setting or Capability Used:
+    Timestep 4 per hour, conduction transfer functions, warm-up 6-25 days,
+      convergence tolerances 0.04 (loads) / 0.4 (temperature) (program
+      defaults), the same for every case (5.1.1.4). Full annual run periods
+      (Jan 1 - Dec 31); hourly outputs integrated by the engine.
+
+
+NOTE 6 - Weather data and sky temperature
+-------------------------------------------------------------------------------
+6.1 Describe the Effect Being Simulated:
+    Use of the normative 725650TY.CSV (7.2.1.1) by an engine that reads EPW.
+
+6.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+6.2.1 Project > Weather > upload (.epw / TMY3 .csv / .tm2 / .tmy / .wy2)
+        Physical Meaning: non-EPW files are converted to EPW by the program's
+          weather converter; TMY3 is local standard time, hour-ending, so no
+          time shift is applied
+
+6.3 Setting or Capability Used:
+    725650TY.CSV converted by the program's converter (pinocchio-wx 1.0.0); the
+      converted EPW is archived with the results (weather/725650TY.epw, sha256
+      e7404680efbd0aab...). Sky temperature is calculated each hour from the
+      horizontal infrared radiation, which the converter derives from dry-bulb,
+      dew point and opaque sky cover (Clark-Allen). Ground reflectance: the
+      program default 0.2 (Table A1-1).
+
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+
+NOTE 1 - Weather file format
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated:
+    Normative weather 725650TY.CSV (TMY3) for all Section 7 cases.
+
+1.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.1.1, Annex A1.1
+
+1.3 Equivalent Input(s) Used:
+    The CSV converted to EPW by the program's own converter: same station
+      header (39.833 N, 104.650 W, 1650 m, UTC-7) and the same hourly data, no
+      time shift.
+
+1.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    TMY3 and EPW both use local standard time with hour-ending stamps and solar
+      values integrated over the preceding hour; the conversion copies the
+      values unchanged (the converted file is archived).
+
+
+NOTE 2 - High-conductance wall element
+-------------------------------------------------------------------------------
+2.1 Describe the Effect Being Simulated:
+    Opaque 3 m x 2 m high-conductance elements replacing the south windows
+      (Cases 195-250, 400-430, 800; 195 and 395 use solid wall instead).
+
+2.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.3.1.4, Tables 7-35, 7-36
+
+2.3 Equivalent Input(s) Used:
+    Two opaque doors (Geometry > door, 3.0 m x 2.0 m at x = 0.5 m and 4.5 m on
+      the south wall, sill 0.2 m) whose construction is the custom opaque
+      construction "Std140 HC Element" picked in the door construction select
+      (Envelope > + New construction, exact layers): panel 3.048 mm k 1.0 rho
+      2470 cp 750; air gap 12.0 mm k 0.0625 rho 1.292498 cp 1006.103271
+      (constant); panel 3.048 mm k 1.0 rho 2470 cp 750; roughness VerySmooth;
+      the case's exterior / interior solar absorptance and IR emittance on the
+      outer / inner panel.
+
+2.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    Shortwave transmittance is 0 (an opaque door subsurface) and the layers are
+      exactly those of Table 7-36; the constant-conductivity gap is entered as
+      a solid layer of that conductivity. Geometry, position and area are as
+      specified.
+
+
+NOTE 3 - Night ventilation fan (Cases 650, 950, 650FF, 950FF)
+-------------------------------------------------------------------------------
+3.1 Describe the Effect Being Simulated:
+    1700 m3/h vent fan 18:00-07:00 in addition to infiltration, zero fan heat.
+
+3.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.2.1.5, Table 7-16, 7.2.2.3.2
+
+3.3 Equivalent Input(s) Used:
+    A second Internal loads > Infiltration load, method Design Flow Rate,
+      0.47222222 m3/s (1700 m3/h), with an hourly fraction schedule (1 for
+      00:00-07:00 and 18:00-24:00, else 0; Schedules > Add a schedule).
+
+3.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    The infiltration object is a constant outdoor-air flow (constant term 1, no
+      wind or temperature terms) at outdoor density that adds no fan heat: the
+      same heat-balance term as a ventilation fan with zero fan heat. The
+      engine uses the site barometric pressure, so the sea-level rate of Table
+      7-16 (1409 m3/h) is not used.
+
+
+NOTE 4 - Constant combined surface coefficients (Cases 450, 460, 470)
+-------------------------------------------------------------------------------
+4.1 Describe the Effect Being Simulated:
+    Table 7-46 combined interior and/or exterior coefficients.
+
+4.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.3.21-7.2.3.23, Table 7-46
+
+4.3 Equivalent Input(s) Used:
+    Envelope > Surface heat transfer > Fill Std 140 Table 7-46 (constant
+      coefficients by surface type: walls 1.8 / 21.6, roof 1.7 / 21.8, raised
+      floor 3.7 / 5.2, windows 4.5 / 17.8 W/m2K; 460 inside only, 470 outside
+      only), entered as convective coefficients, with the IR emittance of the
+      affected faces set to 0.00001 (opaque: thermal absorptance of the outer /
+      inner layer; windows: outdoor-side emissivity of the outer pane /
+      room-side emissivity of the inner pane).
+
+4.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    The program accepts constant convective coefficients; the informative notes
+      to 7.2.3.21.1 / 7.2.3.21.2 prescribe entering the combined value as
+      convective with the emittance at 0 or the lowest value the program allows
+      (the forms require a value > 0).
+
+
+NOTE 5 - Raised floor insulation
+-------------------------------------------------------------------------------
+5.1 Describe the Effect Being Simulated:
+    Underfloor insulation with minimum density and specific heat.
+
+5.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.1.4, Table 7-2 note a, Table 7-27
+
+5.3 Equivalent Input(s) Used:
+    Exact material layer of kind No-mass with R = 1.003 / 0.04 = 25.075 m2K/W
+      (600 series) and 1.007 / 0.04 = 25.175 m2K/W (900 series).
+
+5.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    A resistance-only layer is the limit of zero density and specific heat at
+      the same thermal resistance.
+
+
+NOTE 6 - Thermostat schedules (Cases 640, 940, 650, 950)
+-------------------------------------------------------------------------------
+6.1 Describe the Effect Being Simulated:
+    Heating setback with a linear ramp; heating off and cooling only
+      07:00-18:00.
+
+6.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    7.2.2.1.4, 7.2.2.1.5
+
+6.3 Equivalent Input(s) Used:
+    640/940: heating setpoint schedule entered with + Add object
+      (Schedule:Compact, Interpolate: Linear): 10 C to 07:00, ramp to 20 C at
+      08:00, 20 C to 23:00, 10 C from the 23:00-23:15 time step on. 650/950:
+      heating setpoint -50 C at all hours; cooling setpoint 27 C 07:00-18:00
+      and 99 C otherwise (Schedules > Add a schedule; HVAC > zone thermostat
+      schedules).
+
+6.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    With 4 time steps per hour the interpolation gives 12.5 / 15 / 17.5 / 20 C
+      at the ends of the 07:00-08:00 time steps, as 7.2.2.1.4 requires; the -50
+      C / 99 C setpoints are never reached, i.e. the equipment is OFF.
+
+
+===============================================================================
+D. REPORT BLOCK FOR USE OF NON-SPECIFIED INPUTS
+===============================================================================
+
+NONE
+
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+
+NONE
+
+
+===============================================================================
+F. REPORT BLOCK FOR CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE
+   TESTS, WHERE SUCH CHANGES ARE NOT AVAILABLE IN PUBLICLY RELEASED VERSIONS OF
+   THE SOFTWARE
+===============================================================================
+
+NOTE 1 - Tested build not yet publicly released
+-------------------------------------------------------------------------------
+1.1 List the Change(s) to the Source Code:
+    The tested build (1.0.0+b0c9cf1.dirty) contains features developed for
+      these tests that were not yet in the publicly deployed version: the
+      Standard 140 / validation profile, layered pane-by-pane glazing, exact
+      material layers with per-face absorptances, constant convection
+      coefficients, overhang / fin extents, + Add object in the objects editor,
+      the Output variable picker, the version stamp and this report export.
+
+1.2 List the Test Case(s) Relevant to the Change(s) in the Source Code:
+    All Section 7 cases.
+
+1.3. Explanation of Why the Change is Not Included in the Publicly Released
+     Version of the Software:
+    The changes were complete and tested but not yet deployed when the tests
+      were run; they are intended for the next public release.
+
+
+===============================================================================
+G. REPORT BLOCK FOR ANOMALOUS RESULTS
+===============================================================================
+
+NOTE 1 - Engine psychrometric warnings
+-------------------------------------------------------------------------------
+1.1 Test Case(s) and Specific Results from the Case(s) that are Anomalous:
+    Several cases report one or two run-time warnings "Temperature out of range
+      [-100. to 200.] (PsyPsatFnTemp)" / "WetBulb not converged" from the
+      wet-bulb routine at isolated time steps (e.g. Case 600: 03/13 10:15 and
+      03/14 11:56).
+
+1.2 Explanation of Reason for the Anomalous Results:
+    The warnings come from the engine's iterative wet-bulb routine
+      (PsyTwbFnTdbWPb) at isolated zone / system time steps. The runs complete
+      normally and the hourly loads and zone temperatures around those time
+      steps show no discontinuity; the cause was not traced further.
+
+
+===============================================================================
+<END OF DOCUMENT>
+===============================================================================

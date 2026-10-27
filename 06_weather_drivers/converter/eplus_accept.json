@@ -1,0 +1,77 @@
+[
+ {
+  "epw": "725650TY_from_tmy3.epw",
+  "end": "EnergyPlus Completed Successfully-- 12 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  ",
+  "ok": true,
+  "weatherMessages": []
+ },
+ {
+  "epw": "WD500_from_tmy3.epw",
+  "end": "EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=New Delhi Gandhi Intl AP DL TMY3 WMO#=421810"
+  ]
+ },
+ {
+  "epw": "GC40a_tmy2.epw",
+  "end": "EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=MIAMI FL USA TMY2 WMO#=12839"
+  ]
+ },
+ {
+  "epw": "CE300_tmy2.epw",
+  "end": "EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=NEW_ORLEANS LA USA TMY2 WMO#=12916"
+  ]
+ },
+ {
+  "epw": "Lasvega_tmy.epw",
+  "end": "EnergyPlus Completed Successfully-- 3 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=Las Vegas NV USA TMY WMO#=23169"
+  ]
+ },
+ {
+  "epw": "Colorad_tmy.epw",
+  "end": "EnergyPlus Completed Successfully-- 0 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": []
+ },
+ {
+  "epw": "HE140W_wyec2.epw",
+  "end": "EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=Ottawa ON CAN WYEC2 WMO#=04772"
+  ]
+ },
+ {
+  "epw": "HE210W_wyec2.epw",
+  "end": "EnergyPlus Completed Successfully-- 2 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  1",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=Ottawa ON CAN WYEC2 WMO#=04772"
+  ]
+ },
+ {
+  "epw": "CE100_tmy.epw",
+  "end": "EnergyPlus Completed Successfully-- 1 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  0",
+  "ok": true,
+  "weatherMessages": [
+   "** Warning ** Weather file location will be used rather than entered (IDF) Location object.",
+   "**   ~~~   ** ..Weather File Location=Miami FL USA TMY WMO#=12839"
+  ]
+ }
+]

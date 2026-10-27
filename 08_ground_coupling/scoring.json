@@ -1,0 +1,1663 @@
+{
+ "section": 8,
+ "acceptance_criteria": "none (Section 8 has no Annex A3 ranges; comparisons with Annex B8.2 example / verified-numerical-model results are informative)",
+ "software": "Pinocchio-EP (ashrae140-compliance working tree) + EnergyPlus 26.1.0-6f2e40d102 Kiva (Foundation:Kiva, 2-D)",
+ "cases": {
+  "GC30a": {
+   "years": 3,
+   "tsim_h": 26280,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 5000.0,
+   "E_m": 30,
+   "F_m": 20,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "qfloor_W": 2541.5520390199663,
+   "qzone_W": 2541.552039013244,
+   "Tzone_C": 30.0,
+   "conv_lasthour_pct": 0.0017741634963543513,
+   "vs_ref_qfloor": {
+    "vm_mean": 2640.568337251482,
+    "vm_min": 2585.0,
+    "vm_max": 2694.98556731,
+    "all_min": 2456.7,
+    "all_max": 2694.98556731,
+    "dev_vs_vm_mean_pct": -3.7498101009034945,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "analytical": null,
+     "vm": {
+      "TRNSYS": 2641.7194444444444,
+      "FLUENT": 2585.0,
+      "MATLAB": 2694.98556731
+     },
+     "other": {
+      "GHT": 2456.7
+     }
+    }
+   },
+   "vs_ref_qzone": null
+  },
+  "GC30b": {
+   "years": 3,
+   "tsim_h": 26280,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 100.00000000000001,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "qfloor_W": 2480.1255073206826,
+   "qzone_W": 2480.125507320612,
+   "Tzone_C": 30.0,
+   "conv_lasthour_pct": 0.0010662852226458843,
+   "vs_ref_qfloor": {
+    "vm_mean": 2535.5776265659474,
+    "vm_min": 2503.729,
+    "vm_max": 2569.970071581111,
+    "all_min": 2341.2,
+    "all_max": 2652.4227309996386,
+    "dev_vs_vm_mean_pct": -2.186962002830348,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 2533.0338081167306,
+      "FLUENT": 2503.729,
+      "MATLAB": 2569.970071581111
+     },
+     "other": {
+      "GHT": 2341.2,
+      "SUNREL-GC": 2341.2,
+      "EnergyPlus 2.0": 2652.4227309996386,
+      "VA114/ISO-13370": 2421.0
+     }
+    }
+   },
+   "vs_ref_qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 2341.2,
+    "all_max": 2652.4227309996386,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 2341.2,
+      "EnergyPlus 2.0": 2652.4227309996386,
+      "VA114/ISO-13370": 2427.0
+     }
+    }
+   }
+  },
+  "GC30c": {
+   "years": 3,
+   "tsim_h": 26280,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 8,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "qfloor_W": 2154.8161325882243,
+   "qzone_W": 2154.8161325883175,
+   "Tzone_C": 30.0,
+   "conv_lasthour_pct": 0.0012785989612814324,
+   "vs_ref_qfloor": {
+    "vm_mean": 2138.0341085374057,
+    "vm_min": 2122.83728,
+    "vm_max": 2154.476081074976,
+    "all_min": 1973.0,
+    "all_max": 2307.9215979290834,
+    "dev_vs_vm_mean_pct": 0.7849277981022892,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 2136.7889645372416,
+      "FLUENT": 2122.83728,
+      "MATLAB": 2154.476081074976
+     },
+     "other": {
+      "EnergyPlus 2.0": 2307.9215979290834,
+      "VA114/ISO-13370": 2092.0,
+      "ESP-r/BASESIMP": 1973.0,
+      "BASECALC": 1973.0
+     }
+    }
+   },
+   "vs_ref_qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 2003.0,
+    "all_max": 2307.9215979290834,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 2307.9215979290834,
+      "VA114/ISO-13370": 2098.0,
+      "ESP-r/BASESIMP": 2003.0,
+      "BASECALC": 2003.0
+     }
+    }
+   }
+  },
+  "GC60b": {
+   "years": 3,
+   "tsim_h": 26280,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "qfloor_W": 2136.4282830067673,
+   "qzone_W": 2136.4282830067987,
+   "Tzone_C": 30.0,
+   "conv_lasthour_pct": 0.0004367026433258515,
+   "vs_ref_qfloor": {
+    "vm_mean": 2115.298487445901,
+    "vm_min": 2104.16024,
+    "vm_max": 2128.276381352575,
+    "all_min": 1999.0,
+    "all_max": 2218.5826976560083,
+    "dev_vs_vm_mean_pct": 0.9989037332683532,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 2113.4588409851276,
+      "FLUENT": 2104.16024,
+      "MATLAB": 2128.276381352575
+     },
+     "other": {
+      "SUNREL-GC": 1999.0,
+      "EnergyPlus 2.0": 2218.5826976560083,
+      "VA114/ISO-13370": 2069.0
+     }
+    }
+   },
+   "vs_ref_qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 1999.0,
+    "all_max": 2218.5826976560083,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 1999.0,
+      "EnergyPlus 2.0": 2218.5826976560083,
+      "VA114/ISO-13370": 2075.0
+     }
+    }
+   }
+  },
+  "GC65b": {
+   "years": 3,
+   "tsim_h": 26280,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "qfloor_W": 1848.475878861224,
+   "qzone_W": 1848.475878861158,
+   "Tzone_C": 30.0,
+   "conv_lasthour_pct": 0.0008451842446829766,
+   "vs_ref_qfloor": {
+    "vm_mean": 1995.9955064658254,
+    "vm_min": 1990.65496,
+    "vm_max": 2003.6620846148014,
+    "all_min": 1615.5451202003471,
+    "all_max": 2003.6620846148014,
+    "dev_vs_vm_mean_pct": -7.390779544679665,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 1993.669474782675,
+      "FLUENT": 1990.65496,
+      "MATLAB": 2003.6620846148014
+     },
+     "other": {
+      "SUNREL-GC": 1895.3,
+      "EnergyPlus 2.0": 1615.5451202003471,
+      "VA114/ISO-13370": 1920.0
+     }
+    }
+   },
+   "vs_ref_qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 1615.5451202003471,
+    "all_max": 1925.0,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 1895.3,
+      "EnergyPlus 2.0": 1615.5451202003471,
+      "VA114/ISO-13370": 1925.0
+     }
+    }
+   }
+  },
+  "GC40a": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 5000.0,
+   "E_m": 30,
+   "F_m": 20,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 22199.189496641735,
+   "Qzone_kWh": 22199.189496627907,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 2953.8459701566967,
+   "qfloor_max_at": [
+    "02/04",
+    14
+   ],
+   "qzone_max_W": 2953.8459701100364,
+   "qzone_max_at": [
+    "02/04",
+    14
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 490,
+   "conv_annual_pct": 0.07985121582372091,
+   "vs_ref_Qfloor": {
+    "vm_mean": 23134.107160224627,
+    "vm_min": 22760.546410839837,
+    "vm_max": 23608.8523126109,
+    "all_min": 20812.0,
+    "all_max": 23608.8523126109,
+    "dev_vs_vm_mean_pct": -4.041295638114498,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "analytical": null,
+     "vm": {
+      "TRNSYS": 23032.92275722314,
+      "FLUENT": 22760.546410839837,
+      "MATLAB": 23608.8523126109
+     },
+     "other": {
+      "GHT": 20812.0
+     }
+    }
+   },
+   "vs_ref_Qzone": null,
+   "vs_ref_qfloor_max": {
+    "vm_mean": 3100.8009091756917,
+    "vm_min": 3042.31908,
+    "vm_max": 3173.52963554924,
+    "dev_vs_vm_mean_pct": -4.739257479709043,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 3086.5540119778334,
+       "date": "02/01",
+       "hour": 12
+      },
+      "FLUENT": {
+       "q": 3042.31908,
+       "date": "02/01",
+       "hour": 12
+      },
+      "MATLAB": {
+       "q": 3173.52963554924,
+       "date": "02/01",
+       "hour": 12
+      }
+     },
+     "other": {
+      "GHT": 2757.8
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 416.0,
+    "vm_max": 416.0,
+    "vm_mean": 416.0,
+    "ours": 490,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 416.0,
+      "FLUENT": 416.0,
+      "MATLAB": 416.0
+     },
+     "other": {
+      "GHT": 487.0
+     }
+    }
+   }
+  },
+  "GC40b": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 100.00000000000001,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 21722.833633804676,
+   "Qzone_kWh": 21722.83363380408,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 2871.2994656281467,
+   "qfloor_max_at": [
+    "02/04",
+    15
+   ],
+   "qzone_max_W": 2871.299464127762,
+   "qzone_max_at": [
+    "02/04",
+    15
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 491,
+   "conv_annual_pct": 0.0027866031695417703,
+   "vs_ref_Qfloor": {
+    "vm_mean": 22181.48345943353,
+    "vm_min": 21932.03641867996,
+    "vm_max": 22512.9407099861,
+    "all_min": 20513.0,
+    "all_max": 23203.807827344343,
+    "dev_vs_vm_mean_pct": -2.0677148418303632,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 22099.473249634528,
+      "FLUENT": 21932.03641867996,
+      "MATLAB": 22512.9407099861
+     },
+     "other": {
+      "GHT": 20513.0,
+      "SUNREL-GC": 20513.0,
+      "EnergyPlus 2.0": 23203.807827344343,
+      "VA114/ISO-13370": 21206.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 20513.0,
+    "all_max": 23203.807827344343,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 20513.0,
+      "EnergyPlus 2.0": 23203.807827344343,
+      "VA114/ISO-13370": 21260.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 2952.520381122756,
+    "vm_min": 2914.02,
+    "vm_max": 3002.12851545413,
+    "dev_vs_vm_mean_pct": -2.750901095006957,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 2941.4126279141387,
+       "date": "02/01",
+       "hour": 13
+      },
+      "FLUENT": {
+       "q": 2914.02,
+       "date": "02/03",
+       "hour": 13
+      },
+      "MATLAB": {
+       "q": 3002.12851545413,
+       "date": "02/02",
+       "hour": 13
+      }
+     },
+     "other": {
+      "GHT": 2710.2,
+      "SUNREL-GC": 2710.2,
+      "EnergyPlus 2.0": 3004.8425344171665,
+      "VA114/ISO-13370": 2899.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 417.0,
+    "vm_max": 465.0,
+    "vm_mean": 441.0,
+    "ours": 491,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 417.0,
+      "FLUENT": 465.0,
+      "MATLAB": 441.0
+     },
+     "other": {
+      "GHT": 489.0,
+      "SUNREL-GC": 489.0,
+      "VA114/ISO-13370": 886.0
+     }
+    }
+   }
+  },
+  "GC45b": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 100.0,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 36,
+   "B_m": 4,
+   "k": 1.9,
+   "Qfloor_kWh": 31790.21071936491,
+   "Qzone_kWh": 31790.21071936469,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 4287.686120543873,
+   "qfloor_max_at": [
+    "02/04",
+    15
+   ],
+   "qzone_max_W": 4287.686117854275,
+   "qzone_max_at": [
+    "02/04",
+    15
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 491,
+   "conv_annual_pct": 0.0021163601550059368,
+   "vs_ref_Qfloor": {
+    "vm_mean": 32899.261738701745,
+    "vm_min": 32456.284599760012,
+    "vm_max": 33483.4585670516,
+    "all_min": 30856.0,
+    "all_max": 33483.4585670516,
+    "dev_vs_vm_mean_pct": -3.371051387551897,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 32758.04204929361,
+      "FLUENT": 32456.284599760012,
+      "MATLAB": 33483.4585670516
+     },
+     "other": {
+      "EnergyPlus 2.0": 33414.5666728713,
+      "VA114/ISO-13370": 30856.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 30924.0,
+    "all_max": 33414.5666728713,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 33414.5666728713,
+      "VA114/ISO-13370": 30924.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 4463.799763457207,
+    "vm_min": 4396.1268,
+    "vm_max": 4550.92994419162,
+    "dev_vs_vm_mean_pct": -3.945375067113991,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 4444.34254618,
+       "date": "02/01",
+       "hour": 13
+      },
+      "FLUENT": {
+       "q": 4396.1268,
+       "date": "02/02",
+       "hour": 13
+      },
+      "MATLAB": {
+       "q": 4550.92994419162,
+       "date": "02/02",
+       "hour": 13
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 4414.521752688583,
+      "VA114/ISO-13370": 4318.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 417.0,
+    "vm_max": 441.0,
+    "vm_mean": 433.0,
+    "ours": 491,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 417.0,
+      "FLUENT": 441.0,
+      "MATLAB": 441.0
+     },
+     "other": {
+      "VA114/ISO-13370": 880.0
+     }
+    }
+   }
+  },
+  "GC50b": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 2,
+   "h_in_floor": 100.00000000000001,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 80,
+   "B_m": 80,
+   "k": 1.9,
+   "Qfloor_kWh": 274401.33721706434,
+   "Qzone_kWh": 274401.3372170651,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 33905.16033522911,
+   "qfloor_max_at": [
+    "02/04",
+    15
+   ],
+   "qzone_max_W": 33905.16032715887,
+   "qzone_max_at": [
+    "02/04",
+    15
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 491,
+   "conv_annual_pct": 0.0038616710501612295,
+   "vs_ref_Qfloor": {
+    "vm_mean": 279109.8724498812,
+    "vm_min": 277923.2552680389,
+    "vm_max": 281418.026311205,
+    "all_min": 277923.2552680389,
+    "all_max": 324257.1080842638,
+    "dev_vs_vm_mean_pct": -1.6869826894648368,
+    "within_vm_range": false,
+    "within_example_range": false,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 277923.2552680389,
+      "FLUENT": 277988.3357703999,
+      "MATLAB": 281418.026311205
+     },
+     "other": {
+      "EnergyPlus 2.0": 324257.1080842638,
+      "VA114/ISO-13370": 289925.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 291502.0,
+    "all_max": 324257.1080842638,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": false,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 324257.1080842638,
+      "VA114/ISO-13370": 291502.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 34691.24297816869,
+    "vm_min": 34510.16,
+    "vm_max": 35033.0220630541,
+    "dev_vs_vm_mean_pct": -2.265939688105898,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 34530.546871451945,
+       "date": "02/04",
+       "hour": 13
+      },
+      "FLUENT": {
+       "q": 34510.16,
+       "date": "02/03",
+       "hour": 13
+      },
+      "MATLAB": {
+       "q": 35033.0220630541,
+       "date": "02/03",
+       "hour": 13
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 39569.94253996694,
+      "VA114/ISO-13370": 36304.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 465.0,
+    "vm_max": 489.0,
+    "vm_mean": 473.0,
+    "ours": 491,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 489.0,
+      "FLUENT": 465.0,
+      "MATLAB": 465.0
+     },
+     "other": {
+      "VA114/ISO-13370": 867.0
+     }
+    }
+   }
+  },
+  "GC55b": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 100.00000000000001,
+   "E_m": 2,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 34447.40575151821,
+   "Qzone_kWh": 34447.405751517945,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 4263.233496049396,
+   "qfloor_max_at": [
+    "01/22",
+    15
+   ],
+   "qzone_max_W": 4263.233494578017,
+   "qzone_max_at": [
+    "01/22",
+    15
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 179,
+   "conv_annual_pct": 2.1121931987179472e-14,
+   "vs_ref_Qfloor": {
+    "vm_mean": 35148.34915905394,
+    "vm_min": 34879.10955656,
+    "vm_max": 35490.940149161,
+    "all_min": 31601.0,
+    "all_max": 39931.57298486019,
+    "dev_vs_vm_mean_pct": -1.9942427576436468,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 35074.99777144083,
+      "FLUENT": 34879.10955656,
+      "MATLAB": 35490.940149161
+     },
+     "other": {
+      "SUNREL-GC": 33211.0,
+      "EnergyPlus 2.0": 39931.57298486019,
+      "VA114/ISO-13370": 31601.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 31654.0,
+    "all_max": 39931.57298486019,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 33211.0,
+      "EnergyPlus 2.0": 39931.57298486019,
+      "VA114/ISO-13370": 31654.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 4376.547748366008,
+    "vm_min": 4336.0708,
+    "vm_max": 4427.36007878494,
+    "dev_vs_vm_mean_pct": -2.589124095788003,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 4366.212366313083,
+       "date": "01/22",
+       "hour": 13
+      },
+      "FLUENT": {
+       "q": 4336.0708,
+       "date": "01/21",
+       "hour": 13
+      },
+      "MATLAB": {
+       "q": 4427.36007878494,
+       "date": "01/21",
+       "hour": 13
+      }
+     },
+     "other": {
+      "SUNREL-GC": 4101.5,
+      "EnergyPlus 2.0": 4859.683605027666,
+      "VA114/ISO-13370": 4085.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 153.0,
+    "vm_max": 177.0,
+    "vm_mean": 161.0,
+    "ours": 179,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 177.0,
+      "FLUENT": 153.0,
+      "MATLAB": 153.0
+     },
+     "other": {
+      "SUNREL-GC": 178.0,
+      "VA114/ISO-13370": 884.0
+     }
+    }
+   }
+  },
+  "GC70b": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 16282.390932145054,
+   "Qzone_kWh": 16282.39093214121,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 2073.1080569448036,
+   "qfloor_max_at": [
+    "02/17",
+    17
+   ],
+   "qzone_max_W": 2073.108055292052,
+   "qzone_max_at": [
+    "02/17",
+    17
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 805,
+   "conv_annual_pct": 0.006156750144069122,
+   "vs_ref_Qfloor": {
+    "vm_mean": 17460.714303143206,
+    "vm_min": 17395.58980706803,
+    "vm_max": 17552.0832227216,
+    "all_min": 15553.34004978731,
+    "all_max": 17552.0832227216,
+    "dev_vs_vm_mean_pct": -6.748425926572978,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 17395.58980706803,
+      "FLUENT": 17434.469879639986,
+      "MATLAB": 17552.0832227216
+     },
+     "other": {
+      "SUNREL-GC": 16607.0,
+      "EnergyPlus 2.0": 15553.34004978731,
+      "VA114/ISO-13370": 16817.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 15553.34004978731,
+    "all_max": 16865.0,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 16607.0,
+      "EnergyPlus 2.0": 15553.34004978731,
+      "VA114/ISO-13370": 16865.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 2263.1561157372357,
+    "vm_min": 2254.452190970928,
+    "vm_max": 2276.37235624078,
+    "dev_vs_vm_mean_pct": -8.397478966249878,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 2254.452190970928,
+       "date": "02/11",
+       "hour": 16
+      },
+      "FLUENT": {
+       "q": 2258.6438,
+       "date": "02/11",
+       "hour": 15
+      },
+      "MATLAB": {
+       "q": 2276.37235624078,
+       "date": "02/11",
+       "hour": 16
+      }
+     },
+     "other": {
+      "SUNREL-GC": 2144.0,
+      "EnergyPlus 2.0": 1905.8965465161639,
+      "VA114/ISO-13370": 2252.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 659.0,
+    "vm_max": 660.0,
+    "vm_mean": 659.6666666666666,
+    "ours": 805,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 660.0,
+      "FLUENT": 659.0,
+      "MATLAB": 660.0
+     },
+     "other": {
+      "SUNREL-GC": 662.0,
+      "VA114/ISO-13370": 958.0
+     }
+    }
+   }
+  },
+  "GC80b": {
+   "years": 14,
+   "tsim_h": 122640,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 100.00000000000001,
+   "E_m": 15,
+   "F_m": 15,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 0.5,
+   "Qfloor_kWh": 6060.563596865137,
+   "Qzone_kWh": 6060.563596863857,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 775.9691651991362,
+   "qfloor_max_at": [
+    "02/09",
+    20
+   ],
+   "qzone_max_W": 775.9691651165631,
+   "qzone_max_at": [
+    "02/09",
+    20
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 616,
+   "conv_annual_pct": 0.029023046700371598,
+   "vs_ref_Qfloor": {
+    "vm_mean": 6039.748884640826,
+    "vm_min": 5938.990518040011,
+    "vm_max": 6151.43429074452,
+    "all_min": 5661.0,
+    "all_max": 6151.43429074452,
+    "dev_vs_vm_mean_pct": 0.34462876887552324,
+    "within_vm_range": true,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 6028.821845137944,
+      "FLUENT": 5938.990518040011,
+      "MATLAB": 6151.43429074452
+     },
+     "other": {
+      "SUNREL-GC": 5661.0,
+      "EnergyPlus 2.0": 6059.1215458127845,
+      "VA114/ISO-13370": 5728.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 5661.0,
+    "all_max": 6059.1215458127845,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": false,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "SUNREL-GC": 5661.0,
+      "EnergyPlus 2.0": 6059.1215458127845,
+      "VA114/ISO-13370": 5778.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 777.3325775744971,
+    "vm_min": 762.5202,
+    "vm_max": 793.631993926111,
+    "dev_vs_vm_mean_pct": -0.1753962737050255,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 775.8455387973805,
+       "date": "02/07",
+       "hour": 20
+      },
+      "FLUENT": {
+       "q": 762.5202,
+       "date": "02/08",
+       "hour": 19
+      },
+      "MATLAB": {
+       "q": 793.631993926111,
+       "date": "02/07",
+       "hour": 19
+      }
+     },
+     "other": {
+      "SUNREL-GC": 722.4,
+      "EnergyPlus 2.0": 765.8088531059667,
+      "VA114/ISO-13370": 753.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 567.0,
+    "vm_max": 591.0,
+    "vm_mean": 575.3333333333334,
+    "ours": 616,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 568.0,
+      "FLUENT": 591.0,
+      "MATLAB": 567.0
+     },
+     "other": {
+      "SUNREL-GC": 618.0,
+      "VA114/ISO-13370": 1174.0
+     }
+    }
+   }
+  },
+  "GC40c": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 8,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 18874.475793951206,
+   "Qzone_kWh": 18874.475793949754,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 2474.439698709494,
+   "qfloor_max_at": [
+    "02/09",
+    16
+   ],
+   "qzone_max_W": 2474.4396920267554,
+   "qzone_max_at": [
+    "02/09",
+    16
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 612,
+   "conv_annual_pct": 0.002675056630856858,
+   "vs_ref_Qfloor": {
+    "vm_mean": 18706.625306615228,
+    "vm_min": 18597.662991200075,
+    "vm_max": 18873.2129286456,
+    "all_min": 17285.0,
+    "all_max": 20255.001389313038,
+    "dev_vs_vm_mean_pct": 0.8972782882256212,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 18649.0,
+      "FLUENT": 18597.662991200075,
+      "MATLAB": 18873.2129286456
+     },
+     "other": {
+      "EnergyPlus 2.0": 20255.001389313038,
+      "VA114/ISO-13370": 18330.0,
+      "ESP-r/BASESIMP": 17285.0,
+      "BASECALC": 17285.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 17545.0,
+    "all_max": 20255.001389313038,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 20255.001389313038,
+      "VA114/ISO-13370": 18379.0,
+      "ESP-r/BASESIMP": 17545.0,
+      "BASECALC": 17545.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 2461.6866691422447,
+    "vm_min": 2444.42552,
+    "vm_max": 2486.58604369815,
+    "dev_vs_vm_mean_pct": 0.5180606340811535,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 2454.0484437285836,
+       "date": "02/07",
+       "hour": 14
+      },
+      "FLUENT": {
+       "q": 2444.42552,
+       "date": "02/07",
+       "hour": 14
+      },
+      "MATLAB": {
+       "q": 2486.58604369815,
+       "date": "02/06",
+       "hour": 14
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 2650.387382091864,
+      "VA114/ISO-13370": 2472.0,
+      "ESP-r/BASESIMP": 2231.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 538.0,
+    "vm_max": 562.0,
+    "vm_mean": 554.0,
+    "ours": 612,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 562.0,
+      "FLUENT": 562.0,
+      "MATLAB": 538.0
+     },
+     "other": {
+      "VA114/ISO-13370": 961.0,
+      "ESP-r/BASESIMP": 388.0
+     }
+    }
+   }
+  },
+  "GC45c": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 8,
+   "L_m": 36,
+   "B_m": 4,
+   "k": 1.9,
+   "Qfloor_kWh": 26842.070753138618,
+   "Qzone_kWh": 26842.070753136737,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 3600.8184526077534,
+   "qfloor_max_at": [
+    "02/07",
+    16
+   ],
+   "qzone_max_W": 3600.8184408143647,
+   "qzone_max_at": [
+    "02/07",
+    16
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 564,
+   "conv_annual_pct": 0.0020414226857624913,
+   "vs_ref_Qfloor": {
+    "vm_mean": 27100.97448146531,
+    "vm_min": 26906.381699319954,
+    "vm_max": 27392.4364851582,
+    "all_min": 23849.0,
+    "all_max": 28706.63247853355,
+    "dev_vs_vm_mean_pct": -0.955329958720706,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 27004.105259917775,
+      "FLUENT": 26906.381699319954,
+      "MATLAB": 27392.4364851582
+     },
+     "other": {
+      "EnergyPlus 2.0": 28706.63247853355,
+      "VA114/ISO-13370": 26038.0,
+      "ESP-r/BASESIMP": 23849.0,
+      "BASECALC": 23849.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 24185.0,
+    "all_max": 28706.63247853355,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 28706.63247853355,
+      "VA114/ISO-13370": 26101.0,
+      "ESP-r/BASESIMP": 24185.0,
+      "BASECALC": 24185.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 3647.7660983358433,
+    "vm_min": 3617.5554,
+    "vm_max": 3691.36832109339,
+    "dev_vs_vm_mean_pct": -1.2870245641437348,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 3634.3745739141386,
+       "date": "02/04",
+       "hour": 14
+      },
+      "FLUENT": {
+       "q": 3617.5554,
+       "date": "02/06",
+       "hour": 14
+      },
+      "MATLAB": {
+       "q": 3691.36832109339,
+       "date": "02/06",
+       "hour": 14
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 3826.683148786278,
+      "VA114/ISO-13370": 3606.0,
+      "ESP-r/BASESIMP": 3192.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 490.0,
+    "vm_max": 538.0,
+    "vm_mean": 522.0,
+    "ours": 564,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 490.0,
+      "FLUENT": 538.0,
+      "MATLAB": 538.0
+     },
+     "other": {
+      "VA114/ISO-13370": 981.0,
+      "ESP-r/BASESIMP": 386.0
+     }
+    }
+   }
+  },
+  "GC55c": {
+   "years": 8,
+   "tsim_h": 70080,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 5,
+   "F_m": 8,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 1.9,
+   "Qfloor_kWh": 20997.321416766295,
+   "Qzone_kWh": 20997.321416766383,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 2734.4086734382718,
+   "qfloor_max_at": [
+    "02/09",
+    16
+   ],
+   "qzone_max_W": 2734.4086670196043,
+   "qzone_max_at": [
+    "02/09",
+    16
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 612,
+   "conv_annual_pct": 0.0,
+   "vs_ref_Qfloor": {
+    "vm_mean": 20820.299222599908,
+    "vm_min": 20714.438608999975,
+    "vm_max": 20986.1156254992,
+    "all_min": 20172.0,
+    "all_max": 22569.791321416575,
+    "dev_vs_vm_mean_pct": 0.8502384729141381,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 20760.343433300557,
+      "FLUENT": 20714.438608999975,
+      "MATLAB": 20986.1156254992
+     },
+     "other": {
+      "EnergyPlus 2.0": 22569.791321416575,
+      "VA114/ISO-13370": 20172.0,
+      "ESP-r/BASESIMP": 20850.0,
+      "BASECALC": 20850.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 20221.0,
+    "all_max": 22569.791321416575,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 22569.791321416575,
+      "VA114/ISO-13370": 20221.0,
+      "ESP-r/BASESIMP": 21111.0,
+      "BASECALC": 21111.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 2718.979897652764,
+    "vm_min": 2702.75048,
+    "vm_max": 2744.14335785486,
+    "dev_vs_vm_mean_pct": 0.567447217937397,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 2710.045855103433,
+       "date": "02/04",
+       "hour": 14
+      },
+      "FLUENT": {
+       "q": 2702.75048,
+       "date": "02/06",
+       "hour": 14
+      },
+      "MATLAB": {
+       "q": 2744.14335785486,
+       "date": "02/06",
+       "hour": 14
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 2925.8489908433335,
+      "VA114/ISO-13370": 2682.0,
+      "ESP-r/BASESIMP": 2666.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 490.0,
+    "vm_max": 538.0,
+    "vm_mean": 522.0,
+    "ours": 612,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 490.0,
+      "FLUENT": 538.0,
+      "MATLAB": 538.0
+     },
+     "other": {
+      "VA114/ISO-13370": 978.0,
+      "ESP-r/BASESIMP": 355.0
+     }
+    }
+   }
+  },
+  "GC80c": {
+   "years": 14,
+   "tsim_h": 122640,
+   "ok": true,
+   "severe": 0,
+   "warnings": 6,
+   "h_in_floor": 7.949999999999999,
+   "E_m": 15,
+   "F_m": 8,
+   "L_m": 12,
+   "B_m": 12,
+   "k": 0.85,
+   "Qfloor_kWh": 9320.743168129582,
+   "Qzone_kWh": 9320.7431681272,
+   "Tzone_mean_C": 30.0,
+   "qfloor_max_W": 1200.536061815395,
+   "qfloor_max_at": [
+    "02/11",
+    18
+   ],
+   "qzone_max_W": 1200.5360600780132,
+   "qzone_max_at": [
+    "02/11",
+    18
+   ],
+   "TODB_min_C": 2.0375,
+   "TODB_min_at": [
+    "01/08",
+    4
+   ],
+   "TODB_min_hours": 15,
+   "phase_h": 662,
+   "conv_annual_pct": 0.0042862267721061114,
+   "vs_ref_Qfloor": {
+    "vm_mean": 9214.539611903148,
+    "vm_min": 9137.127309920015,
+    "vm_max": 9314.33906909982,
+    "all_min": 8635.0,
+    "all_max": 10073.16720094616,
+    "dev_vs_vm_mean_pct": 1.1525649755658127,
+    "within_vm_range": false,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 9192.152456689611,
+      "FLUENT": 9137.127309920015,
+      "MATLAB": 9314.33906909982
+     },
+     "other": {
+      "EnergyPlus 2.0": 10073.16720094616,
+      "VA114/ISO-13370": 8966.0,
+      "ESP-r/BASESIMP": 8635.0,
+      "BASECALC": 8635.0
+     }
+    }
+   },
+   "vs_ref_Qzone": {
+    "vm_mean": null,
+    "vm_min": null,
+    "vm_max": null,
+    "all_min": 8848.0,
+    "all_max": 10073.16720094616,
+    "dev_vs_vm_mean_pct": null,
+    "within_vm_range": null,
+    "within_example_range": true,
+    "example_values": {
+     "vm": {
+      "TRNSYS": null,
+      "FLUENT": null,
+      "MATLAB": null
+     },
+     "other": {
+      "EnergyPlus 2.0": 10073.16720094616,
+      "VA114/ISO-13370": 9013.0,
+      "ESP-r/BASESIMP": 8848.0,
+      "BASECALC": 8848.0
+     }
+    }
+   },
+   "vs_ref_qfloor_max": {
+    "vm_mean": 1192.4323039834642,
+    "vm_min": 1180.60728,
+    "vm_max": 1207.16599044974,
+    "dev_vs_vm_mean_pct": 0.6795989847691332,
+    "example_values": {
+     "vm": {
+      "TRNSYS": {
+       "q": 1189.5236415006527,
+       "date": "02/09",
+       "hour": 17
+      },
+      "FLUENT": {
+       "q": 1180.60728,
+       "date": "02/09",
+       "hour": 17
+      },
+      "MATLAB": {
+       "q": 1207.16599044974,
+       "date": "02/08",
+       "hour": 17
+      }
+     },
+     "other": {
+      "EnergyPlus 2.0": 1299.7820630266915,
+      "VA114/ISO-13370": 1187.0,
+      "ESP-r/BASESIMP": 1094.0
+     }
+    }
+   },
+   "vs_ref_phase": {
+    "vm_min": 589.0,
+    "vm_max": 613.0,
+    "vm_mean": 605.0,
+    "ours": 662,
+    "example_values": {
+     "vm": {
+      "TRNSYS": 613.0,
+      "FLUENT": 613.0,
+      "MATLAB": 589.0
+     },
+     "other": {
+      "VA114/ISO-13370": 1100.0,
+      "ESP-r/BASESIMP": 433.0
+     }
+    }
+   }
+  }
+ },
+ "omitted": {
+  "GC10a": "linearly varying perimeter-surface temperature on a semi-infinite solid (8.2.2.1.1 c-e) cannot be expressed in Kiva (2-D, finite domain, convective boundaries). Analytical reference 2432.6 W.",
+  "near-surface temperatures (Table 8-12)": "EnergyPlus' Kiva exposes no ground-cell temperatures at user points (only the slab's inside/outside face temperatures)."
+ },
+ "deltas": {
+  "GC30b-GC30a (W)": -61.426531699283714,
+  "GC60b-GC30b (W)": -343.6972243139153,
+  "GC65b-GC60b (W)": -287.95240414554337,
+  "GC45b-GC40b (kWh)": 10067.377085560234,
+  "GC55b-GC40b (kWh)": 12724.572117713531,
+  "GC40b-GC70b (kWh)": 5440.442701659622,
+  "GC40b-GC80b (kWh)": 15662.270036939539,
+  "GC45c-GC40c (kWh)": 7967.594959187412,
+  "GC55c-GC40c (kWh)": 2122.84562281509,
+  "GC40c-GC80c (kWh)": 9553.732625821624,
+  "GC40a-GC40b (kWh)": 476.35586283705925
+ }
+}

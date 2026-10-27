@@ -1,0 +1,146 @@
+MODELING NOTES FOR ASHRAE STANDARD 140 - SECTION 11 (AIR-SIDE HVAC EQUIPMENT, AE101-AE445)
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+1. SOFTWARE VENDOR: ERGO Energy LLP (Pinocchio-EP)
+2. SOFTWARE NAME: Pinocchio-EP (web BEM application; HVAC built in Pinocchio Studio)
+   with its calculation engine EnergyPlus 26.1.0-6f2e40d102 (unmodified)
+3. SOFTWARE VERSION: Pinocchio-EP 1.0.0+b0c9cf1.dirty (branch ashrae140-compliance
+   working tree, 2026-10-27); EnergyPlus 26.1.0-6f2e40d102
+4. OPERATING SYSTEM REQUIREMENTS: any current web browser; engine server-side
+   (Linux) or local (Windows/Linux)
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION: none (client); ~1 GB engine
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION: 4 GB (client)
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS: 1280 x 800
+8. OTHER: the IDF tested is the one the application's Run/Export produces
+   (exportIdf); stored per case in inputs/<case>/in.idf with the Studio op log.
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+NOTE 1 - Zone loads
+-------------------------------------------------------------------------------
+1.1 Effect: fixed zone sensible and latent loads (11.2.1.1.4).
+1.2 Options: (1) adiabatic zone with internal gains (negative for heating);
+    (2) alternate non-adiabatic zone (11.2.1.1.5).
+1.3 Used: option 1. All surfaces adiabatic; sensible cooling loads and latent
+    loads as zone equipment gains (fraction radiant 0; latent fraction 1, i.e.
+    moisture added at the zone temperature); heating loads as negative
+    convective gains.
+
+NOTE 2 - System types
+-------------------------------------------------------------------------------
+1.1 Effect: FC, SZ, CV terminal reheat and VAV terminal reheat systems.
+1.2 Options available: air loop with zone terminals; four-pipe fan-coil zone
+    unit (its fan is located upstream of the coils).
+1.3 Used: air loop for all four. FC = single-zone air loop with heating coil,
+    cooling coil, then supply fan (fan downstream of the coils as in Figure
+    11-1), no return fan, CV terminal without reheat.
+
+NOTE 3 - Cooling coil with bypass factor ~0
+-------------------------------------------------------------------------------
+1.1 Effect: BF = 0 (11.2.1.1.3 d).
+1.2 Options: DX coils (bypass factor from rated conditions, cycling); chilled
+    water coil (effectiveness model, continuous modulation).
+1.3 Used: chilled-water coil with a very large UA (design: 0.01 m3/s water at
+    2 C, air 26.7 C -> 4 C), water flow modulated by its controller to the
+    leaving-air set point; wet-coil leaving RH 99.3-100 %.
+
+NOTE 4 - Outputs not directly reported by the program
+-------------------------------------------------------------------------------
+1.1 Specific volume at each node = 287.042 (T+273.15)(1+1.607858 W)/P [m3/kgda]
+    (dry-air basis) from the program's node temperature, humidity ratio and
+    pressure; enthalpy (J/g) = node enthalpy (J/kg) / 1000; cooling-coil latent
+    load = total - sensible; zone latent load = the latent gain rate. Steady
+    state is checked as last hour vs previous hour; 24-h medians are also
+    recorded (Block G note 1).
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+NOTE 1 - Supply-fan heat
+-------------------------------------------------------------------------------
+1.1 Effect: fan energy and fan losses to the moved air, motor and drive losses
+    outside the airstream (11.2.1.1.1.1 e-h).
+1.2 Sections 11.2.1.1.1.1, 11.2.2.1.1.1, 11.2.3.1.1.1, 11.2.4.1.1.1.
+1.3 Pressure rise 498 Pa, fan total efficiency 0.7, motor efficiency 1.0,
+    motor in airstream fraction 0.
+1.4 Heat to air = shaft power = Q x dP / 0.7 = Ho + Ho(1/0.7 - 1), as specified
+    (e: fan energy to the air; g: fan losses to the air); motor/drive input is
+    not an output.
+
+NOTE 2 - Return fan
+-------------------------------------------------------------------------------
+1.1 Effect: return fan between zone mixer and OA mixing box, 249 Pa at the design
+    return flow, pressure ~ flow^2 (11.2.2.1.1.2, 11.2.3.1.1.2, 11.2.4.1.1.2).
+1.3 Fan on the air loop upstream of the outdoor-air system; maximum flow = the
+    system supply flow; SZ/CV constant 249 Pa; VAV pressure ~ (flow fraction)^2
+    (power coefficients 0,0,0,1,0), total efficiency 0.7, motor outside airstream.
+1.4 The program passes the branch (supply) flow through a fan in this position
+    and relieves the excess at the mixer; the heat reaching the mixed air is
+    Q_supply x dP / 0.7 x (supply - exhaust)/supply = Q_return x dP / 0.7, the
+    specified value at design return flow; the fan temperature rise equals the
+    specified one. The reported rfi/rfo mass flows are the program's node
+    values (supply flow).
+
+NOTE 3 - Ambient conditions
+-------------------------------------------------------------------------------
+1.3 Constant hourly weather records (EPW) with the dry-bulb and dew-point of
+    Tables 11-4, 11-5, 11-7, 11-14, 11-16, 101325 Pa, 4.3 m/s, no solar
+    radiation, entered directly (not the TM2 files).
+
+NOTE 4 - Thermostat without deadband
+-------------------------------------------------------------------------------
+1.3 Heating and cooling set points both equal to the specified zone temperature
+    (dual set point with zero deadband) in every case, per zone.
+
+===============================================================================
+D. REPORT BLOCK FOR USE OF NON-SPECIFIED INPUTS
+===============================================================================
+NONE
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+NONE (all 24 cases AE101-AE445 run and reported)
+
+===============================================================================
+F. REPORT BLOCK FOR CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE
+   TESTS, WHERE SUCH CHANGES ARE NOT AVAILABLE IN PUBLICLY RELEASED VERSIONS OF
+   THE SOFTWARE
+===============================================================================
+NOTE 1 - Application working tree
+-------------------------------------------------------------------------------
+1.1 No Section 11-specific source change. The application build tested is the
+    ashrae140-compliance working tree (changes listed for Section 10 and by
+    other work packages), not yet publicly released. EnergyPlus is unmodified.
+
+===============================================================================
+G. REPORT BLOCK FOR ANOMALOUS RESULTS
+===============================================================================
+NOTE 1 - VAV cases not exactly steady
+-------------------------------------------------------------------------------
+1.1 AE403, AE404, AE405, AE406, AE445: hour-to-hour variation of coil loads and
+    node flows of 0.3-1.6 % persists after 5 days of constant conditions.
+1.2 Iterative interaction of the VAV terminal damper control and the water-coil
+    controller; insensitive to convergence tolerances, HVAC iteration limit and
+    timestep. Last-hour values are reported; 24-h medians give the same range
+    results.
+
+NOTE 2 - AE301 preheat coil load
+-------------------------------------------------------------------------------
+1.1 AE301 preheat 3.550 kWh/h.
+1.2 Volumetric flows are converted to mass at standard air density (permitted
+    predetermined assumption): outdoor-air mass 1.7 % higher and supply mass
+    3.6 % lower than at the specified local conditions, raising the share of
+    -29 C outdoor air in the mixed air.
+
+NOTE 3 - Zone temperature offset
+-------------------------------------------------------------------------------
+1.1 Zone air temperatures 0.005-0.04 K above set point (e.g. AE301 zone 2
+    22.261 C vs 22.222 C); no set-point adjustment applied.
+
+===============================================================================
+<END OF DOCUMENT>
+===============================================================================

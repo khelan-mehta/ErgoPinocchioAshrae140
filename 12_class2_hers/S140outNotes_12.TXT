@@ -1,0 +1,120 @@
+MODELING NOTES FOR ASHRAE STANDARD 140 - SECTION 12 (CLASS II, HERS BESTEST)
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+1. SOFTWARE VENDOR: ERGO Energy LLP
+2. SOFTWARE NAME: Pinocchio-EP (web BEM application; simulation engine EnergyPlus)
+3. SOFTWARE VERSION: Pinocchio-EP 1.0.0+b0c9cf1.dirty (branch ashrae140-compliance), engine EnergyPlus 26.1.0-6f2e40d102
+   (unmodified, bundled build; the exported IDF carries the version comment in its first line)
+4. OPERATING SYSTEM REQUIREMENTS: any current web browser (Chrome/Edge/Firefox/Safari); engine runs server-side (Linux) or
+   locally (Windows 10/11 x64 used for these tests)
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION: none for the browser client; ~1 GB for a local EnergyPlus 26.1 install
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION: 4 GB
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS: 1280 x 720
+8. OTHER: test inputs were produced by the application's own export function (exportIdf) from project data, with the
+   "Standard 140 / validation" project profile; runs used `energyplus -x -r` with the converted weather files listed in Block C.
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+NOTE 1 - Attic
+---------------------------------------------------------
+1.1 Effect: unconditioned attic above the conditioned zone.
+1.2 Options: (a) separate unconditioned zone under a pitched roof; (b) resistance layer.
+1.3 Used: (a) - the application's gable roof generator (pitch 18.43 deg, ridge E-W, no eave overhang) creates the attic zone
+    (3463 ft3) with its own ventilation rate (2.4 ACH); roof and gable constructions per Table 12-6.
+
+NOTE 2 - Surface heat transfer coefficients
+---------------------------------------------------------
+2.1 Effect: interior and exterior convection and radiation.
+2.2 Options: program-calculated time-varying coefficients, or user constant values.
+2.3 Used: program-calculated (TARP inside, DOE-2 outside, detailed long-wave exchange) for all surfaces except: the raised
+    floor (combined coefficient fixed at 12.49 W/m2K = 2.2 Btu/h-ft2-F at zero wind, 12.2.1.5) and the soil-side faces of the
+    ASHRAE slab/basement resistances (film included in the resistance; see Block C note 4).
+
+NOTE 3 - Basement thermal zoning (L322A, L324A)
+---------------------------------------------------------
+3.1 Effect: conditioned basement under the main floor.
+3.2 Options in 12.2.2.12.1.3: one well-mixed zone, or two zones with identical thermostat control.
+3.3 Used: two zones (basement + main floor) with identical heating set point, coupled by the main floor/basement ceiling
+    (Table 12-43); results are the sum of both zones' heating loads.
+
+NOTE 4 - Ground coupling of the slab (L302A/L304A)
+---------------------------------------------------------
+4.1 Used for the reported L302A/L304A results: the ASHRAE perimeter-method slab loss coefficients of Tables 12-36/12-38 as a
+    resistance to ambient air. Additional runs L302K/L304K use the application's two-dimensional ground model (Kiva, via the
+    project ground setting) with the Annex B18 soil and concrete properties; they are reported for information only.
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+NOTE 1 - Parallel-path framed constructions
+---------------------------------------------------------
+Framed and insulated sections are represented by one homogeneous cavity layer whose resistance makes the composite
+surface-to-surface R equal the tabulated value (L100A wall 10.901, floor 12.928, ceiling 16.922; L120A wall 22.723,
+ceiling 55.962; L200A wall 3.981, floor 3.017, ceiling 10.224 h-ft2-F/Btu); the layer's heat capacity is the area-weighted
+capacity of insulation and framing.
+
+NOTE 2 - Interior walls
+---------------------------------------------------------
+Internal mass with both faces in the zone: 2 x 921.6 ft2 of half the unframed wall (one 0.5 in plasterboard) and
+2 x 102.4 ft2 of half the framed wall (1.75 in frame + plasterboard).
+
+NOTE 3 - Windows
+---------------------------------------------------------
+Each 3 x 5 ft window module = glass 2.542 x 2.156 ft x 2 sashes (10.96 ft2) separated by a 0.23 ft horizontal meeting rail,
+plus a 2.75 in frame (frame + rail = 4.04 ft2). Glass: single pane 0.118 in, tau 0.837, rho 0.075, emissivity 0.84,
+k 0.52 Btu/h-ft-F (Table 12-11); the program calculates angular properties from these. Frame conductance (surface to surface)
+9.096 Btu/h-ft2-F (aluminium, L100A) / 0.756 (wood, L130A); L130A edge-of-glass/center-of-glass conductance ratio 1.153
+(Table 12-20). L130A outer low-e pane back-side reflectance taken equal to the front value (0.34) - not given.
+
+NOTE 4 - ASHRAE steady-state ground coupling (L302A, L304A, L322A, L324A)
+---------------------------------------------------------
+Slab, below-grade wall and basement floor: massless layers equal to the tabulated soil/slab loss resistances (6.564, 15.891,
+5.186, 40.614 h-ft2-F/Btu) facing ambient air with a 1000 W/m2K exterior coefficient, no solar and thermal emittance 1e-4.
+Each basement wall is divided into rim joist/sill (0.75 ft), above-grade concrete (0.667 ft, both sun exposed) and
+below-grade (6.583 ft) sections.
+
+NOTE 5 - Weather
+---------------------------------------------------------
+Colorad.TMY and Lasvega.TMY converted to EPW by the application's harness converter: radiation re-binned from true solar time to
+local standard time (equation of time + longitude correction), diffuse horizontal derived as GHI - DNI cos(z) (absent in the
+files), 3-hourly sky cover interpolated, station pressure retained (altitude handled by the program). A run without the solar-
+time shift changes loads by less than 0.3 %.
+
+NOTE 6 - Internal gains
+---------------------------------------------------------
+One equipment object at 5818 Btu/h peak (sensible 4782 + latent 1036) with the Table 12-9 hourly profile; latent fraction
+0.178; 70 % of the sensible part radiative. Latent gains have no effect on the reported sensible loads (no latent removal).
+
+===============================================================================
+D. REPORT BLOCK FOR NONSPECIFIED INPUTS
+===============================================================================
+Not applicable to Class II (5.2). Values not given by Section 12 that had to be entered: carpet density 12 lb/ft3 and
+thickness 0.5 in (Kiva runs only), cavity-air resistance 1.0 h-ft2-F/Btu for the unframed 90 % of the main floor/basement
+ceiling, Kiva foundation wall 8 in concrete extending 2 ft below grade, window positions taken from Figures 12-2, 12-11, 12-15.
+
+===============================================================================
+E. OMITTED TEST CASES AND RESULTS
+===============================================================================
+Tier 2 cases P100A, P105A, P110A, P140A and P150A were not run in this test round (inputs not yet built). All other Tier 1
+and Tier 2 cases were run.
+
+===============================================================================
+F. CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE TESTS
+===============================================================================
+No change to the simulation engine. The application version used includes unreleased work on the ashrae140-compliance
+branch (Standard 140 profile, project ground setting with Kiva); the test inputs also carry objects that the user interface
+cannot create (internal mass, window frame/divider, surface convection coefficients, detached shading, basement wall
+sections), added to the exported input.
+
+===============================================================================
+G. ANOMALOUS RESULTS
+===============================================================================
+1. Annual loads are below the minimum example result in all cases but L140AC (heating -0.4 to -12 %, cooling -4 to -17 %).
+   The effect of windows is smaller than in the example results (L140A-L100A heating -2.7 MBtu, cooling -25.1 MBtu).
+2. L322A/L324A heating is below the example range; in the two-zone model the main floor's gains warm the basement
+   (basement mean air temperature 21.9 C).
+3. The Kiva slab runs (L302K/L304K) give lower losses than both the ASHRAE perimeter method and the Annex B18 variant.
+4. One psychrometric range warning (wet-bulb iteration, 02/12 22:00, Colorado runs) - no effect on results.

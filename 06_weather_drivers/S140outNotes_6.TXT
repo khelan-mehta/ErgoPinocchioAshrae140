@@ -1,0 +1,196 @@
+MODELING NOTES FOR ASHRAE STANDARD 140 - SECTION 6 (WEATHER DRIVERS, WD100-WD600)
+
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+1. SOFTWARE VENDOR: ERGO Energy LLP (Pinocchio-EP user interface); simulation
+   engine EnergyPlus (U.S. DOE), bundled unmodified.
+
+2. SOFTWARE NAME: Pinocchio-EP (web application) with its bundled EnergyPlus
+   engine.
+
+3. SOFTWARE VERSION (unique software version identifier):
+   Pinocchio-EP 1.0.0+b0c9cf1.dirty (branch ashrae140-compliance, unreleased
+   working tree of 2026-10-27; the stamp is written as the first comment line of
+   every exported in.idf); engine EnergyPlus 26.1.0-6f2e40d102.
+
+4. OPERATING SYSTEM REQUIREMENTS: Front end: a current desktop browser
+   (Chromium-based, Firefox or Safari). Engine: the runs in this report used the
+   Windows x86_64 EnergyPlus 26.1 build bundled with the application (the
+   deployed server runs the Linux build of the same version).
+
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION: none for the browser front
+   end; about 1 GB for a local EnergyPlus 26.1 engine installation.
+
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION: 4 GB recommended for the
+   browser application.
+
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS: 1280 x 800.
+
+8. OTHER HARDWARE OR SOFTWARE-RELATED REQUIREMENTS: The model was built with
+   the application's own project model and IDF emitter (exportIdf) driven from
+   Node.js (tools/std140/wd/wd_suite.mjs) and run locally with
+   "energyplus -x -r -w <WDnnn.epw>". Time step: 4 per hour (application
+   default; not changed for these tests). Hourly outputs reported.
+
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+NOTE 1 - Sky diffuse model
+---------------------------------------------------------
+1.1 Describe the Effect Being Simulated: Diffuse sky radiation incident on
+    tilted and vertical surfaces.
+
+1.2 Optional Settings or Modeling Capabilities:
+1.2.1 None user-selectable. The engine always applies its anisotropic sky model
+      (isotropic background, circumsolar brightening and horizon brightening,
+      Perez-type coefficients).
+
+1.3 Setting or Capability Used: the engine's built-in anisotropic sky model.
+
+NOTE 2 - Weather data format
+---------------------------------------------------------
+1.1 Describe the Effect Being Simulated: Reading the specified weather data.
+
+1.2 Optional Settings or Modeling Capabilities:
+1.2.1 EPW format - the only weather format the engine reads.
+
+1.3 Setting or Capability Used: the equivalent EPW files WD100.epw - WD600.epw
+    supplied with the standard (Section 6.2.1.1.1, Informative Note 4; Annex A1
+    Table A1-26) were used unchanged. Site latitude, longitude, time zone
+    (including the non-integer +5.5 of WD500) and elevation were read from the
+    EPW LOCATION record (no Site:Location object in the input); they agree with
+    Tables 6-1 and 6-3 to 6-6.
+
+NOTE 3 - Shading calculation
+---------------------------------------------------------
+1.1 Describe the Effect Being Simulated: Exterior shading / self-shading.
+
+1.3 Setting or Capability Used: Solar Distribution FullInteriorAndExterior (the
+    application's Standard 140 profile). The building of Figs 6-1 / 6-2 is
+    convex, so no surface shades another (Section 6.2.1.5.2 requires shading to
+    be ignored).
+
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+NOTE 1 - Alternative building geometry (Section 6.2.1.5)
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated: Incident solar radiation on the ten
+    surfaces of Table 6-2.
+
+1.2 Section(s) of the Standard where Relevant Inputs are Specified: 6.2.1.4,
+    6.2.1.5, Table 6-2, Figures 6-1 and 6-2.
+
+1.3 Equivalent Input(s) Used: The software cannot request incident solar
+    without a building model, so the alternative building was modeled. Floor
+    plan per Fig 6-1 (8 m x 6 m, south corners cut 2 m x 2 m at 45 degrees),
+    walls 2.7 m high (S, 45 deg E of S, E, N, W, 45 deg W of S), roof per
+    Fig 6-2: horizontal top at 2.7 + 2 tan 30 = 3.855 m with planes sloped 30
+    degrees toward E, S and W, two corner triangles over the 45-degree walls
+    and a vertical band on the north side. The 30-degree slope was modeled
+    exactly (rise 1.1547 m over 2 m; the figure dimension 1.15 m is rounded).
+    The roof planes enclose a separate unconditioned roof-space zone with an
+    adiabatic floor at 2.7 m so that both zones are closed. Walls and the
+    horizontal/30-degree roof planes report the Table 6-2 orientations.
+
+1.4 Justification: Section 6.2.1.5.2 and its informative note - materials and
+    the surfaces not listed in Table 6-2 do not affect the incident solar
+    outputs; the shape is convex so there is no self-shading.
+
+NOTE 2 - Ground reflectance
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated: Ground-reflected solar radiation.
+
+1.2 Section(s): 6.2.1.2 (0 for WD100-WD500), 6.2.6.2 (0.2 for WD600).
+
+1.3 Equivalent Input(s) Used: twelve monthly ground reflectances of 0 (WD100 -
+    WD500) or 0.2 (WD600). The EPW albedo column is not used by the engine (it
+    is 0.2 in WD300.epw and WD500.epw; the reported ground-diffuse incident
+    solar of those cases is 0 everywhere, as specified).
+
+1.4 Justification: direct input of the specified value.
+
+
+===============================================================================
+D. REPORT BLOCK FOR USE OF NON-SPECIFIED INPUTS
+===============================================================================
+NONE
+
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+NONE. All cases WD100-WD600 and all Section 6.3.1 outputs were produced.
+
+
+===============================================================================
+F. REPORT BLOCK FOR CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE
+   TESTS, WHERE SUCH CHANGES ARE NOT AVAILABLE IN PUBLICLY RELEASED VERSIONS OF
+   THE SOFTWARE
+===============================================================================
+NOTE 1 - Unreleased application features used
+-------------------------------------------------------------------------------
+1.1 List the Change(s) to the Source Code: No engine source code was changed.
+    The application build used is unreleased and contains (a) the opt-in
+    "Standard 140 / validation" project profile (no daylight saving time or
+    holidays, Country terrain, FullInteriorAndExterior solar distribution) and
+    (b) a user list of Output:Variable requests (project setting "Output
+    variables"). Both are user-accessible settings of that build.
+    The Fig 6-2 roof planes, the roof-space zone and the ground reflectance were
+    entered as additional IDF objects carried in the project's IDF model (the
+    application emits such objects verbatim); the application has no dedicated
+    input screen for a ground reflectance value or for this roof shape.
+
+1.2 List the Test Case(s) Relevant to the Change(s): WD100-WD600.
+
+1.3 Explanation: development build prepared for this test; not yet released.
+
+
+===============================================================================
+G. REPORT BLOCK FOR ANOMALOUS RESULTS
+===============================================================================
+NOTE 1 - Hourly averages of interpolated values
+-------------------------------------------------------------------------------
+1.1 Test Case(s) and Specific Results: all cases, all hourly outputs. The
+    software interpolates the hourly weather linearly to its 15-minute time
+    step and reports hourly means of the four time-step values. Instantaneous
+    quantities (dry-bulb, dew point, humidity, pressure, wind, sky cover) are
+    placed at the end of their hour; the solar values (averages over the
+    preceding hour) are placed at the middle of their hour. The hourly mean of
+    an instantaneous quantity therefore equals 0.375 x (previous hour) +
+    0.625 x (current hour) - verified to 1e-5 for dry bulb, RH, pressure, wind
+    speed and sky cover in every case - and annual solar totals on the
+    horizontal are 0.07-0.6 % below the EPW global horizontal totals
+    (WD100: 1664.6 vs 1670.2 kWh/m2). Results are entered with time stamps at
+    the hour midpoints (averaged values, Section 6.3).
+
+1.2 Explanation: engine time-step interpolation; not an input error.
+
+NOTE 2 - Wind direction interpolated as a scalar
+-------------------------------------------------------------------------------
+1.1 Test Case(s) and Specific Results: all cases. When the wind direction
+    crosses north between two hours (e.g. 310 deg -> 20 deg, WD100 Jan 1
+    12:00) the interpolated values pass through the opposite direction (hourly
+    mean 173.75 deg). Annual mean wind direction WD100: 173.6 deg reported vs
+    179.3 deg in the EPW (933 such hours).
+
+1.2 Explanation: the engine interpolates wind direction linearly without
+    taking the short way across 0/360 deg.
+
+NOTE 3 - Psychrometric warnings
+-------------------------------------------------------------------------------
+1.1 Test Case(s): WD100, WD600 (two warnings each: "Temperature out of range
+    (PsyPsatFnTemp)" inside the wet-bulb iteration on 03/13 10:15 and "WetBulb
+    not converged" on 03/14 11:45).
+
+1.2 Explanation: engine wet-bulb solver at very dry Denver conditions; the
+    run completes; the warnings concern two 15-minute time steps.
+
+
+===============================================================================
+<END OF DOCUMENT>
+===============================================================================

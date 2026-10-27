@@ -1,0 +1,422 @@
+MODELING NOTES FOR ASHRAE STANDARD 140
+
+Test section: 13 - Building thermal fabric empirical validation tests (ETNA),
+  Addendum b
+Software: Pinocchio-EP dev
+Date of results: 2026-10-27
+
+Results summary over the best steady-state periods (informative; Section 13 has
+  no acceptance criteria): ET110A1: measured 634.7 Wh/h, model 635.5 Wh/h
+  (+0.12 %), 18/18 h within +/-0.9 %; ET110B1: measured 640.4 Wh/h, model 642.5
+  Wh/h (+0.33 %), 18/18 h within +/-1 %; ET100A1: measured 736.6 Wh/h, model
+  736.8 Wh/h (+0.03 %), 55/55 h within +/-0.7 %; ET100B1: measured 737.6 Wh/h,
+  model 737.8 Wh/h (+0.03 %), 55/55 h within +/-0.9 %; ET100A3: measured 736.6
+  Wh/h, model 742.3 Wh/h (+0.77 %), 27/55 h within +/-0.7 %; ET100B3: measured
+  737.6 Wh/h, model 745.2 Wh/h (+1.04 %), 22/55 h within +/-0.9 %.
+
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+
+1. SOFTWARE VENDOR:
+   ERGO Energy LLP (Pinocchio-EP); calculation engine EnergyPlus 26.1.0 (build
+     6f2e40d102), unmodified
+
+2. SOFTWARE NAME:
+   Pinocchio-EP
+
+3. SOFTWARE VERSION (unique software version identifier):
+   dev
+
+4. OPERATING SYSTEM REQUIREMENTS:
+   Web application: any OS with a current Chromium, Firefox or Safari browser.
+     Simulation server: Linux (Docker) running the official EnergyPlus 26.1.0
+     build; the same build for Windows x86_64 was used for these runs.
+
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION:
+   Browser: none (web app). Server: about 2 GB (EnergyPlus 26.1 + application).
+
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION:
+   Browser: 4 GB. Server: 2 GB per concurrent simulation.
+
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS:
+   1280 x 800 or larger.
+
+8. OTHER HARDWARE OR SOFTWARE-RELATED REQUIREMENTS:
+   None.
+
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+
+NOTE 1 - Standard 140 / validation project profile
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated:
+    Program-side assumptions the test specification excludes (daylight saving,
+      holidays, automatic loads, latent removal) and the interior solar
+      distribution method.
+
+1.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+1.2.1 Normal (realistic defaults)
+        Physical Meaning: Pinocchio-EP's default for design projects:
+          weather-file DST and holidays honoured, FullExterior solar
+          distribution, ideal loads with constant-SHR dehumidification,
+          automatic People/Lights/Equipment/Infiltration from the space type.
+
+1.2.2 Standard 140 / validation: runperiod
+        Physical Meaning: RunPeriod: Use Weather File Daylight Saving Period =
+          No, Use Weather File Holidays and Special Days = No, Apply Weekend
+          Holiday Rule = No; any RunPeriodControl:DaylightSavingTime /
+          RunPeriodControl:SpecialDays object is dropped. (5.1.1.1 Time
+          convention - "Daylight savings time or holidays shall not be used for
+          scheduling.")
+
+1.2.3 Standard 140 / validation: solar
+        Physical Meaning: Building > Solar Distribution =
+          FullInteriorAndExterior (...WithReflections kept when the Site tab
+          turned reflections on). (7.2.1.12 Interior solar distribution -
+          programs that calculate it internally shall do so (Table 7-13
+          fractions only for programs that cannot); 5.1.1.6 c)
+
+1.2.4 Standard 140 / validation: terrain
+        Physical Meaning: Building > Terrain = Country when the project has no
+          Site exposure of its own (an explicit Site exposure always wins).
+          (7.2.1.1.2.2 / 7.2.1.9.1 - open terrain with scattered obstructions
+          (Terrain Category 3) -> EnergyPlus "Country")
+
+1.2.5 Standard 140 / validation: ideal
+        Physical Meaning: Every HVACTemplate:Zone:IdealLoadsAirSystem /
+          ZoneHVAC:IdealLoadsAirSystem: Dehumidification Control Type = None,
+          Humidification Control Type = None, Outdoor Air Method = None (no
+          outdoor-air object). (7.2.1.13 a, d and 7.2.1.13.2 e - 100 %
+          convective, "no latent heat extraction", "sensible cooling only")
+
+1.2.6 Standard 140 / validation: loads
+        Physical Meaning: No automatic People / Lights / ElectricEquipment /
+          Infiltration: only the loads the user defines (Internal loads step,
+          or model objects) are exported. (7.2.1.6 / 7.2.1.7 (the specified
+          infiltration and internal gains are the only ones) and 5.1.1.6
+          (non-specified inputs are not permitted))
+
+1.2.7 Standard 140 / validation: outputs
+        Physical Meaning: Hourly Output:Variable for Zone Ideal Loads Zone
+          Sensible Heating Energy, Zone Ideal Loads Zone Sensible Cooling
+          Energy, Zone Mean Air Temperature (key *). (7.3.1, 7.3.2, 7.3.8 -
+          annual and hourly heating / sensible cooling loads and zone
+          temperatures)
+
+1.2.8 Standard 140 / validation: timestep
+        Physical Meaning: Timestep, convergence tolerances and warm-up are NOT
+          changed by the profile (the model's own values are used and
+          reported). (5.1.1.9 Numerical settings - per the software
+          implementation; 5.1.1.4 consistent settings across the suite)
+
+1.3 Setting or Capability Used:
+    project.profile = "std140" for all six cases. For these imported models it
+      sets RunPeriod DST / holidays = No, Building Terrain Country and
+      FullInteriorAndExterior solar distribution (no effect: all surfaces are
+      NoSun / NoWind with other-side coefficients), ideal loads without
+      dehumidification, humidification or outdoor air, and the hourly
+      ideal-load / zone-temperature outputs.
+
+
+NOTE 2 - Interior surface heat transfer algorithm, Cases ET100A3 and ET100B3
+  (13.2.6.4 / 13.2.7.4)
+-------------------------------------------------------------------------------
+2.1 Describe the Effect Being Simulated:
+    Time-step varying interior convection and interior long-wave radiation
+      exchange between the cell surfaces.
+
+2.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+2.2.1 Inside convection algorithm (Envelope > Surface heat transfer,
+  SurfaceConvectionAlgorithm:Inside): Simple, TARP, CeilingDiffuser,
+  AdaptiveConvectionAlgorithm, ASTMC1340
+        Physical Meaning: Simple: constant natural-convection values by
+          orientation. TARP: natural convection by temperature difference and
+          tilt. CeilingDiffuser: mixed/forced convection correlations of the
+          zone supply air change rate (walls, ceiling, floor).
+          AdaptiveConvectionAlgorithm: per-surface selection by flow regime.
+          ASTMC1340: attic/horizontal-surface correlations.
+
+2.2.2 Interior long-wave radiation
+        Physical Meaning: Exchange between all inside faces with each face's
+          thermal emittance (the engine's only interior radiation model; not
+          user-selectable).
+
+2.2.3 Per-path constant convection coefficients (Envelope > Surface heat
+  transfer > Imported surfaces: SurfaceProperty:ConvectionCoefficients)
+        Physical Meaning: Constant convective coefficient per face; used for
+          the '1' cases only.
+
+2.3 Setting or Capability Used:
+    CeilingDiffuser for both cases, with the interior emittances of Tables
+      13-19 / 13-45 restored (0.870 walls and ceiling, 0.846 floor, 0.872 door,
+      0.9 glazing, 0.870 frames). Basis: the cell is mechanically mixed by the
+      heater-with-diffusers system at about 20.7 / 21.5 ach (four 0.55 m
+      diffusers near the floor, intake near the ceiling, 13.2.6.4.1); of the
+      program's algorithms only CeilingDiffuser makes the inside coefficients a
+      function of the supply air change rate, the others are natural-convection
+      or regime-classification correlations that do not see the measured
+      airflow. The hourly measured HWD supply air flow (CSV column J,
+      designated "Input" in Table 13-3) is imposed as the ideal heater's air
+      mass flow (see Block C note 4), so the correlation sees the measured air
+      change rate. Interior surface roughness: Smooth (it does not enter the
+      inside convection correlations). Other algorithms were run as informative
+      sensitivity only; they are listed in the results README, not used for the
+      submitted results.
+
+
+NOTE 3 - Numerical settings: timestep (13.2.2.5, 5.1.1.9)
+-------------------------------------------------------------------------------
+3.1 Describe the Effect Being Simulated:
+    Temporal discretization of the zone heat balance and the conduction
+      transfer functions.
+
+3.2 Optional Settings or Modeling Capabilities
+    (list setting or capability and its physical meaning):
+
+3.2.1 Timestep (objects editor: Timestep > Number of Timesteps per Hour), 1-60
+  per hour
+        Physical Meaning: Zone heat-balance time step; imported models run at
+          their own value.
+
+3.3 Setting or Capability Used:
+    60 per hour for all six cases (5.1.1.4). Convergence study: ET110A1,
+      ET100A1, ET100A3 at 4, 6, 10, 15, 20, 30 and 60 per hour change the
+      best-steady-state mean Qhtr by at most 0.100 % relative to 60 per hour.
+      Conduction transfer functions (default heat balance algorithm), default
+      convergence tolerances and warm-up.
+
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+
+NOTE 1 - Model input route: IDF authored from the normative specification and
+  imported
+-------------------------------------------------------------------------------
+1.1 Describe the Effect Being Simulated:
+    Test-cell geometry (16 parallel one-dimensional conduction paths), layered
+      constructions with imputed conductivities, schedules and the idealized
+      heater.
+
+1.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    13.2.2.7, 13.2.2.8 (Tables 13-5 to 13-18), 13.2.3.7 (Tables 13-23 to
+      13-37), 13.2.4.7 (Tables 13-42 to 13-44), 13.2.2.14, 13.2.2.16
+
+1.3 Equivalent Input(s) Used:
+    Each path is one BuildingSurface:Detailed (net inside area of Tables 13-5 /
+      13-23, strips of the 3.5 x 4.655 x 2.565 m cell) with its own
+      Construction and Material layers exactly as tabulated (inside layer first
+      in the tables, outside layer first in the input). The file was brought in
+      through Project > Import IDF together with the schedule CSV; the importer
+      inlined the Schedule:File objects as exact Schedule:Compact equivalents.
+      Guard boundary conditions, interior coefficients, emittance edits,
+      timestep, profile and outputs were then entered in the application (notes
+      2, 3, 4).
+
+1.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    The application's footprint/zone editor cannot split one wall, floor or
+      ceiling into several parallel conduction paths with different
+      constructions; the IDF import route reproduces the specified paths
+      exactly. Composite air-to-air R-values computed from the entered layers
+      and Table 13-20 coefficients match the informative values of Tables 13-6
+      to 13-37 (e.g. Cell A north wall 1.455 vs 1.456, ceiling path 1 6.157 vs
+      6.161, floor path 1 2.929 vs 2.928 m2K/W; Cell A UA with insulated
+      windows 30.92 W/K = sum of the required UA values).
+
+
+NOTE 2 - Guard zones as exterior boundary conditions
+-------------------------------------------------------------------------------
+2.1 Describe the Effect Being Simulated:
+    Measured guard-zone air temperatures and exterior combined coefficients on
+      every bounding surface.
+
+2.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    13.2.2.15.1, 13.2.2.10 (Table 13-20), 13.2.3.12.1, 13.2.4.11.1
+
+2.3 Equivalent Input(s) Used:
+    Six SurfaceProperty:OtherSideCoefficients, one per guard zone (attic,
+      cellar, north, east, south, west), entered as part of the cell
+      description brought in with Project > Import IDF (the program records
+      them as the faces' Other side coefficients boundary): Combined
+      Convective/Radiative Film Coefficient 18 W/m2K (hcomb,ext), Constant
+      Temperature Coefficient 1, all other coefficients 0, Constant Temperature
+      Schedule = the measured guard temperature. Every path surface has Outside
+      Boundary Condition OtherSideCoefficients with its guard, NoSun, NoWind.
+
+2.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    The other-side coefficient with a positive film coefficient is exactly an
+      exterior air temperature with a constant combined coefficient, which is
+      the boundary condition 13.2.2.15.1 specifies.
+
+
+NOTE 3 - Constant combined interior coefficients, Cases ET110A1, ET110B1,
+  ET100A1, ET100B1
+-------------------------------------------------------------------------------
+3.1 Describe the Effect Being Simulated:
+    Constant interior combined (convective + radiative) surface coefficients of
+      Tables 13-20 / 13-39 / 13-46.
+
+3.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    13.2.2.10 Informative Note 4, 13.2.3.9, 13.2.4.9
+
+3.3 Equivalent Input(s) Used:
+    A constant inside coefficient per path entered in Envelope > Surface heat
+      transfer > Imported surfaces (written as
+      SurfaceProperty:ConvectionCoefficients, Inside, Value = hcomb,int) (north
+      wall 10.5, door 10.5, ceiling 3.6, floor 5.3, east/south/west walls per
+      cell, insulated window paths 7.0 / 7.0 / 12.0, uninsulated window paths
+      12.0 W/m2K); the inside layer's Thermal Absorptance set to 0.00001 (the
+      program minimum, objects editor field edit).
+
+3.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    The program accepts constant convective coefficients but not combined ones;
+      the standard's own instruction (enter hcomb as convective, set the
+      interior emittance to 0 or the lowest value allowed) is followed. With
+      all inside emittances at the minimum the interior long-wave exchange is
+      negligible.
+
+
+NOTE 4 - Measured schedules, initialization and the measured HWD air flow
+-------------------------------------------------------------------------------
+4.1 Describe the Effect Being Simulated:
+    Hourly measured cell set point, guard temperatures, fan heat and supply air
+      flow; data outside the measured period.
+
+4.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    13.2.2.2.1 (Table 13-3), 13.2.2.4, 13.2.2.14, 13.2.2.16.2, 13.2.6.4.1
+
+4.3 Equivalent Input(s) Used:
+    A schedule CSV (8784 hourly rows, leap year 2000, GMT+1, preceding-hour
+      stamps placed on the hour they end) derived from the normative
+      measurement CSV: Tattic, Tcellar, Tnorth, Teast, Tsouth, Twest, Tcell,
+      Qfan, HWDsafr. Hours before the first measured hour hold the first row,
+      hours after the last hold the last row. RunPeriod = the calendar days of
+      the measured period (2000), so the program's warm-up repeats the first
+      day until converged. Qfan (Wh/h) is an ElectricEquipment of design level
+      1 W x the Qfan schedule, fraction radiant 0, latent 0, lost 0 (100 %
+      convective). The heater is an ideal loads air system (HVACTemplate)
+      heating to the hourly Tcell schedule, unlimited, no outdoor air, cooling
+      set point 100 C. The measured HWDsafr (m3/h) is imposed as the heater's
+      supply air mass flow with an EMS program (+ Add object: sensor, actuator
+      'Ideal Loads Air System / Air Mass Flow Rate', calling manager, program)
+      using the intake air density 1.1455 kg/m3 (35 C, 101.325 kPa).
+
+4.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    Tables 13-3 marks columns B-J as inputs. The ideal heater stays 100 %
+      efficient, convective and unlimited; imposing its flow only gives the
+      interior convection correlation of the '3' cases the measured air change
+      rate (with constant coefficients the flow has no effect: ET110A1 changes
+      by less than 0.01 %). The measured value 1,001.48 in
+      ET100A-Measurements.csv (quoted with a thousands separator) is read as
+      1001.48.
+
+
+NOTE 5 - Floor conduction paths: 10-layer limit
+-------------------------------------------------------------------------------
+5.1 Describe the Effect Being Simulated:
+    Floor paths 1-3 have 11 layers; the program allows 10 layers per
+      construction.
+
+5.2 Section(s) of the Standard where Relevant Inputs are Specified:
+    13.2.2.8.7.2.2.1 and Tables 13-13 to 13-15 informative note 2 (Cell B:
+      Tables 13-32 to 13-34)
+
+5.3 Equivalent Input(s) Used:
+    Path 1: Insulated Block 1 + 2 merged into one 0.120 m layer (same k, rho,
+      cp). Path 2: Ceramic Tile + Glue Cement merged (0.009 m, k 1.658, rho
+      2085, cp 893). Path 3: Concrete Beam 1 + 2 merged into one 0.120 m layer.
+
+5.4 Physical, Mathematical or Logical Justification of the Equivalent Input(s)
+    - provide supporting calculations, if relevant:
+    Exactly the merges the standard recommends for programs with a 10-layer
+      limit; layers with identical properties merge without any change in
+      resistance or capacity.
+
+
+===============================================================================
+D. REPORT BLOCK FOR USE OF NON-SPECIFIED INPUTS
+===============================================================================
+
+NONE
+
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+
+NONE
+
+
+===============================================================================
+F. REPORT BLOCK FOR CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE
+   TESTS, WHERE SUCH CHANGES ARE NOT AVAILABLE IN PUBLICLY RELEASED VERSIONS OF
+   THE SOFTWARE
+===============================================================================
+
+NONE
+
+
+===============================================================================
+G. REPORT BLOCK FOR ANOMALOUS RESULTS
+===============================================================================
+
+NOTE 1 - EnergyPlus 26.1: FisherPedersenCeilingDiffuser keys in
+  SurfaceProperty:ConvectionCoefficients:MultipleSurface are fatal
+-------------------------------------------------------------------------------
+1.1 Test Case(s) and Specific Results from the Case(s) that are Anomalous:
+    ET100A3 / ET100B3 algorithm options. MultipleSurface AllExteriorWalls
+      Inside FisherPedersenCeilingDiffuserWalls (+ Add object): fatal (** Fatal
+      error -- final processing. Program exited before simulations began. See
+      previous error messages.); MultipleSurface AllExteriorRoofs Inside
+      FisherPedersenCeilingDiffuserCeiling (+ Add object): fatal (** Fatal
+      error -- final processing. Program exited before simulations began. See
+      previous error messages.); MultipleSurface AllExteriorFloors Inside
+      FisherPedersenCeilingDiffuserFloor (+ Add object): fatal (** Fatal error
+      -- final processing. Program exited before simulations began. See
+      previous error messages.).
+
+1.2 Explanation of Reason for the Anomalous Results:
+    The calculation engine (EnergyPlus 26.1.0, unmodified) accepts these keys
+      in the input dictionary but terminates with 'Unhandled convection
+      coefficient algorithm'. The application does not patch the engine; the
+      per-surface Fisher-Pedersen correlations are therefore reachable only
+      through the zone-level CeilingDiffuser algorithm, which is what Cases
+      ET100A3 / ET100B3 use.
+
+
+NOTE 2 - Cases ET100A3 / ET100B3: sensitivity to the air change rate seen by
+  the convection correlation
+-------------------------------------------------------------------------------
+2.1 Test Case(s) and Specific Results from the Case(s) that are Anomalous:
+    Without the measured HWD air flow imposed (the ideal heater's own, much
+      smaller, air flow): ET100A3 674.1 Wh/h (-8.48 %), ET100B3 676.0 Wh/h
+      (-8.34 %). Other algorithms with the measured flow: ET100A3 TARP -19.2 %,
+      ET100A3 AdaptiveConvectionAlgorithm -27.3 %, ET100A3 ASTMC1340 -21.8 %,
+      ET100A3 Simple -14.7 %, ET100B3 TARP -19.3 %, ET100B3
+      AdaptiveConvectionAlgorithm -27.6 %, ET100B3 ASTMC1340 -22.0 %, ET100B3
+      Simple -14.9 %.
+
+2.2 Explanation of Reason for the Anomalous Results:
+    The interior coefficients of these cases are driven by forced convection
+      from about 21 ach of diffuser air. Correlations that do not use the air
+      change rate, or that see only the heat-delivery air flow of an idealized
+      heater, under-predict the interior coefficients and therefore the heater
+      energy. Reported for transparency; the submitted results use the
+      algorithm and settings of Block B.
+
+
+===============================================================================
+<END OF DOCUMENT>
+===============================================================================

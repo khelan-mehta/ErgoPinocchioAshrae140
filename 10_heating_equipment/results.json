@@ -1,0 +1,394 @@
+{
+ "engine": "EnergyPlus 26.1.0-6f2e40d102 (bundled, unmodified)",
+ "generated": "2026-10-27T16:42:37.707Z",
+ "variant": "base",
+ "results": [
+  {
+   "id": "HE100",
+   "tag": "HE100",
+   "case": {
+    "wx": "HE100",
+    "eff": 1,
+    "cap": 10000,
+    "fanW": 0,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE100W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 0,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 77.76,
+   "totalFurnaceInput_GJ": 77.75611219439186,
+   "fuelConsumption_m3s": 0.0002631447374999725,
+   "fanEnergy_kWh": 0,
+   "circulatingFan_kWh": 0,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0,
+   "zoneSensibleHeating_GJ": 77.76000000004005,
+   "zoneT": {
+    "mean": 19.74757548662948,
+    "max": 19.747575585874806,
+    "min": 19.747575486033984
+   },
+   "plr": {
+    "mean": 1,
+    "max": 1
+   },
+   "rtfMean": 0.9999500024998842,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE110",
+   "tag": "HE110",
+   "case": {
+    "wx": "HE100",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 0,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE100W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 0,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 77.76,
+   "totalFurnaceInput_GJ": 97.19514024298473,
+   "fuelConsumption_m3s": 0.00032893092187494835,
+   "fanEnergy_kWh": 0,
+   "circulatingFan_kWh": 0,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0,
+   "zoneSensibleHeating_GJ": 77.76000000004005,
+   "zoneT": {
+    "mean": 19.74757548662948,
+    "max": 19.747575585874806,
+    "min": 19.747575486033984
+   },
+   "plr": {
+    "mean": 1,
+    "max": 1
+   },
+   "rtfMean": 0.9999500024998842,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE120",
+   "tag": "HE120",
+   "case": {
+    "wx": "HE120",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 0,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE120W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 0,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 31.26908124247319,
+   "totalFurnaceInput_GJ": 38.49135794579071,
+   "fuelConsumption_m3s": 0.00013026369241996531,
+   "fanEnergy_kWh": 0,
+   "circulatingFan_kWh": 0,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0,
+   "zoneSensibleHeating_GJ": 31.269081242473195,
+   "zoneT": {
+    "mean": 20.000000000000004,
+    "max": 20.000000000000004,
+    "min": 20.000000000000004
+   },
+   "plr": {
+    "mean": 0.40212295836516276,
+    "max": 0.4021229583676839
+   },
+   "rtfMean": 0.396001624956669,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE130",
+   "tag": "HE130",
+   "case": {
+    "wx": "HE130",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 0,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE130W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 0.008506442997819394,
+   "totalFurnaceInput_GJ": 0.015190076781819557,
+   "fuelConsumption_m3s": 5.140674674375798e-8,
+   "fanEnergy_kWh": 0,
+   "circulatingFan_kWh": 0,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0,
+   "zoneSensibleHeating_GJ": 0.008506443003342532,
+   "zoneT": {
+    "mean": 19.997690366423765,
+    "max": 19.998013549711608,
+    "min": 19.997337752252278
+   },
+   "plr": {
+    "mean": 0.00010939355707072181,
+    "max": 0.0001367419530643401
+   },
+   "rtfMean": 0.00015627651010102997,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE140",
+   "tag": "HE140",
+   "case": {
+    "wx": "HE140",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 0,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE140W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 31.269042433785273,
+   "totalFurnaceInput_GJ": 39.07876917881311,
+   "fuelConsumption_m3s": 0.00013225162842082626,
+   "fanEnergy_kWh": 0,
+   "circulatingFan_kWh": 0,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0,
+   "zoneSensibleHeating_GJ": 31.269042433785373,
+   "zoneT": {
+    "mean": 19.999978401917666,
+    "max": 20,
+    "min": 19.99961004329947
+   },
+   "plr": {
+    "mean": 0.40212245928222223,
+    "max": 0.7987016289501063
+   },
+   "rtfMean": 0.4020449503993096,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE150",
+   "tag": "HE150",
+   "case": {
+    "wx": "HE140",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 200,
+    "fanMode": "continuous",
+    "draftW": 0
+   },
+   "weather": "official HE140W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 29.76513127802963,
+   "totalFurnaceInput_GJ": 37.15695119608495,
+   "fuelConsumption_m3s": 0.00012574775014919369,
+   "fanEnergy_kWh": 432.00000023760714,
+   "circulatingFan_kWh": 432.00000023760714,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 1.5552000008554243,
+   "zoneSensibleHeating_GJ": 31.320331278885195,
+   "zoneT": {
+    "mean": 20.03266131580802,
+    "max": 20.41833689629173,
+    "min": 19.999999999999996
+   },
+   "plr": {
+    "mean": 0.38278203804050914,
+    "max": 0.7787016289391043
+   },
+   "rtfMean": 0.3822731604535453,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE160",
+   "tag": "HE160",
+   "case": {
+    "wx": "HE140",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 200,
+    "fanMode": "cycling",
+    "draftW": 0
+   },
+   "weather": "official HE140W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 30.653222553778253,
+   "totalFurnaceInput_GJ": 38.296002207586646,
+   "fuelConsumption_m3s": 0.0001296025632431322,
+   "fanEnergy_kWh": 171.15759611226903,
+   "circulatingFan_kWh": 171.15759611226903,
+   "draftFan_kWh": 0,
+   "fanHeatToAir_GJ": 0.6161673460041744,
+   "zoneSensibleHeating_GJ": 31.26938897261862,
+   "zoneT": {
+    "mean": 20.000196531001592,
+    "max": 20.00083372102381,
+    "min": 19.999481706526716
+   },
+   "plr": {
+    "mean": 0.39420296494056933,
+    "max": 0.7829532423782783
+   },
+   "rtfMean": 0.3939917922591154,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE170",
+   "tag": "HE170",
+   "case": {
+    "wx": "HE140",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 200,
+    "fanMode": "continuous",
+    "draftW": 50
+   },
+   "weather": "official HE140W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 29.76513127802963,
+   "totalFurnaceInput_GJ": 37.15695119608495,
+   "fuelConsumption_m3s": 0.00012574775014919369,
+   "fanEnergy_kWh": 473.28550156659026,
+   "circulatingFan_kWh": 432.00000023760714,
+   "draftFan_kWh": 41.2855013289831,
+   "fanHeatToAir_GJ": 1.5552000008554243,
+   "zoneSensibleHeating_GJ": 31.320331278885195,
+   "zoneT": {
+    "mean": 20.03266131580802,
+    "max": 20.41833689629173,
+    "min": 19.999999999999996
+   },
+   "plr": {
+    "mean": 0.38278203804050914,
+    "max": 0.7787016289391043
+   },
+   "rtfMean": 0.3822731604535453,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE210",
+   "tag": "HE210",
+   "case": {
+    "wx": "HE210",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 200,
+    "fanMode": "cycling",
+    "draftW": 50
+   },
+   "weather": "official HE210W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 0,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 42.26474575456161,
+   "totalFurnaceInput_GJ": 52.69346552070761,
+   "fuelConsumption_m3s": 0.00017832692197553745,
+   "fanEnergy_kWh": 293.8684060796783,
+   "circulatingFan_kWh": 235.32011105666973,
+   "draftFan_kWh": 58.54829502300861,
+   "fanHeatToAir_GJ": 0.8471523998040115,
+   "zoneSensibleHeating_GJ": 43.11189810098354,
+   "zoneT": {
+    "mean": 20.000185354324813,
+    "max": 20.000866406266717,
+    "min": 19.999999999999996
+   },
+   "plr": {
+    "mean": 0.5435281089835602,
+    "max": 0.8740997935145169
+   },
+   "rtfMean": 0.5421138428056346,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE220",
+   "tag": "HE220",
+   "case": {
+    "wx": "HE210",
+    "eff": 0.8,
+    "cap": 10000,
+    "fanW": 200,
+    "fanMode": "cycling",
+    "draftW": 50,
+    "setback": true
+   },
+   "weather": "official HE210W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 40.033261005973316,
+   "totalFurnaceInput_GJ": 49.833047409088934,
+   "fuelConsumption_m3s": 0.00016864660293849134,
+   "fanEnergy_kWh": 278.18975415644417,
+   "circulatingFan_kWh": 222.8197014796785,
+   "draftFan_kWh": 55.37005267676564,
+   "fanHeatToAir_GJ": 0.8021509253268418,
+   "zoneSensibleHeating_GJ": 40.81615370359983,
+   "zoneT": {
+    "mean": 18.537107502821396,
+    "max": 20.00086519391432,
+    "min": 14.999999999999996
+   },
+   "plr": {
+    "mean": 0.5148310314554163,
+    "max": 0.9496698643152769
+   },
+   "rtfMean": 0.5126856729330127,
+   "passthrough": [],
+   "validate": []
+  },
+  {
+   "id": "HE230",
+   "tag": "HE230",
+   "case": {
+    "wx": "HE210",
+    "eff": 0.8,
+    "cap": 5000,
+    "fanW": 200,
+    "fanMode": "cycling",
+    "draftW": 50,
+    "setback": true
+   },
+   "weather": "official HE210W.WY2 (Std 140-2023 accompanying files), converted to EPW by weather.mjs wy2ToEpw",
+   "warnings": 1,
+   "timestepsPerHour": 4,
+   "totalFurnaceLoad_GJ": 34.58701356552783,
+   "totalFurnaceInput_GJ": 43.30539226496188,
+   "fuelConsumption_m3s": 0.00014655550230453313,
+   "fanEnergy_kWh": 481.25097967794756,
+   "circulatingFan_kWh": 385.01677464469947,
+   "draftFan_kWh": 96.23420503324809,
+   "fanHeatToAir_GJ": 1.386060388720927,
+   "zoneSensibleHeating_GJ": 35.917293706496764,
+   "zoneT": {
+    "mean": 15.400278394711364,
+    "max": 20.000866568206888,
+    "min": 1.8745727015838605
+   },
+   "plr": {
+    "mean": 0.8895836822409433,
+    "max": 1
+   },
+   "rtfMean": 0.8910574540115592,
+   "passthrough": [],
+   "validate": []
+  }
+ ]
+}

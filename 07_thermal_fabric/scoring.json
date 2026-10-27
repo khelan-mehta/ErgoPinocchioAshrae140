@@ -1,0 +1,985 @@
+{
+ "version": "1.0.0+b0c9cf1.dirty",
+ "date": "2026-10-27",
+ "criteria": "ANSI/ASHRAE 140-2023 Annex A3 as revised by Addendum a (Tables A3-1..A3-6, A3-10)",
+ "route": "GUI-reachable project data (tools/std140/tf/cases.mjs) -> exportIdf -> EnergyPlus 26.1",
+ "groups": {
+  "low": {
+   "inRange": 34,
+   "evaluated": 34,
+   "rangeCases": 34,
+   "required": 30,
+   "pass": true
+  },
+  "high": {
+   "inRange": 28,
+   "evaluated": 28,
+   "rangeCases": 28,
+   "required": 25,
+   "pass": true
+  }
+ },
+ "pass": true,
+ "missing": [],
+ "single": [
+  {
+   "group": "low",
+   "case": "600",
+   "label": "600",
+   "kind": "heat",
+   "value": 4.300506935918177,
+   "lo": 3.75,
+   "hi": 4.98,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "600",
+   "label": "600",
+   "kind": "cool",
+   "value": 6.015388543949032,
+   "lo": 5,
+   "hi": 6.83,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "610",
+   "label": "610-600",
+   "kind": "heat",
+   "value": 0.05191873461721652,
+   "lo": -0.14,
+   "hi": 0.29,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "610",
+   "label": "610-600",
+   "kind": "cool",
+   "value": -1.69224411937628,
+   "lo": -2.26,
+   "hi": -0.8,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "620",
+   "label": "620-600",
+   "kind": "heat",
+   "value": 0.16616396289398327,
+   "lo": -0.08,
+   "hi": 0.4,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "620",
+   "label": "620-600",
+   "kind": "cool",
+   "value": -1.9656802112627618,
+   "lo": -2.24,
+   "hi": -1.64,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "630",
+   "label": "630-620",
+   "kind": "heat",
+   "value": 0.3014146109339233,
+   "lo": 0.02,
+   "hi": 0.74,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "630",
+   "label": "630-620",
+   "kind": "cool",
+   "value": -1.2212677791681985,
+   "lo": -1.68,
+   "hi": -0.77,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "640",
+   "label": "640-600",
+   "kind": "heat",
+   "value": -1.6308101607693768,
+   "lo": -2.17,
+   "hi": -1.22,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "640",
+   "label": "640-600",
+   "kind": "cool",
+   "value": -0.2755575105837451,
+   "lo": -0.56,
+   "hi": 0.03,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "650",
+   "label": "650-600",
+   "kind": "cool",
+   "value": -1.2292102226553085,
+   "lo": -1.54,
+   "hi": -0.95,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "660",
+   "label": "660-600",
+   "kind": "heat",
+   "value": -0.6153475021260681,
+   "lo": -1.07,
+   "hi": -0.16,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "660",
+   "label": "660-600",
+   "kind": "cool",
+   "value": -2.796661244314814,
+   "lo": -3.09,
+   "hi": -2.5,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "670",
+   "label": "670-600",
+   "kind": "heat",
+   "value": 1.2886920463958722,
+   "lo": 0.25,
+   "hi": 2.98,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "670",
+   "label": "670-600",
+   "kind": "cool",
+   "value": 0.5966464322593872,
+   "lo": 0.05,
+   "hi": 0.84,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "680",
+   "label": "680-600",
+   "kind": "heat",
+   "value": -2.1423504656667918,
+   "lo": -2.54,
+   "hi": -1.9,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "680",
+   "label": "680-600",
+   "kind": "cool",
+   "value": 0.4176867508278166,
+   "lo": 0.13,
+   "hi": 0.87,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "685",
+   "label": "685-600",
+   "kind": "heat",
+   "value": 0.5673594109074047,
+   "lo": 0.33,
+   "hi": 0.77,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "685",
+   "label": "685-600",
+   "kind": "cool",
+   "value": 3.1076172322629203,
+   "lo": 2.7,
+   "hi": 3.31,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "695",
+   "label": "695-685",
+   "kind": "heat",
+   "value": -2.0714822224292737,
+   "lo": -2.38,
+   "hi": -1.94,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "695",
+   "label": "695-685",
+   "kind": "cool",
+   "value": 0.05190142826427824,
+   "lo": -0.21,
+   "hi": 0.44,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "900",
+   "label": "900",
+   "kind": "heat",
+   "value": 1.6612362105723801,
+   "lo": 1.04,
+   "hi": 2.28,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "900",
+   "label": "900",
+   "kind": "cool",
+   "value": 2.5055557020528063,
+   "lo": 2.35,
+   "hi": 2.6,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "910",
+   "label": "900-910",
+   "kind": "heat",
+   "value": -0.2926602041797064,
+   "lo": -0.52,
+   "hi": -0.02,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "910",
+   "label": "900-910",
+   "kind": "cool",
+   "value": 1.1057342060742894,
+   "lo": 0.35,
+   "hi": 1.74,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "920",
+   "label": "920-900",
+   "kind": "heat",
+   "value": 1.667993244588112,
+   "lo": 1.51,
+   "hi": 1.92,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "920",
+   "label": "920-900",
+   "kind": "cool",
+   "value": 0.22787302520326902,
+   "lo": 0.08,
+   "hi": 0.48,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "930",
+   "label": "930-920",
+   "kind": "heat",
+   "value": 0.6581440298400318,
+   "lo": 0.2,
+   "hi": 1.15,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "930",
+   "label": "930-920",
+   "kind": "cool",
+   "value": -0.811459566400226,
+   "lo": -1.19,
+   "hi": -0.44,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "940",
+   "label": "940-900",
+   "kind": "heat",
+   "value": -0.5897408732600853,
+   "lo": -0.82,
+   "hi": -0.37,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "940",
+   "label": "940-900",
+   "kind": "cool",
+   "value": -0.06376545151638613,
+   "lo": -0.19,
+   "hi": 0.06,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "950",
+   "label": "950-900",
+   "kind": "cool",
+   "value": -1.808890404794469,
+   "lo": -2,
+   "hi": -1.56,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "960",
+   "label": "960-900",
+   "kind": "heat",
+   "value": 1.0395112975231933,
+   "lo": 0.96,
+   "hi": 1.12,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "960",
+   "label": "960-900",
+   "kind": "cool",
+   "value": -1.596703558271837,
+   "lo": -1.81,
+   "hi": -1.27,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "980",
+   "label": "980-900",
+   "kind": "heat",
+   "value": -1.2525382293272411,
+   "lo": -1.65,
+   "hi": -1,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "980",
+   "label": "980-900",
+   "kind": "cool",
+   "value": 1.2209592494804062,
+   "lo": 1.09,
+   "hi": 1.41,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "985",
+   "label": "985-900",
+   "kind": "heat",
+   "value": 0.7060039873339425,
+   "lo": 0.64,
+   "hi": 0.81,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "985",
+   "label": "985-900",
+   "kind": "cool",
+   "value": 3.865857583845255,
+   "lo": 3.52,
+   "hi": 4.18,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "995",
+   "label": "995-985",
+   "kind": "heat",
+   "value": -1.3612683325419348,
+   "lo": -1.83,
+   "hi": -1.07,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "995",
+   "label": "995-985",
+   "kind": "cool",
+   "value": 0.8405738186410794,
+   "lo": 0.63,
+   "hi": 1.15,
+   "pass": true
+  }
+ ],
+ "series": [
+  {
+   "group": "low",
+   "case": "600",
+   "day": "Feb 1",
+   "key": "600|F",
+   "pearson": 0.9993212041527592,
+   "rmse": 0.12622566704347082,
+   "rmseMax": 0.4194,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "640",
+   "day": "Feb 1",
+   "key": "640|F",
+   "pearson": 0.9983184258922462,
+   "rmse": 0.16983825601354396,
+   "rmseMax": 0.6559,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "660",
+   "day": "Feb 1",
+   "key": "660|F",
+   "pearson": 0.9994309988087758,
+   "rmse": 0.048237724762350005,
+   "rmseMax": 0.3087,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "670",
+   "day": "Feb 1",
+   "key": "670|F",
+   "pearson": 0.9990696424321862,
+   "rmse": 0.16205799734762205,
+   "rmseMax": 0.7881,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "680",
+   "day": "Feb 1",
+   "key": "680|F",
+   "pearson": 0.998706444882297,
+   "rmse": 0.1449054331019657,
+   "rmseMax": 0.399,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "685",
+   "day": "Feb 1",
+   "key": "685|F",
+   "pearson": 0.9993359761126359,
+   "rmse": 0.15374020150154263,
+   "rmseMax": 0.4643,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "695",
+   "day": "Feb 1",
+   "key": "695|F",
+   "pearson": 0.9987063828191495,
+   "rmse": 0.17443643668095932,
+   "rmseMax": 0.2069,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "600",
+   "day": "Jul 14",
+   "key": "600|J",
+   "pearson": 0.9981215187067044,
+   "rmse": 0.06980465431038672,
+   "rmseMax": 0.1921,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "660",
+   "day": "Jul 14",
+   "key": "660|J",
+   "pearson": 0.9980788352156518,
+   "rmse": 0.04661397713444739,
+   "rmseMax": 0.1697,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "670",
+   "day": "Jul 14",
+   "key": "670|J",
+   "pearson": 0.997385871290006,
+   "rmse": 0.0979736769140854,
+   "rmseMax": 0.3018,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "680",
+   "day": "Jul 14",
+   "key": "680|J",
+   "pearson": 0.9985831708901703,
+   "rmse": 0.04919561274316128,
+   "rmseMax": 0.2097,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "685",
+   "day": "Jul 14",
+   "key": "685|J",
+   "pearson": 0.9990635195668922,
+   "rmse": 0.07539915137360263,
+   "rmseMax": 0.3218,
+   "pass": true
+  },
+  {
+   "group": "low",
+   "case": "695",
+   "day": "Jul 14",
+   "key": "695|J",
+   "pearson": 0.9988510970696879,
+   "rmse": 0.05617025899990279,
+   "rmseMax": 0.2001,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "900",
+   "day": "Feb 1",
+   "key": "900|F",
+   "pearson": 0.99845995356004,
+   "rmse": 0.0332587135416527,
+   "rmseMax": 0.3716,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "940",
+   "day": "Feb 1",
+   "key": "940|F",
+   "pearson": 0.9978753374239987,
+   "rmse": 0.028041646914310443,
+   "rmseMax": 0.4298,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "980",
+   "day": "Feb 1",
+   "key": "980|F",
+   "pearson": 0.989138914237997,
+   "rmse": 0.07520099819528393,
+   "rmseMax": 0.2969,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "985",
+   "day": "Feb 1",
+   "key": "985|F",
+   "pearson": 0.9996834102120351,
+   "rmse": 0.0516138504298736,
+   "rmseMax": 0.4166,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "995",
+   "day": "Feb 1",
+   "key": "995|F",
+   "pearson": 0.9992958120195237,
+   "rmse": 0.0644301090110584,
+   "rmseMax": 0.2944,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "900",
+   "day": "Jul 14",
+   "key": "900|J",
+   "pearson": 0.9977918179626564,
+   "rmse": 0.04059417300383568,
+   "rmseMax": 0.0967,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "980",
+   "day": "Jul 14",
+   "key": "980|J",
+   "pearson": 0.999318582108929,
+   "rmse": 0.018863774853520622,
+   "rmseMax": 0.0986,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "985",
+   "day": "Jul 14",
+   "key": "985|J",
+   "pearson": 0.9992361988002469,
+   "rmse": 0.04424507280789721,
+   "rmseMax": 0.2053,
+   "pass": true
+  },
+  {
+   "group": "high",
+   "case": "995",
+   "day": "Jul 14",
+   "key": "995|J",
+   "pearson": 0.999233464837911,
+   "rmse": 0.023702493646681578,
+   "rmseMax": 0.2468,
+   "pass": true
+  }
+ ],
+ "defaultVariant": {
+  "note": "Pinocchio-EP defaults (no Standard 140 profile: City terrain, FullExterior solar distribution, DST/holidays from the weather file, ideal loads with SHR 0.7 dehumidification), same GUI inputs otherwise",
+  "cases": {
+   "600": {
+    "heat": 4.268895089341807,
+    "cool": 6.6962432150769535,
+    "heatRange": [
+     3.75,
+     4.98
+    ],
+    "coolRange": [
+     5,
+     6.83
+    ],
+    "heatIn": true,
+    "coolIn": true,
+    "series": [
+     {
+      "day": "Feb 1",
+      "pearson": 0.9989529973876763,
+      "rmse": 0.3420493410993468,
+      "rmseMax": 0.4194,
+      "pass": true
+     },
+     {
+      "day": "Jul 14",
+      "pearson": 0.996358551361354,
+      "rmse": 0.20653187030825318,
+      "rmseMax": 0.1921,
+      "pass": false
+     }
+    ]
+   },
+   "900": {
+    "heat": 1.481858234388687,
+    "cool": 2.9357486820594394,
+    "heatRange": [
+     1.04,
+     2.28
+    ],
+    "coolRange": [
+     2.35,
+     2.6
+    ],
+    "heatIn": true,
+    "coolIn": false,
+    "series": [
+     {
+      "day": "Feb 1",
+      "pearson": 0.9838875707387961,
+      "rmse": 0.1423960532791778,
+      "rmseMax": 0.3716,
+      "pass": true
+     },
+     {
+      "day": "Jul 14",
+      "pearson": 0.9967977594778613,
+      "rmse": 0.13482821718234717,
+      "rmseMax": 0.0967,
+      "pass": false
+     }
+    ]
+   }
+  }
+ },
+ "runs": {
+  "195": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "200": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "210": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "215": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "220": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "230": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "240": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "250": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "270": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "280": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "290": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "300": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "310": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "320": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "395": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "400": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "410": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "420": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "430": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "440": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "450": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 6
+  },
+  "460": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 6
+  },
+  "470": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "600": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "610": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "620": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "630": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "640": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "650": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "660": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "670": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "680": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "685": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "695": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "800": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "810": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "900": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "910": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "920": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "930": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "940": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "950": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "960": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "980": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "985": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "995": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "600FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "900FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "650FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "950FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "680FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "980FF": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "default_900": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  },
+  "default_600": {
+   "ok": true,
+   "severe": 0,
+   "warnings": 4
+  }
+ }
+}

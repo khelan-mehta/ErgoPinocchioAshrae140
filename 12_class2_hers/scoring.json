@@ -1,0 +1,1600 @@
+{
+ "standard": "ANSI/ASHRAE 140-2023 Section 12 (Class II, HERS BESTEST) - INFORMATIVE comparison (no normative acceptance criteria)",
+ "software": "Pinocchio-EP (exportIdf) + EnergyPlus 26.1.0-6f2e40d102",
+ "range_method": "Informative Annex B22: 93 % confidence interval of the 3 B20 example results (t_c = 3.576255) widened to min-4 / max+4 MBtu",
+ "notes": {
+  "L302BC/L304BC": "compared with Pinocchio's Kiva runs L302KC/L304KC (detailed ground model, B18 soil) - B rows are the annex's more-detailed variant",
+  "L322A1/L322A2": "Pinocchio models the basement as a 2nd zone (2-zone = A2); A1 shown for information",
+  "P-series": "Tier 2 P100A-P150A omitted (see README)"
+ },
+ "cases": [
+  {
+   "table": "B20-1",
+   "case": "L100AC",
+   "pinocchio": 52.09,
+   "from_run": "L100AC",
+   "examples": [
+    61.940000000000005,
+    58.0,
+    72.39
+   ],
+   "min": 58.0,
+   "max": 72.39,
+   "mean": 64.11,
+   "range_min": 48.756,
+   "range_max": 79.464,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L110AC",
+   "pinocchio": 77.768,
+   "from_run": "L110AC",
+   "examples": [
+    85.95000000000002,
+    81.39,
+    96.53
+   ],
+   "min": 81.39,
+   "max": 96.53,
+   "mean": 87.957,
+   "range_min": 71.92,
+   "range_max": 103.993,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L120AC",
+   "pinocchio": 39.674,
+   "from_run": "L120AC",
+   "examples": [
+    50.269999999999996,
+    45.1,
+    57.81999999999999
+   ],
+   "min": 45.1,
+   "max": 57.81999999999999,
+   "mean": 51.063,
+   "range_min": 37.855,
+   "range_max": 64.272,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L130AC",
+   "pinocchio": 42.286,
+   "from_run": "L130AC",
+   "examples": [
+    46.349999999999994,
+    45.83999999999999,
+    49.980000000000004
+   ],
+   "min": 45.83999999999999,
+   "max": 49.980000000000004,
+   "mean": 47.39,
+   "range_min": 41.84,
+   "range_max": 53.98,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L140AC",
+   "pinocchio": 49.392,
+   "from_run": "L140AC",
+   "examples": [
+    49.14999999999999,
+    47.25000000000001,
+    52.48
+   ],
+   "min": 47.25000000000001,
+   "max": 52.48,
+   "mean": 49.627,
+   "range_min": 43.25,
+   "range_max": 56.48,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-1",
+   "case": "L150AC",
+   "pinocchio": 44.05,
+   "from_run": "L150AC",
+   "examples": [
+    54.93,
+    49.480000000000004,
+    64.03000000000002
+   ],
+   "min": 49.480000000000004,
+   "max": 64.03000000000002,
+   "mean": 56.147,
+   "range_min": 40.969,
+   "range_max": 71.324,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L155AC",
+   "pinocchio": 46.854,
+   "from_run": "L155AC",
+   "examples": [
+    57.39,
+    52.300000000000004,
+    66.89999999999999
+   ],
+   "min": 52.300000000000004,
+   "max": 66.89999999999999,
+   "mean": 58.863,
+   "range_min": 43.562,
+   "range_max": 74.165,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L160AC",
+   "pinocchio": 52.812,
+   "from_run": "L160AC",
+   "examples": [
+    62.900000000000006,
+    58.29,
+    73.50999999999999
+   ],
+   "min": 58.29,
+   "max": 73.50999999999999,
+   "mean": 64.9,
+   "range_min": 48.785,
+   "range_max": 81.015,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L170AC",
+   "pinocchio": 62.961,
+   "from_run": "L170AC",
+   "examples": [
+    73.05999999999999,
+    71.64999999999999,
+    85.46
+   ],
+   "min": 71.64999999999999,
+   "max": 85.46,
+   "mean": 76.723,
+   "range_min": 61.033,
+   "range_max": 92.413,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L200AC",
+   "pinocchio": 131.293,
+   "from_run": "L200AC",
+   "examples": [
+    133.97,
+    136.11999999999998,
+    168.34
+   ],
+   "min": 133.97,
+   "max": 168.34,
+   "mean": 146.143,
+   "range_min": 106.391,
+   "range_max": 185.896,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L202AC",
+   "pinocchio": 136.973,
+   "from_run": "L202AC",
+   "examples": [
+    137.47,
+    142.06,
+    172.55
+   ],
+   "min": 137.47,
+   "max": 172.55,
+   "mean": 150.693,
+   "range_min": 111.325,
+   "range_max": 190.062,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L302AC",
+   "pinocchio": 60.75,
+   "from_run": "L302AC",
+   "examples": [
+    70.5,
+    67.44,
+    82.92
+   ],
+   "min": 67.44,
+   "max": 82.92,
+   "mean": 73.62,
+   "range_min": 56.693,
+   "range_max": 90.547,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L302BC",
+   "pinocchio": 43.14,
+   "from_run": "L302KC",
+   "examples": [
+    65.24,
+    60.11999999999998,
+    73.1
+   ],
+   "min": 60.11999999999998,
+   "max": 73.1,
+   "mean": 66.153,
+   "range_min": 52.654,
+   "range_max": 79.653,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L304AC",
+   "pinocchio": 50.021,
+   "from_run": "L304AC",
+   "examples": [
+    60.050000000000004,
+    56.64000000000001,
+    69.16
+   ],
+   "min": 56.64000000000001,
+   "max": 69.16,
+   "mean": 61.95,
+   "range_min": 48.586,
+   "range_max": 75.314,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L304BC",
+   "pinocchio": 39.162,
+   "from_run": "L304KC",
+   "examples": [
+    55.59,
+    50.12,
+    61.589999999999996
+   ],
+   "min": 50.12,
+   "max": 61.589999999999996,
+   "mean": 55.767,
+   "range_min": 43.921,
+   "range_max": 67.612,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L322A1",
+   "pinocchio": 70.674,
+   "from_run": "L322AC",
+   "examples": [
+    91.64999999999999,
+    88.25999999999999,
+    105.94
+   ],
+   "min": 88.25999999999999,
+   "max": 105.94,
+   "mean": 95.283,
+   "range_min": 75.909,
+   "range_max": 114.658,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L322A2",
+   "pinocchio": 70.674,
+   "from_run": "L322AC",
+   "examples": [
+    92.49000000000001,
+    86.32000000000001,
+    107.67999999999998
+   ],
+   "min": 86.32000000000001,
+   "max": 107.67999999999998,
+   "mean": 95.497,
+   "range_min": 72.799,
+   "range_max": 118.194,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L322B1",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    81.82000000000001,
+    77.72,
+    92.39000000000001
+   ],
+   "min": 77.72,
+   "max": 92.39000000000001,
+   "mean": 83.977,
+   "range_min": 68.348,
+   "range_max": 99.605,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-1",
+   "case": "L322B2",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    87.97,
+    82.87,
+    92.10000000000001
+   ],
+   "min": 82.87,
+   "max": 92.10000000000001,
+   "mean": 87.647,
+   "range_min": 78.1,
+   "range_max": 97.193,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-1",
+   "case": "L324A1",
+   "pinocchio": 52.296,
+   "from_run": "L324AC",
+   "examples": [
+    64.91000000000001,
+    61.11,
+    72.58
+   ],
+   "min": 61.11,
+   "max": 72.58,
+   "mean": 66.2,
+   "range_min": 54.136,
+   "range_max": 78.264,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L324A2",
+   "pinocchio": 52.296,
+   "from_run": "L324AC",
+   "examples": [
+    65.01,
+    60.31,
+    73.47
+   ],
+   "min": 60.31,
+   "max": 73.47,
+   "mean": 66.263,
+   "range_min": 52.494,
+   "range_max": 80.033,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-1",
+   "case": "L324B1",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    56.58999999999999,
+    50.379999999999995,
+    62.45
+   ],
+   "min": 50.379999999999995,
+   "max": 62.45,
+   "mean": 56.473,
+   "range_min": 44.011,
+   "range_max": 68.936,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-1",
+   "case": "L324B2",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    60.400000000000006,
+    51.879999999999995,
+    65.30000000000001
+   ],
+   "min": 51.879999999999995,
+   "max": 65.30000000000001,
+   "mean": 59.193,
+   "range_min": 45.172,
+   "range_max": 73.215,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-2",
+   "case": "L110AC-L100AC",
+   "pinocchio": 25.678,
+   "from_run": "L110AC - L100AC",
+   "examples": [
+    24.010000000000012,
+    23.39,
+    24.14
+   ],
+   "min": 23.39,
+   "max": 24.14,
+   "mean": 23.847,
+   "range_min": 19.39,
+   "range_max": 28.14,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L120AC-L100AC",
+   "pinocchio": -12.416,
+   "from_run": "L120AC - L100AC",
+   "examples": [
+    -11.670000000000009,
+    -12.899999999999999,
+    -14.570000000000007
+   ],
+   "min": -14.570000000000007,
+   "max": -11.670000000000009,
+   "mean": -13.047,
+   "range_min": -18.57,
+   "range_max": -7.67,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L130AC-L100AC",
+   "pinocchio": -9.804,
+   "from_run": "L130AC - L100AC",
+   "examples": [
+    -15.59000000000001,
+    -12.16000000000001,
+    -22.409999999999997
+   ],
+   "min": -22.409999999999997,
+   "max": -12.16000000000001,
+   "mean": -16.72,
+   "range_min": -27.493,
+   "range_max": -5.947,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L140AC-L100AC",
+   "pinocchio": -2.698,
+   "from_run": "L140AC - L100AC",
+   "examples": [
+    -12.790000000000013,
+    -10.749999999999993,
+    -19.910000000000004
+   ],
+   "min": -19.910000000000004,
+   "max": -10.749999999999993,
+   "mean": -14.483,
+   "range_min": -24.413,
+   "range_max": -4.554,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L150AC-L100AC",
+   "pinocchio": -8.04,
+   "from_run": "L150AC - L100AC",
+   "examples": [
+    -7.010000000000005,
+    -8.519999999999996,
+    -8.359999999999985
+   ],
+   "min": -8.519999999999996,
+   "max": -7.010000000000005,
+   "mean": -7.963,
+   "range_min": -12.52,
+   "range_max": -3.01,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L155AC-L150AC",
+   "pinocchio": 2.804,
+   "from_run": "L155AC - L150AC",
+   "examples": [
+    2.460000000000001,
+    2.8200000000000003,
+    2.869999999999976
+   ],
+   "min": 2.460000000000001,
+   "max": 2.869999999999976,
+   "mean": 2.717,
+   "range_min": -1.54,
+   "range_max": 6.87,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L160AC-L100AC",
+   "pinocchio": 0.722,
+   "from_run": "L160AC - L100AC",
+   "examples": [
+    0.9600000000000009,
+    0.28999999999999915,
+    1.1199999999999903
+   ],
+   "min": 0.28999999999999915,
+   "max": 1.1199999999999903,
+   "mean": 0.79,
+   "range_min": -3.71,
+   "range_max": 5.12,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L170AC-L100AC",
+   "pinocchio": 10.871,
+   "from_run": "L170AC - L100AC",
+   "examples": [
+    11.119999999999983,
+    13.649999999999991,
+    13.069999999999993
+   ],
+   "min": 11.119999999999983,
+   "max": 13.649999999999991,
+   "mean": 12.613,
+   "range_min": 7.12,
+   "range_max": 17.65,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L200AC-L100AC",
+   "pinocchio": 79.203,
+   "from_run": "L200AC - L100AC",
+   "examples": [
+    72.03,
+    78.11999999999998,
+    95.95
+   ],
+   "min": 72.03,
+   "max": 95.95,
+   "mean": 82.033,
+   "range_min": 56.367,
+   "range_max": 107.7,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L202AC-L200AC",
+   "pinocchio": 5.68,
+   "from_run": "L202AC - L200AC",
+   "examples": [
+    3.5,
+    5.940000000000026,
+    4.210000000000008
+   ],
+   "min": 3.5,
+   "max": 5.940000000000026,
+   "mean": 4.55,
+   "range_min": -0.5,
+   "range_max": 9.94,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L302AC-L100AC",
+   "pinocchio": 8.66,
+   "from_run": "L302AC - L100AC",
+   "examples": [
+    8.559999999999995,
+    9.439999999999998,
+    10.530000000000001
+   ],
+   "min": 8.559999999999995,
+   "max": 10.530000000000001,
+   "mean": 9.51,
+   "range_min": 4.56,
+   "range_max": 14.53,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L302BC-L100AC",
+   "pinocchio": -8.95,
+   "from_run": "L302KC - L100AC",
+   "examples": [
+    3.29999999999999,
+    2.1199999999999832,
+    0.7099999999999937
+   ],
+   "min": 0.7099999999999937,
+   "max": 3.29999999999999,
+   "mean": 2.043,
+   "range_min": -3.29,
+   "range_max": 7.3,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L302AC-L304AC",
+   "pinocchio": 10.729,
+   "from_run": "L302AC - L304AC",
+   "examples": [
+    10.449999999999996,
+    10.79999999999999,
+    13.760000000000005
+   ],
+   "min": 10.449999999999996,
+   "max": 13.760000000000005,
+   "mean": 11.67,
+   "range_min": 6.45,
+   "range_max": 17.76,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-2",
+   "case": "L302BC-L304BC",
+   "pinocchio": 3.978,
+   "from_run": "L302KC - L304KC",
+   "examples": [
+    9.649999999999991,
+    9.999999999999986,
+    11.509999999999998
+   ],
+   "min": 9.649999999999991,
+   "max": 11.509999999999998,
+   "mean": 10.387,
+   "range_min": 5.65,
+   "range_max": 15.51,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L322A1-L100AC",
+   "pinocchio": 18.584,
+   "from_run": "L322AC - L100AC",
+   "examples": [
+    29.709999999999987,
+    30.25999999999999,
+    33.55
+   ],
+   "min": 29.709999999999987,
+   "max": 33.55,
+   "mean": 31.173,
+   "range_min": 25.71,
+   "range_max": 37.55,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L322A2-L100AC",
+   "pinocchio": 18.584,
+   "from_run": "L322AC - L100AC",
+   "examples": [
+    30.550000000000004,
+    28.320000000000007,
+    35.28999999999998
+   ],
+   "min": 28.320000000000007,
+   "max": 35.28999999999998,
+   "mean": 31.387,
+   "range_min": 24.037,
+   "range_max": 39.29,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L322B1-L100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    19.880000000000003,
+    19.72,
+    20.000000000000014
+   ],
+   "min": 19.72,
+   "max": 20.000000000000014,
+   "mean": 19.867,
+   "range_min": 15.72,
+   "range_max": 24.0,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-2",
+   "case": "L322B2-L100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    26.029999999999994,
+    24.870000000000005,
+    19.710000000000008
+   ],
+   "min": 19.710000000000008,
+   "max": 26.029999999999994,
+   "mean": 23.537,
+   "range_min": 15.71,
+   "range_max": 30.483,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-2",
+   "case": "L322A1-L324A1",
+   "pinocchio": 18.378,
+   "from_run": "L322AC - L324AC",
+   "examples": [
+    26.73999999999998,
+    27.14999999999999,
+    33.36
+   ],
+   "min": 26.73999999999998,
+   "max": 33.36,
+   "mean": 29.083,
+   "range_min": 21.424,
+   "range_max": 37.36,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L322A2-L324A2",
+   "pinocchio": 18.378,
+   "from_run": "L322AC - L324AC",
+   "examples": [
+    27.480000000000004,
+    26.010000000000005,
+    34.20999999999998
+   ],
+   "min": 26.010000000000005,
+   "max": 34.20999999999998,
+   "mean": 29.233,
+   "range_min": 20.206,
+   "range_max": 38.261,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-2",
+   "case": "L322B1-L324B1",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    25.230000000000018,
+    27.340000000000003,
+    29.940000000000012
+   ],
+   "min": 25.230000000000018,
+   "max": 29.940000000000012,
+   "mean": 27.503,
+   "range_min": 21.23,
+   "range_max": 33.94,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-2",
+   "case": "L322B2-L324B2",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    27.569999999999993,
+    30.99000000000001,
+    26.799999999999997
+   ],
+   "min": 26.799999999999997,
+   "max": 30.99000000000001,
+   "mean": 28.453,
+   "range_min": 22.8,
+   "range_max": 34.99,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-3",
+   "case": "L100AL",
+   "pinocchio": 47.789,
+   "from_run": "L100AL",
+   "examples": [
+    54.660000000000004,
+    60.800000000000004,
+    59.32
+   ],
+   "min": 54.660000000000004,
+   "max": 60.800000000000004,
+   "mean": 58.26,
+   "range_min": 50.66,
+   "range_max": 64.876,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L110AL",
+   "pinocchio": 51.094,
+   "from_run": "L110AL",
+   "examples": [
+    57.709999999999994,
+    63.82,
+    63.18
+   ],
+   "min": 57.709999999999994,
+   "max": 63.82,
+   "mean": 61.57,
+   "range_min": 53.71,
+   "range_max": 68.504,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L120AL",
+   "pinocchio": 43.757,
+   "from_run": "L120AL",
+   "examples": [
+    51.36,
+    56.14,
+    55.01
+   ],
+   "min": 51.36,
+   "max": 56.14,
+   "mean": 54.17,
+   "range_min": 47.36,
+   "range_max": 60.14,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L130AL",
+   "pinocchio": 35.238,
+   "from_run": "L130AL",
+   "examples": [
+    36.96,
+    41.25,
+    38.93
+   ],
+   "min": 36.96,
+   "max": 41.25,
+   "mean": 39.047,
+   "range_min": 32.96,
+   "range_max": 45.25,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L140AL",
+   "pinocchio": 22.655,
+   "from_run": "L140AL",
+   "examples": [
+    23.52,
+    26.54,
+    24.64
+   ],
+   "min": 23.52,
+   "max": 26.54,
+   "mean": 24.9,
+   "range_min": 19.52,
+   "range_max": 30.54,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L150AL",
+   "pinocchio": 59.9,
+   "from_run": "L150AL",
+   "examples": [
+    67.72999999999999,
+    77.35,
+    72.03
+   ],
+   "min": 67.72999999999999,
+   "max": 77.35,
+   "mean": 72.37,
+   "range_min": 62.42,
+   "range_max": 82.32,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L155AL",
+   "pinocchio": 45.092,
+   "from_run": "L155AL",
+   "examples": [
+    54.089999999999996,
+    59.05999999999999,
+    57.510000000000005
+   ],
+   "min": 54.089999999999996,
+   "max": 59.05999999999999,
+   "mean": 56.887,
+   "range_min": 50.09,
+   "range_max": 63.06,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L160AL",
+   "pinocchio": 57.134,
+   "from_run": "L160AL",
+   "examples": [
+    62.62,
+    68.69,
+    67.62
+   ],
+   "min": 62.62,
+   "max": 68.69,
+   "mean": 66.31,
+   "range_min": 58.62,
+   "range_max": 73.0,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L170AL",
+   "pinocchio": 38.719,
+   "from_run": "L170AL",
+   "examples": [
+    45.83,
+    49.08,
+    49.3
+   ],
+   "min": 45.83,
+   "max": 49.3,
+   "mean": 48.07,
+   "range_min": 41.83,
+   "range_max": 53.3,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L200AL",
+   "pinocchio": 59.878,
+   "from_run": "L200AL",
+   "examples": [
+    65.71,
+    73.10000000000001,
+    76.71000000000001
+   ],
+   "min": 65.71,
+   "max": 76.71000000000001,
+   "mean": 71.84,
+   "range_min": 60.263,
+   "range_max": 83.417,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-3",
+   "case": "L202AL",
+   "pinocchio": 50.174,
+   "from_run": "L202AL",
+   "examples": [
+    59.60999999999999,
+    62.239999999999995,
+    70.57000000000001
+   ],
+   "min": 59.60999999999999,
+   "max": 70.57000000000001,
+   "mean": 64.14,
+   "range_min": 52.326,
+   "range_max": 75.954,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-4",
+   "case": "L110AL-L100AL",
+   "pinocchio": 3.305,
+   "from_run": "L110AL - L100AL",
+   "examples": [
+    3.04999999999999,
+    3.019999999999996,
+    3.8599999999999994
+   ],
+   "min": 3.019999999999996,
+   "max": 3.8599999999999994,
+   "mean": 3.31,
+   "range_min": -0.98,
+   "range_max": 7.86,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-4",
+   "case": "L120AL-L100AL",
+   "pinocchio": -4.032,
+   "from_run": "L120AL - L100AL",
+   "examples": [
+    -3.3000000000000043,
+    -4.660000000000004,
+    -4.310000000000002
+   ],
+   "min": -4.660000000000004,
+   "max": -3.3000000000000043,
+   "mean": -4.09,
+   "range_min": -8.66,
+   "range_max": 0.7,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-4",
+   "case": "L130AL-L100AL",
+   "pinocchio": -12.551,
+   "from_run": "L130AL - L100AL",
+   "examples": [
+    -17.700000000000003,
+    -19.550000000000004,
+    -20.39
+   ],
+   "min": -20.39,
+   "max": -17.700000000000003,
+   "mean": -19.213,
+   "range_min": -24.39,
+   "range_max": -13.7,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-4",
+   "case": "L140AL-L100AL",
+   "pinocchio": -25.134,
+   "from_run": "L140AL - L100AL",
+   "examples": [
+    -31.140000000000004,
+    -34.260000000000005,
+    -34.68
+   ],
+   "min": -34.68,
+   "max": -31.140000000000004,
+   "mean": -33.36,
+   "range_min": -38.68,
+   "range_max": -27.14,
+   "in_B22_example_range": false,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-4",
+   "case": "L150AL-L100AL",
+   "pinocchio": 12.111,
+   "from_run": "L150AL - L100AL",
+   "examples": [
+    13.069999999999986,
+    16.54999999999999,
+    12.71
+   ],
+   "min": 12.71,
+   "max": 16.54999999999999,
+   "mean": 14.11,
+   "range_min": 8.71,
+   "range_max": 20.55,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-4",
+   "case": "L155AL-L150AL",
+   "pinocchio": -14.808,
+   "from_run": "L155AL - L150AL",
+   "examples": [
+    -13.639999999999993,
+    -18.290000000000006,
+    -14.519999999999996
+   ],
+   "min": -18.290000000000006,
+   "max": -13.639999999999993,
+   "mean": -15.483,
+   "range_min": -22.29,
+   "range_max": -9.64,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-4",
+   "case": "L160AL-L100AL",
+   "pinocchio": 9.345,
+   "from_run": "L160AL - L100AL",
+   "examples": [
+    7.959999999999994,
+    7.8899999999999935,
+    8.300000000000004
+   ],
+   "min": 7.8899999999999935,
+   "max": 8.300000000000004,
+   "mean": 8.05,
+   "range_min": 3.89,
+   "range_max": 12.3,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-4",
+   "case": "L170AL-L100AL",
+   "pinocchio": -9.07,
+   "from_run": "L170AL - L100AL",
+   "examples": [
+    -8.830000000000005,
+    -11.720000000000006,
+    -10.020000000000003
+   ],
+   "min": -11.720000000000006,
+   "max": -8.830000000000005,
+   "mean": -10.19,
+   "range_min": -15.72,
+   "range_max": -4.83,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-4",
+   "case": "L200AL-L100AL",
+   "pinocchio": 12.089,
+   "from_run": "L200AL - L100AL",
+   "examples": [
+    11.04999999999999,
+    12.300000000000004,
+    17.390000000000008
+   ],
+   "min": 11.04999999999999,
+   "max": 17.390000000000008,
+   "mean": 13.58,
+   "range_min": 6.646,
+   "range_max": 21.39,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-4",
+   "case": "L202AL-L200AL",
+   "pinocchio": -9.704,
+   "from_run": "L202AL - L200AL",
+   "examples": [
+    -6.100000000000001,
+    -10.860000000000014,
+    -6.140000000000001
+   ],
+   "min": -10.860000000000014,
+   "max": -6.100000000000001,
+   "mean": -7.7,
+   "range_min": -14.86,
+   "range_max": -2.049,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-5",
+   "case": "L165AC",
+   "pinocchio": 56.874,
+   "from_run": "L165AC",
+   "examples": [
+    66.84,
+    64.72999999999999,
+    78.05
+   ],
+   "min": 64.72999999999999,
+   "max": 78.05,
+   "mean": 69.873,
+   "range_min": 55.091,
+   "range_max": 84.656,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-5",
+   "case": "P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    12.31,
+    10.02,
+    14.400000000000002
+   ],
+   "min": 10.02,
+   "max": 14.400000000000002,
+   "mean": 12.243,
+   "range_min": 6.02,
+   "range_max": 18.4,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-5",
+   "case": "P105AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    14.6,
+    12.099999999999998,
+    16.96
+   ],
+   "min": 12.099999999999998,
+   "max": 16.96,
+   "mean": 14.553,
+   "range_min": 8.1,
+   "range_max": 20.96,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-5",
+   "case": "P110AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    22.370000000000005,
+    20.169999999999998,
+    23.78
+   ],
+   "min": 20.169999999999998,
+   "max": 23.78,
+   "mean": 22.107,
+   "range_min": 16.17,
+   "range_max": 27.78,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-5",
+   "case": "P140AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    29.419999999999998,
+    25.82,
+    29.42
+   ],
+   "min": 25.82,
+   "max": 29.42,
+   "mean": 28.22,
+   "range_min": 21.82,
+   "range_max": 33.42,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-5",
+   "case": "P150AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    25.1,
+    22.580000000000002,
+    28.01
+   ],
+   "min": 22.580000000000002,
+   "max": 28.01,
+   "mean": 25.23,
+   "range_min": 18.58,
+   "range_max": 32.01,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-6",
+   "case": "L165AC-L160AC",
+   "pinocchio": 4.062,
+   "from_run": "L165AC - L160AC",
+   "examples": [
+    3.9399999999999977,
+    6.439999999999991,
+    4.540000000000006
+   ],
+   "min": 3.9399999999999977,
+   "max": 6.439999999999991,
+   "mean": 4.973,
+   "range_min": -0.06,
+   "range_max": 10.44,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-6",
+   "case": "P105AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    2.289999999999999,
+    2.0799999999999983,
+    2.5599999999999987
+   ],
+   "min": 2.0799999999999983,
+   "max": 2.5599999999999987,
+   "mean": 2.31,
+   "range_min": -1.92,
+   "range_max": 6.56,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-6",
+   "case": "P110AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    10.060000000000004,
+    10.149999999999999,
+    9.379999999999999
+   ],
+   "min": 9.379999999999999,
+   "max": 10.149999999999999,
+   "mean": 9.863,
+   "range_min": 5.38,
+   "range_max": 14.15,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-6",
+   "case": "P140AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    17.11,
+    15.8,
+    15.02
+   ],
+   "min": 15.02,
+   "max": 17.11,
+   "mean": 15.977,
+   "range_min": 11.02,
+   "range_max": 21.11,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-6",
+   "case": "P150AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    12.790000000000001,
+    12.560000000000002,
+    13.61
+   ],
+   "min": 12.560000000000002,
+   "max": 13.61,
+   "mean": 12.987,
+   "range_min": 8.56,
+   "range_max": 17.61,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-7",
+   "case": "L165AL",
+   "pinocchio": 48.693,
+   "from_run": "L165AL",
+   "examples": [
+    54.77,
+    52.870000000000005,
+    59.58
+   ],
+   "min": 52.870000000000005,
+   "max": 59.58,
+   "mean": 55.74,
+   "range_min": 48.599,
+   "range_max": 63.58,
+   "in_B22_example_range": true,
+   "within_example_min_max": false
+  },
+  {
+   "table": "B20-7",
+   "case": "P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    18.109999999999996,
+    23.01,
+    20.07
+   ],
+   "min": 18.109999999999996,
+   "max": 23.01,
+   "mean": 20.397,
+   "range_min": 14.11,
+   "range_max": 27.01,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-7",
+   "case": "P105AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    11.94,
+    13.610000000000001,
+    13.46
+   ],
+   "min": 11.94,
+   "max": 13.610000000000001,
+   "mean": 13.003,
+   "range_min": 7.94,
+   "range_max": 17.61,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-7",
+   "case": "P110AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    30.189999999999998,
+    36.48,
+    30.859999999999996
+   ],
+   "min": 30.189999999999998,
+   "max": 36.48,
+   "mean": 32.51,
+   "range_min": 25.378,
+   "range_max": 40.48,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-7",
+   "case": "P140AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    1.6800000000000002,
+    2.84,
+    1.7400000000000002
+   ],
+   "min": 1.6800000000000002,
+   "max": 2.84,
+   "mean": 2.087,
+   "range_min": -2.32,
+   "range_max": 6.84,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-7",
+   "case": "P150AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    12.43,
+    15.030000000000001,
+    14.030000000000001
+   ],
+   "min": 12.43,
+   "max": 15.030000000000001,
+   "mean": 13.83,
+   "range_min": 8.43,
+   "range_max": 19.03,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-8",
+   "case": "L165AL-L160AL",
+   "pinocchio": -8.441,
+   "from_run": "L165AL - L160AL",
+   "examples": [
+    -7.849999999999994,
+    -15.819999999999993,
+    -8.040000000000006
+   ],
+   "min": -15.819999999999993,
+   "max": -7.849999999999994,
+   "mean": -10.57,
+   "range_min": -19.96,
+   "range_max": -1.18,
+   "in_B22_example_range": true,
+   "within_example_min_max": true
+  },
+  {
+   "table": "B20-8",
+   "case": "P105AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    -6.169999999999996,
+    -9.4,
+    -6.609999999999999
+   ],
+   "min": -9.4,
+   "max": -6.169999999999996,
+   "mean": -7.393,
+   "range_min": -13.4,
+   "range_max": -2.17,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-8",
+   "case": "P110AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    12.080000000000002,
+    13.469999999999995,
+    10.789999999999996
+   ],
+   "min": 10.789999999999996,
+   "max": 13.469999999999995,
+   "mean": 12.113,
+   "range_min": 6.79,
+   "range_max": 17.47,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-8",
+   "case": "P140AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    -16.429999999999996,
+    -20.17,
+    -18.33
+   ],
+   "min": -20.17,
+   "max": -16.429999999999996,
+   "mean": -18.31,
+   "range_min": -24.17,
+   "range_max": -12.43,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  },
+  {
+   "table": "B20-8",
+   "case": "P150AC-P100AC",
+   "pinocchio": null,
+   "from_run": null,
+   "examples": [
+    -5.679999999999996,
+    -7.98,
+    -6.039999999999999
+   ],
+   "min": -7.98,
+   "max": -5.679999999999996,
+   "mean": -6.567,
+   "range_min": -11.98,
+   "range_max": -1.68,
+   "in_B22_example_range": null,
+   "within_example_min_max": null
+  }
+ ],
+ "summary": {
+  "scored_rows_excluding_B_variants": 58,
+  "in_B22_example_range": 38
+ }
+}

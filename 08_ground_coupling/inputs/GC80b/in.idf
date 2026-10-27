@@ -1,0 +1,618 @@
+! Exported by Pinocchio-EP pinocchio-ep ashrae140-compliance working tree (b0c9cf1+WP-F) (EnergyPlus input)
+! Profile: Standard 140 / validation (lib/compliance/profile140.js)
+Version,
+  26.1;                   !- Version Identifier
+
+SimulationControl,
+  No,                     !- Do Zone Sizing Calculation
+  No,                     !- Do System Sizing Calculation
+  No,                     !- Do Plant Sizing Calculation
+  No,                     !- Run Simulation for Sizing Periods
+  Yes;                    !- Run Simulation for Weather File Run Periods
+
+Building,
+  Std140 GC80b,           !- Name
+  0,                      !- North Axis
+  Country,                !- Terrain
+  0.04,                   !- Loads Convergence Tolerance Value
+  0.4,                    !- Temperature Convergence Tolerance Value
+  FullInteriorAndExterior, !- Solar Distribution
+  25,                     !- Maximum Number of Warmup Days
+  6;                      !- Minimum Number of Warmup Days
+
+Timestep,
+  4;                      !- Number of Timesteps per Hour
+
+GlobalGeometryRules,
+  UpperLeftCorner,        !- Starting Vertex Position
+  Counterclockwise,       !- Vertex Entry Direction
+  Relative,               !- Coordinate System
+  Relative,               !- Daylighting Reference Point Coordinate System
+  Relative;               !- Rectangular Surface Coordinate System
+
+RunPeriod,
+  Run Period,             !- Name
+  1,                      !- Begin Month
+  1,                      !- Begin Day of Month
+  2001,                   !- Begin Year
+  12,                     !- End Month
+  31,                     !- End Day of Month
+  2014,                   !- End Year
+  ,                       !- Day of Week for Start Day
+  No,                     !- Use Weather File Holidays and Special Days
+  No,                     !- Use Weather File Daylight Saving Period
+  No,                     !- Apply Weekend Holiday Rule
+  Yes,                    !- Use Weather File Rain Indicators
+  Yes;                    !- Use Weather File Snow Indicators
+
+Site:GroundTemperature:BuildingSurface,
+  18,                     !- January Ground Temperature
+  18,                     !- February Ground Temperature
+  18,                     !- March Ground Temperature
+  18,                     !- April Ground Temperature
+  18,                     !- May Ground Temperature
+  18,                     !- June Ground Temperature
+  18,                     !- July Ground Temperature
+  18,                     !- August Ground Temperature
+  18,                     !- September Ground Temperature
+  18,                     !- October Ground Temperature
+  18,                     !- November Ground Temperature
+  18;                     !- December Ground Temperature
+
+ScheduleTypeLimits,
+  Fraction,               !- Name
+  0,                      !- Lower Limit Value
+  1,                      !- Upper Limit Value
+  Continuous;             !- Numeric Type
+
+ScheduleTypeLimits,
+  Temperature,            !- Name
+  ,                       !- Lower Limit Value
+  ,                       !- Upper Limit Value
+  Continuous,             !- Numeric Type
+  Temperature;            !- Unit Type
+
+ScheduleTypeLimits,
+  Any Number;             !- Name
+
+ScheduleTypeLimits,
+  On/Off,                 !- Name
+  0,                      !- Lower Limit Value
+  1,                      !- Upper Limit Value
+  Discrete;               !- Numeric Type
+
+ScheduleTypeLimits,
+  Activity Level,         !- Name
+  0,                      !- Lower Limit Value
+  ,                       !- Upper Limit Value
+  Continuous;             !- Numeric Type
+
+Schedule:Compact,
+  Always On,              !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  1;                      !- Field 6
+
+Schedule:Compact,
+  Office Occupancy,       !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 08:00,           !- Field 5
+  0.05,                   !- Field 6
+  Until: 18:00,           !- Field 7
+  0.9,                    !- Field 8
+  Until: 24:00,           !- Field 9
+  0.1,                    !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.05;                   !- Field 13
+
+Schedule:Compact,
+  Office Lighting,        !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 07:00,           !- Field 5
+  0.1,                    !- Field 6
+  Until: 19:00,           !- Field 7
+  0.9,                    !- Field 8
+  Until: 24:00,           !- Field 9
+  0.15,                   !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.1;                    !- Field 13
+
+Schedule:Compact,
+  Office Equipment,       !- Name
+  Fraction,               !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay, !- Field 4
+  Until: 07:00,           !- Field 5
+  0.2,                    !- Field 6
+  Until: 19:00,           !- Field 7
+  0.85,                   !- Field 8
+  Until: 24:00,           !- Field 9
+  0.25,                   !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  0.2;                    !- Field 13
+
+Schedule:Compact,
+  Activity Sched,         !- Name
+  Activity Level,         !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: AllDays,           !- Field 4
+  Until: 24:00,           !- Field 5
+  120;                    !- Field 6
+
+Schedule:Compact,
+  Heating Setpoint,       !- Name
+  Temperature,            !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay WinterDesignDay, !- Field 4
+  Until: 06:00,           !- Field 5
+  17,                     !- Field 6
+  Until: 18:00,           !- Field 7
+  21,                     !- Field 8
+  Until: 24:00,           !- Field 9
+  17,                     !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  17;                     !- Field 13
+
+Schedule:Compact,
+  Cooling Setpoint,       !- Name
+  Temperature,            !- Schedule Type Limits Name
+  Through: 12/31,         !- Field 3
+  For: Weekdays SummerDesignDay WinterDesignDay, !- Field 4
+  Until: 06:00,           !- Field 5
+  28,                     !- Field 6
+  Until: 18:00,           !- Field 7
+  24,                     !- Field 8
+  Until: 24:00,           !- Field 9
+  28,                     !- Field 10
+  For: AllOtherDays,      !- Field 11
+  Until: 24:00,           !- Field 12
+  28;                     !- Field 13
+
+Material:NoMass,
+  Ext Wall Ins,           !- Name
+  MediumRough,            !- Roughness
+  1.975,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Ext Wall Mass,          !- Name
+  MediumRough,            !- Roughness
+  0.15,                   !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Ext Wall,               !- Name
+  Ext Wall Ins,           !- Outside Layer
+  Ext Wall Mass;          !- Layer 2
+
+Material:NoMass,
+  Roof Ins,               !- Name
+  MediumRough,            !- Roughness
+  4.202,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Roof Mass,              !- Name
+  MediumRough,            !- Roughness
+  0.1,                    !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Roof,                   !- Name
+  Roof Ins,               !- Outside Layer
+  Roof Mass;              !- Layer 2
+
+Material:NoMass,
+  Slab Floor Ins,         !- Name
+  MediumRough,            !- Roughness
+  3.296,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Slab Floor Mass,        !- Name
+  MediumRough,            !- Roughness
+  0.15,                   !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Slab Floor,             !- Name
+  Slab Floor Ins,         !- Outside Layer
+  Slab Floor Mass;        !- Layer 2
+
+Material:NoMass,
+  Int Wall Ins,           !- Name
+  MediumRough,            !- Roughness
+  0.302,                  !- Thermal Resistance
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Material,
+  Int Wall Mass,          !- Name
+  MediumRough,            !- Roughness
+  0.1,                    !- Thickness
+  1.95,                   !- Conductivity
+  2300,                   !- Density
+  1000,                   !- Specific Heat
+  0.9,                    !- Thermal Absorptance
+  0.7,                    !- Solar Absorptance
+  0.7;                    !- Visible Absorptance
+
+Construction,
+  Int Wall,               !- Name
+  Int Wall Ins,           !- Outside Layer
+  Int Wall Mass;          !- Layer 2
+
+WindowMaterial:SimpleGlazingSystem,
+  Std Glass Mat,          !- Name
+  3,                      !- U-Factor
+  0.4,                    !- Solar Heat Gain Coefficient
+  0.4;                    !- Visible Transmittance
+
+Construction,
+  Window,                 !- Name
+  Std Glass Mat;          !- Outside Layer
+
+Output:Table:SummaryReports,
+  AllSummary;             !- Report 1 Name
+
+OutputControl:Table:Style,
+  CommaAndHTML,           !- Column Separator
+  JtoKWH;                 !- Unit Conversion
+
+Output:Diagnostics,
+  DisplayExtraWarnings;   !- Key 1
+
+Material,
+  GC Slab Soil,           !- Name
+  MediumRough,            !- Roughness
+  0.001,                  !- Thickness
+  0.5,                    !- Conductivity
+  1490,                   !- Density
+  1800,                   !- Specific Heat
+  0.00001,                !- Thermal Absorptance
+  0.00001,                !- Solar Absorptance
+  0.00001;                !- Visible Absorptance
+
+Construction,
+  GC Slab,                !- Name
+  GC Slab Soil;           !- Outside Layer
+
+Material:NoMass,
+  GC Adiabatic Massless,  !- Name
+  Smooth,                 !- Roughness
+  1000,                   !- Thermal Resistance
+  0.00001,                !- Thermal Absorptance
+  0.00001,                !- Solar Absorptance
+  0.00001;                !- Visible Absorptance
+
+Construction,
+  GC Adiabatic,           !- Name
+  GC Adiabatic Massless;  !- Outside Layer
+
+HeatBalanceAlgorithm,
+  ConductionTransferFunction, !- Algorithm
+  200,                    !- Surface Temperature Upper Limit
+  0.1,                    !- Minimum Surface Convection Heat Transfer Coefficient Value
+  1000;                   !- Maximum Surface Convection Heat Transfer Coefficient Value
+
+Zone,
+  GC Zone,                !- Name
+  ,                       !- Direction of Relative North
+  0,                      !- X Origin
+  0,                      !- Y Origin
+  0,                      !- Z Origin
+  1,                      !- Type
+  1;                      !- Multiplier
+
+BuildingSurface:Detailed,
+  Wall-0001,              !- Name
+  Wall,                   !- Surface Type
+  GC Adiabatic,           !- Construction Name
+  GC Zone,                !- Zone Name
+  ,                       !- Space Name
+  Adiabatic,              !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  NoWind,                 !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  0,                      !- X2
+  0,                      !- Y2
+  0,                      !- Z2
+  12,                     !- X3
+  0,                      !- Y3
+  0,                      !- Z3
+  12,                     !- X4
+  0,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0002,              !- Name
+  Wall,                   !- Surface Type
+  GC Adiabatic,           !- Construction Name
+  GC Zone,                !- Zone Name
+  ,                       !- Space Name
+  Adiabatic,              !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  NoWind,                 !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  12,                     !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  12,                     !- X2
+  0,                      !- Y2
+  0,                      !- Z2
+  12,                     !- X3
+  12,                     !- Y3
+  0,                      !- Z3
+  12,                     !- X4
+  12,                     !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0003,              !- Name
+  Wall,                   !- Surface Type
+  GC Adiabatic,           !- Construction Name
+  GC Zone,                !- Zone Name
+  ,                       !- Space Name
+  Adiabatic,              !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  NoWind,                 !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  12,                     !- X1
+  12,                     !- Y1
+  2.7,                    !- Z1
+  12,                     !- X2
+  12,                     !- Y2
+  0,                      !- Z2
+  0,                      !- X3
+  12,                     !- Y3
+  0,                      !- Z3
+  0,                      !- X4
+  12,                     !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Wall-0004,              !- Name
+  Wall,                   !- Surface Type
+  GC Adiabatic,           !- Construction Name
+  GC Zone,                !- Zone Name
+  ,                       !- Space Name
+  Adiabatic,              !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  NoWind,                 !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  12,                     !- Y1
+  2.7,                    !- Z1
+  0,                      !- X2
+  12,                     !- Y2
+  0,                      !- Z2
+  0,                      !- X3
+  0,                      !- Y3
+  0,                      !- Z3
+  0,                      !- X4
+  0,                      !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Roof-0005,              !- Name
+  Ceiling,                !- Surface Type
+  GC Adiabatic,           !- Construction Name
+  GC Zone,                !- Zone Name
+  ,                       !- Space Name
+  Adiabatic,              !- Outside Boundary Condition
+  ,                       !- Outside Boundary Condition Object
+  NoSun,                  !- Sun Exposure
+  NoWind,                 !- Wind Exposure
+  autocalculate,          !- View Factor to Ground
+  4,                      !- Number of Vertices
+  0,                      !- X1
+  0,                      !- Y1
+  2.7,                    !- Z1
+  12,                     !- X2
+  0,                      !- Y2
+  2.7,                    !- Z2
+  12,                     !- X3
+  12,                     !- Y3
+  2.7,                    !- Z3
+  0,                      !- X4
+  12,                     !- Y4
+  2.7;                    !- Z4
+
+BuildingSurface:Detailed,
+  Flr-0006,                !- Name
+  Floor,                   !- Surface Type
+  GC Slab,                 !- Construction Name
+  GC Zone,                 !- Zone Name
+  ,                        !- Space Name
+  Foundation,              !- Outside Boundary Condition
+  Kiva Foundation,         !- Outside Boundary Condition Object
+  NoSun,                   !- Sun Exposure
+  NoWind,                  !- Wind Exposure
+  autocalculate,           !- View Factor to Ground
+  4,                       !- Number of Vertices
+  0,                       !- Vertex 1 X-coordinate {m}
+  12,                      !- Vertex 1 Y-coordinate {m}
+  0,                       !- Vertex 1 Z-coordinate {m}
+  12,                      !- Vertex 2 X-coordinate {m}
+  12,                      !- Vertex 2 Y-coordinate {m}
+  0,                       !- Vertex 2 Z-coordinate {m}
+  12,                      !- Vertex 3 X-coordinate {m}
+  0,                       !- Vertex 3 Y-coordinate {m}
+  0,                       !- Vertex 3 Z-coordinate {m}
+  0,                       !- Vertex 4 X-coordinate {m}
+  0,                       !- Vertex 4 Y-coordinate {m}
+  0;                       !- Vertex 4 Z-coordinate {m}
+
+HVACTemplate:Thermostat,
+  GC Zone Tstat,          !- Name
+  ,                       !- Heating Setpoint Schedule Name
+  30,                     !- Constant Heating Setpoint
+  ,                       !- Cooling Setpoint Schedule Name
+  60;                     !- Constant Cooling Setpoint
+
+HVACTemplate:Zone:IdealLoadsAirSystem,
+  GC Zone,                !- Zone Name
+  GC Zone Tstat,          !- Template Thermostat Name
+  ,                       !- System Availability Schedule Name
+  ,                       !- Maximum Heating Supply Air Temperature
+  ,                       !- Minimum Cooling Supply Air Temperature
+  ,                       !- Maximum Heating Supply Air Humidity Ratio
+  ,                       !- Minimum Cooling Supply Air Humidity Ratio
+  NoLimit,                !- Heating Limit
+  ,                       !- Maximum Heating Air Flow Rate
+  ,                       !- Maximum Sensible Heating Capacity
+  NoLimit,                !- Cooling Limit
+  ,                       !- Maximum Cooling Air Flow Rate
+  ,                       !- Maximum Total Cooling Capacity
+  ,                       !- Heating Availability Schedule Name
+  ,                       !- Cooling Availability Schedule Name
+  None,                   !- Dehumidification Control Type
+  ,                       !- Cooling Sensible Heat Ratio
+  ,                       !- Dehumidification Setpoint
+  None,                   !- Humidification Control Type
+  ,                       !- Humidification Setpoint
+  None;                   !- Outdoor Air Method
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Ideal Loads Zone Sensible Heating Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Ideal Loads Zone Sensible Cooling Energy, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Mean Air Temperature, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  Flr-0006,               !- Key Value
+  Surface Inside Face Conduction Heat Transfer Rate, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  Flr-0006,               !- Key Value
+  Surface Inside Face Temperature, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  Flr-0006,               !- Key Value
+  Surface Inside Face Convection Heat Transfer Coefficient, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  Flr-0006,               !- Key Value
+  Surface Outside Face Temperature, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Zone Ideal Loads Zone Sensible Heating Rate, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+Output:Variable,
+  *,                      !- Key Value
+  Site Outdoor Air Drybulb Temperature, !- Variable Name
+  Hourly;                 !- Reporting Frequency
+
+
+! ==== Foundation:Kiva (Pinocchio ground) — lib/ground/kiva.js ====
+Foundation:Kiva:Settings,
+  0.5,                    !- Soil Conductivity
+  1490,                   !- Soil Density
+  1800,                   !- Soil Specific Heat
+  0,                      !- Ground Solar Absorptivity
+  0,                      !- Ground Thermal Absorptivity
+  0.03000000096,          !- Ground Surface Roughness
+  15,                     !- Far-Field Width
+  GroundWater,            !- Deep-Ground Boundary Condition
+  15,                     !- Deep-Ground Depth
+  0.0005,                 !- Minimum Cell Dimension
+  1.2,                    !- Maximum Cell Growth Coefficient
+  Hourly;                 !- Simulation Timestep
+
+Material,
+  Kiva Foundation Wall Material, !- Name
+  Rough,                  !- Roughness
+  0.24,                   !- Thickness
+  0.001,                  !- Conductivity
+  0.001,                  !- Density
+  100;                    !- Specific Heat
+
+Construction,
+  Kiva Foundation Wall,   !- Name
+  Kiva Foundation Wall Material; !- Outside Layer
+
+Foundation:Kiva,
+  Kiva Foundation,        !- Name
+  30,                     !- Initial Indoor Air Temperature
+  ,                       !- Interior Horizontal Insulation Material Name
+  ,                       !- Interior Horizontal Insulation Depth
+  ,                       !- Interior Horizontal Insulation Width
+  ,                       !- Interior Vertical Insulation Material Name
+  ,                       !- Interior Vertical Insulation Depth
+  ,                       !- Exterior Horizontal Insulation Material Name
+  ,                       !- Exterior Horizontal Insulation Depth
+  ,                       !- Exterior Horizontal Insulation Width
+  ,                       !- Exterior Vertical Insulation Material Name
+  ,                       !- Exterior Vertical Insulation Depth
+  0,                      !- Wall Height Above Grade
+  0,                      !- Wall Depth Below Slab
+  Kiva Foundation Wall;   !- Footing Wall Construction Name
+
+SurfaceProperty:ExposedFoundationPerimeter,
+  Flr-0006,               !- Surface Name
+  TotalExposedPerimeter,  !- Exposed Perimeter Calculation Method
+  48;                     !- Total Exposed Perimeter
+
+SurfaceProperty:ConvectionCoefficients,
+  Flr-0006,  !- Surface Name
+  Inside,  !- Convection Coefficient 1 Location
+  Value,  !- Convection Coefficient 1 Type
+  100;  !- Convection Coefficient 1 {W/m2-K}

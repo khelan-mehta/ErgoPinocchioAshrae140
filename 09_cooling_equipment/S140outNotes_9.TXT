@@ -1,0 +1,211 @@
+MODELING NOTES FOR ASHRAE STANDARD 140 - SECTION 9 (SPACE-COOLING EQUIPMENT, CASES CE100-CE200 AND CE300-CE545)
+Software tested: Pinocchio-EP (web building-energy-modeling application; HVAC built in "Pinocchio Studio")
+
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+1. SOFTWARE VENDOR: ERGO Energy LLP (Pinocchio-EP, https://www.ergoenergy.in/pinocchio/)
+
+2. SOFTWARE NAME: Pinocchio-EP. HVAC entered in Pinocchio Studio (the application's HVAC system editor). Simulation engine:
+   EnergyPlus 26.1.0-6f2e40d102, unmodified, as bundled and deployed with Pinocchio-EP.
+
+3. SOFTWARE VERSION: Pinocchio-EP 1.0.0+b0c9cf1.dirty (git b0c9cf1 plus the uncommitted working tree of branch
+   ashrae140-compliance, 2026-10-27; the version string is written as the first line of every exported IDF).
+   Engine: EnergyPlus 26.1.0, build 6f2e40d102.
+
+4. OPERATING SYSTEM REQUIREMENTS: client - a current web browser (Chrome, Edge, Firefox, Safari) on any desktop OS;
+   simulation service - Linux x86-64 (deployed) or Windows 10/11 x64 (the identical engine build used for these runs).
+
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION: none on the client; about 1 GB for a local engine installation.
+
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION: 4 GB.
+
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS: 1280 x 800.
+
+8. OTHER: the runs were made with the application's own exporter (exportIdf) and the bundled engine, driven from the scripts in
+   harness/ (identical to the Run button's IDF; the deployed service runs the same engine build).
+
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+NOTE 1 - Unitary system control
+---------------------------------------------------------
+1.1 Effect: thermostat control of a single-speed split DX unit.
+1.2 Options: (1) AirLoopHVAC:UnitarySystem with Control Type = Load (cycles to meet the zone load at the thermostat set point);
+    (2) Control Type = SetPoint (controls the supply-air temperature).
+1.3 Used: Load. Ideal on/off control inside each time step (no minimum on/off time, no deadband, nonproportional):
+    the run-time fraction is PLR/PLF and the zone is held at the set point while capacity suffices.
+
+NOTE 2 - Part-load ratio definition
+---------------------------------------------------------
+1.1 Effect: PLR used for the COP degradation factor.
+1.2 Options: none; the program defines PLR = gross total coil load / gross total capacity.
+1.3 Used: that definition (Equation 9-2, permitted by 9.2.1.10.4.3).
+
+NOTE 3 - Supply fan operating mode
+---------------------------------------------------------
+1.1 Effect: indoor fan cycling with the compressor (CE100-CE200, CE500-CE545) or running continuously (CE300-CE440).
+1.2 Options: Supply Air Fan Operating Mode schedule 0 = cycling, 1 = continuous.
+1.3 Used: 0 for CE100-CE200 and CE500-CE545 (fan run time = PLR/PLF, so the CDF applies to the fan); 1 for CE300-CE440
+    (fan at full flow and power every hour; the CDF is applied only to the compressor and outdoor fan, 9.2.3.10.4.5).
+
+NOTE 4 - Economizer control
+---------------------------------------------------------
+1.1 Effect: outdoor-air economizers of CE400-CE440.
+1.2 Options: Controller:OutdoorAir economizer types (differential dry bulb, differential enthalpy, fixed limits),
+    lockout (none = integrated; with compressor = non-integrated), mixed-air set point from a set point manager.
+1.3 Used: CE400 DifferentialDryBulb/NoLockout; CE410 DifferentialDryBulb/LockoutWithCompressor; CE420 DifferentialDryBulb +
+    Economizer Maximum Limit Dry-Bulb 20 C; CE430 DifferentialEnthalpy; CE440 DifferentialEnthalpy + Maximum Limit Enthalpy
+    47250 J/kg; no low limit. Mixed-air reference from SetpointManager:SingleZone:Cooling at the loop outlet (min -20 C, max
+    50 C), which is below the zone temperature only when the zone needs cooling (so the economizer is off when IDB <= 25 C).
+    Modulating damper (ModulateFlow), minimum outdoor air 15 % at all times.
+
+NOTE 5 - DX coil model
+---------------------------------------------------------
+1.1 Effect: full-load capacity, sensible/latent split, power and dry-coil behaviour of the DX coil.
+1.2 Options: single-speed DX coil with rated values + curves (selected); performance tables (Table:Lookup) were not used.
+1.3 Used: Coil:Cooling:DX:SingleSpeed, gross rated capacity, rated SHR and rated COP at the AHRI point, biquadratic CapFT and
+    EIRFT in (EWB, ODB), PLF(PLR) curve. Sensible/latent split by the program's apparatus-dew-point / bypass-factor method,
+    with its built-in dry-coil adjustment.
+
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+NOTE 1 - Performance maps entered as curves
+-------------------------------------------------------------------------------
+1.1 Effect: equipment full-load performance vs EWB, ODB, EDB (Tables 9-5..9-10, 9-16/9-17).
+1.2 Sections: 9.2.1.10.3, 9.2.3.10.3; CE100MAP.XLS (sheet Table-26c = Table 9-7, gross), CE300MAP.XLS (sheet ExpSI = Table 9-16).
+1.3 Inputs: the map rows are pasted in the Studio inspector's "Performance map" tab of the DX coil (op fit_dx_coil_map). The
+    program fits by least squares, over the wet-coil rows (CE300: Table 9-16 cells with TC > SHC, 252 points incl. the AHRI
+    point; CE100: all 24 rows of Table 9-7):
+      CapFT(EWB,ODB) = TC_gross / TC_gross,rated   EIRFT(EWB,ODB) = [(P_comp + P_odfan)/TC_gross] / same at rating
+    normalised to 1.0 at EWB 19.44 C / ODB 35.0 C. Rated gross capacity = the fitted value there (CE100 8176 W vs listed 8181 W;
+    CE300 33349 W vs listed 33280 W); rated COP = 1/EIR at rating (CE100 4.157, CE300 3.036); rated SHR = listed gross
+    sensible / gross total at the AHRI point (CE100 6369/8181 = 0.7785; CE300 26.04/33.28 = 0.7825).
+    Fit quality: CE100 capacity rms 0.11 % (max 0.20 %), total power rms 0.22 % (max 0.52 %); CE300 capacity rms 0.64 %
+    (max 2.85 %), power rms 0.66 % (max 4.3 %; largest at the shaded out-of-envelope corners). Curve limits: CE100 EWB 10-25 C,
+    ODB 25-50 C (extrapolation enabled below EWB 15 C as 9.2.1.10.3.1 requires); CE300 = the map's range (EWB 7.22-35,
+    ODB 12.78-46.11 C; outside it the program holds the curve at its limit).
+    The flow-fraction curves are left at 1 (the flow is always the rated flow).
+1.4 Justification: the program's DX model takes capacity and EIR as functions of EWB and ODB; a least-squares surface over the
+    listed data is the "generalized curve fit" 9.2.1.10.3 Informative Note 3 allows. TC depends on EDB only through the
+    dry-coil cells in Table 9-7, and by < 3 % within one (EWB, ODB) block of Table 9-16; the program represents EDB effects
+    through the ADP/BF sensible split. Cross-check: the program's own standard rating of the CE100 coil (net, with its default
+    773.3 W/(m3/s) fan) is 7846 W vs the listed net 7852 W.
+
+NOTE 2 - Outdoor (condenser) fan power
+-------------------------------------------------------------------------------
+1.1 Effect: separate outdoor fan power 108 W (CE100) / 930 W (CE300), cycling with the compressor.
+1.2 Sections: 9.2.1.10.6.2, 9.2.3.10.5.2.
+1.3 Inputs: the outdoor fan power is added to the compressor power in the EIR data (Note 1). Reported compressor energy =
+    coil electric energy - P_odfan x run-time fraction x 1 h; reported outdoor fan energy = P_odfan x run-time fraction x 1 h.
+1.4 Justification: the outdoor fan runs exactly when the compressor runs (same run-time fraction PLR/CDF), so the sum is
+    exact and the split is exact.
+
+NOTE 3 - COP degradation factor
+-------------------------------------------------------------------------------
+1.1 Effect: CDF = 1 - 0.229(1 - PLR) (Figure 9-3), run time = PLR/CDF.
+1.2 Sections: 9.2.1.10.4, 9.2.3.10.4.
+1.3 Inputs: Part Load Fraction Correlation curve PLF(PLR) = 0.771 + 0.229 PLR (quadratic with zero x^2 term).
+1.4 Justification: the program's run-time fraction is PLR/PLF and the electric input at part load is the full-load power x
+    run-time fraction, i.e. COP(PLR) = COP_full x CDF. In cycling-fan cases the program also runs the indoor fan for PLR/PLF.
+
+NOTE 4 - Bypass factor / apparatus dew point
+-------------------------------------------------------------------------------
+1.1 Effect: coil bypass factor (CE100: 0.049-0.080; CE300: 0.070).
+1.2 Sections: 9.2.1.10.3.3, 9.2.3.10.3.2.
+1.3 Inputs: none (the program does not accept a BF); it derives the BF from the rated SHR at the rating point and holds it
+    independent of PLR (9.2.1.10.4.4). Implied values (psychrometric back-calculation at 101325 Pa, rated flow at 1.2 kg/m3):
+    CE100 BF = 0.077, ADP = 13.5 C (listed ADP 13.8 C); CE300 BF = 0.144, ADP = 13.6 C.
+1.4 Justification: 9.2.1.10.3.3 "If the software being tested does not require an input for BF, or automatically calculates
+    it based on other inputs, skip". The CE300 implied BF is higher than the manufacturer's 0.070 because the listed AHRI-point
+    SHR (0.7825) was kept as the primary data (see block G).
+
+NOTE 5 - Near-adiabatic envelope and surface properties
+-------------------------------------------------------------------------------
+1.1 Effect: insulation R = 100 m2K/W (CE100) / 325 m2K/W (CE300), no capacitance, solar absorptance 0.1 exterior / 0.6
+    interior, IR emittance 0.9, floor exposed to outdoor air.
+1.2 Sections: 9.2.1.4, 9.2.1.7, 9.2.3.4, Tables 9-1, 9-3, 9-13.
+1.3 Inputs: custom constructions of two Material:NoMass layers of R/2 each (outer layer solar/visible absorptance 0.1, inner
+    0.6, thermal absorptance 0.9); floor boundary = outdoors; full specified areas (8 x 6 x 2.7 m; 14 x 14 x 3 m). Surface
+    coefficients calculated by the program (TARP inside, DOE-2 outside).
+1.4 Justification: splitting one massless layer in two is thermally identical and lets each face carry its own absorptance.
+
+NOTE 6 - Latent internal gains
+-------------------------------------------------------------------------------
+1.1 Effect: latent gains in W (constant or per Tables 9-15, 9-20..9-23).
+1.3 Inputs: an ElectricEquipment load with Fraction Latent = 1, Fraction Radiant = 0, design level = the largest scheduled
+    latent gain, on a fractional schedule = gain / max; sensible gains likewise with Fraction Latent 0 and Fraction Radiant 0
+    (100 % convective).
+1.4 Justification: the program converts latent watts to moisture with its own heat of vaporisation (9.2.2.2.1.1).
+
+NOTE 7 - Scheduled outdoor air and infiltration
+-------------------------------------------------------------------------------
+1.1 Effect: OA 15 % / 50 % / 100 % of 1.888 m3/s; infiltration 1.734 / 5.779 / 11.558 ach as volumetric flows.
+1.3 Inputs: Controller:OutdoorAir minimum = maximum flow 1.888 m3/s, Minimum Outdoor Air Schedule = the OA fraction
+    (FixedMinimum); infiltration = ZoneInfiltration:DesignFlowRate Flow/Zone (1.8878 or 0.9439 m3/s) x a fractional schedule
+    with constant coefficients (no wind / temperature dependence). Relief air = OA by the mixer.
+
+NOTE 8 - Weather data
+-------------------------------------------------------------------------------
+1.1 Effect: CE100A/CE110A/CE165A/CE200A.TM2, CE300.TM2.
+1.3 Inputs: the normative TMY2 files converted to EPW with the program's own weather converter (Project step weather import,
+    src/lib/weather/tmy2.js; no time shift, TMY2 = local standard time hour-ending). Location from the files (Miami 25.8 N;
+    New Orleans 29.98 N, elevation 3 m). CE300 check: mean ODB 19.9 C, max 35.0 C, mean outdoor W 0.0116 (Table A1-7).
+
+NOTE 9 - Heating OFF
+-------------------------------------------------------------------------------
+1.3 Inputs: no heating coil; heating set point schedule -60 C (the dual-set-point thermostat needs one).
+
+NOTE 10 - Zone latent load output
+-------------------------------------------------------------------------------
+1.3 Zone latent cooling load (CE100-CE200) is reported as the coil latent removal (no outdoor air or infiltration in those
+    cases, so they are equal); zone sensible load = the program's zone air-system sensible cooling energy.
+
+NOTE 11 - Sizing environment
+-------------------------------------------------------------------------------
+1.3 The program's HVAC export always performs a design-day sizing pass. All capacities and flows are hard-sized, so this has no
+    effect on the results. Design days: CE300 series - the New Orleans (722310) 99.6 % heating / 0.4 % cooling design days;
+    CE100 series - one day at the file's constant conditions. Zone design cooling supply temperature 10 C (sizing only).
+
+
+===============================================================================
+D. REPORT BLOCK FOR USE OF NON-SPECIFIED INPUTS
+===============================================================================
+NONE. Air density is calculated automatically by the program from the site pressure (9.2.1.4.3 / 9.2.3.4.3 skipped); exterior
+and interior surface coefficients are calculated automatically (9.2.1.8 / 9.2.1.9 skipped).
+
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+NONE. All 34 cases (CE100-CE200, CE300-CE545) were run and every output of 9.3 is reported in Std140_CE_a_Output.xls and
+Std140_CE_b_Output.xls.
+
+
+===============================================================================
+F. REPORT BLOCK FOR CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE TESTS, WHERE SUCH CHANGES ARE NOT AVAILABLE
+   IN PUBLICLY RELEASED VERSIONS OF THE SOFTWARE
+===============================================================================
+NOTE 1 - DX performance-map fitting (Pinocchio Studio)
+1.1 Unreleased (working tree, branch ashrae140-compliance): a "Performance map" tab on the DX cooling coil and the Studio op
+    fit_dx_coil_map (src/lib/std140/dxMap.js, dxMapOp.js, src/osapp/inspector/Inspector.jsx). Before it, a user had to fit the
+    curves outside the program and type 20+ coefficients. The fit is general (any EWB/ODB map); nothing in it is specific to
+    the test results. The simulation engine is not modified.
+NOTE 2 - Other unreleased application changes made by the same work (not specific to Section 9) are listed in
+    results/01_software/CHANGES.md (Standard 140 project profile, weather converters, version stamp, Output:Variable picker).
+
+
+===============================================================================
+G. REPORT BLOCK FOR ANOMALOUS RESULTS
+===============================================================================
+NOTE 1 - CE410 equals CE400. With Lockout Type = LockoutWithCompressor on the program's load-controlled unitary system, the
+    annual results of CE410 are identical to CE400 (integrated economizer): the non-integrated lockout is not effective in this
+    configuration. CE410-CE300 is still within the Table A3-7 range.
+NOTE 2 - Zone temperatures above the set point in CE360 (undersized system, by design) and in some hours of CE400-CE440 (full
+    economizer air in humid hours raises the latent load beyond the coil's sensible capacity).
+NOTE 3 - CE300 implied bypass factor (0.144) is higher than the manufacturer's 0.070 (see C.4); the latent coil load share
+    is sensitive to it.

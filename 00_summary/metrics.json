@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-27",
+  "software": "Pinocchio-EP (branch ashrae140-compliance, uncommitted) + EnergyPlus 26.1.0-6f2e40d102",
+  "standard": "ANSI/ASHRAE Standard 140-2023 + Addendum a (2025) + Addendum b (2026)",
+  "graded_groups": {
+    "thermal_fabric_low_mass": {"before": [33, 34], "now": [34, 34], "required": 30, "pass": true},
+    "thermal_fabric_high_mass": {"before": [21, 28], "now": [28, 28], "required": 25, "pass": true},
+    "cooling_equipment": {"before": null, "now": [14, 14], "required": 12, "pass": true},
+    "heating_equipment": {"before": null, "now": [6, 6], "required": 5, "pass": true},
+    "airside_hvac": {"before": null, "now": [54, 54], "required": 48, "pass": true}
+  },
+  "percentages": {
+    "groups_passed": {"before": 0.20, "now": 1.00},
+    "range_cases_of_136": {"before": 0.40, "now": 1.00},
+    "conformance_matrix": {"before": 0.31, "now": 0.86}
+  },
+  "informative": {
+    "sec6_incident_solar_in_example_range": [55, 60],
+    "sec8_cases_run": [16, 17], "sec8_in_example_range": [15, 16],
+    "sec12_in_B22_range": [38, 58],
+    "sec13_qhtr_diff_pct": {"ET110A1": 0.12, "ET110B1": 0.33, "ET100A1": 0.03, "ET100B1": 0.03, "ET100A3": 0.77, "ET100B3": 1.04},
+    "sec13_without_measured_airflow_pct": {"ET100A3": -8.48, "ET100B3": -8.34}
+  },
+  "tests": {"frontend": "see 01_software/final_tests/frontend_tests.log", "backend": {"pass": 210, "fail": 0, "skipped": 6}},
+  "formal_status": "all graded tests pass; declaration pending release + public results page"
+}

@@ -1,0 +1,131 @@
+MODELING NOTES FOR ASHRAE STANDARD 140 - SECTION 8 (GROUND-COUPLED SLAB-ON-GRADE, GC CASES)
+
+===============================================================================
+A. SOFTWARE INFORMATION
+===============================================================================
+1. SOFTWARE VENDOR: ERGO Energy LLP (Pinocchio-EP); simulation engine EnergyPlus (U.S. DOE), unmodified.
+
+2. SOFTWARE NAME: Pinocchio-EP (web building-energy-modelling application) with its bundled EnergyPlus engine.
+
+3. SOFTWARE VERSION: Pinocchio-EP working tree of branch ashrae140-compliance (base commit b0c9cf1, plus
+   uncommitted work-package changes, stamped "pinocchio-ep ashrae140-compliance working tree (b0c9cf1+WP-F)"
+   in line 1 of every input file); EnergyPlus 26.1.0-6f2e40d102 (Windows x86_64), including its Kiva
+   ground heat-transfer model.
+
+4. OPERATING SYSTEM REQUIREMENTS: Front end: a current web browser (Chrome / Edge / Firefox / Safari).
+   Engine: Linux x86_64 server (production) or Windows 10/11 x64 (the local build used for these runs).
+
+5. APPROX HARD DISK SPACE REQUIRED FOR INSTALLATION: none on the client; the engine installation is about 1 GB.
+
+6. MINIMUM RAM REQUIRED FOR SOFTWARE OPERATION: 4 GB.
+
+7. MINIMUM DISPLAY MONITOR REQUIREMENTS: 1280 x 720.
+
+8. OTHER: These runs used the application's own IDF emitter (exportIdf) driven from Node.js and the
+   EnergyPlus command line (energyplus -x -r). This is the same input text that the GUI Run button sends
+   to the deployed engine.
+
+===============================================================================
+B. REPORT BLOCK FOR ALTERNATIVE MODELING METHODS
+===============================================================================
+NOTE 1 - Ground coupling model
+---------------------------------------------------------
+1.1 Effect simulated: heat conduction from the slab through the ground.
+1.2 Options:
+1.2.1 Monthly ground-surface temperature (Site:GroundTemperature:BuildingSurface)
+      Physical meaning: a prescribed outside-face temperature under the floor (1-D).
+1.2.2 Kiva (Foundation:Kiva)
+      Physical meaning: a 2-D finite-volume ground domain coupled to the zone each hour, with soil
+      properties, a deep-ground boundary and a far-field boundary.
+1.3 Used: 1.2.2 Kiva, for every case.
+
+NOTE 2 - Kiva deep-ground boundary
+---------------------------------------------------------
+1.1 Effect simulated: the lower boundary of the ground.
+1.2 Options: ZeroFlux, GroundWater (a constant temperature equal to the weather file's annual mean dry-bulb
+    temperature, applied at the specified depth), Autoselect.
+1.3 Used: GroundWater at the specified depth E. The annual mean is 10.0 C in every GC weather file, which
+    equals the specified deep-ground temperature.
+
+===============================================================================
+C. REPORT BLOCK FOR EQUIVALENT MODELING METHODS
+===============================================================================
+NOTE 1 - Weather data
+1.1 Effect: GC*.TM2 weather.
+1.2 Section: 8.2, Annex A1.1.2, Table A1-3.
+1.3 Input used: EnergyPlus EPW files carrying the hourly dry-bulb of the normative GC*.TM2 files (equal to the
+    A1.1.2.1 formula within the TM2's 0.1 C resolution) and the Table A1-3 constants. Wind direction (0),
+    extraterrestrial radiation (0) and horizontal IR (missing, so the engine calculates it) are not specified.
+
+NOTE 2 - Exterior ground-surface convective coefficient
+1.1 Effect: hext = 100 / 11.95 W/m2K, or >= 5000 W/m2K (a- and c-series).
+1.2 Section: 8.2.1.1.4, 8.2.1.7.1, 8.2.2.2.1, 8.2.3.1.1.
+1.3 Input used: the Kiva ground surface has no direct hext input. The program calculates it from the
+    weather-file wind speed (19.9 / 1.0 / 40 m/s per Table A1-3, chosen by the standard to give these
+    coefficients) and the ground roughness (0.03 m, program default). Ground solar and IR absorptivity are 0,
+    so the coefficient is convective only.
+
+NOTE 3 - Interior convective coefficient and direct interior surface temperature
+1.1 Effect: hint = 100 / 7.95 W/m2K; a-series direct Ti.
+1.2 Section: 8.2.1.1.4, 8.2.1.6.1, 8.2.2.2.1, 8.2.3.1.1.
+1.3 Input used: a constant inside convection coefficient on the floor (SurfaceProperty:ConvectionCoefficients,
+    Value). For the a-series, h = 5000 W/m2K with the HeatBalanceAlgorithm maximum raised to 5000. Interior IR
+    emittance is 1e-5 (the lowest value accepted), so the c-series combined 7.95 equals the convective input.
+
+NOTE 4 - Adiabatic, massless above-grade surfaces; no radiation
+1.1 Effect: adiabatic massless walls and ceiling; no surface radiation exchange.
+1.2 Section: 8.2.1.1.3.
+1.3 Input used: walls and roof with an Adiabatic boundary condition; a NoMass layer R = 1000 m2K/W;
+    absorptances and emittances 1e-5.
+
+NOTE 5 - Wall / ground interface
+1.1 Effect: a 0.24 m adiabatic wall that contacts but does not penetrate the ground.
+1.2 Section: 8.2.1.1.3 e, Figure 8-3.
+1.3 Input used: Kiva foundation wall 0.24 m thick, k 0.001 W/mK, density 0.001 kg/m3, cp 100 J/kgK (minimum
+    accepted), height above grade 0, depth below slab 0. The wall therefore extends only through the 1 mm slab.
+
+NOTE 6 - Slab
+1.1 Effect: slab with the soil properties, least stable thickness.
+1.2 Section: 8.2.1.1.2 a, g.
+1.3 Input used: a 1 mm slab of the soil material. Thicker slabs (20 / 10 / 5 / 2 mm) gave GC30b qfloor 2.4 /
+    1.3 / 0.6 / 0.2 % lower.
+
+NOTE 7 - Multiyear simulation
+1.1 Effect: run until the year-to-year change is below 0.1 %.
+1.2 Section: 8.2.1.1.7.1, 8.2.1.2.1 c.
+1.3 Input used: RunPeriod over 3 years (steady cases), 8 years (harmonic) and 14 years (GC80b, GC80c). The
+    weather file repeats each year (Feb 29 skipped). The last-hour or last-year change is 0.000 - 0.080 %.
+
+===============================================================================
+D. REPORT BLOCK FOR NONSPECIFIED INPUTS
+===============================================================================
+NONE beyond those listed under C. The ground roughness (0.03 m) and the Kiva mesh (minimum cell 0.5 mm,
+growth 1.2, hourly ground step) are numerical / program defaults. The mesh is the same in every case.
+
+===============================================================================
+E. REPORT BLOCK FOR OMITTED TEST CASES AND RESULTS
+===============================================================================
+1. Case GC10a omitted: the linearly varying perimeter-surface temperature on a semi-infinite solid cannot be
+   input in the program's 2-D Kiva ground model.
+2. Steady-state near-surface temperatures Tsurf,n (Table 8-12) and GC10a at-surface temperatures not reported:
+   the program provides no output of ground temperatures at user-specified points.
+
+===============================================================================
+F. CHANGES TO SOURCE CODE FOR THE PURPOSE OF RUNNING THE TESTS
+===============================================================================
+The application gained a Kiva ground-coupling capability for these tests: a project setting with GUI panel
+and agent fields, exported as Foundation:Kiva objects (pinocchio-ep src/lib/ground/kiva.js,
+GroundPanel.jsx, src/agent/fields/ground.js). It is not yet in a released version. The EnergyPlus engine
+is unmodified. No code or input was tuned to the reference results.
+
+===============================================================================
+G. ANOMALOUS RESULTS
+===============================================================================
+1. GC65b and GC70b (wind 1 m/s) are 7.4 % and 6.7 % below the verified-model mean. The program's
+   wind-driven exterior ground convection at 1 m/s is lower than the specified 11.95 W/m2K.
+2. Floor-conduction peaks occur 25 - 75 h (GC70b: 145 h) later than in the verified models, and the
+   last-year peaks are 0.2 - 8 % lower (hourly 2-D ground model).
+3. GC50b is 1.3 % below the lowest example result. GC40a - GC40b is 476 kWh, against 829 - 1096 kWh in
+   the verified models.
+4. The reported minimum ODB is 2.038 C. The weather file's minimum is 2.0 C; the engine reports hourly means
+   of timestep-interpolated values.
